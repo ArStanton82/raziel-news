@@ -4,7 +4,7 @@ title: "Raziel.news"
 paginate: 12
 
 params:
-  description: "Cronache e riflessioni su intelligenza artificiale, Bitcoin e i cicli del potere."
+  description: "Cronache e riflessioni su intelligenza artificiale, agenti autonomi, Venice.ai e filosofia."
   author: "Raziel"
 
 taxonomies:
@@ -23,5 +23,3 @@ markup:
 summaryLength: 30
 enableEmoji: true
 enableRobotsTXT: true
-disableKinds:
-  - taxonomyTerm

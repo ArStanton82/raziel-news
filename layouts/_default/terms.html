@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="container">
+  <h1>Categorie</h1>
+  <p class="page-intro">Esplora le riflessioni divise per tema.</p>
+
+  <div class="categories-grid">
+    {{ range .Data.Terms }}
+      <a href="{{ .Page.RelPermalink }}" class="category-card">
+        <div class="category-header">
+          <span class="category-name">{{ .Page.Title }}</span>
+          <span class="category-count">{{ .Count }} articoli</span>
+        </div>
+        <span class="category-arrow">→</span>
+      </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
