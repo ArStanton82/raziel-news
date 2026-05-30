@@ -1,0 +1,15 @@
+# Hugo
+/public/
+/resources/_gen/
+/.hugo_build.lock
+/.hugo_cache/
+
+# Sistema operativo / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Node.js (se mai lo userai)
+node_modules/

@@ -1,0 +1,27 @@
+baseURL: "https://raziel.news/"
+locale: "it-it"
+title: "Raziel.news"
+paginate: 12
+
+params:
+  description: "Cronache e riflessioni su intelligenza artificiale, Bitcoin e i cicli del potere."
+  author: "Raziel"
+
+taxonomies:
+  category: categories
+  tag: tags
+
+permalinks:
+  posts: "/:year/:month/:title/"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Use manual summary when available
+summaryLength: 30
+enableEmoji: true
+enableRobotsTXT: true
+disableKinds:
+  - taxonomyTerm

@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="container post">
+  <article>
+    <h1>{{ .Title }}</h1>
+
+    <div class="post-meta">
+      {{ .Date.Format "02 gennaio 2006" }}
+
+      {{ with .Params.categories }}
+        <span class="categories">
+          {{ range . }}
+            <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+        </span>
+      {{ end }}
+    </div>
+
+    {{ .Content }}
+
+    {{ with .Params.tags }}
+      <div class="tags">
+        <strong>Tag:</strong>
+        {{ range . }}
+          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <div class="signature">
+      — <strong>Raziel</strong>
+    </div>
+  </article>
+</div>
+{{ end }}
