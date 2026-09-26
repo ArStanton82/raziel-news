@@ -1,0 +1,96 @@
+/* =====================================================================
+   raziel.news — custom-v3-solo-carattere.css
+   Variante scelta: SOLO CAMBIO CARATTERE, senza riquadro di lettura.
+   Da caricare DOPO /css/custom-v2.css.
+   Prerequisito: i file .woff2 di Atkinson Hyperlegible in /static/fonts/.
+
+   AVVERTENZA TECNICA
+   Il contrasto dipende dal colore, non dalla famiglia tipografica.
+   Il presente file migliora la leggibilità (riconoscimento dei glifi,
+   corpo, interlinea, crenatura) ma NON modifica il rapporto di
+   contrasto, che resta quello misurato in precedenza:
+      tema chiaro, testo #222 su sfondo con velo 0,35 -> 2,1:1
+   La sezione 3 in fondo contiene il completamento minimo per restare
+   senza pannello; è commentata e va attivata a scelta.
+   ===================================================================== */
+
+/* ---------- 1. Carattere ---------- */
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:400;font-display:swap;
+  src:url("../static/fonts/AtkinsonHyperlegible-400-latin.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:400;font-display:swap;
+  src:url("../static/fonts/AtkinsonHyperlegible-400-latin-ext.woff2") format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:italic;font-weight:400;font-display:swap;
+  src:url("../static/fonts/AtkinsonHyperlegible-400-italic-latin.woff2") format("woff2")}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:italic;font-weight:400;font-display:swap;
+  src:url("../static/fonts/AtkinsonHyperlegible-400-italic-latin-ext.woff2") format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:700;font-display:swap;
+  src:url("../static/fonts/AtkinsonHyperlegible-700-latin.woff2") format("woff2")}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:italic;font-weight:700;font-display:swap;
+  src:url("../static/fonts/AtkinsonHyperlegible-700-italic-latin.woff2") format("woff2")}
+
+/* ---------- 2. Metrica del testo ---------- */
+html{
+  letter-spacing:0;      /* il tema impone 0.06em: penalizza il riconoscimento della parola */
+  font-feature-settings:normal;   /* il tema attiva ss01/zero/case di Inter, qui inutili */
+}
+
+body{
+  font-family:'Atkinson Hyperlegible','Inter',-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:1.0625rem;   /* 17px (era 16px) */
+  line-height:1.75;      /* era 1.54 */
+  letter-spacing:0;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.post-title{ line-height:1.25; letter-spacing:0 }
+h1,h2,h3{ line-height:1.25; letter-spacing:0; font-weight:700 }
+
+/* il giustificato su interlinea corta crea "fiumi" che disturbano la lettura */
+.post-content{ text-align:left; -webkit-hyphens:none; hyphens:none }
+
+/* il carattere ha una sola coppia di pesi (400/700): il grassetto dei titoli
+   è reale, non sintetizzato */
+b,strong{ font-weight:700 }
+
+/* =====================================================================
+   3. COMPLETAMENTO MINIMO SENZA PANNELLO (opzionale, commentato)
+
+   Effetto misurato sullo sfondo reale (fascia del testo in homepage):
+     velo 0,35 + testo #f2f2f2 -> CR 6,8:1 medio | 2,2:1 sul 10% più chiaro
+     velo 0,55 + testo #f2f2f2 -> CR 8,5:1 medio | 3,0:1 sul 10% più chiaro
+   Nessuna delle due raggiunge 4,5:1 sulle zone chiare dell'immagine:
+   per farlo serve il pannello (vedi custom-v3.css) oppure l'ombra di
+   testo qui sotto, che garantisce un bordo leggibile su ogni fondo.
+
+   Per attivare, togliere i delimitatori di commento:
+
+:root{
+  --raziel-velo: 0.55;
+  --raziel-inchiostro: #f2f2f2;
+}
+
+.bg::before{
+  background-image:linear-gradient(to top, rgba(0,0,0,var(--raziel-velo)), rgba(0,0,0,var(--raziel-velo))) !important;
+}
+
+   Testo chiaro sulla homepage: indispensabile, il #222 del tema chiaro
+   su fotografia scura resta a 2,1:1 con qualsiasi carattere.
+body.bg, [data-theme="light"] body.bg, [data-theme="dark"] body.bg{
+  color:var(--raziel-inchiostro);
+}
+body.bg a, body.bg .post-title a, body.bg .logo__text{ color:#ffffff }
+body.bg .post-meta, body.bg .post-date{ color:#d6d6de }
+
+   Ombra di testo: mantiene il distacco dal fondo variabile senza pannello.
+   Non aumenta il contrasto fra lettera e fondo immediato, ma garantisce
+   un contorno a contrasto elevato su qualunque zona dell'immagine.
+body.bg .site-h1, body.bg h1, body.bg .post-title a, body.bg .post-meta,
+body.bg .post-date, body.bg .logo__text{
+  text-shadow:0 1px 2px rgba(0,0,0,.85), 0 0 3px rgba(0,0,0,.70);
+}
+   ===================================================================== */

@@ -24,6 +24,7 @@ params:
 
   customCSS:
     - "/css/custom-v2.css"
+    - "/css/custom-v3-solo-carattere.css"
 
   logo:
     logoText: "Raziel.news"
