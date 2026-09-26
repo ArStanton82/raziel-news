@@ -23,7 +23,7 @@ params:
   homeTitle: "Raziel.news"
 
   customCSS:
-    - "/css/custom.css"
+    - "/css/custom-v2.css"
 
   logo:
     logoText: "Raziel.news"
