@@ -21,7 +21,7 @@
         {{ end }}
 
         <div class="meta">
-          {{ .Date.Format "02 January 2006" }}
+          {{ partial "date-ita.html" .Date }}
           {{ with .Params.categories }} • {{ delimit . ", " }}{{ end }}
         </div>
       </div>
