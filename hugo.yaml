@@ -22,6 +22,9 @@ params:
   LastModDisplay: false
   homeTitle: "Raziel.news"
 
+  customCSS:
+    - "/css/custom.css"
+
   logo:
     logoText: "Raziel.news"
     logoCursorColor: "#6d5ae6"
