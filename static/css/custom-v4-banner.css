@@ -1,0 +1,170 @@
+/* =====================================================================
+   raziel.news — custom-v4-banner.css
+   Homepage: banner in alto con la fotografia, articoli sotto su fondo
+   pieno del tema, uno per riquadro.
+
+   Motivo: la fotografia dietro il testo rendeva impossibile superare la
+   soglia di contrasto WCAG AA (2,1:1 in tema chiaro, 1,1:1 sulle zone
+   chiare in tema scuro). Con il banner la fotografia resta confinata in
+   una fascia e tutto il testo di lettura poggia sul fondo pieno del tema:
+   tema scuro #a9a9b3 su #232425 -> 6,7:1 ; tema chiaro #222 su #fff -> 16:1.
+
+   Palette usata: quella del tema (_variables.scss), per coerenza.
+   ===================================================================== */
+
+/* ---------- 1. La fotografia non sta più dietro il testo ---------- */
+body.home{
+  background-image:none;
+  background-attachment:scroll;
+}
+
+/* ---------- 2. Banner ---------- */
+.home-banner{
+  position:relative;
+  width:100%;
+  min-height:clamp(220px, 32vh, 340px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:34px 24px;
+  overflow:hidden;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("/images/raziel-bg-v4.jpeg");
+  background-size:cover;
+  background-position:top center;
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+}
+
+.home-banner__inner{
+  width:100%;
+  max-width:860px;
+}
+
+.home-banner__title{
+  margin:0;
+  color:#ffffff;
+  font-size:clamp(2rem, 5.2vw, 3.1rem);
+  line-height:1.12;
+  font-weight:700;
+  letter-spacing:0;
+  text-shadow:0 1px 2px rgba(0,0,0,0.80), 0 0 10px rgba(0,0,0,0.55);
+}
+
+.home-banner p{
+  margin:0.55em 0 0;
+  color:#f2f2f2;
+  font-size:clamp(0.95rem, 2vw, 1.1rem);
+  text-shadow:0 1px 2px rgba(0,0,0,0.80);
+}
+
+/* ---------- 3. Colonna degli articoli, su fondo pieno ---------- */
+.home-body{
+  width:100%;
+  max-width:860px;
+  margin:0 auto;
+  padding:30px 20px 10px;
+}
+
+.home-body .posts{
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:0;
+  border-bottom:none;
+}
+
+.home-body .content{
+  text-align:left;
+}
+
+/* ---------- 4. Un riquadro per articolo (separazione netta) ---------- */
+.home-body .post.on-list{
+  width:100%;
+  max-width:none;
+  margin:0 0 16px;
+  padding:22px 26px;
+  border-radius:12px;
+  background:#f6f6f7;
+  border:1px solid #dcdcdc;
+  box-shadow:0 1px 2px rgba(0,0,0,0.04);
+}
+
+@media (prefers-color-scheme: dark){
+  .home-body .post.on-list{
+    background:#1b1c1d;
+    border-color:#3b3d42;
+    box-shadow:none;
+  }
+}
+
+[data-theme=dark] .home-body .post.on-list{
+  background:#1b1c1d;
+  border-color:#3b3d42;
+  box-shadow:none;
+}
+
+[data-theme=light] .home-body .post.on-list{
+  background:#f6f6f7;
+  border-color:#dcdcdc;
+  box-shadow:0 1px 2px rgba(0,0,0,0.04);
+}
+
+/* titolo dell'articolo: in lista il tema lo rende a 1rem, troppo poco
+   per un riquadro */
+.home-body .posts .post-title{
+  margin:0 0 10px;
+  font-size:1.375rem;
+  line-height:1.28;
+  letter-spacing:0;
+}
+
+.home-body .posts .post-title a{
+  text-decoration:none;
+}
+
+.home-body .posts .post-title a:hover{
+  text-decoration:underline;
+}
+
+.home-body .post-meta{
+  margin-bottom:4px;
+  font-size:0.9rem;
+}
+
+.home-body .post-tags a{
+  font-size:0.9rem;
+  text-decoration:none;
+}
+
+.home-body .post-tags a:hover{
+  text-decoration:underline;
+}
+
+.home-body .post-content{
+  margin-top:12px;
+  text-align:left;
+}
+
+.home-body .read-more{
+  font-size:0.95rem;
+}
+
+/* ---------- 5. Telefono ---------- */
+@media (max-width: 684px){
+  .home-banner{
+    min-height:190px;
+    padding:26px 18px;
+  }
+  .home-body{
+    padding:20px 14px 8px;
+  }
+  .home-body .post.on-list{
+    padding:18px;
+    margin-bottom:14px;
+  }
+  .home-body .posts .post-title{
+    font-size:1.2rem;
+  }
+}

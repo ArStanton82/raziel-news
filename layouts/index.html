@@ -1,12 +1,19 @@
 {{ define "body" }}
-    <body class="bg" style="background-image: url('/images/raziel-bg-v4.jpeg');">
+    <body class="home">
 {{ end }}
 
 {{ define "main" }}
     <main aria-role="main">
-        <div>
-            <h1>{{ .Site.Params.homeTitle }}</h1>
-            {{ partial "subtitle.html" . }}
+        <!-- Banner: la fotografia resta confinata qui, nessun testo di lettura vi si sovrappone -->
+        <section class="home-banner">
+            <div class="home-banner__inner">
+                <h1 class="home-banner__title">{{ .Site.Params.homeTitle }}</h1>
+                {{ partial "subtitle.html" . }}
+            </div>
+        </section>
+
+        <!-- Articoli: su fondo pieno del tema, uno per riquadro -->
+        <div class="home-body">
         <!-- Start Posts -->
         {{ if .Site.Params.showPosts }}
             {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
@@ -15,7 +22,8 @@
             {{ if .IsHome }}
                 {{ $PageContext = .Site }}
             {{ end }}
-            {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) ($.Site.Params.paginate | default 2) }}
+            {{ $pages := where $PageContext.RegularPages "Type" $contentTypeName }}
+            {{ $paginator := .Paginate $pages }}
             {{ if .Content }}
             <div class="content">{{ .Content }}</div>
             {{ end }}
