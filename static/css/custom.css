@@ -7,6 +7,10 @@
   opacity: 0.6;
 }
 
+.bg {
+  background-position: top center !important;
+}
+
 /* Ensure text stays readable over background */
 .home-bg .container {
   position: relative;
