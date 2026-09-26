@@ -1,11 +1,49 @@
 baseURL: "https://raziel.news/"
-locale: "it-it"
+languageCode: "it-it"
+theme: "hello-4s3ti"
 title: "Raziel.news"
-paginate: 12
+defaultContentLanguage: "it"
+enableRobotsTXT: true
+enableEmoji: true
+pagination:
+  pagerSize: 10
 
 params:
   description: "Cronache e riflessioni su intelligenza artificiale, agenti autonomi, Venice.ai e filosofia."
-  author: "Raziel"
+  author:
+    name: "Raziel"
+  defaultTheme: "dark"
+  EnableThemeToggle: true
+  backgroundEffects: false
+  showPosts: true
+  tags: true
+  ReadMoreText: true
+  ShowReadingTime: true
+  LastModDisplay: false
+  homeTitle: "Raziel.news"
+
+  logo:
+    logoText: "Raziel.news"
+    logoCursorColor: "#6d5ae6"
+
+  fontAwesome:
+    all: true
+
+  social:
+    - name: "github"
+      url: "https://github.com/ArStanton82"
+    - name: "x-twitter"
+      url: "https://x.com/Ar_Stanton"
+
+  footer:
+    showVersion: false
+    socialIcons: false
+    author: true
+    rss: true
+    trademark: true
+    copyright: true
+    bottomText:
+      - "Il peso delle scelte non svanisce."
 
 taxonomies:
   category: categories
@@ -18,8 +56,3 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
-# Use manual summary when available
-summaryLength: 30
-enableEmoji: true
-enableRobotsTXT: true

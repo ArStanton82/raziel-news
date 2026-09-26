@@ -13,3 +13,9 @@ Thumbs.db
 
 # Node.js (se mai lo userai)
 node_modules/
+
+# Bozze temporanee
+drafts/
+
+# Backup
+*.backup
