@@ -12,24 +12,46 @@
    Palette usata: quella del tema (_variables.scss), per coerenza.
    ===================================================================== */
 
+/* ---------- 0. Regolazioni ---------- */
+:root{
+  /* Altezza del banner. Valore precedente: clamp(220px, 32vh, 340px).
+     Qui +30%: 220 x 1,30 = 286 ; 32vh x 1,30 = 41,6vh ; 340 x 1,30 = 442. */
+  --raziel-banner-h: clamp(286px, 41.6vh, 442px);
+  --raziel-banner-velo: 0.45;
+}
+
 /* ---------- 1. La fotografia non sta più dietro il testo ---------- */
 body.home{
   background-image:none;
   background-attachment:scroll;
 }
 
-/* ---------- 2. Banner ---------- */
+/* ---------- 2. Banner a tutta larghezza ---------- */
+/* Neutralizza in anticipo qualunque vincolo dei contenitori del tema:
+   body -> .container -> .content -> main. Il banner deve arrivare ai
+   bordi della finestra, non fermarsi al bordo di un contenitore. */
+body.home,
+body.home .container,
+body.home .content,
+body.home main{
+  width:100%;
+  max-width:none;
+  padding-left:0;
+  padding-right:0;
+}
+
 .home-banner{
   position:relative;
   width:100%;
-  min-height:clamp(220px, 32vh, 340px);
+  max-width:none;
+  min-height:var(--raziel-banner-h);
   display:flex;
   align-items:center;
   justify-content:center;
   padding:34px 24px;
   overflow:hidden;
   background-image:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    linear-gradient(rgba(0,0,0,var(--raziel-banner-velo)), rgba(0,0,0,var(--raziel-banner-velo))),
     url("/images/raziel-bg-v4.jpeg");
   background-size:cover;
   background-position:top center;
@@ -153,8 +175,11 @@ body.home{
 
 /* ---------- 5. Telefono ---------- */
 @media (max-width: 684px){
+  :root{
+    /* 190 x 1,30 = 247 ; 300 x 1,30 = 390 */
+    --raziel-banner-h: clamp(247px, 41.6vh, 390px);
+  }
   .home-banner{
-    min-height:190px;
     padding:26px 18px;
   }
   .home-body{
