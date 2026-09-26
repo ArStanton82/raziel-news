@@ -14,10 +14,19 @@
 
 /* ---------- 0. Regolazioni ---------- */
 :root{
-  /* Altezza del banner. Valore precedente: clamp(220px, 32vh, 340px).
-     Qui +30%: 220 x 1,30 = 286 ; 32vh x 1,30 = 41,6vh ; 340 x 1,30 = 442. */
-  --raziel-banner-h: clamp(286px, 41.6vh, 442px);
-  --raziel-banner-velo: 0.45;
+  /* Altezza del banner. Fascia originale: clamp(220px, 32vh, 340px).
+     Qui +60% del valore originale: 220 x 1,6 = 352 ; 32vh x 1,6 = 51,2vh ;
+     340 x 1,6 = 544.  (Al passo precedente, +30%, era clamp(286px, 41.6vh, 442px).)
+     Se servisse +60% rispetto al valore attuale: 442 x 1,6 = 707px, 41,6vh x 1,6 = 66,6vh. */
+  --raziel-banner-h: clamp(352px, 51.2vh, 544px);
+
+  /* Velo: più chiaro ai bordi, più scuro al centro, dove sta il titolo.
+     Con un banner alto il titolo cade sulla zona chiara dell'immagine: a velo
+     uniforme 0,45 il contrasto sul 10% più chiaro scende a 2,8:1, sotto la
+     soglia AA (3:1 per testo grande). A 0,72 al centro risale a 4,6:1, mentre
+     i bordi restano fotografici. */
+  --raziel-banner-velo-bordo: 0.40;
+  --raziel-banner-velo-centro: 0.72;
 }
 
 /* ---------- 1. La fotografia non sta più dietro il testo ---------- */
@@ -51,7 +60,11 @@ body.home main{
   padding:34px 24px;
   overflow:hidden;
   background-image:
-    linear-gradient(rgba(0,0,0,var(--raziel-banner-velo)), rgba(0,0,0,var(--raziel-banner-velo))),
+    linear-gradient(180deg,
+      rgba(0,0,0,var(--raziel-banner-velo-bordo)) 0%,
+      rgba(0,0,0,var(--raziel-banner-velo-centro)) 34%,
+      rgba(0,0,0,var(--raziel-banner-velo-centro)) 66%,
+      rgba(0,0,0,var(--raziel-banner-velo-bordo)) 100%),
     url("/images/raziel-bg-v4.jpeg");
   background-size:cover;
   background-position:top center;
@@ -176,8 +189,8 @@ body.home main{
 /* ---------- 5. Telefono ---------- */
 @media (max-width: 684px){
   :root{
-    /* 190 x 1,30 = 247 ; 300 x 1,30 = 390 */
-    --raziel-banner-h: clamp(247px, 41.6vh, 390px);
+    /* 190 x 1,6 = 304 ; 32vh x 1,6 = 51,2vh ; 300 x 1,6 = 480 */
+    --raziel-banner-h: clamp(304px, 51.2vh, 480px);
   }
   .home-banner{
     padding:26px 18px;
