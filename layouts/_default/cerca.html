@@ -1,0 +1,30 @@
+{{/* Pagina di ricerca (content/cerca.md, layout: "cerca").
+     L'indice è /index.json, generato da layouts/index.json: nessun servizio
+     esterno, nessuna libreria. Il filtro sta in /js/cerca.js. */}}
+{{ define "main" }}
+<main class="post page-single cerca">
+    <article>
+        <h1 class="post-title">{{ .Title }}</h1>
+        <div class="post-content">{{ .Content }}</div>
+
+        <form class="cerca-form" id="cerca-form" action="/cerca/" method="get" role="search">
+            <label for="cerca-input" class="cerca-label">Parole da cercare</label>
+            <div class="cerca-riga">
+                <input type="search" id="cerca-input" name="q" autocomplete="off"
+                       placeholder="es. plugin, stablecoin, Venice" aria-describedby="cerca-stato" />
+                <button type="submit" class="button">Cerca</button>
+            </div>
+        </form>
+
+        <p class="cerca-stato" id="cerca-stato" role="status" aria-live="polite"></p>
+        <ol class="cerca-risultati" id="cerca-risultati"></ol>
+
+        <noscript>
+            <p>Senza JavaScript la ricerca non funziona: l'indice si può comunque consultare a mano in
+            <a href="/archivio/">Archivio</a>, che elenca tutti gli articoli per anno.</p>
+        </noscript>
+
+        <script src="/js/cerca.js" defer></script>
+    </article>
+</main>
+{{ end }}

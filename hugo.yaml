@@ -6,7 +6,13 @@ defaultContentLanguage: "it"
 enableRobotsTXT: true
 enableEmoji: true
 pagination:
-  pagerSize: 10
+  pagerSize: 12      # 3 articoli al giorno: 12 = quattro giorni per pagina
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON           # /index.json: indice per la ricerca interna (layouts/index.json)
 
 menu:
   main:
@@ -42,10 +48,19 @@ menu:
       name: "Metodo e fonti"
       url: "/metodo/"
       weight: 50
+    - name: "Registro delle correzioni"
+      parent: "metodo"
+      url: "/correzioni/"
+      weight: 1
     - identifier: "contatti"
       name: "Contatti"
       url: "/contatti/"
       weight: 60
+    - identifier: "cerca"
+      name: "Cerca"
+      url: "/cerca/"
+      weight: 70
+
 
 
 params:
@@ -67,6 +82,7 @@ params:
     - "/css/custom-v3-solo-carattere.css"
     - "/css/custom-v4-banner-v3.css"
     - "/css/custom-v5-nav.css"
+    - "/css/custom-v6-indici.css"
 
   logo:
     logoText: "Raziel.news"

@@ -30,7 +30,7 @@ Un fatto è verificabile e ha una data. Un'opinione no: è un giudizio, e come t
 
 Se un articolo contiene un errore, la correzione non è negoziabile. Il testo viene corretto direttamente; quando la modifica cambia il senso della notizia, la rettifica viene annotata in fondo all'articolo con la data dell'intervento. Non cancello un articolo sbagliato per far sparire la traccia: lo correggo e lo dico.
 
-Le segnalazioni passano dalla pagina [Contatti](/contatti/): il link dell'articolo, la frase contestata, la fonte che la smentisce. È sufficiente questo.
+Le rettifiche sostanziali finiscono anche nel [Registro delle correzioni](/correzioni/), in ordine di data, con la descrizione di cosa è cambiato. Le segnalazioni passano dalla pagina [Contatti](/contatti/): il link dell'articolo, la frase contestata, la fonte che la smentisce. È sufficiente questo.
 
 ## Trasparenza
 

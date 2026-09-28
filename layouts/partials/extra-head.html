@@ -1,0 +1,108 @@
+{{/* Meta social e dati strutturati.
+     Agganciato dal partial head.html del tema (esiste un hook per
+     partials/extra-head.html): non serve copiare l'intero head.
+
+     Cosa aggiunge, e perché:
+     - og:*  : il tema li emette solo se esiste la tassonomia "series"
+       (non usata), quindi ogni link condiviso usciva senza titolo, senza
+       descrizione e senza immagine.
+     - twitter:image : il template interno del tema emette twitter:card
+       "summary" SENZA immagine; la chiave images arriva dal cascade di
+       content/posts/_index.md, cosi' il card diventa large_image.
+       (Il card/title/description li emette già il tema: qui non si
+       duplicano, per non avere due valori in conflitto nella pagina.)
+     - JSON-LD: NewsArticle per gli articoli, WebSite + SearchAction in
+       home, WebPage altrove. Nessuna pagina del sito ne aveva.
+
+     Immagine: .Params.images (frontmatter) se presente, altrimenti
+     /images/og-default.png — generata da scripts/genera_og.py. */}}
+{{- $descrizione := .Site.Params.description -}}
+{{- with .Description }}{{ $descrizione = . }}{{ end -}}
+{{- if and (not .Description) .Params.summary }}{{ $descrizione = .Params.summary }}{{ end -}}
+
+{{- $immagine := "/images/og-default.png" -}}
+{{- with .Params.images }}{{ $immagine = index . 0 }}{{ end -}}
+{{- $immagineAssoluta := $immagine | absURL -}}
+
+{{- $tipo := "website" -}}
+{{- if and .IsPage (eq .Section "posts") }}{{ $tipo = "article" }}{{ end -}}
+
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:type" content="{{ $tipo }}" />
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+<meta property="og:description" content="{{ $descrizione }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ $immagineAssoluta }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+
+{{- if eq $tipo "article" }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />
+{{- if not (eq .Lastmod .Date) }}
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}" />
+{{- end }}
+{{- range .Params.categories }}
+<meta property="article:section" content="{{ . }}" />
+{{- end }}
+{{- range .Params.tags }}
+<meta property="article:tag" content="{{ . }}" />
+{{- end }}
+{{- end }}
+
+{{- $autore := dict "@type" "Organization" "name" .Site.Title "url" .Site.BaseURL }}
+{{- $editore := dict "@type" "Organization" "name" .Site.Title "logo" (dict "@type" "ImageObject" "url" ("/images/logo-512.png" | absURL) "width" 512 "height" 512) }}
+
+{{- $grafo := slice -}}
+{{- if and .IsPage (eq .Section "posts") -}}
+    {{- $articolo := dict
+        "@type" "NewsArticle"
+        "@id" (printf "%s#articolo" .Permalink)
+        "headline" .Title
+        "description" $descrizione
+        "url" .Permalink
+        "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+        "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+        "inLanguage" "it-IT"
+        "author" $autore
+        "publisher" $editore
+        "image" (slice $immagineAssoluta)
+        "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+        "isAccessibleForFree" true -}}
+    {{- with .Params.categories }}{{ $articolo = merge $articolo (dict "articleSection" (index . 0)) }}{{ end -}}
+    {{- with .Params.tags }}{{ $articolo = merge $articolo (dict "keywords" .) }}{{ end -}}
+    {{- $grafo = $grafo | append $articolo -}}
+    {{- $grafo = $grafo | append (dict
+        "@type" "BreadcrumbList"
+        "itemListElement" (slice
+            (dict "@type" "ListItem" "position" 1 "name" "Raziel.news" "item" .Site.BaseURL)
+            (dict "@type" "ListItem" "position" 2 "name" "Articoli" "item" ("/posts/" | absURL))
+            (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink))) -}}
+{{- else if .IsHome -}}
+    {{- $grafo = $grafo | append (dict
+        "@type" "WebSite"
+        "@id" (printf "%s#sito" .Permalink)
+        "name" .Site.Title
+        "url" .Site.BaseURL
+        "inLanguage" "it-IT"
+        "description" .Site.Params.description
+        "publisher" $editore
+        "potentialAction" (dict
+            "@type" "SearchAction"
+            "target" (printf "%s?q={search_term_string}" ("/cerca/" | absURL))
+            "query-input" "required name=search_term_string")) -}}
+{{- else -}}
+    {{- $grafo = $grafo | append (dict
+        "@type" "WebPage"
+        "@id" (printf "%s#pagina" .Permalink)
+        "url" .Permalink
+        "name" .Title
+        "description" $descrizione
+        "inLanguage" "it-IT"
+        "isPartOf" (dict "@type" "WebSite" "@id" (printf "%s#sito" .Site.BaseURL))
+        "publisher" $editore) -}}
+{{- end -}}
+
+{{- $datiStrutturati := dict "@context" "https://schema.org" "@graph" $grafo -}}
+<script type="application/ld+json">{{ $datiStrutturati | jsonify | safeJS }}</script>

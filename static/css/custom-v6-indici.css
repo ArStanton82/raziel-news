@@ -1,0 +1,255 @@
+/* =====================================================================
+   raziel.news — custom-v6-indici.css
+   Ricerca interna, registro delle correzioni, apertura dei temi e
+   correzioni al comportamento del menu sul telefono.
+
+   Caricato dopo custom-v5-nav.css: le regole qui sotto vincono a pari
+   specificità. Sta in un file nuovo (non in v5) perché Cloudflare serve
+   gli asset statici dalla cache per nome: modificare v5 non sarebbe
+   arrivato ai lettori.
+   ===================================================================== */
+
+/* ---------- 1. Menu sul telefono: i sottomenu devono essere raggiungibili ---------- */
+@media (max-width: 684px){
+  /* Nel pannello del telefono il passaggio del mouse non esiste: il tema
+     teneva .dropdown-content nascosto (display:none), quindi Temi e
+     "Metodo e fonti" perdevano le voci figlie. Qui si mostrano in linea,
+     rientrate, come sotto-voci del pannello. */
+  .menu .dropdown-content{
+    display:block;
+    position:static;
+    min-width:0;
+    margin:0;
+    padding:0 0 0 14px;
+    border:none;
+    border-radius:0;
+    background:transparent;
+    box-shadow:none;
+  }
+
+  .menu .dropdown-content a{
+    padding:4px 0;
+    font-size:0.95rem;
+    opacity:.85;
+  }
+
+  .menu .dropdown-content a:hover,
+  .menu .dropdown-content a.is-active{
+    background:transparent;
+    opacity:1;
+  }
+}
+
+/* ---------- 2. Ricerca ---------- */
+.cerca-form{
+  margin:26px 0 0;
+}
+
+.cerca-label{
+  display:block;
+  margin-bottom:6px;
+  font-size:0.9rem;
+  opacity:.8;
+}
+
+.cerca-riga{
+  display:flex;
+  gap:10px;
+  align-items:stretch;
+}
+
+.cerca-riga input[type=search]{
+  flex:1 1 auto;
+  min-width:0;
+  padding:10px 14px;
+  font-size:1rem;
+  font-family:inherit;
+  color:inherit;
+  background:#f6f6f7;
+  border:1px solid #dcdcdc;
+  border-radius:8px;
+}
+
+.cerca-riga input[type=search]:focus{
+  outline:2px solid #6d5ae6;
+  outline-offset:1px;
+}
+
+.cerca-riga .button{
+  flex:0 0 auto;
+  max-width:none;
+  padding:10px 18px;
+}
+
+.cerca-stato{
+  margin:18px 0 0;
+  font-size:0.95rem;
+  opacity:.8;
+}
+
+.cerca-risultati{
+  list-style:none;
+  margin:10px 0 0;
+  padding:0;
+}
+
+.cerca-voce{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+  margin:0 0 12px;
+  padding:16px 18px;
+  border:1px solid #dcdcdc;
+  border-radius:10px;
+  background:#f6f6f7;
+}
+
+.cerca-titolo{
+  font-size:1.1rem;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.cerca-titolo:hover{
+  text-decoration:underline;
+}
+
+.cerca-meta{
+  font-size:0.85rem;
+  opacity:.75;
+}
+
+.cerca-sommario{
+  font-size:0.97rem;
+  line-height:1.5;
+}
+
+mark{
+  background:#6d5ae6;
+  color:#fff;
+  padding:0 2px;
+  border-radius:3px;
+}
+
+/* modulo compatto nella pagina Articoli */
+.cerca-form--compatta{
+  margin:0 0 22px;
+}
+
+.cerca-form--compatta .cerca-riga input[type=search]{
+  background:#fff;
+}
+
+@media (prefers-color-scheme: dark){
+  .cerca-riga input[type=search]{background:#1b1c1d;border-color:#3b3d42}
+  .cerca-voce{background:#1b1c1d;border-color:#3b3d42}
+  .cerca-form--compatta .cerca-riga input[type=search]{background:#232425}
+}
+
+[data-theme=dark] .cerca-riga input[type=search]{background:#1b1c1d;border-color:#3b3d42}
+[data-theme=dark] .cerca-voce{background:#1b1c1d;border-color:#3b3d42}
+[data-theme=dark] .cerca-form--compatta .cerca-riga input[type=search]{background:#232425}
+[data-theme=light] .cerca-riga input[type=search]{background:#f6f6f7;border-color:#dcdcdc}
+[data-theme=light] .cerca-voce{background:#f6f6f7;border-color:#dcdcdc}
+
+/* ---------- 3. Registro delle correzioni ---------- */
+.correzioni-lista{
+  list-style:none;
+  margin:26px 0 0;
+  padding:0;
+  counter-reset:correzione;
+}
+
+.correzione{
+  position:relative;
+  margin:0 0 16px;
+  padding:18px 20px 18px 22px;
+  border:1px solid #dcdcdc;
+  border-left:4px solid #6d5ae6;
+  border-radius:10px;
+  background:#f6f6f7;
+}
+
+.correzione-testa{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  margin:0 0 6px;
+  font-size:0.85rem;
+  opacity:.85;
+}
+
+.correzione-tipo{
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  font-size:0.72rem;
+  padding:2px 8px;
+  border-radius:999px;
+  border:1px solid #6d5ae6;
+  color:#6d5ae6;
+}
+
+.correzione-articolo{
+  margin:0 0 6px;
+  font-size:1.05rem;
+  font-weight:600;
+}
+
+.correzione-nota{
+  margin:0;
+  font-size:0.97rem;
+  line-height:1.5;
+}
+
+.correzioni-vuoto{
+  margin:26px 0 0;
+  padding:18px 20px;
+  border-left:4px solid #6d5ae6;
+  border-radius:10px;
+  background:#f6f6f7;
+  font-size:1rem;
+  line-height:1.55;
+}
+
+@media (prefers-color-scheme: dark){
+  .correzione{background:#1b1c1d;border-color:#3b3d42;border-left-color:#6d5ae6}
+  .correzioni-vuoto{background:#1b1c1d}
+}
+
+[data-theme=dark] .correzione{background:#1b1c1d;border-color:#3b3d42;border-left-color:#6d5ae6}
+[data-theme=dark] .correzioni-vuoto{background:#1b1c1d}
+[data-theme=light] .correzione{background:#f6f6f7;border-color:#dcdcdc}
+[data-theme=light] .correzioni-vuoto{background:#f6f6f7}
+
+/* ---------- 4. Apertura degli indici (temi, tag, articoli) ---------- */
+.home-body > .content{
+  display:block;
+  align-items:flex-start;
+  text-align:left;
+  margin:0 0 22px;
+  font-size:1rem;
+  line-height:1.6;
+}
+
+.home-body > .content p{
+  margin:0 0 10px;
+}
+
+.home-body > .content p:last-child{
+  margin-bottom:0;
+}
+
+/* ---------- 5. Telefono ---------- */
+@media (max-width: 684px){
+  .cerca-riga{
+    flex-direction:column;
+  }
+
+  .cerca-riga .button{
+    width:100%;
+  }
+
+  .correzione{
+    padding:16px 16px 16px 18px;
+  }
+}

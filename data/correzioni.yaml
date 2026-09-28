@@ -1,0 +1,21 @@
+# Registro delle correzioni di raziel.news
+#
+# Una voce per intervento, dalla più recente. Chiavi:
+#   data      (YYYY-MM-DD)   giorno in cui la correzione è stata applicata
+#   articolo  (stringa)      titolo dell'articolo
+#   url       (stringa)      percorso dell'articolo, senza dominio
+#   tipo      rettifica | precisazione | aggiornamento
+#   nota      (stringa)      che cosa è cambiato e perché
+#
+# Esempio da copiare:
+#   - data: 2026-10-02
+#     articolo: "Titolo dell'articolo"
+#     url: /2026/10/slug-dell-articolo/
+#     tipo: rettifica
+#     nota: "La data del merge era indicata come 27 settembre: corretta in 28 settembre dopo verifica sull'API di GitHub."
+#
+# La pagina /correzioni/ legge questo file. Se la lista è vuota, la pagina
+# dichiara che non ci sono correzioni registrate: è il caso normale, e va
+# detto, non nascosto.
+
+correzioni: []

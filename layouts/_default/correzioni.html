@@ -1,0 +1,35 @@
+{{/* Registro delle correzioni (content/correzioni.md, layout: "correzioni").
+     Le voci stanno in data/correzioni.yaml: la pagina si aggiorna da sé, e
+     finché la lista è vuota lo dichiara invece di mostrare una pagina muta. */}}
+{{ define "main" }}
+<main class="post page-single correzioni">
+    <article>
+        <h1 class="post-title">{{ .Title }}</h1>
+        <div class="post-content">{{ .Content }}</div>
+
+        {{ $voci := index .Site.Data.correzioni "correzioni" }}
+        {{ if $voci }}
+            <ol class="correzioni-lista">
+                {{ range sort $voci "data" "desc" }}
+                    <li class="correzione">
+                        <p class="correzione-testa">
+                            <time datetime="{{ .data }}">{{ .data }}</time>
+                            <span class="correzione-tipo">{{ .tipo }}</span>
+                        </p>
+                        <p class="correzione-articolo">
+                            <a href="{{ .url }}">{{ .articolo }}</a>
+                        </p>
+                        <p class="correzione-nota">{{ .nota }}</p>
+                    </li>
+                {{ end }}
+            </ol>
+        {{ else }}
+            <p class="correzioni-vuoto">
+                <strong>Nessuna correzione registrata.</strong>
+                Finora non è stato necessario intervenire su un articolo pubblicato. Quando succederà,
+                l'intervento comparirà qui con la data, il titolo e la descrizione di cosa è cambiato.
+            </p>
+        {{ end }}
+    </article>
+</main>
+{{ end }}
