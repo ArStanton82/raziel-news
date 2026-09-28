@@ -1,0 +1,20 @@
+{{/* /posts/ — indice degli articoli a schede.
+     Le card usano il partial condiviso con la home; la griglia riprende
+     le classi .home-body / .posts di /css/custom-v4-banner-v3.css. */}}
+{{ define "main" }}
+<main class="indice">
+    <div class="home-body">
+        <h1 class="list-heading">{{ .Title }}</h1>
+        {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+        {{ $pagine := .Pages }}
+        {{ $paginatore := .Paginate $pagine }}
+        <div class="posts">
+            {{ range $paginatore.Pages }}
+                {{ partial "post-card.html" . }}
+            {{ end }}
+        </div>
+        {{ partial "pagination-list.html" . }}
+    </div>
+</main>
+{{ end }}

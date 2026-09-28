@@ -1,0 +1,34 @@
+{{/* Card di un articolo, condivisa fra la home e la pagina /posts/.
+     Il contesto (.) è la pagina dell'articolo.
+     Riquadro: stile in /css/custom-v4-banner-v3.css (sezione 4), che si
+     applica quando la card sta dentro un contenitore .home-body. */}}
+<div class="post on-list">
+    <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
+    <div class="post-meta">
+        {{ if .Date }}
+            <span class="post-date">{{ .Date.Format (.Site.Params.DateFormatList | default "2006-01-02") }}</span>
+        {{ end }}
+        {{ if .Site.Params.ShowReadingTime }}
+            &nbsp;<i class="fa-solid fa-clock"></i> {{ i18n "readingTime" .ReadingTime }}
+        {{ end }}
+    </div>
+    {{ if .Site.Params.tags }}
+        <span class="post-tags">
+        {{ range .Params.tags }}
+            <a href="{{ (urlize (printf "tags/%s" .)) | absLangURL }}/">#{{ . }}</a>&nbsp;
+        {{ end }}
+        </span>
+    {{ end }}
+    <div class="post-content">
+        {{ with .Params.summary }}
+            {{ . | markdownify }}
+        {{ else }}
+            {{ if .Truncated }}{{ .Summary }}{{ end }}
+        {{ end }}
+    </div>
+    {{ if not .Site.Params.hideReadMore }}
+        <div>
+            <a class="read-more button" href="{{ .RelPermalink }}">{{ i18n "readMore" }} →</a>
+        </div>
+    {{ end }}
+</div>

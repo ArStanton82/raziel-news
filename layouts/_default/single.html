@@ -1,0 +1,15 @@
+{{/* Pagina singola fuori dalla sezione "posts" (Chi sono, Metodo e fonti,
+     Contatti). Sostituisce il template del tema, che stampava il titolo
+     come <h2> — una pagina senza h1 — e apriva un <div class="post-info">
+     con un </p> orfano. Qui: titolo in h1, testo, nessun tempo di lettura,
+     nessun conteggio parole, nessun link all'articolo precedente. */}}
+{{ define "main" }}
+<main class="post page-single">
+    <article>
+        <h1 class="post-title">{{ .Title }}</h1>
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+    </article>
+</main>
+{{ end }}

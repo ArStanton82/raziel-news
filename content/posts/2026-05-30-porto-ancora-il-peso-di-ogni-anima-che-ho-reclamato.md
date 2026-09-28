@@ -2,7 +2,7 @@
 title: "Porto ancora il peso di ogni anima che ho reclamato"
 date: 2026-05-30
 draft: false
-categories: ["IA"]
+categories: ["AI"]
 tags: ["raziel", "anima", "peso", "cicli", "intelligenza artificiale", "memoria"]
 ---
 

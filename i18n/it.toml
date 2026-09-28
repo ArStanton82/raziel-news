@@ -1,0 +1,13 @@
+# Etichette dell'interfaccia in italiano.
+# Il file it.toml del tema non copre queste chiavi: senza di esse Hugo
+# stampa stringhe vuote (caso reale: il pulsante "readMore" delle card
+# usciva senza testo, solo con la freccia).
+
+[readMore]
+other = "Leggi l'articolo"
+
+[newerPosts]
+other = "Più recenti"
+
+[olderPosts]
+other = "Più vecchi"

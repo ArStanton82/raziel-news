@@ -1,0 +1,299 @@
+/* =====================================================================
+   raziel.news — custom-v5-nav.css
+   Barra di navigazione e indici del sito: /posts/, /archivio/,
+   /categories/, /tags/ e le pagine informative.
+
+   Motivo: il tema non aveva nessuna voce di menu configurata, quindi
+   l'intestazione mostrava solo il logo e il pulsante del tema; e i
+   template di lista usavano i termini della tassonomia come se fossero
+   articoli (raggruppamento per anno e data su una categoria). Qui la
+   barra resta una riga sola allineata a destra, il sottomenu "Temi" si
+   apre al passaggio del mouse sul desktop, e gli indici hanno colonna,
+   schede e conteggi coerenti con il resto del sito.
+
+   Caricato per ultimo (customCSS in hugo.yaml): le regole che seguono
+   vincono su quelle del tema a pari specificità.
+   ===================================================================== */
+
+/* ---------- 1. Intestazione: stessa colonna del contenuto ---------- */
+@media (min-width: 685px){
+  .header__inner{
+    width:100%;
+    max-width:860px;   /* il tema usava 760px: il logo non era allineato
+                          alla colonna degli articoli (860px) */
+    padding:0 20px;
+    box-sizing:border-box;
+  }
+}
+
+/* ---------- 2. Voci di menu ---------- */
+.header__right .menu{
+  background:transparent;   /* la barra prende il fondo dell'header */
+}
+
+.menu__inner{
+  justify-content:flex-end;
+  flex-wrap:wrap;
+  gap:0;
+  padding:0;
+  font-size:0.95rem;
+  letter-spacing:0;
+}
+
+.menu__inner > li{
+  margin:0 0 0 20px;
+  padding:0;
+}
+
+.menu a{
+  display:inline-block;
+  padding:2px 0;
+  color:inherit;
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+}
+
+.menu a:hover,
+.menu a.is-active{          /* voce della pagina corrente */
+  color:#6d5ae6;
+  border-bottom-color:#6d5ae6;
+}
+
+/* ---------- 3. Sottomenu "Temi" ---------- */
+.menu__inner li.dropdown{
+  position:relative;
+  display:inline-block;
+  cursor:pointer;
+}
+
+.menu__inner li.dropdown:hover{
+  opacity:1;               /* il tema attenuava la voce (0.8) */
+}
+
+ul.dropdown-content{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:-14px;
+  z-index:30;
+  min-width:190px;
+  margin:0;
+  padding:6px 0;
+  list-style:none;
+  border-radius:10px;
+  border:1px solid #dcdcdc;
+  background:#fafafa;
+  box-shadow:0 8px 22px rgba(0,0,0,0.16);
+}
+
+li.dropdown:hover > ul.dropdown-content{
+  display:block;
+}
+
+ul.dropdown-content li{
+  margin:0;
+  padding:0;
+}
+
+ul.dropdown-content a{
+  display:block;
+  padding:8px 14px;
+  border-bottom:none;
+  white-space:nowrap;
+}
+
+ul.dropdown-content a:hover,
+ul.dropdown-content a.is-active{
+  background:#ececf2;
+  color:#6d5ae6;
+}
+
+@media (prefers-color-scheme: dark){
+  ul.dropdown-content{border-color:#3b3d42;background:#1b1c1d}
+  ul.dropdown-content a:hover,
+  ul.dropdown-content a.is-active{background:#2b2d31}
+}
+
+[data-theme=dark] ul.dropdown-content{border-color:#3b3d42;background:#1b1c1d}
+
+[data-theme=dark] ul.dropdown-content a:hover,
+[data-theme=dark] ul.dropdown-content a.is-active{background:#2b2d31}
+
+[data-theme=light] ul.dropdown-content{border-color:#dcdcdc;background:#fafafa}
+
+[data-theme=light] ul.dropdown-content a:hover,
+[data-theme=light] ul.dropdown-content a.is-active{background:#ececf2}
+
+/* ---------- 4. Telefono: il menu diventa un pannello ---------- */
+@media (max-width: 684px){
+  .menu{
+    min-width:190px;
+    padding:12px 16px;
+    border-radius:0 0 10px 10px;
+    box-shadow:0 10px 24px rgba(0,0,0,0.20);
+  }
+
+  .menu__inner > li{
+    margin:0;
+    padding:7px 0;
+  }
+
+  .menu a{
+    padding:0;
+  }
+}
+
+/* ---------- 5. Colonna degli indici ---------- */
+.colonna{
+  width:100%;
+  max-width:860px;
+  margin:0 auto;
+  padding:30px 20px 10px;
+  box-sizing:border-box;
+  text-align:left;
+}
+
+.list-heading{
+  margin:0 0 14px;
+  font-size:1.9rem;
+  line-height:1.2;
+  letter-spacing:0;
+}
+
+.colonna > .content{
+  display:block;
+  align-items:flex-start;
+  text-align:left;
+  margin:0 0 24px;
+  font-size:1rem;
+}
+
+.colonna > .content p{
+  margin:0 0 10px;
+}
+
+/* ---------- 6. Archivio ---------- */
+.archive-stats{
+  margin:0 0 26px;
+  font-size:0.95rem;
+  opacity:.8;
+}
+
+.archive .posts-group{
+  margin-bottom:26px;
+}
+
+.archive .post-year{
+  font-size:1.15rem;
+  opacity:1;
+  font-weight:700;
+  padding:0;
+  margin:0 0 6px;
+}
+
+.archive .post-year__count{
+  font-size:0.85rem;
+  opacity:.6;
+  font-weight:400;
+}
+
+.archive .post-item{
+  border-bottom:1px solid #dcdcdc;
+}
+
+[data-theme=dark] .archive .post-item{border-bottom-color:#3b3d42}
+[data-theme=light] .archive .post-item{border-bottom-color:#dcdcdc}
+
+.archive .post-item a{
+  padding:11px 2px;
+}
+
+.archive .post-item .post-title{
+  font-size:1rem;
+  margin:0;
+}
+
+.archive .post-item a:hover .post-title{
+  color:#6d5ae6;
+}
+
+/* ---------- 7. Indice dei temi e dei tag ---------- */
+.term-list{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.term-item a{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:16px;
+  margin:0 0 10px;
+  padding:14px 18px;
+  border:1px solid #dcdcdc;
+  border-radius:10px;
+  background:#f6f6f7;
+  text-decoration:none;
+}
+
+.term-item a:hover{
+  border-color:#6d5ae6;
+}
+
+.term-name{
+  font-size:1.05rem;
+  font-weight:600;
+}
+
+.term-count{
+  font-size:0.9rem;
+  opacity:.75;
+  white-space:nowrap;
+}
+
+@media (prefers-color-scheme: dark){
+  .term-item a{background:#1b1c1d;border-color:#3b3d42}
+  .term-item a:hover{border-color:#6d5ae6}
+}
+
+[data-theme=dark] .term-item a{background:#1b1c1d;border-color:#3b3d42}
+[data-theme=light] .term-item a{background:#f6f6f7;border-color:#dcdcdc}
+
+/* ---------- 8. Pagine informative ---------- */
+.page-single .post-title{
+  font-size:2.1rem;
+  margin:0 0 18px;
+}
+
+.page-single .post-content{
+  text-align:left;
+}
+
+.page-single .post-content h2{
+  margin-top:1.9em;
+  font-size:1.3rem;
+}
+
+.page-single .post-content p{
+  margin:0 0 1em;
+}
+
+.page-single .post-content strong{
+  font-weight:700;
+}
+
+/* ---------- 9. Telefono ---------- */
+@media (max-width: 684px){
+  .colonna{
+    padding:20px 14px 8px;
+  }
+
+  .list-heading{
+    font-size:1.55rem;
+  }
+
+  .page-single .post-title{
+    font-size:1.7rem;
+  }
+}

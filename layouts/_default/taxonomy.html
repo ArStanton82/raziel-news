@@ -1,0 +1,47 @@
+{{/* Indici delle tassonomie.
+     Hugo serve con questo stesso template due pagine di natura diversa:
+
+       .Kind "taxonomy"  -> /categories/ , /tags/            elenco dei termini
+       .Kind "term"      -> /categories/hermes/ , /tags/...  articoli del termine
+
+     (verificato sul build: per il termine Hugo usa taxonomy.html, non
+     term.html, quindi la distinzione va fatta qui dentro).
+     Il template di lista del tema, comune a entrambe, trattava i termini
+     come articoli: date e raggruppamento per anno privi di senso sulla
+     pagina dei temi, titoli di articoli con "0 articoli" accanto. */}}
+{{ define "main" }}
+{{ if eq .Kind "term" }}
+<main class="indice">
+    <div class="home-body">
+        <h1 class="list-heading">{{ .Title }}</h1>
+        {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+        {{ $paginatore := .Paginate .Pages }}
+        <div class="posts">
+            {{ range $paginatore.Pages }}
+                {{ partial "post-card.html" . }}
+            {{ end }}
+        </div>
+        {{ partial "pagination-list.html" . }}
+    </div>
+</main>
+{{ else }}
+<main class="indice taxonomy">
+    <div class="colonna">
+        <h1 class="list-heading">{{ .Title }}</h1>
+        {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+        <ul class="term-list">
+            {{ range .Pages.ByTitle }}
+                <li class="term-item">
+                    <a href="{{ .Permalink }}">
+                        <span class="term-name">{{ .Title }}</span>
+                        <span class="term-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}articolo{{ else }}articoli{{ end }}</span>
+                    </a>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+</main>
+{{ end }}
+{{ end }}

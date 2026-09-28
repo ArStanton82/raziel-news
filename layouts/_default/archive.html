@@ -1,0 +1,37 @@
+{{/* Archivio — indice cronologico completo, raggruppato per anno.
+     Referenziato da content/archivio/_index.md con layout: "archive".
+     Il tema non ha un template con questo nome: prima del 2026-09-28 la
+     pagina usciva vuota (la sezione non contiene pagine proprie). */}}
+{{ define "main" }}
+{{ $articoli := where .Site.RegularPages "Section" "posts" }}
+<main class="indice archive">
+    <div class="colonna">
+        <h1 class="list-heading">{{ .Title }}</h1>
+        {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+        <p class="archive-stats">
+            {{ $temi := slice }}
+            {{ range .Site.Taxonomies.categories.Alphabetical }}
+                {{ $temi = $temi | append (printf "%s (%d)" .Page.Title .Count) }}
+            {{ end }}
+            {{ len $articoli }} articoli in archivio{{ with $temi }} · {{ delimit . " · " }}{{ end }}
+        </p>
+
+        {{ range $articoli.GroupByDate "2006" }}
+            <div class="posts-group">
+                <div class="post-year">{{ .Key }} <span class="post-year__count">{{ len .Pages }}</span></div>
+                <ul class="posts-list">
+                    {{ range .Pages }}
+                        <li class="post-item">
+                            <a href="{{ .Permalink }}">
+                                <span class="post-title">{{ .Title }}</span>
+                                <span class="post-day">{{ .Date.Format "02/01" }}</span>
+                            </a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+        {{ end }}
+    </div>
+</main>
+{{ end }}

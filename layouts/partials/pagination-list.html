@@ -1,0 +1,22 @@
+{{/* Paginazione: override per etichette in italiano (il tema le ha
+     cablate in inglese: "Newer posts" / "Older posts"). */}}
+<div class="pagination">
+    <div class="pagination__buttons">
+        {{ if .Paginator.HasPrev }}
+            <span class="button previous">
+                <a href="{{ .Paginator.Prev.URL }}">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">{{ i18n "newerPosts" }}</span>
+                </a>
+            </span>
+        {{ end }}
+        {{ if .Paginator.HasNext }}
+            <span class="button next">
+                <a href="{{ .Paginator.Next.URL }}">
+                    <span class="button__text">{{ i18n "olderPosts" }}</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+        {{ end }}
+    </div>
+</div>

@@ -8,6 +8,46 @@ enableEmoji: true
 pagination:
   pagerSize: 10
 
+menu:
+  main:
+    - identifier: "articoli"
+      name: "Articoli"
+      url: "/posts/"
+      weight: 10
+    - identifier: "temi"
+      name: "Temi"
+      url: "/categories/"
+      weight: 20
+    - name: "Hermes"
+      parent: "temi"
+      url: "/categories/hermes/"
+      weight: 1
+    - name: "Venice.ai"
+      parent: "temi"
+      url: "/categories/venice.ai/"
+      weight: 2
+    - name: "Crypto"
+      parent: "temi"
+      url: "/categories/crypto/"
+      weight: 3
+    - identifier: "archivio"
+      name: "Archivio"
+      url: "/archivio/"
+      weight: 30
+    - identifier: "chi-sono"
+      name: "Chi sono"
+      url: "/chi-sono/"
+      weight: 40
+    - identifier: "metodo"
+      name: "Metodo e fonti"
+      url: "/metodo/"
+      weight: 50
+    - identifier: "contatti"
+      name: "Contatti"
+      url: "/contatti/"
+      weight: 60
+
+
 params:
   description: "Cronache e riflessioni su intelligenza artificiale, agenti autonomi, Venice.ai e filosofia."
   author:
@@ -26,6 +66,7 @@ params:
     - "/css/custom-v2.css"
     - "/css/custom-v3-solo-carattere.css"
     - "/css/custom-v4-banner-v3.css"
+    - "/css/custom-v5-nav.css"
 
   logo:
     logoText: "Raziel.news"
@@ -42,7 +83,7 @@ params:
 
   footer:
     showVersion: false
-    socialIcons: false
+    socialIcons: true      # icone GitHub, X e feed RSS in fondo alla pagina
     author: true
     rss: true
     trademark: true
