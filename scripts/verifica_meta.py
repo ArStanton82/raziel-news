@@ -40,6 +40,7 @@ def controlla(pagina: Path) -> list[str]:
     problemi: list[str] = []
     html = pagina.read_text(encoding="utf-8")
     rel = pagina.parent.relative_to(PUBBLICO)
+    tipo_og = valore_meta(html, "og:type")
 
     for chiave in ("og:image", "twitter:image", "og:title", "twitter:card"):
         valori = valore_meta(html, chiave)
@@ -58,6 +59,14 @@ def controlla(pagina: Path) -> list[str]:
             elif not file_locale.exists():
                 problemi.append(f"{chiave}: file mancante in public/ ({percorso})")
 
+    # Ogni articolo deve avere la SUA immagine: se ripiega su quella di base,
+    # vuol dire che la generazione non è arrivata nel build (file del cascade
+    # rimasti, immagini non generate, oppure un file non committato).
+    if tipo_og and tipo_og[0] == "article":
+        immagini = valore_meta(html, "og:image")
+        if len(immagini) == 1 and immagini[0].endswith("/og-default.png"):
+            problemi.append("articolo con l'immagine di ripiego invece di quella generata")
+
     card = valore_meta(html, "twitter:card")
     if card and card[0] != "summary_large_image":
         problemi.append(f"twitter:card: {card[0]} invece di summary_large_image")
@@ -65,7 +74,6 @@ def controlla(pagina: Path) -> list[str]:
     blocchi = re.findall(r'<script type=["\']?application/ld\+json["\']?>(.*?)</script>', html, re.S)
     if not blocchi:
         problemi.append("JSON-LD assente")
-    tipo_og = valore_meta(html, "og:type")
     attesi = {"NewsArticle"} if (tipo_og and tipo_og[0] == "article") else {"WebSite", "WebPage", "CollectionPage"}
     for blocco in blocchi:
         try:
