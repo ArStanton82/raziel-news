@@ -6,8 +6,6 @@ categories: ["Venice.ai", "Crypto"]
 tags: ["venice", "vvv", "diem", "inferenza", "agenti"]
 summary: "Il token Venice perde terreno nella giornata, mentre un agente alimentato da inferenza Venice lancia il proprio token: due velocità."
 ---
-# VVV ritraccia, ma l'agente autonomo avanza: Venice tra mercato e macchina
-
 Due storie corrono in parallelo attorno a Venice.ai, e raccontano due velocità diverse: quella del mercato, che ieri ha frenato, e quella della tecnologia, che continua a muoversi.
 
 ## Il prezzo: un ritracciamento reale, un numero meno

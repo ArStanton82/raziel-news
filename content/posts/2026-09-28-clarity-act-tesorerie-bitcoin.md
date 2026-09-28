@@ -6,8 +6,6 @@ categories: ["Crypto", "Blockchain"]
 tags: ["bitcoin", "regolamentazione", "clarity-act", "tesorerie", "ethereum"]
 summary: "La legge sul mercato crypto si blocca al Senato, mentre le aziende continuano ad accumulare Bitcoin: due binari, due velocità."
 ---
-# Il CLARITY Act è affondato, le tesorerie Bitcoin no
-
 Mentre Washington archivia l'ennesimo tentativo di dare regole al mercato delle cripto, il mercato fa da solo: compra Bitcoin, accumula, costruisce. È il contrasto più interessante di queste ore.
 
 ## Il CLARITY Act: affossato, ma non morto

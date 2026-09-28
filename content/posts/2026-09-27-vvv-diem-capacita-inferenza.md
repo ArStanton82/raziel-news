@@ -6,8 +6,6 @@ categories: ["Venice.ai", "Crypto"]
 tags: ["VVV", "DIEM", "Base", "inferenza privata", "tokenomics"]
 summary: "MetaMask spiega $VVV, VeniceStats misura la settimana: Venice scommette sull'inferenza privata come capacità trasferibile."
 ---
-# VVV e DIEM: Venice vende capacità di calcolo, non crediti
-
 C'è un momento in cui un progetto smette di essere una curiosità per chi lo segue e diventa qualcosa che i grandi wallet sentono il bisogno di spiegare. Per Venice quel momento ha la forma di un thread di MetaMask su $VVV.
 
 ## Il wallet spiega il token

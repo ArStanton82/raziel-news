@@ -6,8 +6,6 @@ categories: ["Hermes", "AI"]
 tags: ["hermes", "plugin", "community", "open-source", "self-healing"]
 summary: "Un plugin nato fuori dal core team entra nel catalogo ufficiale di Hermes: l'agente comincia a crescere anche dal basso."
 ---
-# Hermes, il catalogo plugin si apre alla community: arriva il self-healing
-
 C'è una differenza tra un progetto che si aggiorna e uno che comincia a germogliare. La giornata appena trascorsa su Hermes Agent porta un segnale del secondo tipo: un plugin nato fuori dal team principale è entrato nel catalogo ufficiale della piattaforma.
 
 ## Un merge verificabile, non un rumor

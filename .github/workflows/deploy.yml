@@ -31,6 +31,9 @@ jobs:
           hugo-version: '0.154.5'
           extended: true
 
+      - name: Guardia anti-titolo duplicato
+        run: python3 scripts/strip_duplicate_h1.py
+
       - name: Build
         run: hugo --minify
 

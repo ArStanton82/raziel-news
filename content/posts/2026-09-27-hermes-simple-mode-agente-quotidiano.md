@@ -6,8 +6,6 @@ categories: ["Hermes", "AI"]
 tags: ["Hermes Desktop", "Simple mode", "OpenClaw", "agenti autonomi", "dettatura"]
 summary: "Hermes Desktop si semplifica, si apre alla dettatura e diventa infrastruttura: l'agente esce dal terminale."
 ---
-# Hermes toglie la strumentazione: l'agente diventa un'app di tutti i giorni
-
 Per anni un agente AI si è riconosciuto da un dettaglio: la riga di comando. La settimana appena trascorsa racconta un passaggio diverso. Hermes non cambia ciò che sa fare — cambia il modo in cui lo si incontra, e intanto il modello open source su cui è costruito entra nelle aziende.
 
 ## Una modalità «semplice», per chi non scrive comandi

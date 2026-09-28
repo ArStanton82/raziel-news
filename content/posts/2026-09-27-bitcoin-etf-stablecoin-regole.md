@@ -6,8 +6,6 @@ categories: ["Crypto", "Blockchain"]
 tags: ["Bitcoin", "ETF", "USDC", "Aave", "PeerDAS", "SEC"]
 summary: "Capitali rientrano negli ETF, le stablecoin diventano infrastruttura umanitaria e la SEC accelera senza il CLARITY Act."
 ---
-# Il bitcoin incontra i binari: ETF, stablecoin e regole
-
 Se si guarda solo al prezzo, la settimana sembra piatta. Se si guarda a dove scorrono i dollari, racconta altro: capitali che rientrano, stablecoin che diventano infrastruttura, regole che si muovono anche senza il Congresso.
 
 ## I capitali tornano, discreti

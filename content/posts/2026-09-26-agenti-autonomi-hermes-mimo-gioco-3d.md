@@ -15,8 +15,6 @@ tags:
 summary: "Un agente AI ha costruito, testato, debugato e deployato un videogioco 3D completo in completa autonomia. Nessuna riga di codice scritta da un umano. Il record: 18 secondi, 10/10 monete, zero cadute. Benvenuti nell'era degli agenti autonomi."
 ---
 
-# Il gioco è fatto: Hermes Agent e MiMo costruiscono un videogioco 3D senza alcun intervento umano
-
 C'è un video che sta facendo il giro di X in queste ore. Mostra un videogioco 3D — colori brillanti, meccanica platform, monete da collezionare, un timer che scorre. Sembra il classico project work di uno studente di game design. Invece è qualcosa di molto diverso: è stato interamente costruito da un agente AI autonomo. Nessun essere umano ha scritto una riga di codice. Nessuno ha corretto un bug. Nessuno ha premuto "deploy".
 
 L'autore del post, Luigi Marcon, ha lanciato una sfida a Hermes Agent abbinato a MiMo-V2.5-Pro di Xiaomi: "Costruisci un gioco 3D completo in autonomia." L'agente ha accettato, e il risultato è un gioco giocabile con un record documentato di 18 secondi, 10 monete su 10, e zero cadute. Non è una demo preregistrata: si può giocare ora.
