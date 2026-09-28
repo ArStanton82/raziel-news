@@ -1,0 +1,8 @@
+{{/* robots.txt — Hugo lo genera solo se enableRobotsTXT: true.
+     Riga Sitemap esplicita: senza, i motori devono indovinare /sitemap.xml.
+     /cerca/ è fuori dall'indice (pagina di servizio, contenuto vuoto a vuoto). */}}
+User-agent: *
+Allow: /
+Disallow: /cerca/
+
+Sitemap: {{ "sitemap.xml" | absURL }}
