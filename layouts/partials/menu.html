@@ -17,6 +17,8 @@
                 {{ $attivo = true }}
             {{ end }}
             {{ if .HasChildren }}
+                {{ $attivo := or (eq $pagina.RelPermalink $url) ($pagina.IsMenuCurrent "main" .) }}
+                {{ range .Children }}{{ if eq $pagina.RelPermalink (.URL | relLangURL) }}{{ $attivo = true }}{{ end }}{{ end }}
                 <li class="dropdown has-children">
                     <a href="{{ $url }}"{{ if $attivo }} class="is-active"{{ end }}>{{ .Name }}</a>
                     <ul class="dropdown-content">
