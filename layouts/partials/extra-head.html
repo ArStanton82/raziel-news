@@ -6,23 +6,29 @@
      - og:*  : il tema li emette solo se esiste la tassonomia "series"
        (non usata), quindi ogni link condiviso usciva senza titolo, senza
        descrizione e senza immagine.
-     - twitter:image : il template interno del tema emette twitter:card
-       "summary" SENZA immagine; la chiave images arriva dal cascade di
-       content/posts/_index.md, cosi' il card diventa large_image.
-       (Il card/title/description li emette già il tema: qui non si
-       duplicano, per non avere due valori in conflitto nella pagina.)
+     - twitter:* : il template interno di Hugo (disattivato in head.html) emetteva
+       twitter:card "summary" senza immagine in home; qui il card è sempre
+       large_image e segue l'immagine dell'articolo.
      - JSON-LD: NewsArticle per gli articoli, WebSite + SearchAction in
        home, WebPage altrove. Nessuna pagina del sito ne aveva.
 
-     Immagine: .Params.images (frontmatter) se presente, altrimenti
-     /images/og-default.png — generata da scripts/genera_og.py. */}}
+     Immagine: /images/og/<basename>.png se esiste sul disco (generata da
+     scripts/genera_og.py --articoli), altrimenti .Params.images del
+     frontmatter, altrimenti /images/og-default.png. Il controllo con
+     fileExists evita di citare un file che non c'è: se la generazione non
+     gira (niente Chrome), il sito ripiega sull'immagine di base. */}}
 {{- $descrizione := .Site.Params.description -}}
 {{- with .Description }}{{ $descrizione = . }}{{ end -}}
 {{- if and (not .Description) .Params.summary }}{{ $descrizione = .Params.summary }}{{ end -}}
 
 {{- $immagine := "/images/og-default.png" -}}
+{{- if and .IsPage .File (eq .Section "posts") -}}
+    {{- $perArticolo := printf "/images/og/%s.png" .File.ContentBaseName -}}
+    {{- if fileExists (printf "static%s" $perArticolo) }}{{ $immagine = $perArticolo }}{{ end -}}
+{{- end -}}
 {{- with .Params.images }}{{ $immagine = index . 0 }}{{ end -}}
 {{- $immagineAssoluta := $immagine | absURL -}}
+{{- $titoloSocial := cond .IsHome .Site.Title .Title -}}
 
 {{- $tipo := "website" -}}
 {{- if and .IsPage (eq .Section "posts") }}{{ $tipo = "article" }}{{ end -}}
@@ -36,7 +42,15 @@
 <meta property="og:image" content="{{ $immagineAssoluta }}" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+<meta property="og:image:alt" content="{{ $titoloSocial }}" />
+
+{{/* Twitter/X: i tag del template interno di Hugo sono disattivati in head.html,
+     così il card è large_image anche in home e segue l'immagine dell'articolo. */}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $titoloSocial }}" />
+<meta name="twitter:description" content="{{ $descrizione }}" />
+<meta name="twitter:image" content="{{ $immagineAssoluta }}" />
+<meta name="twitter:image:alt" content="{{ $titoloSocial }}" />
 
 {{- if eq $tipo "article" }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" />

@@ -34,8 +34,29 @@ jobs:
       - name: Guardia anti-titolo duplicato
         run: python3 scripts/strip_duplicate_h1.py
 
+      # Le immagini di condivisione per articolo si generano qui, non nel repo:
+      # così valgono anche per gli articoli scritti dalla pipeline, e il git
+      # non si riempie di PNG. Se Chrome non c'è, lo script lo dice e il sito
+      # usa l'immagine di ripiego (il modello controlla che il file esista).
+      - name: Immagini di condivisione per articolo
+        continue-on-error: true
+        run: |
+          python3 scripts/genera_og.py --articoli
+          python3 scripts/genera_og.py --verifica
+
       - name: Build
         run: hugo --minify
+
+      # Controllo di coerenza: ogni articolo costruito deve citare
+      # un'immagine che esiste davvero nell'artefatto pubblicato.
+      - name: Verifica dei meta di condivisione
+        continue-on-error: true
+        run: python3 scripts/verifica_meta.py
+
+      # L'elenco degli URL appena costruiti viaggia fino al job di deploy:
+      # così la segnalazione a IndexNow non dipende dalla cache di Cloudflare.
+      - name: Elenco URL per IndexNow
+        run: python3 scripts/indexnow.py --da-public --solo-elenco indexnow-urls.txt
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -44,6 +65,13 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+
+      - name: Salva l'elenco URL
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-urls
+          path: indexnow-urls.txt
+          retention-days: 1
 
   deploy:
     environment:
@@ -55,3 +83,18 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Recupera l'elenco URL
+        uses: actions/download-artifact@v4
+        with:
+          name: indexnow-urls
+
+      # IndexNow (Bing, Yandex, Seznam, Naver) ricontrolla subito gli URL che
+      # gli si segnalano. Google non partecipa: per Google c'è Search Console.
+      # Non blocca nulla: se il servizio non risponde, il sito è già pubblicato.
+      - name: Segnala a IndexNow
+        continue-on-error: true
+        run: python3 scripts/indexnow.py --elenco indexnow-urls.txt

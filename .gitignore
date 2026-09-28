@@ -17,5 +17,9 @@ node_modules/
 # Bozze temporanee
 drafts/
 
+# Immagini di condivisione per articolo: generate da scripts/genera_og.py
+# (in locale e nel workflow), non versionate
+/static/images/og/
+
 # Backup
 *.backup

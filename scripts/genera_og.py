@@ -2,37 +2,72 @@
 """Genera le immagini di condivisione (Open Graph) di raziel.news.
 
 Produce, dentro static/images/:
-  og-default.png   1200x630  immagine usata da og:image e twitter:image
-  logo-512.png      512x512  logo del publisher per i dati strutturati
+  og-default.png        1200x630  immagine di ripiego (home, pagine informative)
+  logo-512.png           512x512  logo del publisher per i dati strutturati
+  og/<basename>.png     1200x630  una per articolo (--articoli)
 
-Perche' uno script: il PNG deve restare riproducibile. Si costruisce una
-pagina HTML con le stesse tinte del sito e la si fotografa con Chrome
-headless alla dimensione esatta. I caratteri (Atkinson Hyperlegible) sono
-incorporati in base64, cosi' non serve un server.
+Perche' uno script: il PNG deve restare riproducibile. Si costruisce una pagina
+HTML con le stesse tinte del sito e la si fotografa con Chrome headless alla
+dimensione esatta. I caratteri (Atkinson Hyperlegible) sono incorporati in
+base64, cosi' non serve un server.
 
-Uso:  python3 scripts/genera_og.py            (dalla radice del repo)
+La dimensione del titolo non e' scelta a occhio: il JS dentro la pagina prova
+le misure dall'alto verso il basso e sceglie la piu' grande che sta in 4 righe
+e in 340px; il valore scelto viene letto dal dump del DOM (stesso passaggio
+della fotografia) e stampato, cosi' resta verificabile.
+
+Uso:  python3 scripts/genera_og.py                    (immagine di ripiego + logo)
+      python3 scripts/genera_og.py --articoli         (una immagine per articolo)
+      python3 scripts/genera_og.py --verifica         (quali articoli sono coperti)
       CHROME=/percorso/chrome python3 scripts/genera_og.py
+
+Se Chrome non c'e', lo script lo dice e non fa nulla: il sito usa l'immagine di
+ripiego e il build non si rompe (layouts/partials/extra-head.html controlla che
+il file esista prima di citarlo).
 """
 
 from __future__ import annotations
 
+import argparse
 import base64
+import html
+import json
 import os
+import re
+import shutil
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
 
 RADICE = Path(__file__).resolve().parent.parent
 FONT = RADICE / "static" / "static" / "fonts"
 USCITA = RADICE / "static" / "images"
-CHROME = os.environ.get(
-    "CHROME", "/root/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome"
-)
+USCITA_ARTICOLI = USCITA / "og"
+ARTICOLI = RADICE / "content" / "posts"
+
+CANDIDATI_CHROME = [
+    "google-chrome", "google-chrome-stable", "chromium", "chromium-browser",
+    "/root/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome",
+]
 
 ACCENTO = "#6d5ae6"
 FONDO = "#1b1c1d"
 TESTO = "#f2f2f2"
 TENUE = "#a9a9b3"
+
+MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio",
+        "agosto", "settembre", "ottobre", "novembre", "dicembre"]
+
+
+def trova_chrome() -> str | None:
+    if os.environ.get("CHROME"):
+        return os.environ["CHROME"]
+    for candidato in CANDIDATI_CHROME:
+        trovato = shutil.which(candidato) or (candidato if candidato.startswith("/") and Path(candidato).exists() else None)
+        if trovato:
+            return trovato
+    return None
 
 
 def font_base64(nome: str) -> str:
@@ -81,26 +116,181 @@ def html_logo() -> str:
     </body></html>"""
 
 
-def fotografa(html: str, larghezza: int, altezza: int, destinazione: Path) -> None:
+def html_articolo(titolo: str, etichetta: str, data: str) -> str:
+    """Card di un articolo: etichetta del tema, titolo, data e motto."""
+    misure = [76, 70, 64, 58, 52, 46, 40, 34, 30]
+    return f"""<!doctype html><html lang="it"><head><meta charset="utf-8"><style>{stile()}
+      body{{width:1200px;height:630px;padding:60px 72px;display:flex;flex-direction:column;justify-content:space-between}}
+      .marca{{display:flex;align-items:baseline;gap:10px;font-size:36px;font-weight:700}}
+      .marca .segno{{color:{ACCENTO}}}
+      .centro{{display:flex;flex-direction:column;gap:22px;max-width:1056px}}
+      .etichetta{{color:{ACCENTO};font-size:27px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase}}
+      h1{{font-weight:700;line-height:1.1;letter-spacing:-0.01em;max-height:340px;overflow:hidden}}
+      .piede{{display:flex;align-items:baseline;justify-content:space-between;font-size:25px;color:{TENUE}}}
+      .piede .motto{{font-style:italic}}
+    </style></head><body>
+      <div class="marca"><span class="segno">&gt;</span><span>Raziel.news</span></div>
+      <div class="centro">
+        <div class="etichetta">{html.escape(etichetta)}</div>
+        <h1 id="titolo">{html.escape(titolo)}</h1>
+      </div>
+      <div class="piede">
+        <span>{html.escape(data)} &middot; raziel.news</span>
+        <span class="motto">Il peso delle scelte non svanisce.</span>
+      </div>
+      <div id="misura" hidden></div>
+      <script>
+        const t = document.getElementById('titolo');
+        const passi = {json.dumps(misure)};
+        const ALTEZZA_MAX = 340, RIGHE_MAX = 4;
+        let scelta = passi[passi.length - 1], righe = 0, altezza = 0;
+        for (const s of passi) {{
+          t.style.fontSize = s + 'px';
+          const h = Math.round(t.getBoundingClientRect().height);
+          const n = Math.round(h / (s * 1.1));
+          if (h <= ALTEZZA_MAX && n <= RIGHE_MAX) {{ scelta = s; righe = n; altezza = h; break; }}
+          scelta = s; righe = n; altezza = h;
+        }}
+        t.style.fontSize = scelta + 'px';
+        document.getElementById('misura').textContent = JSON.stringify(
+          {{ dimensione: scelta, righe: righe, altezza: altezza, caratteri: t.textContent.length }});
+      </script>
+    </body></html>"""
+
+
+def fotografa(html_pagina: str, larghezza: int, altezza: int, destinazione: Path,
+              chrome: str) -> dict:
+    """Fotografa la pagina e restituisce la misura scritta dal JS."""
     with tempfile.TemporaryDirectory() as tmp:
         pagina = Path(tmp) / "card.html"
-        pagina.write_text(html, encoding="utf-8")
-        subprocess.run(
+        pagina.write_text(html_pagina, encoding="utf-8")
+        esito = subprocess.run(
             [
-                CHROME, "--headless=new", "--no-sandbox", "--disable-gpu",
+                chrome, "--headless=new", "--no-sandbox", "--disable-gpu",
                 "--hide-scrollbars", "--force-device-scale-factor=1",
+                "--virtual-time-budget=1500",
                 f"--window-size={larghezza},{altezza}",
                 f"--screenshot={destinazione}",
+                "--dump-dom",
                 pagina.as_uri(),
             ],
-            check=True, capture_output=True, timeout=120,
+            check=True, capture_output=True, text=True, timeout=180,
         )
+        trovata = re.search(r'<div id="misura"[^>]*>(.*?)</div>', esito.stdout, re.S)
+        if not trovata:
+            return {}
+        try:
+            return json.loads(trovata.group(1))
+        except json.JSONDecodeError:
+            return {}
+
+
+# ---------------------------------------------------------------- articoli
+
+def leggi_frontmatter(percorso: Path) -> dict[str, str]:
+    """Estrae solo i campi che servono alla card, senza dipendere da PyYAML."""
+    testo = percorso.read_text(encoding="utf-8")
+    pezzi = testo.split("---")
+    if len(pezzi) < 3:
+        return {}
+    blocco = pezzi[1]
+    dati: dict[str, str] = {}
+    lista: str | None = None
+    for riga in blocco.splitlines():
+        riga_pulita = riga.strip()
+        if riga_pulita.startswith("- ") and lista:
+            dati.setdefault(lista, "")
+            dati[lista] = (dati[lista] + ", " + riga_pulita[2:].strip()).strip(", ")
+            continue
+        if not riga_pulita or ":" not in riga_pulita:
+            continue
+        chiave, _, valore = riga_pulita.partition(":")
+        chiave, valore = chiave.strip(), valore.strip().strip('"\'')
+        lista = None
+        if chiave in ("title", "date", "summary", "categories"):
+            if valore.startswith("[") and valore.endswith("]"):
+                valore = ", ".join(v.strip().strip('"\'') for v in valore[1:-1].split(",") if v.strip())
+            elif valore == "":
+                lista = chiave
+                valore = ""
+            dati[chiave] = valore
+    return dati
+
+
+def data_italiana(iso: str) -> str:
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", iso or "")
+    if not m:
+        return ""
+    anno, mese, giorno = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    if not 1 <= mese <= 12:
+        return ""
+    return f"{giorno} {MESI[mese - 1]} {anno}"
+
+
+def genera_articoli(chrome: str) -> int:
+    USCITA_ARTICOLI.mkdir(parents=True, exist_ok=True)
+    articoli = sorted(p for p in ARTICOLI.glob("*.md") if not p.stem.startswith("_"))
+    print(f"articoli trovati: {len(articoli)}")
+    falliti = []
+    for articolo in articoli:
+        dati = leggi_frontmatter(articolo)
+        titolo = dati.get("title", "").strip()
+        if not titolo:
+            print(f"  SALTATO {articolo.name}: senza titolo nel frontmatter")
+            falliti.append(articolo.name)
+            continue
+        categorie = [c for c in dati.get("categories", "").split(",") if c.strip()]
+        etichetta = categorie[0].strip() if categorie else "Raziel.news"
+        data = data_italiana(dati.get("date", ""))
+        destinazione = USCITA_ARTICOLI / f"{articolo.stem}.png"
+        misura = fotografa(html_articolo(titolo, etichetta, data), 1200, 630, destinazione, chrome)
+        righe = misura.get("righe", "?")
+        dimensione = misura.get("dimensione", "?")
+        stato = "ok" if misura and misura.get("altezza", 1e9) <= 340 and misura.get("righe", 99) <= 4 else "ATTENZIONE"
+        print(f"  {destinazione.name:62s} {righe} righe a {dimensione}px  "
+              f"{destinazione.stat().st_size} byte  {stato}")
+        if not misura:
+            falliti.append(articolo.name)
+    if falliti:
+        print(f"ATTENZIONE: immagini non generate o non misurate per {len(falliti)} articoli: {falliti}")
+        return 1
+    return 0
+
+
+def verifica() -> int:
+    articoli = sorted(p for p in ARTICOLI.glob("*.md") if not p.stem.startswith("_"))
+    mancanti = [p.stem for p in articoli if not (USCITA_ARTICOLI / f"{p.stem}.png").exists()]
+    print(f"articoli: {len(articoli)} | immagini per articolo: {len(articoli) - len(mancanti)}")
+    if mancanti:
+        print(f"senza immagine ({len(mancanti)}): {mancanti}")
+        print("nel sito userebbero og-default.png (il modello controlla che il file esista)")
+    else:
+        print("tutti gli articoli hanno la loro immagine di condivisione")
+    return 0
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser(description="Immagini di condivisione di raziel.news")
+    ap.add_argument("--articoli", action="store_true", help="una immagine per articolo")
+    ap.add_argument("--verifica", action="store_true", help="quali articoli hanno l'immagine")
+    argomenti = ap.parse_args()
+
+    if argomenti.verifica:
+        return verifica()
+
+    chrome = trova_chrome()
+    if not chrome:
+        print("ATTENZIONE: nessun Chrome trovato (usa CHROME=/percorso/chrome): "
+              "immagini non generate, il sito userà quelle di ripiego")
+        return 0
+    print(f"chrome: {chrome}")
+
     USCITA.mkdir(parents=True, exist_ok=True)
-    fotografa(html_card(), 1200, 630, USCITA / "og-default.png")
-    fotografa(html_logo(), 512, 512, USCITA / "logo-512.png")
+    if argomenti.articoli:
+        return genera_articoli(chrome)
+
+    fotografa(html_card(), 1200, 630, USCITA / "og-default.png", chrome)
+    fotografa(html_logo(), 512, 512, USCITA / "logo-512.png", chrome)
     for nome in ("og-default.png", "logo-512.png"):
         f = USCITA / nome
         print(f"{f.relative_to(RADICE)}  {f.stat().st_size} byte")
@@ -108,4 +298,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())

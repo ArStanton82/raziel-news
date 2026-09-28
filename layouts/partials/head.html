@@ -73,12 +73,9 @@
 <!-- Icons -->
 {{- partial "favicons.html" . }}
 
-{{ template "_internal/schema.html" . }}
-{{ template "_internal/twitter_cards.html" . }}
-
-{{ if isset .Site.Taxonomies "series" }}
-    {{ template "_internal/opengraph.html" . }}
-{{ end }}
+{{/* I meta dei template interni di Hugo (schema, twitter_cards, opengraph)
+   sono stati tolti: li emette extra-head.html, che copre anche le
+   immagini per singolo articolo e non lascia due tag in conflitto. */}}
 
 {{/* I meta article:* del tema erano qui: ora li emette extra-head.html */}}
 
