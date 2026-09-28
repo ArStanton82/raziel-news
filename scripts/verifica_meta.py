@@ -42,6 +42,12 @@ def controlla(pagina: Path) -> list[str]:
     rel = pagina.parent.relative_to(PUBBLICO)
     tipo_og = valore_meta(html, "og:type")
 
+    # Un solo h1 per pagina: in una lista i titoli delle card sono h2. La home
+    # ne aveva undici (uno per card) prima di questa regola.
+    quanti_h1 = len(re.findall(r"<h1[\s>]", html))
+    if quanti_h1 != 1:
+        problemi.append(f"{quanti_h1} tag h1 nella pagina (ne serve esattamente 1)")
+
     for chiave in ("og:image", "twitter:image", "og:title", "twitter:card"):
         valori = valore_meta(html, chiave)
         if len(valori) != 1:
