@@ -2,6 +2,7 @@
 title: "ChatGPT entra nel portico di Hermes: l'identità diventa l'interfaccia"
 date: 2026-09-29
 slug: "chatgpt-entra-nel-portico-di-hermes-identita-diventa-linterfaccia"
+url: "/2026/09/chatgpt-entra-nel-portico-di-hermes-identita-diventa-linterfaccia/"
 draft: false
 categories: ["Hermes", "AI"]
 tags: ["Hermes Agent", "Nous Research", "OpenAI", "GPT-6.1 Sol", "Plugin"]
