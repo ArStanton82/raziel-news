@@ -14,7 +14,7 @@
             {{ range .Site.Taxonomies.categories.Alphabetical }}
                 {{ $temi = $temi | append (printf "%s (%d)" .Page.Title .Count) }}
             {{ end }}
-            {{ len $articoli }} articoli in archivio{{ with $temi }} · {{ delimit . " · " }}{{ end }}
+            {{ len $articoli }} {{ i18n "articoloPlurale" }} {{ i18n "archivioInArchivio" }}{{ with $temi }} · {{ delimit . " · " }}{{ end }}
         </p>
 
         {{ range $articoli.GroupByDate "2006" }}
@@ -25,7 +25,7 @@
                         <li class="post-item">
                             <a href="{{ .Permalink }}">
                                 <span class="post-title">{{ .Title }}</span>
-                                <span class="post-day">{{ .Date.Format "02/01" }}</span>
+                                <span class="post-day">{{ time.Format ":date_medium" .Date }}</span>
                             </a>
                         </li>
                     {{ end }}

@@ -1,38 +1,40 @@
 {{/* 404: la pagina "non trovata" serve a trattenere chi arriva da un link
      vecchio, non a dire soltanto che non c'è nulla. Offre la ricerca e gli
-     articoli del giorno, che sono la ragione per cui qualcuno è qui. */}}
+     articoli del giorno, che sono la ragione per cui qualcuno è qui.
+     Bilingue: le frasi arrivano da i18n, i percorsi da relLangURL, la data
+     da time.Format (che segue la lingua della pagina). */}}
 {{ define "main" }}
 <div id="spotlight" class="error-404 animated fadeIn">
     <div class="banner-404">
-        <h1>Pagina non trovata</h1>
-        <p>L'indirizzo che hai aperto non esiste: può essere sbagliato, oppure l'articolo è stato spostato. Da qui puoi arrivarci lo stesso.</p>
+        <h1>{{ i18n "nonTrovataTitolo" }}</h1>
+        <p>{{ i18n "nonTrovataTesto" }}</p>
 
-        <form class="cerca-form cerca-form--404" id="cerca-form" action="/cerca/" method="get" role="search">
-            <label for="cerca-input" class="cerca-label">Cerca nel sito</label>
+        <form class="cerca-form cerca-form--404" id="cerca-form" action="{{ "cerca/" | relLangURL }}" method="get" role="search">
+            <label for="cerca-input" class="cerca-label">{{ i18n "cercaNelSito" }}</label>
             <div class="cerca-riga">
                 <input type="search" id="cerca-input" name="q" autocomplete="off"
-                       placeholder="es. plugin, stablecoin, Venice" />
-                <button type="submit" class="button">Cerca</button>
+                       placeholder="{{ i18n "cercaPlaceholder" }}" />
+                <button type="submit" class="button">{{ i18n "cercaBottone" }}</button>
             </div>
         </form>
 
         <p class="btn-404">
-            <a href="{{ "/" | relLangURL }}">Home</a>
-            <a href="{{ "/posts/" | relLangURL }}">Tutti gli articoli</a>
-            <a href="{{ "/archivio/" | relLangURL }}">Archivio</a>
-            <a href="{{ "/correzioni/" | relLangURL }}">Registro delle correzioni</a>
-            <a href="{{ "/metodo/" | relLangURL }}">Metodo e fonti</a>
-            <a href="{{ "/contatti/" | relLangURL }}">Contatti</a>
+            <a href="{{ "" | relLangURL }}">{{ i18n "linkHome" }}</a>
+            <a href="{{ "posts/" | relLangURL }}">{{ i18n "linkTuttiArticoli" }}</a>
+            <a href="{{ "archivio/" | relLangURL }}">{{ i18n "linkArchivio" }}</a>
+            <a href="{{ "correzioni/" | relLangURL }}">{{ i18n "linkCorrezioni" }}</a>
+            <a href="{{ "metodo/" | relLangURL }}">{{ i18n "linkMetodo" }}</a>
+            <a href="{{ "contatti/" | relLangURL }}">{{ i18n "linkContatti" }}</a>
         </p>
 
         {{ with first 3 (where site.RegularPages "Section" "posts") }}
         <div class="ultimi-404">
-            <h2>Gli ultimi articoli</h2>
+            <h2>{{ i18n "ultimiArticoli" }}</h2>
             <ul>
                 {{ range . }}
                 <li>
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    <span class="data-404">{{ .Date.Format "2006-01-02" }}</span>
+                    <span class="data-404">{{ time.Format ":date_long" .Date }}</span>
                 </li>
                 {{ end }}
             </ul>

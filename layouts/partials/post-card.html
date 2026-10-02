@@ -19,8 +19,8 @@
     {{ with $t.etichetta }}<p class="occhiello">{{ . }}</p>{{ end }}
     <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
     <div class="post-meta">
-        {{ if .Date }}<span class="post-date">{{ partial "date-ita.html" (dict "data" .Date "forma" "media") }}</span>{{ end }}
-        {{ if .Site.Params.ShowReadingTime }}<span class="post-sep" aria-hidden="true">·</span>{{ .ReadingTime }} min{{ end }}
+        {{ if .Date }}<span class="post-date">{{ time.Format ":date_long" .Date }}</span>{{ end }}
+        {{ if .Site.Params.ShowReadingTime }}<span class="post-sep" aria-hidden="true">·</span>{{ .ReadingTime }} {{ i18n "minuti" }}{{ end }}
     </div>
     <div class="post-content">
         {{ with .Params.summary }}

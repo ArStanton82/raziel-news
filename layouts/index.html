@@ -36,12 +36,12 @@
              all'elenco. È un semplice GET verso /cerca/: funziona anche senza
              JavaScript, che sulla pagina di ricerca serve solo a filtrare. -->
         <div class="home-cerca">
-            <form class="cerca-form cerca-form--compatta" action="/cerca/" method="get" role="search">
-                <label class="cerca-label" for="q-home">Cerca in tutti gli articoli</label>
+            <form class="cerca-form cerca-form--compatta" action="{{ "cerca/" | relLangURL }}" method="get" role="search">
+                <label class="cerca-label" for="q-home">{{ i18n "cercaEtichetta" }}</label>
                 <div class="cerca-riga">
                     <input type="search" id="q-home" name="q" autocomplete="off"
-                           placeholder="es. plugin, stablecoin, Venice" />
-                    <button type="submit" class="button">Cerca</button>
+                           placeholder="{{ i18n "cercaPlaceholder" }}" />
+                    <button type="submit" class="button">{{ i18n "cercaBottone" }}</button>
                 </div>
             </form>
         </div>
@@ -54,6 +54,13 @@
             <div class="content">{{ .Content }}</div>
             {{ end }}
             <div class="posts">
+            {{ if eq (len $paginator.Pages) 0 }}
+            <p class="senza-articoli">{{ i18n "senzaArticoli" }}
+                {{- range where .Site.Home.Translations "Lang" "ne" .Site.Language.Lang }}
+                <a href="{{ .Permalink }}">{{ i18n "leggiInLingua" }} {{ .Language.LanguageName }}</a>
+                {{- end }}
+            </p>
+            {{ end }}
             {{ $giorno := "" }}
             {{ $gruppoAperto := false }}
             {{ range $paginator.Pages }}
@@ -61,7 +68,7 @@
                 {{ $apertura := ne $questoGiorno $giorno }}
                 {{ if $apertura }}
                     {{ if $gruppoAperto }}</div>{{ end }}
-                    <p class="giorno">{{ partial "date-ita.html" (dict "data" .Date "forma" "lunga") }}</p>
+                    <p class="giorno">{{ time.Format ":date_full" .Date }}</p>
                     <div class="giorno-gruppo">
                 {{ end }}
                 {{ if $apertura }}

@@ -1,0 +1,69 @@
+/* =====================================================================
+   raziel.news — custom-v13-bilingue.css
+   Sito bilingue (italiano alla radice, inglese sotto /en/): cambio lingua
+   nella barra, stato vuoto di una lingua, ricerca per lingua.
+
+   File nuovo e non modifica dei precedenti: Cloudflare serve gli asset
+   statici per nome dalla cache (vedi skill hugo-editorial).
+   ===================================================================== */
+
+/* ---------- 1. Cambio lingua nella barra ---------- */
+.menu__inner > li.lingua{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  margin-left:22px;
+  padding-left:16px;
+  border-left:1px solid var(--raziel-filo,#dcdcdc);
+}
+
+.lingua a,
+.lingua .lingua-attiva{
+  font-size:inherit;      /* come le altre voci: la barra resta una riga sola */
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-decoration:none;
+  line-height:inherit;
+}
+
+.lingua a{
+  color:inherit;
+  opacity:.62;
+}
+
+.lingua a:hover{
+  color:var(--raziel-accento,#6d5ae6);
+  opacity:1;
+}
+
+.lingua .lingua-attiva{
+  color:var(--raziel-accento,#6d5ae6);
+}
+
+/* Sul telefono il menu è un pannello in colonna: il cambio lingua diventa
+   una voce come le altre, separata da una riga. */
+@media (max-width: 684px){
+  .menu__inner > li.lingua{
+    margin:0;
+    padding:10px 0 0;
+    border-left:none;
+    border-top:1px solid var(--raziel-filo,#dcdcdc);
+  }
+}
+
+/* ---------- 2. Lingua ancora senza articoli ---------- */
+.senza-articoli{
+  margin:18px 0 6px;
+  padding:18px 20px;
+  border:1px solid var(--raziel-filo,#dcdcdc);
+  border-left:4px solid var(--raziel-accento,#6d5ae6);
+  border-radius:10px;
+  background:var(--raziel-scheda,#f6f6f7);
+  font-size:1rem;
+  line-height:1.55;
+}
+
+.senza-articoli a{
+  color:var(--raziel-accento,#6d5ae6);
+  font-weight:700;
+}

@@ -23,6 +23,13 @@
 
         {{ $paginatore := .Paginate .Pages }}
         <div class="posts">
+            {{ if eq (len $paginatore.Pages) 0 }}
+            <p class="senza-articoli">{{ i18n "senzaArticoli" }}
+                {{- range where .Site.Home.Translations "Lang" "ne" .Site.Language.Lang }}
+                <a href="{{ .Permalink }}">{{ i18n "leggiInLingua" }} {{ .Language.LanguageName }}</a>
+                {{- end }}
+            </p>
+            {{ end }}
             {{ range $paginatore.Pages }}
                 {{ partial "post-card.html" . }}
             {{ end }}
@@ -42,7 +49,7 @@
                 <li class="term-item">
                     <a href="{{ .Permalink }}"{{ if $t.colore }} class="tema" style="--tema-scuro:{{ $t.colore }};--tema-chiaro:{{ $t.colore_chiaro }}"{{ end }}>
                         <span class="term-name">{{ .Title }}</span>
-                        <span class="term-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}articolo{{ else }}articoli{{ end }}</span>
+                        <span class="term-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}{{ i18n "articoloSingolare" }}{{ else }}{{ i18n "articoloPlurale" }}{{ end }}</span>
                         {{ with .Description }}<span class="term-desc">{{ . }}</span>{{ end }}
                     </a>
                 </li>

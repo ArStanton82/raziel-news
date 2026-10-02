@@ -1,0 +1,96 @@
+# Interface strings in English — the mirror of i18n/it.toml.
+# Keys must stay identical between the two files: the templates only call
+# the key, never a hardcoded sentence.
+
+[readMore]
+other = "Read the article"
+
+[newerPosts]
+other = "Newer"
+
+[olderPosts]
+other = "Older"
+
+# --- Search ---
+[cercaEtichetta]
+other = "Search all articles"
+[cercaParole]
+other = "Words to search for"
+[cercaBottone]
+other = "Search"
+[cercaPlaceholder]
+other = "e.g. plugin, stablecoin, Venice"
+[cercaSenzaJs]
+other = "Without JavaScript the search does not work: you can still browse the index by hand in"
+[cercaVuoto]
+other = "No article contains all of these words."
+[cercaAiuto]
+other = "Type one or more words: the search looks inside the text of the articles."
+[cercaAlmenoDue]
+other = "At least two letters are needed."
+[cercaIndiceAttesa]
+other = "Index not loaded yet."
+[cercaIndiceErrore]
+other = "Index unavailable"
+[cercaIndiceRipiego]
+other = "The articles can still be browsed in the Archive."
+[cercaVoci]
+other = "entries in the index."
+[cercaRisultatoSingolare]
+other = "result"
+[cercaRisultatoPlurale]
+other = "results"
+[cercaPrimi]
+other = "showing the first"
+[cercaPagina]
+other = "page"
+
+# --- Articles ---
+[continuaALeggere]
+other = "Continue reading"
+[minutiLettura]
+other = "min read"
+[minuti]
+other = "min"
+[aggiornatoIl]
+other = "updated on"
+[articoloSingolare]
+other = "article"
+[articoloPlurale]
+other = "articles"
+[archivioInArchivio]
+other = "in the archive"
+[senzaArticoli]
+other = "Nothing in this language yet: the articles are in Italian."
+[leggiInLingua]
+other = "Read in"
+
+# --- 404 ---
+[nonTrovataTitolo]
+other = "Page not found"
+[nonTrovataTesto]
+other = "This address does not exist: it may be wrong, or the article may have moved. You can still get there from here."
+[cercaNelSito]
+other = "Search the site"
+[linkHome]
+other = "Home"
+[linkTuttiArticoli]
+other = "All articles"
+[linkArchivio]
+other = "Archive"
+[linkCorrezioni]
+other = "Corrections log"
+[linkMetodo]
+other = "Method and sources"
+[linkContatti]
+other = "Contact"
+[ultimiArticoli]
+other = "Latest articles"
+
+# --- Corrections log ---
+[nessunaCorrezioneTitolo]
+other = "No corrections on record."
+[nessunaCorrezioneTesto]
+other = "So far no published article has needed an intervention. When it happens, the change will appear here with its date, the article and what was changed."
+[correzioniInItaliano]
+other = "The log is kept in Italian: the entries below carry the original note."

@@ -111,10 +111,20 @@ def main() -> int:
 
     pagine = articoli_costruiti()
     if not argomenti.solo_articoli:
-        pagine += [PUBBLICO / "index.html"] + [
-            p for p in PUBBLICO.glob("*/index.html")
-            if p.parent.name not in {"2026"}
-        ]
+        # Tutte le pagine delle due lingue (dal 2026-10-02 il sito è bilingue:
+        # /en/ è la seconda lingua). Fuori: le pagine di paginazione (/page/2/)
+        # che sono copie della stessa lista, e gli alias di lingua che Hugo
+        # genera come redirect (/it/ -> /), che non sono pagine vere.
+        for p in sorted(PUBBLICO.rglob("index.html")):
+            if "page" in p.parts[:-1]:
+                continue
+            if p in pagine:
+                continue
+            testo = p.read_text(encoding="utf-8", errors="ignore")
+            if "http-equiv=refresh" in testo or 'http-equiv="refresh"' in testo:
+                continue
+            pagine.append(p)
+        pagine = sorted(set(pagine))
 
     print(f"pagine controllate: {len(pagine)}")
     totale = 0

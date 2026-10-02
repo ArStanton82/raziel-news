@@ -45,3 +45,11 @@ AI:
   etichetta: Filosofia dell'AI
   colore: "#c46fa8"
   colore_chiaro: "#96427f"
+
+# Stesso tema, nome inglese: gli articoli in inglese usano "Philosophy of AI"
+# (la terminologia del sito in inglese), gli italiani "Filosofia dell'AI".
+# Il colore è lo stesso: il lettore vede la stessa linea nelle due lingue.
+"Philosophy of AI":
+  etichetta: Philosophy of AI
+  colore: "#c46fa8"
+  colore_chiaro: "#96427f"

@@ -16,9 +16,22 @@
 <meta name="author" content="{{ .Site.Params.author.name }}">
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.homeSubtitle }}{{ else }}{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Summary | plainify }}{{ end }}{{ end }}" />
 <meta name="keywords" content="{{ .Site.Params.keywords }}{{ if .Params.tags }}{{ range .Params.tags }}, {{ . }}{{ end }}{{ end }}" />
-{{- if eq .RelPermalink "/cerca/" }}<meta name="robots" content="noindex, follow" />{{ else }}<meta name="robots" content="index, follow" />{{ end }}
+{{- if eq .RelPermalink ("cerca/" | relLangURL) }}<meta name="robots" content="noindex, follow" />{{ else }}<meta name="robots" content="index, follow" />{{ end }}
 <meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
 <link rel="canonical" href="{{ .Permalink }}" />
+{{/* hreflang (dal 2026-10-02, sito bilingue): dice ai motori che queste
+     pagine sono la stessa cosa in due lingue. Senza, le due versioni si
+     fanno concorrenza invece di sostenersi. x-default punta all'italiano,
+     che è la lingua di partenza. Sulle pagine non ancora tradotte non
+     esce nulla: un alternante che punta a un 404 è peggio di nessuno. */}}
+{{- if gt (len .AllTranslations) 1 }}
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+{{- end }}
+{{- with (index (where .AllTranslations "Lang" "it") 0) }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+{{- end }}
+{{- end }}
 
 {{ block "title" . }}
     <title>

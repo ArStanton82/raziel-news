@@ -28,12 +28,12 @@
         <h1 class="post-title">{{ .Title | markdownify }}</h1>
 
         <p class="articolo-meta">
-            <span class="post-date">{{ partial "date-ita.html" (dict "data" .Date "forma" "lunga") }}</span>
+            <span class="post-date">{{ time.Format ":date_full" .Date }}</span>
             <span class="post-sep" aria-hidden="true">·</span>
-            <span>{{ .ReadingTime }} min di lettura</span>
+            <span>{{ .ReadingTime }} {{ i18n "minutiLettura" }}</span>
             {{ if ne .Lastmod .Date }}
             <span class="post-sep" aria-hidden="true">·</span>
-            <span>aggiornato il {{ partial "date-ita.html" (dict "data" .Lastmod "forma" "media") }}</span>
+            <span>{{ i18n "aggiornatoIl" }} {{ time.Format ":date_long" .Lastmod }}</span>
             {{ end }}
         </p>
 

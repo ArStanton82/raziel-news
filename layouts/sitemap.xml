@@ -12,7 +12,7 @@
     {{- else if and (eq .Kind "term") (hasPrefix .RelPermalink "/categories/") -}}
       {{- $dentro = true -}}
     {{- end -}}
-    {{- if and $dentro (ne .RelPermalink "/cerca/") }}
+    {{- if and $dentro (ne .RelPermalink ("cerca/" | relLangURL)) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}

@@ -33,5 +33,22 @@
                 </li>
             {{ end }}
         {{ end }}
+        {{/* Cambio lingua (sito bilingue dal 2026-10-02): la lingua corrente
+             non è un link, l'altra sì. Il cambio porta alla pagina tradotta
+             se esiste; altrimenti alla home dell'altra lingua, mai su un 404. */}}
+        <li class="lingua">
+            {{- range .Site.Languages }}
+                {{- if eq .Lang $pagina.Site.Language.Lang }}
+                    <span class="lingua-attiva" aria-current="true" title="{{ .LanguageName }}">{{ .Params.sigla }}</span>
+                {{- else }}
+                    {{- $destinazione := "" -}}
+                    {{- with (index (where $pagina.Translations "Lang" .Lang) 0) }}{{ $destinazione = .Permalink }}{{ end -}}
+                    {{- if not $destinazione -}}
+                        {{- with (index (where $pagina.Site.Home.AllTranslations "Lang" .Lang) 0) }}{{ $destinazione = .Permalink }}{{ end -}}
+                    {{- end -}}
+                    <a href="{{ $destinazione }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}" title="{{ .LanguageName }}">{{ .Params.sigla }}</a>
+                {{- end }}
+            {{- end }}
+        </li>
     </ul>
 </nav>

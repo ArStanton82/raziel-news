@@ -8,7 +8,7 @@
     <title>{{ site.Title }}</title>
     <link>{{ .Permalink }}</link>
     <description>{{ with site.Params.description }}{{ . }}{{ else }}Raziel.news — Hermes, agenti autonomi, Venice.ai e Bitcoin: notizie verificate, con fonti.{{ end }}</description>
-    <language>it-it</language>
+    <language>{{ site.Language.LanguageCode }}</language>
     <copyright>©{{ now.Year }} Raziel</copyright>
     <atom:link href="{{ .Permalink }}index.xml" rel="self" type="application/rss+xml" />
     {{- range first 20 (where site.RegularPages "Section" "posts") }}

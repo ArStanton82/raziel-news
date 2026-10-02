@@ -8,6 +8,9 @@
         <div class="post-content">{{ .Content }}</div>
 
         {{ $voci := index .Site.Data.correzioni "correzioni" }}
+        {{ if ne .Site.Language.Lang "it" }}
+            <p class="correzioni-nota">{{ i18n "correzioniInItaliano" }}</p>
+        {{ end }}
         {{ if $voci }}
             <ol class="correzioni-lista">
                 {{ range sort $voci "data" "desc" }}
@@ -25,9 +28,8 @@
             </ol>
         {{ else }}
             <p class="correzioni-vuoto">
-                <strong>Nessuna correzione registrata.</strong>
-                Finora non è stato necessario intervenire su un articolo pubblicato. Quando succederà,
-                l'intervento comparirà qui con la data, il titolo e la descrizione di cosa è cambiato.
+                <strong>{{ i18n "nessunaCorrezioneTitolo" }}</strong>
+                {{ i18n "nessunaCorrezioneTesto" }}
             </p>
         {{ end }}
     </article>

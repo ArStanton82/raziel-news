@@ -1,12 +1,16 @@
-/* Ricerca interna di raziel.news.
-   Legge /index.json (generato da layouts/index.json), filtra e ordina lato
-   client. Nessuna libreria, nessun servizio esterno, nessuna richiesta a
-   terzi: il lettore scarica un file dal sito e basta.
+/* Ricerca interna di raziel.news — un file per tutte le lingue.
+   Legge l'indice JSON della lingua della pagina (attributo data-indice del
+   modulo) e filtra e ordina lato client. Nessuna libreria, nessun servizio
+   esterno, nessuna richiesta a terzi: il lettore scarica un file dal sito.
 
    Come cerca: tutte le parole digitate devono comparire (AND). Il peso
    distingue dove compaiono — titolo 8 (12 se il titolo inizia con la parola),
    tag e temi 6, sommario 3, corpo 1 — e i risultati sono ordinati per punteggio
-   e, a parità, dal più recente. */
+   e, a parità, dal più recente.
+
+   Le frasi dell'interfaccia e il percorso dell'indice arrivano da attributi
+   data-* sul modulo (i18n e relLangURL nel template): qui non c'è testo fisso
+   e non c'è percorso fisso, così la stessa ricerca serve italiano e inglese. */
 
 (function () {
   'use strict';
@@ -21,6 +25,8 @@
 
   var indice = null;
 
+  function frase(nome) { return modulo.getAttribute('data-' + nome) || ''; }
+
   function normalizza(testo) {
     return (testo || '')
       .toLowerCase()
@@ -32,6 +38,18 @@
     return normalizza(interrogazione)
       .split(/[^a-z0-9]+/)
       .filter(function (t) { return t.length > 1; });
+  }
+
+  /* La data si scrive nella lingua della pagina, non in formato tecnico:
+     "2 ottobre 2026" in italiano, "October 2, 2026" in inglese. */
+  function dataInChiaro(iso) {
+    if (!iso) { return ''; }
+    try {
+      var d = new Date(iso + 'T12:00:00');
+      if (isNaN(d.getTime())) { return iso; }
+      return d.toLocaleDateString(frase('lingua') || undefined,
+        { day: 'numeric', month: 'long', year: 'numeric' });
+    } catch (e) { return iso; }
   }
 
   function punteggio(voce, termini) {
@@ -91,11 +109,10 @@
     elenco.textContent = '';
 
     if (!termini.length) {
-      stato.textContent = (interrogazione.trim() ? 'Servono almeno due lettere. ' : '') +
-        'Scrivi una o più parole: la ricerca guarda dentro il testo degli articoli.';
+      stato.textContent = (interrogazione.trim() ? frase('almeno-due') + ' ' : '') + frase('aiuto');
       return;
     }
-    if (!indice) { stato.textContent = 'Indice non ancora caricato.'; return; }
+    if (!indice) { stato.textContent = frase('attesa'); return; }
 
     var trovate = [];
     indice.forEach(function (voce) {
@@ -107,12 +124,13 @@
     });
 
     if (!trovate.length) {
-      stato.textContent = 'Nessun articolo contiene tutte queste parole.';
+      stato.textContent = frase('vuoto');
       return;
     }
 
-    stato.textContent = trovate.length + (trovate.length === 1 ? ' risultato' : ' risultati') +
-      (trovate.length > LIMITE ? ' (mostrati i primi ' + LIMITE + ')' : '');
+    stato.textContent = trovate.length + ' ' +
+      (trovate.length === 1 ? frase('risultato') : frase('risultati')) +
+      (trovate.length > LIMITE ? ' (' + frase('primi') + ' ' + LIMITE + ')' : '');
 
     trovate.slice(0, LIMITE).forEach(function (r) {
       var voce = r.voce;
@@ -126,7 +144,7 @@
 
       var meta = document.createElement('span');
       meta.className = 'cerca-meta';
-      meta.textContent = voce.data + (voce.tipo === 'pagina' ? ' · pagina' : '') +
+      meta.textContent = dataInChiaro(voce.data) +
         (voce.temi && voce.temi.length ? ' · ' + voce.temi.join(', ') : '');
 
       var sommario = document.createElement('span');
@@ -163,7 +181,7 @@
     aggiornaIndirizzo(input.value);
   });
 
-  fetch('/index.json')
+  fetch(frase('indice') || '/index.json')
     .then(function (r) {
       if (!r.ok) { throw new Error('HTTP ' + r.status); }
       return r.json();
@@ -175,11 +193,10 @@
         input.value = iniziale;
         mostraRisultati(iniziale);
       } else {
-        stato.textContent = indice.length + ' voci nell\'indice. Scrivi una o più parole.';
+        stato.textContent = indice.length + ' ' + frase('voci') + ' ' + frase('aiuto');
       }
     })
     .catch(function (errore) {
-      stato.textContent = 'Indice non disponibile (' + errore.message + '). ' +
-        'Gli articoli restano consultabili in Archivio.';
+      stato.textContent = frase('errore') + ' (' + errore.message + '). ' + frase('ripiego');
     });
 })();

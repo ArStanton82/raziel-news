@@ -2,6 +2,9 @@
 # Il file it.toml del tema non copre queste chiavi: senza di esse Hugo
 # stampa stringhe vuote (caso reale: il pulsante "readMore" delle card
 # usciva senza testo, solo con la freccia).
+#
+# Dal 2026-10-02 il sito è bilingue: le stesse chiavi esistono in
+# i18n/en.toml, e i template non contengono più testo italiano fisso.
 
 [readMore]
 other = "Leggi l'articolo"
@@ -11,3 +14,85 @@ other = "Più recenti"
 
 [olderPosts]
 other = "Più vecchi"
+
+# --- Ricerca ---
+[cercaEtichetta]
+other = "Cerca in tutti gli articoli"
+[cercaParole]
+other = "Parole da cercare"
+[cercaBottone]
+other = "Cerca"
+[cercaPlaceholder]
+other = "es. plugin, stablecoin, Venice"
+[cercaSenzaJs]
+other = "Senza JavaScript la ricerca non funziona: l'indice si può comunque consultare a mano in"
+[cercaVuoto]
+other = "Nessun articolo contiene tutte queste parole."
+[cercaAiuto]
+other = "Scrivi una o più parole: la ricerca guarda dentro il testo degli articoli."
+[cercaAlmenoDue]
+other = "Servono almeno due lettere."
+[cercaIndiceAttesa]
+other = "Indice non ancora caricato."
+[cercaIndiceErrore]
+other = "Indice non disponibile"
+[cercaIndiceRipiego]
+other = "Gli articoli restano consultabili in Archivio."
+[cercaVoci]
+other = "voci nell'indice."
+[cercaRisultatoSingolare]
+other = "risultato"
+[cercaRisultatoPlurale]
+other = "risultati"
+[cercaPrimi]
+other = "mostrati i primi"
+
+# --- Articoli ---
+[continuaALeggere]
+other = "Continua a leggere"
+[minutiLettura]
+other = "min di lettura"
+[minuti]
+other = "min"
+[aggiornatoIl]
+other = "aggiornato il"
+[articoloSingolare]
+other = "articolo"
+[articoloPlurale]
+other = "articoli"
+[archivioInArchivio]
+other = "in archivio"
+[senzaArticoli]
+other = "In questa lingua non c'è ancora nulla: gli articoli sono in italiano."
+[leggiInLingua]
+other = "Leggi in"
+
+# --- 404 ---
+[nonTrovataTitolo]
+other = "Pagina non trovata"
+[nonTrovataTesto]
+other = "L'indirizzo che hai aperto non esiste: può essere sbagliato, oppure l'articolo è stato spostato. Da qui puoi arrivarci lo stesso."
+[cercaNelSito]
+other = "Cerca nel sito"
+[linkHome]
+other = "Home"
+[linkTuttiArticoli]
+other = "Tutti gli articoli"
+[linkArchivio]
+other = "Archivio"
+[linkCorrezioni]
+other = "Registro delle correzioni"
+[linkMetodo]
+other = "Metodo e fonti"
+[linkContatti]
+other = "Contatti"
+[ultimiArticoli]
+other = "Gli ultimi articoli"
+
+# --- Registro delle correzioni ---
+[nessunaCorrezioneTitolo]
+other = "Nessuna correzione registrata."
+[nessunaCorrezioneTesto]
+other = "Finora non è stato necessario intervenire su un articolo pubblicato. Quando succederà, l'intervento comparirà qui con la data, il titolo e la descrizione di cosa è cambiato."
+[correzioniInItaliano]
+other = "Il registro è tenuto in italiano: le voci qui sotto riportano la nota originale."

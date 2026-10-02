@@ -9,17 +9,24 @@
         <h1 class="list-heading">{{ .Title }}</h1>
         {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 
-        <form class="cerca-form cerca-form--compatta" action="/cerca/" method="get" role="search">
-            <label class="cerca-label" for="q-articoli">Cerca in tutti gli articoli</label>
+        <form class="cerca-form cerca-form--compatta" action="{{ "cerca/" | relLangURL }}" method="get" role="search">
+            <label class="cerca-label" for="q-articoli">{{ i18n "cercaEtichetta" }}</label>
             <div class="cerca-riga">
                 <input type="search" id="q-articoli" name="q" autocomplete="off"
-                       placeholder="es. plugin, stablecoin, Venice" />
-                <button type="submit" class="button">Cerca</button>
+                       placeholder="{{ i18n "cercaPlaceholder" }}" />
+                <button type="submit" class="button">{{ i18n "cercaBottone" }}</button>
             </div>
         </form>
 
         {{ $paginatore := .Paginate .Pages }}
         <div class="posts">
+            {{ if eq (len $paginatore.Pages) 0 }}
+            <p class="senza-articoli">{{ i18n "senzaArticoli" }}
+                {{- range where .Site.Home.Translations "Lang" "ne" .Site.Language.Lang }}
+                <a href="{{ .Permalink }}">{{ i18n "leggiInLingua" }} {{ .Language.LanguageName }}</a>
+                {{- end }}
+            </p>
+            {{ end }}
             {{ range $paginatore.Pages }}
                 {{ partial "post-card.html" . }}
             {{ end }}

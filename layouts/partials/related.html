@@ -23,14 +23,14 @@
 {{- end -}}
 {{- if $scelti }}
 <section class="continua">
-    <p class="continua-titolo">Continua a leggere</p>
+    <p class="continua-titolo">{{ i18n "continuaALeggere" }}</p>
     <div class="continua-lista">
         {{ range $scelti }}
         {{- $t := partial "tema.html" . -}}
         <a class="continua-voce{{ if $t.colore }} tema{{ end }}" href="{{ .Permalink }}"{{ if $t.colore }} style="--tema-scuro:{{ $t.colore }};--tema-chiaro:{{ $t.colore_chiaro }}"{{ end }}>
             {{ with $t.etichetta }}<span class="occhiello">{{ . }}</span>{{ end }}
             <span class="continua-nome">{{ .Title }}</span>
-            <span class="continua-data">{{ partial "date-ita.html" (dict "data" .Date "forma" "media") }}</span>
+            <span class="continua-data">{{ time.Format ":date_long" .Date }}</span>
         </a>
         {{ end }}
     </div>
