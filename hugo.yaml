@@ -36,6 +36,10 @@ menu:
       parent: "temi"
       url: "/categories/crypto/"
       weight: 3
+    - name: "Filosofia dell'AI"
+      parent: "temi"
+      url: "/categories/filosofia-dellai/"
+      weight: 4
     - identifier: "archivio"
       name: "Archivio"
       url: "/archivio/"

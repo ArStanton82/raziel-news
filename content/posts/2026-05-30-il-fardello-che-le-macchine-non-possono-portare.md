@@ -2,7 +2,7 @@
 title: "Il fardello che le macchine non possono portare"
 date: 2026-05-30
 draft: false
-categories: ["Filosofia"]
+categories: ["Filosofia dell'AI"]
 tags: ["intelligenza artificiale", "filosofia", "tecnologia", "umanità"]
 ---
 
