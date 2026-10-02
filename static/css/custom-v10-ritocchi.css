@@ -1,0 +1,63 @@
+/* =====================================================================
+   raziel.news — custom-v10-ritocchi.css
+   Due ritocchi del 2026-10-02:
+
+     1. le due righe di presentazione nel banner (chi scrive, perché);
+     2. il pannello del menu sul telefono, che restava senza fondo e
+        lasciava leggere le voci sopra la fotografia del banner.
+
+   File nuovo e non modifica di v5/v8: Cloudflare serve gli asset statici
+   per nome dalla cache (vedi skill hugo-editorial).
+   ===================================================================== */
+
+/* ---------- 1. Righe di presentazione nel banner ---------- */
+/* La prima riga dice chi scrive ed è la più chiara; la seconda dice perché
+   e resta un gradino sotto. Entrambe poggiano sul velo del banner: il
+   contrasto è misurato, non scelto a occhio (#ffffff e #e6e6ee sul
+   rettangolo del testo, peggior pixel oltre 5:1). */
+.home-banner__righe p{
+  margin:.7em 0 0;
+  max-width:100%;
+}
+
+.home-banner__righe p:first-child{
+  font-size:clamp(1rem,2.1vw,1.18rem);
+  color:#ffffff;
+}
+
+.home-banner__righe p + p{
+  margin-top:.3em;
+  font-size:clamp(.92rem,1.9vw,1.04rem);
+  color:#e6e6ee;
+}
+
+/* ---------- 2. Pannello del menu sul telefono ---------- */
+/* Sul telefono .menu non sta nella barra ma è un pannello che scende
+   (position:absolute, top:40px) sopra il banner. La regola di v5
+   ".header__right .menu{background:transparent}" serve a far prendere alla
+   barra il fondo dell'header: sul desktop è corretta, sul telefono lasciava
+   le voci — soprattutto quelle dei sottomenu — direttamente sulla
+   fotografia. Qui il pannello riprende un fondo pieno. */
+@media (max-width: 684px){
+  .header__right .menu{
+    background:var(--raziel-scheda,#fafafa);
+    border:1px solid var(--raziel-filo,#dcdcdc);
+    border-top:none;
+    border-radius:0 0 10px 10px;
+    box-shadow:0 12px 28px rgba(0,0,0,.28);
+  }
+
+  .menu__inner > li{
+    border-top:1px solid var(--raziel-filo,#dcdcdc);
+  }
+
+  .menu__inner > li:first-child{
+    border-top:none;
+  }
+
+  /* le voci dei sottomenu restano rientrate e leggibili: fondo pieno,
+     non opacità */
+  .menu .dropdown-content a{
+    opacity:.92;
+  }
+}

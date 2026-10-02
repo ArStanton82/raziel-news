@@ -8,7 +8,14 @@
         <section class="home-banner">
             <div class="home-banner__inner">
                 <h1 class="home-banner__title">{{ .Site.Params.homeTitle }}</h1>
-                {{ partial "subtitle.html" . }}
+                {{/* Due righe di presentazione: chi scrive e perché. La prima
+                     riga sta su un <p> più chiaro, la seconda è di servizio.
+                     homeSubtitle resta la descrizione per i motori (head.html). */}}
+                {{ with .Site.Params.homeRighe }}
+                <div class="home-banner__righe">
+                    {{ range . }}<p>{{ . }}</p>{{ end }}
+                </div>
+                {{ end }}
             </div>
         </section>
 
