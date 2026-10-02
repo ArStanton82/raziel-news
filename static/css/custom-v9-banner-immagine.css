@@ -1,0 +1,36 @@
+/* =====================================================================
+   raziel.news — custom-v9-banner-immagine.css
+   Nuova fotografia del banner (raziel-bg-v5.webp) e velo ricalibrato.
+
+   Perché un file nuovo e non una modifica a custom-v4-banner-v3.css:
+   Cloudflare serve gli asset statici per nome dalla cache, quindi una
+   regola cambiata dentro un file già servito non arriverebbe ai lettori
+   (vedi skill hugo-editorial, "Pitfall — Cloudflare cache busting").
+   Stessa ragione per il nome nuovo dell'immagine: raziel-bg-v4.jpeg resta
+   al suo posto, la v5 è un file diverso.
+
+   Geometria: la v4 era 832x1248 (verticale) in una fascia larga e bassa,
+   quindi il "cover" ne mostrava solo una striscia in alto. La v5 è
+   1896x1272 (orizzontale) e riempie la fascia: a 1280x512 si vede la
+   parte centrale, il 60% dell'altezza.
+
+   Velo: era 0,40 ai bordi e 0,72 al centro, calibrato su un'immagine con
+   zone chiare. La v5 è scura (luminanza media 39/255) e il velo si poteva
+   alleggerire per lasciar vedere la fotografia. Misurato sulla pagina
+   costruita, nel rettangolo del titolo, contro il bianco:
+     velo 0,40/0,72 -> pixel peggiore 9,3:1
+     velo 0,38/0,66 -> pixel peggiore 7,3:1   <- scelto (AAA, 7:1)
+     velo 0,35/0,62 -> pixel peggiore 6,2:1
+   Soglia AA per testo grande: 3:1. Il margine resta ampio.
+   ===================================================================== */
+
+.home-banner{
+  background-image:
+    linear-gradient(180deg,
+      rgba(0,0,0,0.38) 0%,
+      rgba(0,0,0,0.66) 34%,
+      rgba(0,0,0,0.66) 66%,
+      rgba(0,0,0,0.38) 100%),
+    url("/images/raziel-bg-v5.webp");
+  background-position:center center;
+}
