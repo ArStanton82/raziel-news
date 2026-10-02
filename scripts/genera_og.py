@@ -3,8 +3,21 @@
 
 Produce, dentro static/images/:
   og-default.png        1200x630  immagine di ripiego (home, pagine informative)
+  og/en/default.png     1200x630  la stessa, in inglese
   logo-512.png           512x512  logo del publisher per i dati strutturati
-  og/<basename>.png     1200x630  una per articolo (--articoli)
+  og/<basename>.png     1200x630  una per articolo italiano (--articoli)
+  og/en/<basename>.png  1200x630  una per articolo inglese (--articoli)
+
+La lingua di un articolo la dice il nome del file: il gemello inglese e' il
+file italiano piu' ".en.md" (2026-10-02-foo.md / 2026-10-02-foo.en.md), la
+stessa chiave con cui il sito accoppia le due versioni (layouts/partials/
+extra-head.html usa .File.ContentBaseName per l'italiana e og/en/ per
+l'inglese). Data e motto seguono la lingua; il titolo e l'etichetta del tema
+vengono dal frontmatter di quel file, quindi sono gia' tradotti.
+
+Perche' l'inglese sta in una sottocartella: Cloudflare serve gli asset statici
+per nome dalla cache, quindi riscrivere un file con lo stesso nome non
+arriverebbe ai lettori. Una cartella nuova non ha cache da svecchiare.
 
 Perche' uno script: il PNG deve restare riproducibile. Si costruisce una pagina
 HTML con le stesse tinte del sito e la si fotografa con Chrome headless alla
@@ -56,8 +69,31 @@ FONDO = "#1b1c1d"
 TESTO = "#f2f2f2"
 TENUE = "#a9a9b3"
 
-MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio",
-        "agosto", "settembre", "ottobre", "novembre", "dicembre"]
+MESI = {
+    "it": ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio",
+           "agosto", "settembre", "ottobre", "novembre", "dicembre"],
+    "en": ["January", "February", "March", "April", "May", "June", "July",
+           "August", "September", "October", "November", "December"],
+}
+
+# Le due lingue del sito. La cartella delle card inglesi e' separata
+# ("og/en/") per non sovrascrivere un file gia' in cache su Cloudflare: un
+# asset statico servito con lo stesso nome resta quello vecchio.
+LINGUA_BASE = "it"
+LINGUE = ("it", "en")
+
+# Motto del sito in fondo alla card. Fonte: hugo.yaml ->
+# languages.<lingua>.params.footer.bottomText[0]. Se cambia li', va cambiato qui.
+MOTTO = {
+    "it": "Il peso delle scelte non svanisce.",
+    "en": "The weight of choices does not fade.",
+}
+
+# Testo della card di ripiego (home e pagine informative), per lingua.
+CARD_RIPIEGO = {
+    "it": "Cronache e riflessioni su <em>intelligenza artificiale</em>, agenti autonomi e Venice.ai",
+    "en": "Notes and reflections on <em>artificial intelligence</em>, autonomous agents and Venice.ai",
+}
 
 
 def trova_chrome() -> str | None:
@@ -90,8 +126,8 @@ def stile() -> str:
     """
 
 
-def html_card() -> str:
-    return f"""<!doctype html><html lang="it"><head><meta charset="utf-8"><style>{stile()}
+def html_card(lingua: str = LINGUA_BASE) -> str:
+    return f"""<!doctype html><html lang="{lingua}"><head><meta charset="utf-8"><style>{stile()}
       body{{width:1200px;height:630px;padding:64px 72px;display:flex;flex-direction:column;justify-content:space-between}}
       .marca{{display:flex;align-items:baseline;gap:10px;font-size:38px;font-weight:700;letter-spacing:0}}
       .marca .segno{{color:{ACCENTO}}}
@@ -101,8 +137,8 @@ def html_card() -> str:
       .piede .motto{{font-style:italic}}
     </style></head><body>
       <div class="marca"><span class="segno">&gt;</span><span>Raziel.news</span></div>
-      <h1>Cronache e riflessioni su <em>intelligenza artificiale</em>, agenti autonomi e Venice.ai</h1>
-      <div class="piede"><span>raziel.news</span><span class="motto">Il peso delle scelte non svanisce.</span></div>
+      <h1>{CARD_RIPIEGO[lingua]}</h1>
+      <div class="piede"><span>raziel.news</span><span class="motto">{MOTTO[lingua]}</span></div>
     </body></html>"""
 
 
@@ -116,10 +152,11 @@ def html_logo() -> str:
     </body></html>"""
 
 
-def html_articolo(titolo: str, etichetta: str, data: str) -> str:
+def html_articolo(titolo: str, etichetta: str, data: str,
+                  lingua: str = LINGUA_BASE) -> str:
     """Card di un articolo: etichetta del tema, titolo, data e motto."""
     misure = [76, 70, 64, 58, 52, 46, 40, 34, 30]
-    return f"""<!doctype html><html lang="it"><head><meta charset="utf-8"><style>{stile()}
+    return f"""<!doctype html><html lang="{lingua}"><head><meta charset="utf-8"><style>{stile()}
       body{{width:1200px;height:630px;padding:60px 72px;display:flex;flex-direction:column;justify-content:space-between}}
       .marca{{display:flex;align-items:baseline;gap:10px;font-size:36px;font-weight:700}}
       .marca .segno{{color:{ACCENTO}}}
@@ -136,7 +173,7 @@ def html_articolo(titolo: str, etichetta: str, data: str) -> str:
       </div>
       <div class="piede">
         <span>{html.escape(data)} &middot; raziel.news</span>
-        <span class="motto">Il peso delle scelte non svanisce.</span>
+        <span class="motto">{MOTTO[lingua]}</span>
       </div>
       <div id="misura" hidden></div>
       <script>
@@ -217,14 +254,40 @@ def leggi_frontmatter(percorso: Path) -> dict[str, str]:
     return dati
 
 
-def data_italiana(iso: str) -> str:
+def data_lingua(iso: str, lingua: str = LINGUA_BASE) -> str:
+    """2 ottobre 2026 / October 2, 2026."""
     m = re.match(r"(\d{4})-(\d{2})-(\d{2})", iso or "")
     if not m:
         return ""
     anno, mese, giorno = int(m.group(1)), int(m.group(2)), int(m.group(3))
     if not 1 <= mese <= 12:
         return ""
-    return f"{giorno} {MESI[mese - 1]} {anno}"
+    mesi = MESI[lingua]
+    if lingua == "en":
+        return f"{mesi[mese - 1]} {giorno}, {anno}"
+    return f"{giorno} {mesi[mese - 1]} {anno}"
+
+
+def lingua_di(percorso: Path) -> str:
+    return "en" if percorso.stem.endswith(".en") else LINGUA_BASE
+
+
+def nome_base(percorso: Path) -> str:
+    """Nome del file senza estensione e senza suffisso di lingua: e' la chiave
+    con cui il sito accoppia le due versioni (.File.ContentBaseName)."""
+    return re.sub(r"\.en$", "", percorso.stem)
+
+
+def percorso_card(percorso: Path) -> Path:
+    """Dove va l'immagine di un articolo.
+
+    L'italiana resta in og/<nome>.png (nome gia' in cache: non va spostata),
+    l'inglese va in og/en/<nome>.png — cartella nuova, quindi nessuna cache di
+    Cloudflare da svecchiare, e nessun rischio di sovrascrivere l'italiana."""
+    lingua = lingua_di(percorso)
+    if lingua == LINGUA_BASE:
+        return USCITA_ARTICOLI / f"{percorso.stem}.png"
+    return USCITA_ARTICOLI / lingua / f"{nome_base(percorso)}.png"
 
 
 def genera_articoli(chrome: str) -> int:
@@ -239,15 +302,18 @@ def genera_articoli(chrome: str) -> int:
             print(f"  SALTATO {articolo.name}: senza titolo nel frontmatter")
             falliti.append(articolo.name)
             continue
+        lingua = lingua_di(articolo)
         categorie = [c for c in dati.get("categories", "").split(",") if c.strip()]
         etichetta = categorie[0].strip() if categorie else "Raziel.news"
-        data = data_italiana(dati.get("date", ""))
-        destinazione = USCITA_ARTICOLI / f"{articolo.stem}.png"
-        misura = fotografa(html_articolo(titolo, etichetta, data), 1200, 630, destinazione, chrome)
+        data = data_lingua(dati.get("date", ""), lingua)
+        destinazione = percorso_card(articolo)
+        destinazione.parent.mkdir(parents=True, exist_ok=True)
+        misura = fotografa(html_articolo(titolo, etichetta, data, lingua),
+                           1200, 630, destinazione, chrome)
         righe = misura.get("righe", "?")
         dimensione = misura.get("dimensione", "?")
         stato = "ok" if misura and misura.get("altezza", 1e9) <= 340 and misura.get("righe", 99) <= 4 else "ATTENZIONE"
-        print(f"  {destinazione.name:62s} {righe} righe a {dimensione}px  "
+        print(f"  {str(destinazione.relative_to(USCITA)):56s} {righe} righe a {dimensione}px  "
               f"{destinazione.stat().st_size} byte  {stato}")
         if not misura:
             falliti.append(articolo.name)
@@ -259,13 +325,15 @@ def genera_articoli(chrome: str) -> int:
 
 def verifica() -> int:
     articoli = sorted(p for p in ARTICOLI.glob("*.md") if not p.stem.startswith("_"))
-    mancanti = [p.stem for p in articoli if not (USCITA_ARTICOLI / f"{p.stem}.png").exists()]
-    print(f"articoli: {len(articoli)} | immagini per articolo: {len(articoli) - len(mancanti)}")
-    if mancanti:
-        print(f"senza immagine ({len(mancanti)}): {mancanti}")
-        print("nel sito userebbero og-default.png (il modello controlla che il file esista)")
-    else:
-        print("tutti gli articoli hanno la loro immagine di condivisione")
+    for lingua in LINGUE:
+        suoi = [p for p in articoli if lingua_di(p) == lingua]
+        mancanti = [p.stem for p in suoi if not percorso_card(p).exists()]
+        print(f"[{lingua}] articoli: {len(suoi)} | immagini: {len(suoi) - len(mancanti)}")
+        if mancanti:
+            print(f"[{lingua}] senza immagine ({len(mancanti)}): {mancanti}")
+            print("nel sito userebbero og-default.png (il modello controlla che il file esista)")
+        else:
+            print(f"[{lingua}] tutti gli articoli hanno la loro immagine di condivisione")
     return 0
 
 
@@ -289,10 +357,18 @@ def main() -> int:
     if argomenti.articoli:
         return genera_articoli(chrome)
 
-    fotografa(html_card(), 1200, 630, USCITA / "og-default.png", chrome)
-    fotografa(html_logo(), 512, 512, USCITA / "logo-512.png", chrome)
-    for nome in ("og-default.png", "logo-512.png"):
-        f = USCITA / nome
+    generate = []
+    for lingua in LINGUE:
+        if lingua == LINGUA_BASE:
+            destinazione = USCITA / "og-default.png"
+        else:
+            destinazione = USCITA_ARTICOLI / lingua / "default.png"
+        destinazione.parent.mkdir(parents=True, exist_ok=True)
+        fotografa(html_card(lingua), 1200, 630, destinazione, chrome)
+        generate.append(destinazione)
+    logo = USCITA / "logo-512.png"
+    fotografa(html_logo(), 512, 512, logo, chrome)
+    for f in generate + [logo]:
         print(f"{f.relative_to(RADICE)}  {f.stat().st_size} byte")
     return 0
 

@@ -12,18 +12,26 @@
      - JSON-LD: NewsArticle per gli articoli, WebSite + SearchAction in
        home, WebPage altrove. Nessuna pagina del sito ne aveva.
 
-     Immagine: /images/og/<basename>.png se esiste sul disco (generata da
-     scripts/genera_og.py --articoli), altrimenti .Params.images del
-     frontmatter, altrimenti /images/og-default.png. Il controllo con
-     fileExists evita di citare un file che non c'è: se la generazione non
-     gira (niente Chrome), il sito ripiega sull'immagine di base. */}}
+     Immagine: la card dell'articolo nella lingua della pagina —
+     /images/og/<basename>.png per l'italiano, /images/og/en/<basename>.png
+     per l'inglese (generate da scripts/genera_og.py --articoli) — altrimenti
+     .Params.images del frontmatter, altrimenti la card di ripiego della
+     lingua (/images/og/en/default.png) o quella italiana (/images/og-default.png).
+     Il controllo con fileExists evita di citare un file che non c'è: se la
+     generazione non gira (niente Chrome), il sito ripiega sulla card di base. */}}
 {{- $descrizione := .Site.Params.description -}}
 {{- with .Description }}{{ $descrizione = . }}{{ end -}}
 {{- if and (not .Description) .Params.summary }}{{ $descrizione = .Params.summary }}{{ end -}}
 
+{{- $lingua := .Site.Language.Lang -}}
 {{- $immagine := "/images/og-default.png" -}}
+{{- $ripiegoLingua := printf "/images/og/%s/default.png" $lingua -}}
+{{- if fileExists (printf "static%s" $ripiegoLingua) }}{{ $immagine = $ripiegoLingua }}{{ end -}}
 {{- if and .IsPage .File (eq .Section "posts") -}}
-    {{- $perArticolo := printf "/images/og/%s.png" .File.ContentBaseName -}}
+    {{- $nome := .File.ContentBaseName -}}
+    {{- $perArticolo := printf "/images/og/%s.png" $nome -}}
+    {{- $perLingua := printf "/images/og/%s/%s.png" $lingua $nome -}}
+    {{- if fileExists (printf "static%s" $perLingua) }}{{ $perArticolo = $perLingua }}{{ end -}}
     {{- if fileExists (printf "static%s" $perArticolo) }}{{ $immagine = $perArticolo }}{{ end -}}
 {{- end -}}
 {{- with .Params.images }}{{ $immagine = index . 0 }}{{ end -}}
@@ -33,8 +41,25 @@
 {{- $tipo := "website" -}}
 {{- if and .IsPage (eq .Section "posts") }}{{ $tipo = "article" }}{{ end -}}
 
+{{/* Lingua della pagina nei metadati, che finora era fissa sull'italiano anche
+     sulle pagine inglesi. og:locale vuole la forma it_IT / en_US, il JSON-LD
+     (e i motori) la forma BCP-47 it-IT / en-US: entrambe derivate da
+     languageCode in hugo.yaml, non scritte a mano. */}}
+{{- $codiceLingua := .Site.Language.LanguageCode | default .Site.Language.Lang -}}
+{{- $pezziLingua := split $codiceLingua "-" -}}
+{{- $localeOg := cond (eq (len $pezziLingua) 2) (printf "%s_%s" (index $pezziLingua 0) (upper (index $pezziLingua 1))) $codiceLingua -}}
+{{- $bcp47 := cond (eq (len $pezziLingua) 2) (printf "%s-%s" (index $pezziLingua 0) (upper (index $pezziLingua 1))) $codiceLingua -}}
+
 <meta property="og:site_name" content="{{ .Site.Title }}" />
-<meta property="og:locale" content="it_IT" />
+<meta property="og:locale" content="{{ $localeOg }}" />
+{{- if .IsTranslated -}}
+{{- range .Translations -}}
+{{- $codiceAlt := .Language.LanguageCode | default .Language.Lang -}}
+{{- $pezziAlt := split $codiceAlt "-" -}}
+{{- $localeAlt := cond (eq (len $pezziAlt) 2) (printf "%s_%s" (index $pezziAlt 0) (upper (index $pezziAlt 1))) $codiceAlt -}}
+<meta property="og:locale:alternate" content="{{ $localeAlt }}" />
+{{- end -}}
+{{- end -}}
 <meta property="og:type" content="{{ $tipo }}" />
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
 <meta property="og:description" content="{{ $descrizione }}" />
@@ -78,7 +103,7 @@
         "url" .Permalink
         "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
         "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
-        "inLanguage" "it-IT"
+        "inLanguage" $bcp47
         "author" $autore
         "publisher" $editore
         "image" (slice $immagineAssoluta)
@@ -99,7 +124,7 @@
         "@id" (printf "%s#sito" .Permalink)
         "name" .Site.Title
         "url" .Site.BaseURL
-        "inLanguage" "it-IT"
+        "inLanguage" $bcp47
         "description" .Site.Params.description
         "publisher" $editore
         "potentialAction" (dict
@@ -113,7 +138,7 @@
         "url" .Permalink
         "name" .Title
         "description" $descrizione
-        "inLanguage" "it-IT"
+        "inLanguage" $bcp47
         "isPartOf" (dict "@type" "WebSite" "@id" (printf "%s#sito" .Site.BaseURL))
         "publisher" $editore) -}}
 {{- end -}}
