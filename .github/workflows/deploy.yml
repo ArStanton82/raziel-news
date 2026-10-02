@@ -34,13 +34,16 @@ jobs:
       - name: Guardia anti-titolo duplicato
         run: python3 scripts/strip_duplicate_h1.py
 
-      # Le immagini di condivisione per articolo si generano qui, non nel repo:
-      # così valgono anche per gli articoli scritti dalla pipeline, e il git
-      # non si riempie di PNG. Se Chrome non c'è, lo script lo dice e il sito
-      # usa l'immagine di ripiego (il modello controlla che il file esista).
+      # Le immagini di condivisione: una per articolo e per lingua, piu' le
+      # card di ripiego (italiana e inglese) che home e pagine informative
+      # citano. Si generano qui, non nel repo: cosi' valgono anche per gli
+      # articoli scritti dalla pipeline, e il git non si riempie di PNG. Se
+      # Chrome non c'è, lo script lo dice e il sito usa quello che trova
+      # (il modello controlla che il file esista).
       - name: Immagini di condivisione per articolo
         continue-on-error: true
         run: |
+          python3 scripts/genera_og.py
           python3 scripts/genera_og.py --articoli
           python3 scripts/genera_og.py --verifica
 

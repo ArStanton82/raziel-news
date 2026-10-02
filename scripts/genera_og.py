@@ -334,6 +334,11 @@ def verifica() -> int:
             print("nel sito userebbero og-default.png (il modello controlla che il file esista)")
         else:
             print(f"[{lingua}] tutti gli articoli hanno la loro immagine di condivisione")
+    # Le card di ripiego: home, elenco articoli e pagine informative le citano,
+    # quindi devono esistere davvero (una per lingua).
+    for f in (USCITA / "og-default.png", USCITA_ARTICOLI / "en" / "default.png"):
+        stato = "esiste" if f.exists() else "MANCA"
+        print(f"[ripiego] {f.relative_to(RADICE)}: {stato}")
     return 0
 
 
