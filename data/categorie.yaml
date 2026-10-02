@@ -1,0 +1,47 @@
+# Colore e etichetta di ogni tema di raziel.news.
+#
+# Usato dai partial "tema.html": la categoria guida l'occhiello della scheda,
+# il filo colorato a sinistra, la scheda del tema in /categories/ e il blocco
+# "Continua a leggere" in fondo all'articolo.
+#
+# Due colori per tema, misurati (WCAG 2.1, soglia AA 4,5:1 per testo piccolo):
+#   colore        -> fondo scuro  (scheda #1b1c1d / pagina #232425)
+#   colore_chiaro -> fondo chiaro (scheda #f6f6f7 / pagina #fff)
+# Nessun colore unico passa AA su entrambi i fondi: il contrasto va scelto
+# per tema. Rapporti misurati il 2026-10-02:
+#   Hermes            #8b7bf0 -> 5,03:1   #5b45d6 -> 5,95:1
+#   Venice.ai         #3fb8b0 -> 7,07:1   #12736d -> 5,26:1
+#   Crypto            #e0a106 -> 7,53:1   #8a6100 -> 5,13:1
+#   Blockchain        #8ab55c -> 7,19:1   #4a6b2a -> 5,67:1
+#   AI                #5aa9e6 -> 6,71:1   #1f6ca8 -> 5,16:1
+#   Filosofia dell'AI #c46fa8 -> 5,03:1   #96427f -> 5,75:1
+
+Hermes:
+  etichetta: Hermes
+  colore: "#8b7bf0"
+  colore_chiaro: "#5b45d6"
+
+Venice.ai:
+  etichetta: Venice.ai
+  colore: "#3fb8b0"
+  colore_chiaro: "#12736d"
+
+Crypto:
+  etichetta: Crypto
+  colore: "#e0a106"
+  colore_chiaro: "#8a6100"
+
+Blockchain:
+  etichetta: Blockchain
+  colore: "#8ab55c"
+  colore_chiaro: "#4a6b2a"
+
+AI:
+  etichetta: AI
+  colore: "#5aa9e6"
+  colore_chiaro: "#1f6ca8"
+
+"Filosofia dell'AI":
+  etichetta: Filosofia dell'AI
+  colore: "#c46fa8"
+  colore_chiaro: "#96427f"

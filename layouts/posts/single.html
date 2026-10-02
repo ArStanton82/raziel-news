@@ -1,0 +1,65 @@
+{{/* Pagina di un articolo. Sostituisce il template del tema (che stava in
+     themes/hello-4s3ti/layouts/posts/single.html) per tre motivi:
+
+       1. la data usciva come "2026-10-02 00:00", cioè con un orario che non
+          esiste (nel frontmatter c'è solo la data): qui è in italiano,
+          "venerdì 2 ottobre 2026";
+       2. i dati (tempo di lettura, tag, temi) stavano tutti sopra il titolo,
+          prima che il lettore sapesse che cosa sta leggendo: qui restano
+          solo data e tempo di lettura, i tag e i temi vanno in fondo;
+       3. mancava il blocco "Continua a leggere" (partial related.html): con
+          tre articoli al giorno il lettore non deve tornare in home per
+          trovare il successivo.
+
+     Restano del tema la paginazione fra articoli (partial pagination-single,
+     con le etichette italiane di i18n/it.toml) e l'eventuale indice (toc).
+     Il tema stampa il titolo dentro un <a> che punta alla pagina stessa: qui
+     no, è un h1 e basta. */}}
+{{ define "main" }}
+{{- $t := partial "tema.html" . -}}
+{{- $urlTema := "" -}}
+{{- with $t.categoria }}{{ $urlTema = printf "categories/%s" (. | urlize) }}{{ end -}}
+<main class="post">
+    <article class="articolo{{ if $t.colore }} tema{{ end }}"{{ if $t.colore }} style="--tema-scuro:{{ $t.colore }};--tema-chiaro:{{ $t.colore_chiaro }}"{{ end }}>
+        {{ if $t.etichetta }}
+        <p class="occhiello"><a href="{{ $urlTema | absLangURL }}/">{{ $t.etichetta }}</a></p>
+        {{ end }}
+
+        <h1 class="post-title">{{ .Title | markdownify }}</h1>
+
+        <p class="articolo-meta">
+            <span class="post-date">{{ partial "date-ita.html" (dict "data" .Date "forma" "lunga") }}</span>
+            <span class="post-sep" aria-hidden="true">·</span>
+            <span>{{ .ReadingTime }} min di lettura</span>
+            {{ if ne .Lastmod .Date }}
+            <span class="post-sep" aria-hidden="true">·</span>
+            <span>aggiornato il {{ partial "date-ita.html" (dict "data" .Lastmod "forma" "media") }}</span>
+            {{ end }}
+        </p>
+
+        {{ with .Params.summary }}<p class="articolo-sommario">{{ . | markdownify }}</p>{{ end }}
+
+        {{- if .Params.toc }}
+        <aside id="toc">
+            <div class="toc-title">{{ i18n "tableOfContents" }}</div>
+            {{ .TableOfContents }}
+        </aside>
+        {{- end }}
+
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+
+        <div class="articolo-piede">
+            {{ if .Params.tags }}{{ partial "tags.html" .Params.tags }}{{ end }}
+            {{ partial "categories.html" . }}
+        </div>
+    </article>
+
+    {{ partial "related.html" . }}
+
+    <div class="articolo-altri">
+        {{ partial "pagination-single.html" . }}
+    </div>
+</main>
+{{ end }}

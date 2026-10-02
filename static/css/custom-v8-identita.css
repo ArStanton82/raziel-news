@@ -1,0 +1,421 @@
+/* =====================================================================
+   raziel.news — custom-v8-identita.css
+   Identità editoriale: carattere dei titoli (Newsreader), occhiello e
+   colore dei temi, gerarchia della home per giorno, schede dei temi,
+   "Continua a leggere", pagina dell'articolo.
+
+   Caricato dopo custom-v4/v5/v6: a pari specificità vince questo file.
+   File nuovo e non modifica dei precedenti: Cloudflare serve gli asset
+   statici per nome dalla cache (vedi skill hugo-editorial, "Pitfall —
+   Cloudflare cache busting").
+
+   Contenuti:
+     0. variabili
+     1. carattere dei titoli
+     2. colore del tema (occhiello, filo, schede)
+     3. scheda dell'articolo
+     4. gerarchia della home: giorno, apertura, righe
+     5. schede dei temi (/categories/)
+     6. "Continua a leggere"
+     7. pagina dell'articolo
+     8. telefono
+   ===================================================================== */
+
+/* ---------- 0. Variabili ---------- */
+:root{
+  --raziel-muto:#5f6064;      /* testo secondario su fondo chiaro */
+  --raziel-filo:#dcdcdc;      /* righe di separazione */
+  --raziel-scheda:#f6f6f7;    /* fondo delle schede */
+  --raziel-accento:#6d5ae6;   /* accento del sito, su fondo chiaro */
+}
+
+[data-theme=dark]{
+  --raziel-muto:#a9a9b3;
+  --raziel-filo:#3b3d42;
+  --raziel-scheda:#1b1c1d;
+  --raziel-accento:#8b7bf0;   /* #6d5ae6 su #232425 resta a 3,4:1: sotto AA */
+}
+
+[data-theme=light]{
+  --raziel-muto:#5f6064;
+  --raziel-filo:#dcdcdc;
+  --raziel-scheda:#f6f6f7;
+  --raziel-accento:#6d5ae6;
+}
+
+@media (prefers-color-scheme: dark){
+  html:not([data-theme]){
+    --raziel-muto:#a9a9b3;
+    --raziel-filo:#3b3d42;
+    --raziel-scheda:#1b1c1d;
+    --raziel-accento:#8b7bf0;
+  }
+}
+
+/* ---------- 1. Carattere dei titoli ---------- */
+/* Newsreader, ristretto ai caratteri che servono (22 KB) e ridotto a una
+   sola istanza (peso 600, corpo ottico 24): un file invece dei 132 KB della
+   variabile completa. Il corpo del testo resta Atkinson Hyperlegible, scelto
+   per la leggibilità: qui cambiano solo i titoli. */
+@font-face{
+  font-family:'Newsreader Titoli';
+  src:url('/fonts/newsreader-titoli.woff2') format('woff2');
+  font-weight:600;
+  font-style:normal;
+  font-display:swap;
+}
+
+.home-banner__title,
+.post-title,
+.list-heading,
+.giorno,
+.term-name,
+.continua-titolo,
+.continua-nome,
+.articolo-sommario,
+.post-content h2,
+.post-content h3,
+.post-content h4{
+  font-family:'Newsreader Titoli',Georgia,'Times New Roman',serif;
+  font-weight:600;
+  letter-spacing:0;
+}
+
+/* ---------- 2. Colore del tema ---------- */
+/* Il colore arriva inline (--tema-scuro / --tema-chiaro, da data/categorie.yaml)
+   sull'elemento che porta la classe .tema; qui si sceglie quale dei due usare.
+   I due valori servono perché nessun colore unico passa il contrasto AA sia
+   sulla scheda scura sia su quella chiara. */
+.tema{ --tema:var(--tema-scuro,var(--raziel-accento)) }
+
+[data-theme=dark] .tema{ --tema:var(--tema-scuro,var(--raziel-accento)) }
+[data-theme=light] .tema{ --tema:var(--tema-chiaro,var(--raziel-accento)) }
+
+@media (prefers-color-scheme: light){
+  html:not([data-theme]) .tema{ --tema:var(--tema-chiaro,var(--raziel-accento)) }
+}
+
+.occhiello{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  margin:0 0 7px;
+  font-family:'Atkinson Hyperlegible','Inter',-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--tema,var(--raziel-accento));
+}
+
+.occhiello a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.occhiello a:hover{
+  text-decoration:underline;
+}
+
+.occhiello-punto{
+  width:7px;
+  height:7px;
+  flex:0 0 auto;
+  border-radius:50%;
+  background:currentColor;
+}
+
+/* ---------- 3. Scheda dell'articolo ---------- */
+.home-body .post.on-list{
+  transition:border-color .15s ease, box-shadow .2s ease, transform .15s ease;
+}
+
+.home-body .post.on-list.tema{
+  border-left:4px solid var(--tema);
+  padding-left:23px;          /* il filo da 4px non deve spostare il testo */
+}
+
+.home-body .post.on-list:hover{
+  border-color:var(--tema,var(--raziel-accento));
+  transform:translateY(-1px);
+  box-shadow:0 8px 22px rgba(0,0,0,.14);
+}
+
+[data-theme=dark] .home-body .post.on-list:hover,
+html:not([data-theme]) .home-body .post.on-list:hover{
+  box-shadow:0 8px 22px rgba(0,0,0,.45);
+}
+
+[data-theme=light] .home-body .post.on-list:hover{
+  box-shadow:0 8px 22px rgba(0,0,0,.14);
+}
+
+.home-body .post-meta{
+  margin:0 0 10px;
+  font-size:.88rem;
+  color:var(--raziel-muto);
+}
+
+.post-sep{
+  margin:0 .45em;
+  opacity:.7;
+}
+
+.home-body .post-tags{
+  display:block;
+  margin:10px 0 0;
+  line-height:1.9;
+}
+
+.home-body .post-tags a{
+  color:var(--raziel-muto);
+  margin-right:8px;
+}
+
+.home-body .post-tags a:hover{
+  color:var(--raziel-accento);
+}
+
+/* "Leggi l'articolo" da pulsante a richiamo di testo: la scheda ha già
+   l'occhiello e il filo colorato, il riquadro attorno al link appesantiva. */
+.home-body .post.on-list .read-more.button{
+  display:inline-flex;
+  margin:14px 0 0;
+  padding:0;
+  border:none;
+  background:transparent;
+  box-shadow:none;
+  opacity:1;
+  color:var(--tema,var(--raziel-accento));
+  font-weight:700;
+}
+
+.home-body .post.on-list .read-more.button:hover{
+  opacity:1;
+  text-decoration:underline;
+}
+
+.home-body .post.on-list .read-more.button:hover::after{
+  content:" →";
+}
+
+/* ---------- 4. Gerarchia della home ---------- */
+.giorno{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin:26px 0 14px;
+  font-size:1.06rem;
+  color:var(--raziel-muto);
+}
+
+.giorno:first-child{
+  margin-top:0;
+}
+
+.giorno::after{
+  content:'';
+  flex:1 1 auto;
+  height:1px;
+  background:currentColor;
+  opacity:.3;
+}
+
+.giorno-gruppo{
+  display:flex;
+  flex-direction:column;
+}
+
+.post-riga{
+  padding:16px 2px 16px 16px;
+  border-left:3px solid var(--tema,var(--raziel-accento));
+  border-top:1px solid var(--raziel-filo);
+}
+
+.post-riga .occhiello{
+  margin:0 0 4px;
+  font-size:.68rem;
+}
+
+.post-riga .post-title{
+  margin:0 0 5px;
+  font-size:1.06rem;
+  line-height:1.32;
+}
+
+.post-riga .post-title a{
+  text-decoration:none;
+}
+
+.post-riga .post-title a:hover{
+  text-decoration:underline;
+}
+
+.riga-somm{
+  margin:0;
+  font-size:.94rem;
+  line-height:1.5;
+  color:var(--raziel-muto);
+}
+
+/* ---------- 5. Schede dei temi (/categories/) ---------- */
+.term-list--schede{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:14px;
+}
+
+.term-list--schede .term-item a{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+  gap:5px;
+  height:100%;
+  margin:0;
+  padding:16px 18px;
+  border-color:var(--raziel-filo);
+  border-left:4px solid var(--tema,var(--raziel-accento));
+  border-radius:10px;
+  background:var(--raziel-scheda);
+  transition:border-color .15s ease, transform .15s ease;
+}
+
+.term-list--schede .term-item a:hover{
+  border-color:var(--tema,var(--raziel-accento));
+  transform:translateY(-1px);
+}
+
+.term-list--schede .term-name{
+  font-size:1.15rem;
+}
+
+.term-list--schede .term-count{
+  color:var(--raziel-muto);
+  font-size:.85rem;
+  opacity:1;
+}
+
+.term-desc{
+  margin-top:4px;
+  font-size:.9rem;
+  line-height:1.45;
+  color:var(--raziel-muto);
+  white-space:normal;
+}
+
+/* ---------- 6. "Continua a leggere" ---------- */
+.continua{
+  margin:40px 0 0;
+  padding-top:22px;
+  border-top:1px solid var(--raziel-filo);
+}
+
+.continua-titolo{
+  margin:0 0 14px;
+  font-size:1.12rem;
+  color:var(--raziel-muto);
+}
+
+.continua-lista{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:12px;
+}
+
+.continua-voce{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  padding:14px 16px;
+  border:1px solid var(--raziel-filo);
+  border-left:3px solid var(--tema,var(--raziel-accento));
+  border-radius:10px;
+  background:var(--raziel-scheda);
+  text-decoration:none;
+  transition:border-color .15s ease, transform .15s ease;
+}
+
+.continua-voce:hover{
+  border-color:var(--tema,var(--raziel-accento));
+  transform:translateY(-1px);
+}
+
+.continua-voce .occhiello{
+  margin:0;
+  font-size:.66rem;
+}
+
+.continua-nome{
+  font-size:1.02rem;
+  line-height:1.3;
+}
+
+.continua-data{
+  font-size:.8rem;
+  color:var(--raziel-muto);
+}
+
+/* ---------- 7. Pagina dell'articolo ---------- */
+.articolo .post-title{
+  margin:0 0 12px;
+  font-size:clamp(1.9rem,4vw,2.6rem);
+  line-height:1.15;
+}
+
+.articolo-meta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:2px;
+  margin:0 0 18px;
+  font-size:.9rem;
+  color:var(--raziel-muto);
+}
+
+.articolo-sommario{
+  margin:0 0 26px;
+  font-size:1.2rem;
+  line-height:1.45;
+}
+
+.articolo-piede{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0 22px;
+  margin:34px 0 0;
+  padding-top:16px;
+  border-top:1px solid var(--raziel-filo);
+}
+
+.articolo-piede p{
+  margin:0;
+}
+
+.articolo-altri{
+  margin-top:34px;
+}
+
+/* ---------- 8. Telefono ---------- */
+@media (max-width: 684px){
+  .home-body .post.on-list.tema{
+    padding-left:19px;
+  }
+
+  .giorno{
+    margin:22px 0 12px;
+    font-size:1rem;
+  }
+
+  .post-riga{
+    padding:14px 2px 14px 13px;
+  }
+
+  .articolo-sommario{
+    font-size:1.08rem;
+  }
+
+  .continua-lista{
+    grid-template-columns:1fr;
+  }
+}

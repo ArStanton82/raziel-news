@@ -1,0 +1,38 @@
+{{/* "Continua a leggere": fino a tre articoli dello stesso tema, in fondo
+     all'articolo. Se il tema non ne ha abbastanza, si completa con i più
+     recenti (senza ripetere l'articolo che si sta leggendo né quelli già
+     scelti: il confronto è sull'URL, non sull'oggetto pagina).
+     Il contesto (.) è la pagina dell'articolo. */}}
+{{- $pagina := . -}}
+{{- $tema := "" -}}
+{{- with $pagina.Params.categories }}{{ $tema = index . 0 }}{{ end -}}
+{{- $candidati := (where site.RegularPages "Type" "posts").ByDate.Reverse -}}
+{{- $scelti := slice -}}
+{{- $urlScelte := slice -}}
+{{- range $candidati -}}
+    {{- if and (lt (len $scelti) 3) (ne .Permalink $pagina.Permalink) (ne $tema "") (in .Params.categories $tema) -}}
+        {{- $scelti = $scelti | append . -}}
+        {{- $urlScelte = $urlScelte | append .Permalink -}}
+    {{- end -}}
+{{- end -}}
+{{- range $candidati -}}
+    {{- if and (lt (len $scelti) 3) (ne .Permalink $pagina.Permalink) (not (in $urlScelte .Permalink)) -}}
+        {{- $scelti = $scelti | append . -}}
+        {{- $urlScelte = $urlScelte | append .Permalink -}}
+    {{- end -}}
+{{- end -}}
+{{- if $scelti }}
+<section class="continua">
+    <p class="continua-titolo">Continua a leggere</p>
+    <div class="continua-lista">
+        {{ range $scelti }}
+        {{- $t := partial "tema.html" . -}}
+        <a class="continua-voce{{ if $t.colore }} tema{{ end }}" href="{{ .Permalink }}"{{ if $t.colore }} style="--tema-scuro:{{ $t.colore }};--tema-chiaro:{{ $t.colore_chiaro }}"{{ end }}>
+            {{ with $t.etichetta }}<span class="occhiello">{{ . }}</span>{{ end }}
+            <span class="continua-nome">{{ .Title }}</span>
+            <span class="continua-data">{{ partial "date-ita.html" (dict "data" .Date "forma" "media") }}</span>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{- end -}}

@@ -1,31 +1,27 @@
-{{/* Card di un articolo, condivisa fra la home e la pagina /posts/.
-     Il contesto (.) è la pagina dell'articolo.
-     Riquadro: stile in /css/custom-v4-banner-v3.css (sezione 4), che si
-     applica quando la card sta dentro un contenitore .home-body.
+{{/* Card di un articolo, condivisa fra la home, la pagina /posts/ e le
+     pagine dei temi. Il contesto (.) è la pagina dell'articolo.
+     Riquadro: stile in /css/custom-v4-banner-v3.css (sezione 4) e
+     /css/custom-v8-identita.css, che si applicano quando la card sta dentro
+     un contenitore .home-body.
 
      Il titolo della card è un h2, non un h1: in una pagina elenco l'unico h1
      è il titolo della pagina (la home, "Articoli", il nome del tema). Con
      l'h1 per card la home arrivava a undici h1: non è un errore per il
      browser, ma è una gerarchia sbagliata, e la gerarchia la leggono i
      motori e gli screen reader. La resa non cambia: le regole sono su
-     .post-title, non sull'elemento. */}}
-<div class="post on-list">
+     .post-title, non sull'elemento.
+
+     Ordine delle righe: occhiello del tema, titolo, data e tempo di lettura,
+     sommario, tag, "Leggi l'articolo". Il tema (colore e etichetta) arriva da
+     data/categorie.yaml attraverso il partial "tema.html". */}}
+{{- $t := partial "tema.html" . -}}
+<div class="post on-list{{ if $t.colore }} tema{{ end }}"{{ if $t.colore }} style="--tema-scuro:{{ $t.colore }};--tema-chiaro:{{ $t.colore_chiaro }}"{{ end }}>
+    {{ with $t.etichetta }}<p class="occhiello">{{ . }}</p>{{ end }}
     <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
     <div class="post-meta">
-        {{ if .Date }}
-            <span class="post-date">{{ .Date.Format (.Site.Params.DateFormatList | default "2006-01-02") }}</span>
-        {{ end }}
-        {{ if .Site.Params.ShowReadingTime }}
-            &nbsp;<i class="fa-solid fa-clock"></i> {{ i18n "readingTime" .ReadingTime }}
-        {{ end }}
+        {{ if .Date }}<span class="post-date">{{ partial "date-ita.html" (dict "data" .Date "forma" "media") }}</span>{{ end }}
+        {{ if .Site.Params.ShowReadingTime }}<span class="post-sep" aria-hidden="true">·</span>{{ .ReadingTime }} min{{ end }}
     </div>
-    {{ if .Site.Params.tags }}
-        <span class="post-tags">
-        {{ range .Params.tags }}
-            <a href="{{ (urlize (printf "tags/%s" .)) | absLangURL }}/">#{{ . }}</a>&nbsp;
-        {{ end }}
-        </span>
-    {{ end }}
     <div class="post-content">
         {{ with .Params.summary }}
             {{ . | markdownify }}
@@ -33,8 +29,15 @@
             {{ if .Truncated }}{{ .Summary }}{{ end }}
         {{ end }}
     </div>
+    {{ if .Site.Params.tags }}
+        <span class="post-tags">
+        {{ range .Params.tags }}
+            <a href="{{ (urlize (printf "tags/%s" .)) | absLangURL }}/">#{{ . }}</a>
+        {{ end }}
+        </span>
+    {{ end }}
     {{ if not .Site.Params.hideReadMore }}
-        <div>
+        <div class="post-piu">
             <a class="read-more button" href="{{ .RelPermalink }}">{{ i18n "readMore" }} →</a>
         </div>
     {{ end }}

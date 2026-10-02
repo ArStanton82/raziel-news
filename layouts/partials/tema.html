@@ -1,0 +1,22 @@
+{{/* Tema di un articolo: categoria principale, etichetta e colori.
+     Restituisce un dict {"categoria","etichetta","colore","colore_chiaro"}.
+     I colori sono due (fondo scuro / fondo chiaro) e stanno in
+     data/categorie.yaml, con i rapporti di contrasto misurati: nessun
+     colore unico passa AA su entrambi i fondi.
+     Il contesto (.) è la pagina. */}}
+{{- $categoria := "" -}}
+{{- with .Params.categories -}}
+    {{- $categoria = index . 0 -}}
+{{- else -}}
+    {{- if eq .Kind "term" }}{{ $categoria = .Title }}{{ end -}}
+{{- end -}}
+{{- $meta := index site.Data.categorie $categoria -}}
+{{- $etichetta := $categoria -}}
+{{- $colore := "" -}}
+{{- $coloreChiaro := "" -}}
+{{- with $meta -}}
+    {{- $etichetta = .etichetta | default $categoria -}}
+    {{- $colore = .colore -}}
+    {{- $coloreChiaro = .colore_chiaro -}}
+{{- end -}}
+{{- return (dict "categoria" $categoria "etichetta" $etichetta "colore" $colore "colore_chiaro" $coloreChiaro) -}}

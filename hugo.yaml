@@ -80,6 +80,7 @@ params:
   ShowReadingTime: true
   LastModDisplay: false
   homeTitle: "Raziel.news"
+  homeSubtitle: "Cronache e riflessioni su agenti autonomi, Venice.ai e Bitcoin — tre articoli al giorno."
 
   customCSS:
     - "/css/custom-v2.css"
@@ -88,6 +89,7 @@ params:
     - "/css/custom-v5-nav.css"
     - "/css/custom-v6-indici.css"
     - "/css/custom-v7-ricerca-home.css"
+    - "/css/custom-v8-identita.css"
 
   logo:
     logoText: "Raziel.news"

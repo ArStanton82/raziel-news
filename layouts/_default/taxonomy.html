@@ -8,7 +8,12 @@
      term.html, quindi la distinzione va fatta qui dentro).
      Il template di lista del tema, comune a entrambe, trattava i termini
      come articoli: date e raggruppamento per anno privi di senso sulla
-     pagina dei temi, titoli di articoli con "0 articoli" accanto. */}}
+     pagina dei temi, titoli di articoli con "0 articoli" accanto.
+
+     L'elenco dei temi è a schede: ogni scheda prende il colore del tema da
+     data/categorie.yaml (via partial tema.html) e mostra il testo di
+     apertura del tema (frontmatter description di content/categories/<tema>).
+     /tags/ usa lo stesso elenco, senza colore (i tag non sono temi). */}}
 {{ define "main" }}
 {{ if eq .Kind "term" }}
 <main class="indice">
@@ -31,12 +36,14 @@
         <h1 class="list-heading">{{ .Title }}</h1>
         {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
 
-        <ul class="term-list">
+        <ul class="term-list term-list--schede">
             {{ range .Pages.ByTitle }}
+                {{- $t := partial "tema.html" . -}}
                 <li class="term-item">
-                    <a href="{{ .Permalink }}">
+                    <a href="{{ .Permalink }}"{{ if $t.colore }} class="tema" style="--tema-scuro:{{ $t.colore }};--tema-chiaro:{{ $t.colore_chiaro }}"{{ end }}>
                         <span class="term-name">{{ .Title }}</span>
                         <span class="term-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}articolo{{ else }}articoli{{ end }}</span>
+                        {{ with .Description }}<span class="term-desc">{{ . }}</span>{{ end }}
                     </a>
                 </li>
             {{ end }}

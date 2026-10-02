@@ -1,0 +1,11 @@
+{{/* Riga di un articolo nella home: gli articoli dal secondo in poi dello
+     stesso giorno. Più leggera della card — niente riquadro, filo colorato
+     del tema a sinistra e una riga di separazione — così la giornata ha un
+     articolo di apertura e le sue riprese.
+     Il contesto (.) è la pagina dell'articolo. */}}
+{{- $t := partial "tema.html" . -}}
+<div class="post post-riga{{ if $t.colore }} tema{{ end }}"{{ if $t.colore }} style="--tema-scuro:{{ $t.colore }};--tema-chiaro:{{ $t.colore_chiaro }}"{{ end }}>
+    {{ with $t.etichetta }}<p class="occhiello">{{ . }}</p>{{ end }}
+    <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+    {{ with .Params.summary }}<p class="riga-somm">{{ . | markdownify }}</p>{{ end }}
+</div>
