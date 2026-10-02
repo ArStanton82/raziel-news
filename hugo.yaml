@@ -87,6 +87,7 @@ params:
     - "/css/custom-v4-banner-v3.css"
     - "/css/custom-v5-nav.css"
     - "/css/custom-v6-indici.css"
+    - "/css/custom-v7-ricerca-home.css"
 
   logo:
     logoText: "Raziel.news"

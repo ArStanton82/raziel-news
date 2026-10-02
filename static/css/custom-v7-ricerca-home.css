@@ -1,0 +1,38 @@
+/* =====================================================================
+   raziel.news — custom-v7-ricerca-home.css
+   Barra di ricerca in home page: la stessa della sezione Articoli
+   (/posts/, classi .cerca-form .cerca-riga), in cima all'elenco e dentro
+   la colonna degli articoli (.home-body, 860px).
+
+   File nuovo invece di una regola aggiunta a custom-v6: Cloudflare serve
+   gli asset statici per nome dalla cache, quindi una modifica a un file
+   esistente non arriverebbe ai lettori (vedi skill hugo-editorial).
+   ===================================================================== */
+
+/* La barra apre la colonna: un filo di spazio sotto e una riga sottile che
+   la separa dalla prima scheda. */
+.home-cerca{
+  margin:0 0 24px;
+  padding-bottom:22px;
+  border-bottom:1px solid #dcdcdc;
+}
+
+/* Il modulo compatto porta con sé 22px di margine inferiore: qui lo spazio
+   lo governa il contenitore. */
+.home-cerca .cerca-form{
+  margin:0;
+}
+
+@media (prefers-color-scheme: dark){
+  .home-cerca{border-bottom-color:#3b3d42}
+}
+
+[data-theme=dark] .home-cerca{border-bottom-color:#3b3d42}
+[data-theme=light] .home-cerca{border-bottom-color:#dcdcdc}
+
+@media (max-width: 684px){
+  .home-cerca{
+    margin:0 0 18px;
+    padding-bottom:16px;
+  }
+}
