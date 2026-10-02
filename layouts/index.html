@@ -8,14 +8,20 @@
         <section class="home-banner">
             <div class="home-banner__inner">
                 <h1 class="home-banner__title">{{ .Site.Params.homeTitle }}</h1>
-                {{/* Presentazione: chi scrive, e sotto la citazione in corsivo. */}}
+                {{/* Presentazione: chi scrive, e sotto la citazione in corsivo
+                     con la sua fonte (params.homeCitazione / homeCitazioneFonte). */}}
                 {{ with .Site.Params.homeRighe }}
                 <div class="home-banner__righe">
                     {{ range . }}<p>{{ . }}</p>{{ end }}
                 </div>
                 {{ end }}
-                {{ with .Site.Params.homeCitazione }}
-                <p class="home-banner__citazione">{{ . }}</p>
+                {{ $citazione := .Site.Params.homeCitazione }}
+                {{ $fonte := .Site.Params.homeCitazioneFonte }}
+                {{ with $citazione }}
+                <figure class="home-banner__citazione">
+                    <p class="home-banner__citazione-testo">{{ . }}</p>
+                    {{ with $fonte }}<figcaption class="home-banner__citazione-fonte">{{ . }}</figcaption>{{ end }}
+                </figure>
                 {{ end }}
             </div>
         </section>

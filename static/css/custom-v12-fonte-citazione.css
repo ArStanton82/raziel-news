@@ -1,0 +1,50 @@
+/* =====================================================================
+   raziel.news — custom-v12-fonte-citazione.css
+   La citazione del banner prende la sua fonte: testo in corsivo e riga di
+   credito sotto (maiuscoletto, senza corsivo), come in un occhiello
+   editoriale.
+
+   Perché un file nuovo: Cloudflare serve gli asset statici per nome dalla
+   cache (vedi skill hugo-editorial). Il carattere corsivo resta dichiarato
+   in custom-v11-citazione.css (@font-face di "Newsreader Corsivo"); qui
+   c'è solo la messa in pagina.
+
+   Nota di specificità: nel banner esiste `.home-banner p` (0,1,1) in
+   custom-v4-banner-v3.css, che vince su un selettore di una sola classe.
+   Tutte le regole qui sotto usano due classi (0,2,0) per questo motivo:
+   verificato con getComputedStyle, non a occhio.
+   ===================================================================== */
+
+.home-banner .home-banner__citazione{
+  margin:.9em 0 0;
+  max-width:46rem;
+}
+
+/* Il testo: corsivo vero di Newsreader, chiaro sul velo. */
+.home-banner .home-banner__citazione-testo{
+  margin:0;
+  font-family:'Newsreader Corsivo',Georgia,'Times New Roman',serif;
+  font-style:italic;
+  font-weight:600;
+  font-size:clamp(1.06rem,2.2vw,1.3rem);
+  line-height:1.35;
+  letter-spacing:0;
+  color:#f4f4f8;
+  text-shadow:0 1px 2px rgba(0,0,0,0.80);
+}
+
+/* La fonte: tondo, maiuscoletto spaziato, mezza tacca più piccolo del
+   testo della presentazione. Colore #d9d9e2 invece del bianco pieno:
+   resta sopra la soglia AA (misurato 5,5:1 nel pixel peggiore). */
+.home-banner .home-banner__citazione-fonte{
+  margin:.5em 0 0;
+  font-family:'Atkinson Hyperlegible','Inter',-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI",Helvetica,Arial,sans-serif;
+  font-style:normal;
+  font-size:clamp(.76rem,1.4vw,.84rem);
+  font-weight:700;
+  line-height:1.3;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:#d9d9e2;
+  text-shadow:0 1px 2px rgba(0,0,0,0.80);
+}
