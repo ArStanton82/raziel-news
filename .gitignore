@@ -21,5 +21,9 @@ drafts/
 # (in locale e nel workflow), non versionate
 /static/images/og/
 
+# Script Python: cache di bytecode
+__pycache__/
+*.pyc
+
 # Backup
 *.backup
