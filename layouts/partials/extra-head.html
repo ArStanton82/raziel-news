@@ -30,16 +30,21 @@
      statici per nome dalla cache, quindi riscrivere un file già pubblicato non
      arriverebbe ai lettori. */}}
 {{- $immagine := "/images/og-default.png" -}}
-{{/* L'ultimo candidato esistente vince: si elenca dal più vecchio al più nuovo. */}}
-{{- $ripieghi := (slice (printf "/images/og/%s/default.png" $lingua) (printf "/images/og/v2/%s/default.png" $lingua)) -}}
+{{/* L'ultimo candidato esistente vince, quindi si elenca dal meno prioritario al
+     più prioritario: prima la lingua della pagina, poi il nome base, prima v2
+     (card con immagine) e poi i vecchi percorsi. */}}
+{{- $ripieghi := (slice
+    (printf "/images/og/%s/default.png" $lingua)
+    (printf "/images/og/v2/default.png")
+    (printf "/images/og/v2/%s/default.png" $lingua)) -}}
 {{- range $ripieghi }}{{ if fileExists (printf "static%s" .) }}{{ $immagine = . }}{{ end }}{{ end -}}
 {{- if and .IsPage .File (eq .Section "posts") -}}
     {{- $nome := .File.ContentBaseName -}}
     {{- $candidati := (slice
-        (printf "/images/og/%s/%s.png" $lingua $nome)
         (printf "/images/og/%s.png" $nome)
-        (printf "/images/og/v2/%s/%s.png" $lingua $nome)
-        (printf "/images/og/v2/%s.png" $nome)) -}}
+        (printf "/images/og/%s/%s.png" $lingua $nome)
+        (printf "/images/og/v2/%s.png" $nome)
+        (printf "/images/og/v2/%s/%s.png" $lingua $nome)) -}}
     {{- range $candidati }}{{ if fileExists (printf "static%s" .) }}{{ $immagine = . }}{{ end }}{{ end -}}
 {{- end -}}
 {{- with .Params.images }}{{ $immagine = index . 0 }}{{ end -}}
