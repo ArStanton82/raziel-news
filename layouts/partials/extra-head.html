@@ -24,15 +24,23 @@
 {{- if and (not .Description) .Params.summary }}{{ $descrizione = .Params.summary }}{{ end -}}
 
 {{- $lingua := .Site.Language.Lang -}}
+{{/* Ordine di scelta: prima le card "v2" (foto di sfondo, scripts/genera_og.py),
+     poi quelle vecchie, poi le card di ripiego della lingua e infine quella
+     italiana. Il percorso v2 è nuovo di proposito: Cloudflare serve gli asset
+     statici per nome dalla cache, quindi riscrivere un file già pubblicato non
+     arriverebbe ai lettori. */}}
 {{- $immagine := "/images/og-default.png" -}}
-{{- $ripiegoLingua := printf "/images/og/%s/default.png" $lingua -}}
-{{- if fileExists (printf "static%s" $ripiegoLingua) }}{{ $immagine = $ripiegoLingua }}{{ end -}}
+{{/* L'ultimo candidato esistente vince: si elenca dal più vecchio al più nuovo. */}}
+{{- $ripieghi := (slice (printf "/images/og/%s/default.png" $lingua) (printf "/images/og/v2/%s/default.png" $lingua)) -}}
+{{- range $ripieghi }}{{ if fileExists (printf "static%s" .) }}{{ $immagine = . }}{{ end }}{{ end -}}
 {{- if and .IsPage .File (eq .Section "posts") -}}
     {{- $nome := .File.ContentBaseName -}}
-    {{- $perArticolo := printf "/images/og/%s.png" $nome -}}
-    {{- $perLingua := printf "/images/og/%s/%s.png" $lingua $nome -}}
-    {{- if fileExists (printf "static%s" $perLingua) }}{{ $perArticolo = $perLingua }}{{ end -}}
-    {{- if fileExists (printf "static%s" $perArticolo) }}{{ $immagine = $perArticolo }}{{ end -}}
+    {{- $candidati := (slice
+        (printf "/images/og/%s/%s.png" $lingua $nome)
+        (printf "/images/og/%s.png" $nome)
+        (printf "/images/og/v2/%s/%s.png" $lingua $nome)
+        (printf "/images/og/v2/%s.png" $nome)) -}}
+    {{- range $candidati }}{{ if fileExists (printf "static%s" .) }}{{ $immagine = . }}{{ end }}{{ end -}}
 {{- end -}}
 {{- with .Params.images }}{{ $immagine = index . 0 }}{{ end -}}
 {{- $immagineAssoluta := $immagine | absURL -}}

@@ -1,0 +1,18 @@
+{
+  "versione": 1,
+  "nota": "Foto di sfondo delle card di condivisione. Scelte da scripts/foto_card.py su Wikimedia Commons (licenze libere). Modifica a mano 'file' e 'query' per correggere una scelta, poi rilancia lo script con --forza.",
+  "foto": {
+    "2026-10-04-chi-risponde-quando-l-agente-sbaglia": {
+      "file": "card-arte/2026-10-04-chi-risponde-quando-l-agente-sbaglia.jpg",
+      "fonte": "ai",
+      "modello": "venice-sd35",
+      "soggetto": "an empty hearing room with a single empty witness chair under a hard cone of light, rows of dark seats receding into shadow",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": ""
+    }
+  }
+}

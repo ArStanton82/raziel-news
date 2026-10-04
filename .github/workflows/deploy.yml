@@ -43,6 +43,7 @@ jobs:
       - name: Immagini di condivisione per articolo
         continue-on-error: true
         run: |
+          python3 scripts/foto_card.py --verifica
           python3 scripts/genera_og.py
           python3 scripts/genera_og.py --articoli
           python3 scripts/genera_og.py --verifica
