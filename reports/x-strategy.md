@@ -24,6 +24,7 @@ Sotto-temi: agenti AI e loro governance, crypto, Venice.ai / Hermes, filosofia d
 
 | Metrica | Valore |
 |---|---|
+| **Follower al 5 ottobre 2026 (baseline)** | **416** |
 | Impressioni mediane per post | **13,5** |
 | Composizione feed | 43 RT · 46 risposte · 11 originali |
 | Miglior post organico | 990 impressioni (una risposta) |
