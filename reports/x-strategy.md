@@ -111,6 +111,65 @@ Coda: `/root/.hermes/profiles/raziel-news/x-queue/<YYYY-MM-DD>.json`
 
 ---
 
+## 5-bis. Immagine del post (obbligatoria)
+
+**Ogni post pubblicato porta un'illustrazione generata.** Senza immagine la card non si vede e il
+post scorre via.
+
+| | |
+|---|---|
+| Modello | **`venice-sd35`** — 0,01 USD per generazione, soggetto leggibile in miniatura |
+| Fallback | `z-image-turbo` — stesso prezzo, più veloce, subentra da solo se il primo fallisce |
+| Script | `python3 scripts/x_image.py --prompt "<prompt>" --out x-queue/images/<id>.png` |
+| Formato | 1024×576 (16:9), 25 step |
+| Costo | ~0,02 USD al giorno (2 post) ≈ 0,60 USD al mese |
+
+`hide_watermark` è **sempre True**. Senza, Venice stampa la firma "Venice" in basso a sinistra e il
+post sembra contenuto di terzi. Verificato il 5 ottobre 2026: con `hide_watermark: true` l'immagine
+è pulita.
+
+Da evitare per un sito di notizie: `lustify-*` (contenuti adulti) e `wai-Illustrious` (anime).
+Allo stesso prezzo è disponibile anche `chroma`, se serve uno stile più pittorico.
+
+### Regole del prompt immagine
+
+Scritto in inglese, 400-700 caratteri. Deve descrivere **una scena concreta**, non un concetto
+astratto ("solitudine digitale" non è un'immagine; "un uomo di spalle davanti a un rack acceso in una
+sala buia" lo è).
+
+Obbligatorio in ogni prompt:
+- `bright, high contrast` — la miniatura su X è piccola, le immagini scure spariscono nel feed;
+- `one clear focal subject` — un solo soggetto, riconoscibile anche a 100 px;
+- `no text, no words, no letters, no logos` — i modelli generano pseudo-scritte illeggibili;
+- `wide 16:9 composition`;
+- palette coerente con il sito: bianco caldo, blu profondo, un accento ambra.
+
+L'immagine si genera **al momento della bozza**, così Kain la vede insieme alla richiesta di
+approvazione. Il job di pubblicazione carica il file e lo aggancia al post.
+
+### Campi aggiunti alla coda
+
+```json
+{
+  "image_prompt": "testo del prompt usato",
+  "image_path": "/root/.hermes/profiles/raziel-news/x-queue/images/2026-10-06-en-1.png",
+  "media_id": null
+}
+```
+
+`media_id` lo scrive il job di pubblicazione dopo l'upload.
+
+### Pubblicare con l'immagine (verificato il 5 ottobre 2026)
+
+```bash
+xurl media upload <image_path>            # -> data.id ; richiede OAuth2, NON OAuth1
+xurl -X POST /2/tweets -d '{"text":"...","media":{"media_ids":["<MEDIA_ID>"]}}'
+```
+
+Il testo resta senza link: il link va nella prima risposta, l'immagine nel post principale.
+
+---
+
 ## 6. Lista target per il motore delle risposte
 
 Verificata via API il 5 ottobre 2026 (follower reali, badge attivo).
