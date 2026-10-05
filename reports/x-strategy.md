@@ -91,6 +91,13 @@ Coda: `/root/.hermes/profiles/raziel-news/x-queue/<YYYY-MM-DD>.json`
 }
 ```
 
+- **Limite tecnico: 280 caratteri, troncamento silenzioso.** L'API X di questo app *non* restituisce un
+  errore se il testo supera i 280 caratteri: pubblica il post **tagliato** alle ultime parole utili.
+  Verificato il 5 ottobre 2026 — un testo da 298 caratteri è finito online incompleto, senza alcun
+  messaggio di errore. Quindi: il draft si scrive **entro 279 caratteri** (controllo di lunghezza
+  obbligatorio al momento di mettere il testo in coda, non dopo la pubblicazione), e dopo ogni
+  pubblicazione si confronta il testo riletto via API con quello della coda: se differisce, il post
+  si elimina e non si considera pubblicato.
 - `approved: false` → il job di pubblicazione lo salta e lo segnala.
 - `approved: true` → pubblicato, con `reply_link` come prima risposta; poi si scrive
   `published_tweet_id`.
