@@ -188,6 +188,20 @@ Non si spende finché non esiste: fissato + bio + articolo che trattiene. Poi, s
 
 ---
 
+## 9-bis. Verifica dei link (nota tecnica)
+
+`curl` senza User-Agent da browser riceve **HTTP 403** da Cloudflare su raziel.news. Non è un link
+rotto: è il WAF. Per verificare un URL usare sempre un UA da browser:
+
+```bash
+curl -s -o /dev/null -w "%{http_code}\n" -L -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36" "<URL>"
+```
+
+Un 200 con ~16-17 KB di corpo è la conferma che l'articolo esiste davvero. Il controllo dell'URL
+nella prima risposta è obbligatorio prima di dichiarare un post pubblicato.
+
+---
+
 ## 10. Vincoli di sicurezza
 
 - Nessun engagement automatico o massivo. Le risposte si **preparano**, non si sparano.
