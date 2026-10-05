@@ -91,13 +91,18 @@ Coda: `/root/.hermes/profiles/raziel-news/x-queue/<YYYY-MM-DD>.json`
 }
 ```
 
-- **Limite tecnico: 280 caratteri, troncamento silenzioso.** L'API X di questo app *non* restituisce un
-  errore se il testo supera i 280 caratteri: pubblica il post **tagliato** alle ultime parole utili.
-  Verificato il 5 ottobre 2026 — un testo da 298 caratteri è finito online incompleto, senza alcun
-  messaggio di errore. Quindi: il draft si scrive **entro 279 caratteri** (controllo di lunghezza
-  obbligatorio al momento di mettere il testo in coda, non dopo la pubblicazione), e dopo ogni
-  pubblicazione si confronta il testo riletto via API con quello della coda: se differisce, il post
-  si elimina e non si considera pubblicato.
+- **Lunghezza del testo: si può andare oltre i 280 caratteri — e l'API *non* tronca.** Attenzione,
+  perché è controintuitivo: il campo `text` restituito dall'API v2 si ferma a ~280 caratteri anche
+  quando il post pubblicato è più lungo. Il testo integrale sta in **`note_tweet.text`**. Verificato
+  il 5 ottobre 2026 sul post fissato (280 caratteri in `text`, 441 in `note_tweet`): il post online
+  era completo.
+  **Regola di verifica:** dopo una pubblicazione, confrontare il testo riletto con quello della coda
+  usando `note_tweet.text` se presente, altrimenti `text` —
+  `xurl '/2/tweets/<ID>?tweet.fields=note_tweet,text'`.
+  **Non eliminare mai un post solo perché `text` sembra troncato:** è quasi sempre un falso allarme
+  e si distrugge un post integro. Un errore così è già costato due post il 5 ottobre 2026.
+  Limite pratico consigliato: **1.500 caratteri**, per leggibilità. I post lunghi e coesi rendono più
+  delle serie di tweet frammentati: non accorciare per abitudine.
 - `approved: false` → il job di pubblicazione lo salta e lo segnala.
 - `approved: true` → pubblicato, con `reply_link` come prima risposta; poi si scrive
   `published_tweet_id`.
