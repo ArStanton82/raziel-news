@@ -1,0 +1,86 @@
+/* =====================================================================
+   raziel.news — custom-v14-illustrazioni.css
+   Illustrazioni degli articoli: la fotografia di apertura della pagina
+   dell'articolo e la miniatura della scheda (home, /posts/, pagine dei
+   temi).
+
+   L'immagine è una sola per articolo e per entrambe le lingue: sta in
+   static/images/card-arte/ (generata con AI da scripts/arte_card.py) o in
+   static/images/card-bg/ (fotografia da Wikimedia Commons, scripts/foto_card.py),
+   ed è la stessa che scripts/genera_og.py usa come sfondo della card di
+   condivisione. Il riferimento sta in data/card_immagini.json, letto dal
+   partial layouts/partials/illustrazione.html.
+
+   File nuovo e non modifica dei precedenti: Cloudflare serve gli asset
+   statici per nome dalla cache (vedi skill hugo-editorial, "Pitfall —
+   Cloudflare cache busting"). Va registrato in hugo.yaml -> params.customCSS
+   dopo custom-v13-bilingue.css.
+
+   Contenuti:
+     1. pagina dell'articolo
+     2. miniatura della scheda
+     3. telefono
+   ===================================================================== */
+
+/* ---------- 1. Pagina dell'articolo ---------- */
+.articolo-illustrazione{
+  margin:0 0 30px;
+}
+
+.articolo-illustrazione img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  border-radius:12px;
+  background:var(--raziel-scheda);
+  /* Le immagini sono scure (fondo carbone, accento violetto): sul tema
+     chiaro un filo di bordo le stacca dalla pagina. */
+  border:1px solid var(--raziel-filo);
+}
+
+.articolo-illustrazione figcaption{
+  margin-top:9px;
+  font-size:.8rem;
+  line-height:1.4;
+  color:var(--raziel-muto);
+}
+
+/* ---------- 2. Miniatura della scheda ---------- */
+/* La scheda ha il filo colorato del tema a sinistra e il testo indentato:
+   l'immagine vive dentro quel riquadro, con gli stessi angoli arrotondati
+   delle altre schede del sito. */
+.home-body .post.on-list .scheda-illustrazione{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  margin:0 0 16px;
+  border-radius:10px;
+  background:var(--raziel-scheda);
+  border:1px solid var(--raziel-filo);
+}
+
+/* La scheda in hover alza il bordo colorato: l'immagine non deve muoversi
+   con essa (il transform è sulla scheda, non sull'immagine: qui si limita
+   il bordo del riquadro, che resta fermo). */
+.home-body .post.on-list:hover .scheda-illustrazione{
+  border-color:var(--tema,var(--raziel-accento));
+}
+
+/* ---------- 3. Telefono ---------- */
+@media (max-width: 684px){
+  .articolo-illustrazione{
+    margin:0 0 24px;
+  }
+
+  .articolo-illustrazione img{
+    border-radius:10px;
+  }
+
+  .home-body .post.on-list .scheda-illustrazione{
+    margin:0 0 13px;
+  }
+}

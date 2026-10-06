@@ -57,6 +57,7 @@ params:
     - "/css/custom-v11-citazione.css"
     - "/css/custom-v12-fonte-citazione.css"
     - "/css/custom-v13-bilingue.css"
+    - "/css/custom-v14-illustrazioni.css"
 
   logo:
     logoText: "Raziel.news"

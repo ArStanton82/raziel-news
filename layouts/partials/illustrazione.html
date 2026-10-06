@@ -1,0 +1,25 @@
+{{/* Illustrazione di un articolo: la stessa che scripts/genera_og.py usa come
+     sfondo della card di condivisione (data/card_immagini.json, popolato da
+     scripts/arte_card.py per le immagini generate con AI e da
+     scripts/foto_card.py per le fotografie da Wikimedia Commons).
+
+     Una sola fonte di verità per pagina e card: l'indice JSON. La chiave è il
+     nome del file senza ".md" e senza il suffisso ".en" (le due lingue
+     condividono l'illustrazione, come condividono la card).
+
+     Restituisce una mappa vuota se l'articolo non ha ancora un'immagine: chi
+     chiama decide cosa fare (oggi: non stampare nulla). Il campo `file` è
+     relativo a static/images/ (es. "card-arte/2026-10-06-foo.jpg"), quindi
+     l'URL si costruisce con "/images/" davanti. */}}
+{{- $voce := dict -}}
+{{- if and .IsPage .File (eq .Section "posts") -}}
+    {{- $nome := strings.TrimSuffix ".en" .File.ContentBaseName -}}
+    {{- with site.Data.card_immagini -}}
+        {{- with .foto -}}
+            {{- with index . $nome -}}
+                {{- $voce = . -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- return $voce -}}

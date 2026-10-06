@@ -16,6 +16,14 @@
      data/categorie.yaml attraverso il partial "tema.html". */}}
 {{- $t := partial "tema.html" . -}}
 <div class="post on-list{{ if $t.colore }} tema{{ end }}"{{ if $t.colore }} style="--tema-scuro:{{ $t.colore }};--tema-chiaro:{{ $t.colore_chiaro }}"{{ end }}>
+    {{/* Illustrazione di apertura della scheda. Decorativa (alt vuoto): il
+         titolo è già il link, e l'immagine non aggiunge informazione a chi
+         usa uno screen reader. Viene da data/card_immagini.json, la stessa
+         fonte della pagina dell'articolo e della card di condivisione. */}}
+    {{- $arte := partial "illustrazione.html" . -}}
+    {{- with $arte }}
+    <img class="scheda-illustrazione" src="{{ printf "/images/%s" .file | relURL }}" alt="" width="1280" height="720" loading="lazy" decoding="async" />
+    {{- end }}
     {{ with $t.etichetta }}<p class="occhiello">{{ . }}</p>{{ end }}
     <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
     <div class="post-meta">

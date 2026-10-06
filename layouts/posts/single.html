@@ -39,6 +39,21 @@
 
         {{ with .Params.summary }}<p class="articolo-sommario">{{ . | markdownify }}</p>{{ end }}
 
+        {{/* Illustrazione: la stessa immagine che fa da sfondo alla card di
+             condivisione (data/card_immagini.json via partial illustrazione.html).
+             Sta sotto il sommario e sopra il corpo, come una fotografia di
+             apertura; il credito (obbligatorio per le foto da Wikimedia, dovuto
+             per le immagini generate) va in didascalia. */}}
+        {{- $arte := partial "illustrazione.html" . -}}
+        {{- with $arte }}
+        <figure class="articolo-illustrazione">
+            <img src="{{ printf "/images/%s" .file | relURL }}" alt="{{ $.Title }}" width="1280" height="720" decoding="async" />
+            {{- with (index .credito site.Language.Lang) }}
+            <figcaption>{{ . }}</figcaption>
+            {{- end }}
+        </figure>
+        {{- end }}
+
         {{- if .Params.toc }}
         <aside id="toc">
             <div class="toc-title">{{ i18n "tableOfContents" }}</div>
