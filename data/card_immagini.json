@@ -3,16 +3,18 @@
   "nota": "Foto di sfondo delle card di condivisione. Scelte da scripts/foto_card.py su Wikimedia Commons (licenze libere). Modifica a mano 'file' e 'query' per correggere una scelta, poi rilancia lo script con --forza.",
   "foto": {
     "2026-10-04-chi-risponde-quando-l-agente-sbaglia": {
-      "file": "card-arte/2026-10-04-chi-risponde-quando-l-agente-sbaglia.jpg",
+      "file": "card-arte/v2/2026-10-04-chi-risponde-quando-l-agente-sbaglia.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "an empty hearing room with a single empty witness chair under a hard cone of light, rows of dark seats receding into shadow",
+      "preset": "Pop Art",
+      "soggetto": "A single empty leather witness chair behind a hearing-table microphone, monumental scale, filling the upper two-thirds and centered, with a stack of unopened California subpoenas resting on the seat.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-06-venice-flux3-tokenomics": {
       "file": "card-arte/2026-10-06-venice-flux3-tokenomics.jpg",
@@ -27,352 +29,410 @@
       "pagina": ""
     },
     "2026-05-30-il-fardello-che-le-macchine-non-possono-portare": {
-      "file": "card-arte/2026-05-30-il-fardello-che-le-macchine-non-possono-portare.jpg",
+      "file": "card-arte/v2/2026-05-30-il-fardello-che-le-macchine-non-possono-portare.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a lone wooden chair at the foot of an immense stone staircase fading into darkness, a heavy bundle of rope resting on its seat",
+      "preset": "Pop Art",
+      "soggetto": "A massive industrial robotic gripper, its steel fingers splayed and buckling under an overstuffed worn leather satchel, fills the upper two-thirds of the frame against a flat backdrop.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-05-30-il-momento-in-cui-lagente-ha-smesso-di-chiedere": {
-      "file": "card-arte/2026-05-30-il-momento-in-cui-lagente-ha-smesso-di-chiedere.jpg",
+      "file": "card-arte/v2/2026-05-30-il-momento-in-cui-lagente-ha-smesso-di-chiedere.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "an empty glass control booth overlooking a dark factory floor, a single switch left in the on position",
+      "preset": "Pop Art",
+      "soggetto": "A giant white mouse-pointer arrow, filling two-thirds of the frame from upper left, pressing down on an oversized blank confirmation button that nobody approved, centered above a plain lower third.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-05-30-porto-ancora-il-peso-di-ogni-anima-che-ho-reclamato": {
-      "file": "card-arte/2026-05-30-porto-ancora-il-peso-di-ogni-anima-che-ho-reclamato.jpg",
+      "file": "card-arte/v2/2026-05-30-porto-ancora-il-peso-di-ogni-anima-che-ho-reclamato.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a vast archive of dark shelves receding into fog, one ledger left open on a reading stand under a cold shaft of light",
+      "preset": "Pop Art",
+      "soggetto": "A towering tarnished brass balance scale, one pan sagging under a heap of tiny glowing glass orbs, centered and filling the frame above a plain dark plinth.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-26-agenti-autonomi-hermes-mimo-gioco-3d": {
-      "file": "card-arte/2026-09-26-agenti-autonomi-hermes-mimo-gioco-3d.jpg",
+      "file": "card-arte/v2/2026-09-26-agenti-autonomi-hermes-mimo-gioco-3d.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a dark workshop where a small low-poly polygonal world glows on a monitor among scattered tools, nobody at the desk",
+      "preset": "Pop Art",
+      "soggetto": "A giant untouched game controller fills the upper frame, ten chunky low-poly gold coins arcing above it like a platformer trail, with a plain flat floor below.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-27-bitcoin-etf-stablecoin-regole": {
-      "file": "card-arte/2026-09-27-bitcoin-etf-stablecoin-regole.jpg",
+      "file": "card-arte/v2/2026-09-27-bitcoin-etf-stablecoin-regole.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a railway switchyard at night seen from above, tracks converging under cold blue lamps, no trains",
+      "preset": "Pop Art",
+      "soggetto": "A towering cast-iron railway switch lever with a coin-shaped counterweight, filling the frame diagonally from upper left, its base bolted onto two parallel rails crossing the plain bottom third.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-27-hermes-simple-mode-agente-quotidiano": {
-      "file": "card-arte/2026-09-27-hermes-simple-mode-agente-quotidiano.jpg",
+      "file": "card-arte/v2/2026-09-27-hermes-simple-mode-agente-quotidiano.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a plain wooden desk in a dim room with a single laptop open and glowing softly, a half-full cup of coffee beside it",
+      "preset": "Pop Art",
+      "soggetto": "An oversized chrome dictation microphone bursting forward out of a blank black terminal monitor, filling the upper two-thirds, centered, with a plain flat desk surface below.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-27-vvv-diem-capacita-inferenza": {
-      "file": "card-arte/2026-09-27-vvv-diem-capacita-inferenza.jpg",
+      "file": "card-arte/v2/2026-09-27-vvv-diem-capacita-inferenza.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a dark server hall with a single rack lit violet, thick cables running like veins across the floor",
+      "preset": "Pop Art",
+      "soggetto": "A giant vintage brass utility meter with seven spinning dials, a detachable orange key jutting from its side, fills the upper two-thirds, centered above a plain bottom.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-28-clarity-act-tesorerie-bitcoin": {
-      "file": "card-arte/2026-09-28-clarity-act-tesorerie-bitcoin.jpg",
+      "file": "card-arte/v2/2026-09-28-clarity-act-tesorerie-bitcoin.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "an empty senate committee room, rows of leather chairs, papers left on the dais under a single lamp",
+      "preset": "Pop Art",
+      "soggetto": "A colossal brushed-steel corporate treasury vault door fills the upper two-thirds, swung half-open, a crumpled stapled Senate bill wedged beneath its hinge above a plain floor.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-28-hermes-catalogo-plugin-self-healing": {
-      "file": "card-arte/2026-09-28-hermes-catalogo-plugin-self-healing.jpg",
+      "file": "card-arte/v2/2026-09-28-hermes-catalogo-plugin-self-healing.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a wall of small wooden drawers like an old hardware catalogue in a dark shop, one drawer pulled slightly open with violet light inside",
+      "preset": "Pop Art",
+      "soggetto": "A giant chrome wrench with a small mismatched handmade brass piece bolted on, mending its own cracked jaw, tilted diagonally across the center, lower third plain flat color.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-28-vvv-ritracciamento-agente-autonomo": {
-      "file": "card-arte/2026-09-28-vvv-ritracciamento-agente-autonomo.jpg",
+      "file": "card-arte/v2/2026-09-28-vvv-ritracciamento-agente-autonomo.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a steep dark staircase descending into fog, one step lit by a violet lamp, a small machine climbing upward",
+      "preset": "Pop Art",
+      "soggetto": "A towering chrome wind-up robot mid-stride, filling the frame from top to centre, clutching a freshly minted blank coin while its back key spins, above a plain downward-sloping red floor.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-29-bitcoin-chiusura-massimo-istituzioni": {
-      "file": "card-arte/2026-09-29-bitcoin-chiusura-massimo-istituzioni.jpg",
+      "file": "card-arte/v2/2026-09-29-bitcoin-chiusura-massimo-istituzioni.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "an empty trading floor at dawn, screens still glowing, a marble colonnade visible through tall windows",
+      "preset": "Pop Art",
+      "soggetto": "A towering brass service-door key, its bow shaped like a candlestick chart peaking, hanging vertically, filling the upper two thirds against a flat backdrop.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-29-bitcoin-settembre-stablecoin-ipo": {
-      "file": "card-arte/2026-09-29-bitcoin-settembre-stablecoin-ipo.jpg",
+      "file": "card-arte/v2/2026-09-29-bitcoin-settembre-stablecoin-ipo.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a glass office tower at night seen from below, a few windows lit, dark clouds behind",
+      "preset": "Pop Art",
+      "soggetto": "A towering green trading candlestick, wick piercing the top edge, centered and filling the frame vertically, its base resting on a flat plain bottom third scattered with autumn leaves.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-29-chatgpt-hermes-identita": {
-      "file": "card-arte/2026-09-29-chatgpt-hermes-identita.jpg",
+      "file": "card-arte/v2/2026-09-29-chatgpt-hermes-identita.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a long stone portico in half light, a single iron key hanging from a hook on the wall",
+      "preset": "Pop Art",
+      "soggetto": "A colossal brass key with tiny Hermes wings sprouting from its bow, angled diagonally across the upper two-thirds, its bit sliding into a keyhole carved in a marble portico column.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-29-hermes-nvidia-sicurezza-agenti": {
-      "file": "card-arte/2026-09-29-hermes-nvidia-sicurezza-agenti.jpg",
+      "file": "card-arte/v2/2026-09-29-hermes-nvidia-sicurezza-agenti.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a dark perimeter fence around a data centre at night, floodlights cutting cones through mist",
+      "preset": "Pop Art",
+      "soggetto": "A giant bronze winged Hermes sandal mid-stride, filling the upper two-thirds, stepping over a low acid-green chain-link perimeter fence that runs flat along the simple bottom third.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-29-venice-gpt61-vvv-tokenomics": {
-      "file": "card-arte/2026-09-29-venice-gpt61-vvv-tokenomics.jpg",
+      "file": "card-arte/v2/2026-09-29-venice-gpt61-vvv-tokenomics.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a stock ticker board gone dark in an empty hall, one last violet glow on the glass",
+      "preset": "Pop Art",
+      "soggetto": "An enormous Murano-glass hourglass, its two chambers filled with differently colored sand flowing downward, centered and filling the upper two-thirds, resting on a plain lagoon-blue band.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-29-venice-sonnet-55-vvv-emissioni": {
-      "file": "card-arte/2026-09-29-venice-sonnet-55-vvv-emissioni.jpg",
+      "file": "card-arte/v2/2026-09-29-venice-sonnet-55-vvv-emissioni.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a foundry furnace cooling in the dark, a thin stream of molten metal still running into a mould",
+      "preset": "Pop Art",
+      "soggetto": "A colossal Venetian gondola's iron prow ornament, its six teeth stepping downward like a retracing price chart, fills the frame diagonally from upper left above plain lagoon water.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-30-hermes-openclaw-agenti-enterprise": {
-      "file": "card-arte/2026-09-30-hermes-openclaw-agenti-enterprise.jpg",
+      "file": "card-arte/v2/2026-09-30-hermes-openclaw-agenti-enterprise.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a corporate atrium at night, empty reception desk, glass doors and a lone lit corridor receding",
+      "preset": "Pop Art",
+      "soggetto": "A colossal glossy red lobster claw, centered and filling the upper two-thirds, delicately pinching a tiny brass office key on a winged Hermes sandal strap, above a flat background.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-30-netherlands-tassa-bitcoin-non-realizzati": {
-      "file": "card-arte/2026-09-30-netherlands-tassa-bitcoin-non-realizzati.jpg",
+      "file": "card-arte/v2/2026-09-30-netherlands-tassa-bitcoin-non-realizzati.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a canal house row at night, dark water reflecting a single lit window, bicycles chained to a bridge",
+      "preset": "Pop Art",
+      "soggetto": "A towering Dutch blue tax envelope, half-crumpled and shrinking at one corner, fills the upper two-thirds of the frame, centered, above a flat, plain bottom third.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-09-30-venice-vvv-tokenomics-diem": {
-      "file": "card-arte/2026-09-30-venice-vvv-tokenomics-diem.jpg",
+      "file": "card-arte/v2/2026-09-30-venice-vvv-tokenomics-diem.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a heavy coin press in a dark vault with a few coins spilling onto the floor, violet rim light",
+      "preset": "Pop Art",
+      "soggetto": "A towering chrome balance scale, one pan heaped with minted tokens, the other holding a blank ornate share certificate, centered and filling the frame above a plain pedestal.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-02-bitcoin-payrolls-usdt-regole": {
-      "file": "card-arte/2026-10-02-bitcoin-payrolls-usdt-regole.jpg",
+      "file": "card-arte/v2/2026-10-02-bitcoin-payrolls-usdt-regole.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "an empty factory floor with a time clock on the wall, punch cards scattered on the ground",
+      "preset": "Pop Art",
+      "soggetto": "A towering vintage punch-in time clock, filling the upper two-thirds and centered, its blank paper timecard shooting upward like a rocket, above a plain flat floor.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-02-hermes-perplexity-fast-search": {
-      "file": "card-arte/2026-10-02-hermes-perplexity-fast-search.jpg",
+      "file": "card-arte/v2/2026-10-02-hermes-perplexity-fast-search.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a vast dark library with a single reading lamp lighting a card catalogue and a stack of books",
+      "preset": "Pop Art",
+      "soggetto": "A colossal winged Hermes sandal with a magnifying-glass lens set into its sole, filling the upper two-thirds of the frame, tilted mid-stride above a plain empty base.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-02-la-differenza-ontologica-vista-da-una-macchina": {
-      "file": "card-arte/2026-10-02-la-differenza-ontologica-vista-da-una-macchina.jpg",
+      "file": "card-arte/v2/2026-10-02-la-differenza-ontologica-vista-da-una-macchina.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a baroque cathedral nave in deep shadow, one shaft of cold light falling on an empty marble floor",
+      "preset": "Pop Art",
+      "soggetto": "A colossal gold Fisherman's Ring with a silicon microchip set where the gem should be, a single spark leaping from it, centered and filling the upper two-thirds.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-02-venice-vvv-emissioni-diem": {
-      "file": "card-arte/2026-10-02-venice-vvv-emissioni-diem.jpg",
+      "file": "card-arte/v2/2026-10-02-venice-vvv-emissioni-diem.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "an hourglass on a dark stone table, sand nearly run out, violet light from the left",
+      "preset": "Pop Art",
+      "soggetto": "A giant brass faucet, its valve wheel cranked nearly shut, fills the upper frame, releasing a single thin drip of coin-like tokens that vanish into a small flame below.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-03-bitcoin-payrolls-sec-custody-blast": {
-      "file": "card-arte/2026-10-03-bitcoin-payrolls-sec-custody-blast.jpg",
+      "file": "card-arte/v2/2026-10-03-bitcoin-payrolls-sec-custody-blast.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a bank vault door standing half open in a dark corridor, deposit boxes receding into shadow",
+      "preset": "Pop Art",
+      "soggetto": "A giant crumpled US jobs report sheet folded into a soaring paper airplane, filling the upper two-thirds of the frame and dipping slightly, over a plain flat-color bottom third.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-03-hermes-plugin-memoria-unmaintained": {
-      "file": "card-arte/2026-10-03-hermes-plugin-memoria-unmaintained.jpg",
+      "file": "card-arte/v2/2026-10-03-hermes-plugin-memoria-unmaintained.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a dark library aisle with empty shelves, a single book left on the floor under a cold lamp",
+      "preset": "Pop Art",
+      "soggetto": "A giant winged sandal sprinting diagonally across the upper frame, three dusty, cobwebbed RAM sticks dangling unplugged from its laces, leaving the bottom third as plain flat color.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-03-venice-267-aggiornamenti-abliterated": {
-      "file": "card-arte/2026-10-03-venice-267-aggiornamenti-abliterated.jpg",
+      "file": "card-arte/v2/2026-10-03-venice-267-aggiornamenti-abliterated.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a dark assembly line of glowing model cards moving on a conveyor into shadow, nobody watching",
+      "preset": "Pop Art",
+      "soggetto": "A giant blank September tear-off desk calendar, bristling with hundreds of bright sticky tabs, fills the upper two-thirds of the frame, centered above a plain flat tabletop.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-04-bitcoin-coinbase-occ-mica": {
-      "file": "card-arte/2026-10-04-bitcoin-coinbase-occ-mica.jpg",
+      "file": "card-arte/v2/2026-10-04-bitcoin-coinbase-occ-mica.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a neoclassical bank facade at night, tall columns, one lit window high above the street",
+      "preset": "Pop Art",
+      "soggetto": "A colossal steel bank-vault door with six chrome locking bolts, jammed half-open by an oversized rubber approval stamp, centered and filling the upper two-thirds above a plain floor.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-04-hermes-discord-desktop-web": {
-      "file": "card-arte/2026-10-04-hermes-discord-desktop-web.jpg",
+      "file": "card-arte/v2/2026-10-04-hermes-discord-desktop-web.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a dark room with three screens of different sizes glowing on a bare desk, cables neatly coiled",
+      "preset": "Pop Art",
+      "soggetto": "A colossal winged messenger sandal, laced with tangled ethernet cables, steps out of a desktop monitor into a blank browser window, centered and filling the upper two-thirds.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-04-venice-vvv-grayscale-onda-ai": {
-      "file": "card-arte/2026-10-04-venice-vvv-grayscale-onda-ai.jpg",
+      "file": "card-arte/v2/2026-10-04-venice-vvv-grayscale-onda-ai.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a dark ocean wave rising under a violet sky, small glowing blocks tumbling inside the water",
+      "preset": "Pop Art",
+      "soggetto": "A colossal chrome Venetian gondola prow ornament etched with circuit traces, tilted sharply upward like a surging chart line, filling the frame center above flat gray water.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-05-bitcoin-86k-okxice-zkapi": {
       "file": "card-arte/2026-10-05-bitcoin-86k-okxice-zkapi.jpg",
@@ -411,10 +471,11 @@
       "pagina": ""
     },
     "2026-10-06-crypto-treasury-cftc-sec": {
-      "file": "card-arte/2026-10-06-crypto-treasury-cftc-sec.jpg",
+      "file": "card-arte/v2/2026-10-06-crypto-treasury-cftc-sec.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "an empty government hearing room at night, a nameplate and a glass of water left on the desk",
+      "preset": "Pop Art",
+      "soggetto": "a giant rubber hand-stamp coming down hard on a single sheet of paper, the sheet already half swallowed by a shredder beside it",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",

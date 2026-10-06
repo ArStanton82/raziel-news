@@ -2,16 +2,18 @@
 """Genera le immagini di condivisione (Open Graph) di raziel.news.
 
 Produce, dentro static/images/:
-  og/v2/default.png        1200x630  immagine di ripiego (home, pagine informative)
-  og/v2/en/default.png     1200x630  la stessa, in inglese
+  og/v3/default.png        1200x630  immagine di ripiego (home, pagine informative)
+  og/v3/en/default.png     1200x630  la stessa, in inglese
   logo-512.png              512x512  logo del publisher per i dati strutturati
-  og/v2/<basename>.png     1200x630  una per articolo italiano (--articoli)
-  og/v2/en/<basename>.png  1200x630  una per articolo inglese (--articoli)
+  og/v3/<basename>.png     1200x630  una per articolo italiano (--articoli)
+  og/v3/en/<basename>.png  1200x630  una per articolo inglese (--articoli)
 
-Perche' "v2": Cloudflare serve gli asset statici per nome dalla cache, quindi
+Perche' "v3": Cloudflare serve gli asset statici per nome dalla cache, quindi
 riscrivere un file gia' pubblicato non arriverebbe ai lettori. Un percorso nuovo
-(e' il caso di og/v2/) non ha cache da svecchiare; i file vecchi restano dove
-sono e fanno da ripiego nel partial extra-head.html.
+(e' il caso di og/v3/, dopo v2) non ha cache da svecchiare; i file vecchi
+restano dove sono e fanno da ripiego nel partial extra-head.html. Il numero
+cresce quando cambia l'aspetto delle card: il 2026-10-06 sono passate alle
+illustrazioni pop art di card-arte/v2/.
 
 La lingua di un articolo la dice il nome del file: il gemello inglese e' il
 file italiano piu' ".en.md" (2026-10-02-foo.md / 2026-10-02-foo.en.md), la
@@ -65,7 +67,7 @@ from pathlib import Path
 RADICE = Path(__file__).resolve().parent.parent
 FONT = RADICE / "static" / "static" / "fonts"
 USCITA = RADICE / "static" / "images"
-USCITA_ARTICOLI = USCITA / "og" / "v2"
+USCITA_ARTICOLI = USCITA / "og" / "v3"
 FOTO_SFONDO = USCITA / "card-bg"
 INDICE_FOTO = RADICE / "data" / "card_immagini.json"
 ARTICOLI = RADICE / "content" / "posts"
@@ -89,7 +91,7 @@ MESI = {
 }
 
 # Le due lingue del sito. La cartella delle card inglesi e' separata
-# ("og/v2/en/") per non sovrascrivere un file gia' in cache su Cloudflare: un
+# ("og/v3/en/") per non sovrascrivere un file gia' in cache su Cloudflare: un
 # asset statico servito con lo stesso nome resta quello vecchio.
 LINGUA_BASE = "it"
 LINGUE = ("it", "en")
@@ -176,16 +178,26 @@ def html_articolo(titolo: str, etichetta: str, data: str,
     if foto:
         misure = [64, 58, 52, 46, 40, 36, 32, 28]
         base64_foto = base64.b64encode(foto.read_bytes()).decode("ascii")
-        sfondo = (f'\n      <div class="foto"></div><div class="velo"></div>')
+        # Illustrazione sopra, testo su fondo pieno sotto. Il velo su tutta la
+        # card (fino al 2026-10-06) reggeva con le fotografie scure, ma non con
+        # le illustrazioni pop art, che sono chiare e piatte: misurato, il testo
+        # bianco scendeva a 2,7:1 nel punto piu' chiaro, e anche rinforzando il
+        # velo la fascia di immagine libera restava di 82px su 630. Su fondo
+        # pieno il contrasto e' garantito per costruzione, e l'illustrazione ha
+        # una fascia sua (1200x338) invece di fare da sfondo a tutto.
+        altezza_max, righe_max = 150, 3
+        sfondo = ('\n      <div class="foto"></div><div class="pannello"></div>')
         stile_foto = f"""
-      .foto{{position:absolute;inset:0;background:#0d0d10 url(data:image/jpeg;base64,{base64_foto}) center 30%/cover no-repeat}}
-      .velo{{position:absolute;inset:0;background:linear-gradient(to top,rgba(12,12,14,.94) 0%,rgba(12,12,14,.86) 38%,rgba(12,12,14,.35) 68%,rgba(12,12,14,.55) 100%)}}"""
+      .foto{{position:absolute;top:0;left:0;right:0;height:338px;background:#0d0d10 url(data:image/jpeg;base64,{base64_foto}) center 30%/cover no-repeat}}
+      .pannello{{position:absolute;left:0;right:0;bottom:0;height:292px;background:{FONDO};border-top:4px solid {ACCENTO}}}"""
         corpo = "width:1200px;height:630px;position:relative;overflow:hidden"
-        marca_pos = "position:absolute;top:52px;left:64px;font-size:34px;text-shadow:0 1px 12px rgba(0,0,0,.55)"
-        testo_pos = "position:absolute;left:64px;right:64px;bottom:52px;text-shadow:0 1px 12px rgba(0,0,0,.55)"
-        colore_etichetta = ACCENTO_FOTO
-        altezza_max, righe_max = 250, 3
-        piede_colore, piede_misura, piede_margine = "#d7d7de", 22, 18
+        # La marca sta sull'illustrazione dentro una targhetta scura: cosi' il
+        # contrasto non dipende da quanto e' chiara l'immagine sotto.
+        marca_pos = ("position:absolute;top:26px;left:64px;font-size:30px;z-index:2;"
+                     "background:rgba(12,12,14,.80);padding:8px 15px;border-radius:9px")
+        testo_pos = "position:absolute;left:72px;right:72px;bottom:34px"
+        colore_etichetta = ACCENTO
+        piede_colore, piede_misura, piede_margine = TENUE, 22, 16
     else:
         misure = [76, 70, 64, 58, 52, 46, 40, 34, 30]
         base64_foto = ""

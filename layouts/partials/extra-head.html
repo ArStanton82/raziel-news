@@ -36,7 +36,9 @@
 {{- $ripieghi := (slice
     (printf "/images/og/%s/default.png" $lingua)
     (printf "/images/og/v2/default.png")
-    (printf "/images/og/v2/%s/default.png" $lingua)) -}}
+    (printf "/images/og/v2/%s/default.png" $lingua)
+    (printf "/images/og/v3/default.png")
+    (printf "/images/og/v3/%s/default.png" $lingua)) -}}
 {{- range $ripieghi }}{{ if fileExists (printf "static%s" .) }}{{ $immagine = . }}{{ end }}{{ end -}}
 {{- if and .IsPage .File (eq .Section "posts") -}}
     {{- $nome := .File.ContentBaseName -}}
@@ -44,7 +46,9 @@
         (printf "/images/og/%s.png" $nome)
         (printf "/images/og/%s/%s.png" $lingua $nome)
         (printf "/images/og/v2/%s.png" $nome)
-        (printf "/images/og/v2/%s/%s.png" $lingua $nome)) -}}
+        (printf "/images/og/v2/%s/%s.png" $lingua $nome)
+        (printf "/images/og/v3/%s.png" $nome)
+        (printf "/images/og/v3/%s/%s.png" $lingua $nome)) -}}
     {{- range $candidati }}{{ if fileExists (printf "static%s" .) }}{{ $immagine = . }}{{ end }}{{ end -}}
 {{- end -}}
 {{- with .Params.images }}{{ $immagine = index . 0 }}{{ end -}}
