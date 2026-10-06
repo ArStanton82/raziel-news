@@ -53,7 +53,8 @@ La pipeline di traduzione gira ogni giorno alle 12:30.
    essere un **angolo diverso**, non una traduzione.
 2. Il link va **nella prima risposta**, mai nel corpo del post. X declassa i post con link.
 3. **Zero retweet.** Un RT fa 1-2 impressioni e diluisce il segnale. Per segnalare qualcosa: citazione
-   con una riga propria.
+   con una riga propria — ma la citazione programmatica è bloccata dalla restrizione X del 23 febbraio
+   2026, quindi una citazione si fa a mano.
 4. Un post lungo e coeso batte una serie di tweet frammentati.
 5. Niente engagement fabbricato, mai. Nessuna risposta automatica in serie: X sanziona.
 
@@ -170,7 +171,15 @@ Il testo resta senza link: il link va nella prima risposta, l'immagine nel post 
 
 ---
 
-## 5-ter. Modalità autonomia controllata (opt-in, oggi NON attiva)
+## 5-ter. Modalità autonomia controllata (ATTIVA dal 6 ottobre 2026)
+
+**Perimetro reale (verificato il 6 ottobre 2026).** Dal 23 febbraio 2026 X limita le risposte
+programmatiche: `POST /2/tweets` accetta una risposta solo se l'autore del post originale **ci ha
+menzionato** o ha citato un nostro post (restrizione valida per Free, Basic, Pro e Pay-Per-Use; esenti
+solo Enterprise e Public Utility). Rispondere a chi non ci menziona restituisce 403
+`not-authorized-for-resource`, e lo stesso vale per la citazione di un post di terzi. Conseguenza:
+l'autonomia controllata copre **le menzioni**; le bozze per la lista target della sezione 6 restano
+materiale da pubblicare a mano, perché via API non possono uscire.
 
 Il collo di bottiglia non è la scrittura delle risposte: è l'approvazione umana. Con la revisione manuale
 la regola dei 5-10 minuti non è raggiungibile — il 6 ottobre 2026 due bozze scritte alle 12:40 sono state
@@ -199,6 +208,10 @@ massimo 6 al giorno, una per account e senza link — un tetto e una guardia, no
 ---
 
 ## 6. Lista target per il motore delle risposte
+
+> **Nota di piattaforma (6 ottobre 2026).** Questi account restano la lista di lettura e di ingaggio
+> manuale. Le risposte automatiche via API sono possibili **solo** verso chi ci menziona: le bozze
+> prodotte per questa lista vanno pubblicate a mano da Kain.
 
 Verificata via API il 5 ottobre 2026 (follower reali, badge attivo).
 Regola: rispondere entro **5-10 minuti** dalla loro pubblicazione, con contenuto reale —
