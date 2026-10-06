@@ -170,6 +170,34 @@ Il testo resta senza link: il link va nella prima risposta, l'immagine nel post 
 
 ---
 
+## 5-ter. Modalità autonomia controllata (opt-in, oggi NON attiva)
+
+Il collo di bottiglia non è la scrittura delle risposte: è l'approvazione umana. Con la revisione manuale
+la regola dei 5-10 minuti non è raggiungibile — il 6 ottobre 2026 due bozze scritte alle 12:40 sono state
+approvate alle 13:27, quando i post target avevano già 59 e 79 minuti.
+
+Modalità alternativa, attivabile con una parola di Kain e revocabile allo stesso modo:
+
+1. Il job delle risposte gira **ogni 20 minuti** dentro le due finestre buone (12:30-14:00, 18:00-20:00) e
+   considera solo post pubblicati negli **ultimi 20 minuti**.
+2. Prima di pubblicare, ogni bozza passa `scripts/x_reply_guard.py`. Controlli meccanici: massimo 220
+   caratteri, nessun link, nessuna menzione, nessun hashtag, nessuna emoji, nessuna frase di riempimento
+   ("ottimo post", "great post"...), almeno 110 caratteri, un dato o un marcatore di sostanza, aggancio
+   lessicale al post di riferimento, massimo una risposta per account al giorno, massimo 6 al giorno,
+   nessuna somiglianza con risposte già pubblicate.
+3. Solo le bozze che passano vengono pubblicate. Le bocciate restano in coda con il motivo, e non escono.
+4. A fine finestra (13:55 e 19:55) arriva su Telegram **un solo digest**: cosa è uscito, con id, account e
+   testo. Kain risponde "cancella <n>" e la risposta viene eliminata: il diritto di cancellazione è sempre
+   disponibile.
+5. **Interruttore di sicurezza:** la presenza del file
+   `/root/.hermes/profiles/raziel-news/x-queue/PAUSA` ferma immediatamente ogni pubblicazione automatica.
+   Una parola in chat fa lo stesso.
+
+Il vincolo della sezione 10 resta: nessuna risposta automatica *in serie*. In questa modalità sono al
+massimo 6 al giorno, una per account e senza link — un tetto e una guardia, non engagement fabbricato.
+
+---
+
 ## 6. Lista target per il motore delle risposte
 
 Verificata via API il 5 ottobre 2026 (follower reali, badge attivo).
