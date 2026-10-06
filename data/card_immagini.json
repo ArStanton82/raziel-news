@@ -17,16 +17,18 @@
       "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-06-venice-flux3-tokenomics": {
-      "file": "card-arte/2026-10-06-venice-flux3-tokenomics.jpg",
+      "file": "card-arte/v2/2026-10-06-venice-flux3-tokenomics.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a long steel printing press for banknotes standing idle in a dark hall, violet light raking across its rollers, no people",
+      "preset": "Pop Art",
+      "soggetto": "A giant leather belt cinched to its tightest notch, its gondola-prow-shaped brass buckle smouldering, coiled diagonally across the upper two-thirds of the frame above a flat empty bottom.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-05-30-il-fardello-che-le-macchine-non-possono-portare": {
       "file": "card-arte/v2/2026-05-30-il-fardello-che-le-macchine-non-possono-portare.jpg",
@@ -435,40 +437,46 @@
       "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-05-bitcoin-86k-okxice-zkapi": {
-      "file": "card-arte/2026-10-05-bitcoin-86k-okxice-zkapi.jpg",
+      "file": "card-arte/v2/2026-10-05-bitcoin-86k-okxice-zkapi.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "an empty stock exchange trading ring at night, brass rails and dark tickers, a single clock showing midnight",
+      "preset": "Pop Art",
+      "soggetto": "A giant brass stock-exchange opening bell, slightly tilted mid-ring, fills the upper two-thirds of the frame beneath a crescent moon, its shadow falling on a plain bottom band.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-05-hermes-refactoring-1393-agenti": {
-      "file": "card-arte/2026-10-05-hermes-refactoring-1393-agenti.jpg",
+      "file": "card-arte/v2/2026-10-05-hermes-refactoring-1393-agenti.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a vast dark field of identical desks arranged in rows, each lit by a faint violet glow, nobody seated",
+      "preset": "Pop Art",
+      "soggetto": "A colossal winged Hermes sandal folded from endless green-bar printer paper, its wings fanning into countless tiny identical paper strips, filling the upper two-thirds above a plain floor.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-05-venice-vvv-crediti-record": {
-      "file": "card-arte/2026-10-05-venice-vvv-crediti-record.jpg",
+      "file": "card-arte/v2/2026-10-05-venice-vvv-crediti-record.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a gauge needle deep in the red on a dark industrial control panel, a few dials beside it",
+      "preset": "Pop Art",
+      "soggetto": "A towering stack of brass arcade credit tokens, nearly touching the top edge, rising from a coin-slot meter whose needle is pinned at maximum, centered, over a plain bottom third.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     },
     "2026-10-06-crypto-treasury-cftc-sec": {
       "file": "card-arte/v2/2026-10-06-crypto-treasury-cftc-sec.jpg",
@@ -484,16 +492,18 @@
       "pagina": ""
     },
     "2026-10-06-hermes-plugin-catalog-hardware": {
-      "file": "card-arte/2026-10-06-hermes-plugin-catalog-hardware.jpg",
+      "file": "card-arte/v2/2026-10-06-hermes-plugin-catalog-hardware.jpg",
       "fonte": "ai",
       "modello": "venice-sd35",
-      "soggetto": "a dark electronics workbench with a single-board computer, jumper wires and a soldering iron, macro detail",
+      "preset": "Pop Art",
+      "soggetto": "A colossal red pushpin skewering a blank card in an open wooden library card-catalog drawer, centered and filling the upper two-thirds, with a flat plain bottom third.",
       "licenza": "immagine generata con AI",
       "credito": {
         "it": "Immagine generata con AI",
         "en": "AI-generated image"
       },
-      "pagina": ""
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
     }
   }
 }

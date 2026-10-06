@@ -102,13 +102,22 @@ def articoli_italiani() -> list[str]:
     )
 
 
-def senza_illustrazione(indice: dict) -> list[str]:
-    """Articoli senza immagine: o il file indicato non c'e', o l'indice non li conosce."""
+def senza_illustrazione(indice: dict, cartella: str = arte_card.CARTELLA) -> list[str]:
+    """Articoli senza illustrazione **di questa generazione**.
+
+    Non basta che l'indice citi un file che esiste: dopo un cambio di stile le
+    immagini nuove stanno in una cartella nuova (`card-arte/v2/`) e le vecchie
+    restano al loro posto, quindi un articolo e' a posto solo se la sua
+    immagine e' nella cartella in uso. Senza questo controllo un lotto
+    interrotto a meta' non viene piu' ripreso (verificato il 2026-10-06: 5
+    articoli rimasti con l'illustrazione vecchia e `--genera` che diceva
+    "niente da fare").
+    """
+    prefisso = f"card-arte/{cartella}/" if cartella else "card-arte/"
     fuori = []
     for nome in articoli_italiani():
-        voce = indice.get(nome) or {}
-        relativo = voce.get("file") or ""
-        if not relativo or not (IMMAGINI / relativo).exists():
+        relativo = (indice.get(nome) or {}).get("file") or ""
+        if not relativo.startswith(prefisso) or not (IMMAGINI / relativo).exists():
             fuori.append(nome)
     return fuori
 
@@ -202,13 +211,13 @@ def main() -> int:
     indice = json.loads(INDICE.read_text(encoding="utf-8")) if INDICE.exists() else {"versione": 1, "foto": {}}
     indice.setdefault("foto", {})
     totale = articoli_italiani()
-    coda = totale if argomenti.rigenera else senza_illustrazione(indice["foto"])
+    coda = totale if argomenti.rigenera else senza_illustrazione(indice["foto"], argomenti.cartella)
     if argomenti.silenzioso:
         if not coda:
             return 0
         print(f"articoli senza illustrazione: {len(coda)}")
     else:
-        print(f"articoli: {len(totale)} | con illustrazione: {len(totale) - len(senza_illustrazione(indice['foto']))} | da fare: {len(coda)}"
+        print(f"articoli: {len(totale)} | con illustrazione: {len(totale) - len(senza_illustrazione(indice['foto'], argomenti.cartella))} | da fare: {len(coda)}"
               + ("  (rigenerazione completa)" if argomenti.rigenera else ""))
         if not coda:
             print("niente da fare: tutti gli articoli hanno un'illustrazione")
