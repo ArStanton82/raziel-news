@@ -25,8 +25,9 @@ import time
 import urllib.request
 
 API = "https://api.venice.ai/api/v1/image/generate"
-DEFAULT_MODEL = "venice-sd35"
+DEFAULT_MODEL = "nano-banana-pro"   # scelto da Kain il 6 ottobre 2026: stile pop art a fumetto
 FALLBACK_MODEL = "z-image-turbo"
+DEFAULT_PRESET = "Pop Art"
 # Prezzi verificati il 5 ottobre 2026 via /api/v1/models?type=image: entrambi 0,01 USD.
 # Alternativa allo stesso prezzo: chroma. Da evitare per un sito di notizie:
 # lustify-* (contenuti adulti) e wai-Illustrious (anime).
@@ -52,17 +53,23 @@ def read_key(env_file: str | None) -> str:
     sys.exit("errore: nessuna chiave Venice trovata (VENICE_API_KEY o --env-file)")
 
 
-def generate(key: str, model: str, prompt: str, width: int, height: int, steps: int, timeout: int) -> bytes:
-    body = json.dumps({
+def generate(key: str, model: str, prompt: str, width: int, height: int, steps: int, timeout: int,
+             preset: str | None = None) -> bytes:
+    corpo: dict = {
         "model": model,
         "prompt": prompt,
-        "width": width,
-        "height": height,
-        "steps": steps,
         "format": "png",
         "safe_mode": True,
         "hide_watermark": True,
-    }).encode()
+    }
+    if preset:
+        corpo["style_preset"] = preset
+    # i modelli a pixel vogliono width/height, quelli ad aspect_ratio no
+    if model.startswith("venice-sd35") or model in ("z-image-turbo", "chroma"):
+        corpo.update({"width": width, "height": height, "steps": steps})
+    else:
+        corpo.update({"aspect_ratio": "16:9", "resolution": "1K"})
+    body = json.dumps(corpo).encode()
     req = urllib.request.Request(
         API, data=body,
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
@@ -81,6 +88,7 @@ def main() -> int:
     ap.add_argument("--prompt-file")
     ap.add_argument("--out", required=True)
     ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap.add_argument("--preset", default=DEFAULT_PRESET, help="preset di stile (stringa vuota per nessuno)")
     ap.add_argument("--width", type=int, default=1024)
     ap.add_argument("--height", type=int, default=576)
     ap.add_argument("--steps", type=int, default=25)
@@ -104,13 +112,14 @@ def main() -> int:
     chain = [args.model]
     if args.model == DEFAULT_MODEL:
         chain.append(FALLBACK_MODEL)
+    preset = args.preset or None
 
     last_err: Exception | None = None
     for model in chain:
         steps = 8 if model == FALLBACK_MODEL else args.steps
         t0 = time.time()
         try:
-            blob = generate(key, model, prompt, args.width, args.height, steps, args.timeout)
+            blob = generate(key, model, prompt, args.width, args.height, steps, args.timeout, preset)
             with open(args.out, "wb") as fh:
                 fh.write(blob)
             print(json.dumps({
@@ -119,7 +128,7 @@ def main() -> int:
                 "path": os.path.abspath(args.out),
                 "bytes": len(blob),
                 "seconds": round(time.time() - t0, 1),
-                "cost_usd": 0.01,
+                "cost_usd": 0.18 if model == "nano-banana-pro" else 0.01,
                 "width": args.width,
                 "height": args.height,
             }, ensure_ascii=False))

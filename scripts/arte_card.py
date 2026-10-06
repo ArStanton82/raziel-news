@@ -53,9 +53,9 @@ IMMAGINI = RADICE / "static" / "images"
 INDICE = RADICE / "data" / "card_immagini.json"
 ENV = pathlib.Path(__file__).resolve().parent.parent.parent / ".env"
 
-MODELLO = "venice-sd35"          # 0,01 DIEM per immagine
+MODELLO = "nano-banana-pro"      # 0,18 DIEM per immagine a 1K (scelto da Kain il 6 ottobre 2026)
 PRESET = "Pop Art"               # preset di stile nativo di Venice
-CARTELLA = "v2"                  # sottocartella di static/images/card-arte/
+CARTELLA = "v3"                  # sottocartella di static/images/card-arte/
 LARGHEZZA, ALTEZZA = 1280, 720
 STEPS = 30
 QUALITA = 88
@@ -65,11 +65,13 @@ ETICHETTA = {"it": "Immagine generata con AI", "en": "AI-generated image"}
 
 # Il preset fa lo stile: qui restano il taglio della scena e i divieti.
 STILE = (
-    "Silkscreen poster of a single emblematic object. One object only, large, filling the frame, "
-    "centred, on a flat field of colour. Flat spot colours, heavy black outlines, no gradients, "
-    "no shading, no photorealism, no 3D. No people, no faces, no text, no letters, no words, "
-    "no numbers, no logos, no signature, no frame, no border. The bottom third stays simple and "
-    "quiet, because the headline of the card is printed over it. Object: "
+    "Pop art comic book panel, 1960s silkscreen printing. Flat spot colours only, four or five of "
+    "them (magenta, cyan, yellow, black, one amber accent), coarse halftone dot pattern, heavy black "
+    "ink outlines, no gradients, no soft shading, no photorealism, no 3D, bold graphic shapes, "
+    "radiating speed lines in the background, high contrast. One clear focal subject, large, filling "
+    "the frame, readable at thumbnail size. The bottom third stays simple and quiet, because the "
+    "headline of the card is printed over it. No people, no faces, no text, no letters, no words, "
+    "no numbers, no logos, no signature, no frame, no border. Subject: "
 )
 
 # Soggetto di ripiego per categoria e per tag: si usa solo se il soggetto non
