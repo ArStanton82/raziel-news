@@ -74,10 +74,16 @@ Mai dopo le 22:00 — i due vecchi job pubblicavano alle 23:00, il momento peggi
 
 ---
 
-## 5. Il ciclo di pubblicazione (draft → approvazione → pubblicazione)
+## 5. Il ciclo di pubblicazione (draft → guardia → pubblicazione automatica)
 
-La regola di sicurezza che questo profilo ha sempre rispettato: **il testo del post è scritto e non
-si modifica.** Nessun post parte senza un testo approvato.
+**Dal 7 ottobre 2026 i post escono senza approvazione umana**, per decisione di Kain: la revisione
+manuale era il collo di bottiglia e faceva perdere la finestra buona. Restano tre protezioni, in
+quest'ordine: il testo è **scritto una volta e non si modifica a runtime**; ogni bozza passa la
+**guardia meccanica** `scripts/x_post_guard.py`, che gira alla creazione e di nuovo come ultimo
+cancello prima dell'uscita; Kain riceve l'**anteprima alle 12:45**, quindici minuti prima della
+pubblicazione delle 13:00, e può fermare tutto con una parola in chat o creando il file
+`x-queue/PAUSA`. Il diritto di cancellazione resta sempre: un post sbagliato si elimina con
+`xurl delete <id>`.
 
 Coda: `/root/.hermes/profiles/raziel-news/x-queue/<YYYY-MM-DD>.json`
 
@@ -111,11 +117,16 @@ Coda: `/root/.hermes/profiles/raziel-news/x-queue/<YYYY-MM-DD>.json`
   e si distrugge un post integro. Un errore così è già costato due post il 5 ottobre 2026.
   Limite pratico consigliato: **1.500 caratteri**, per leggibilità. I post lunghi e coesi rendono più
   delle serie di tweet frammentati: non accorciare per abitudine.
-- `approved: false` → il job di pubblicazione lo salta e lo segnala.
-- `approved: true` → pubblicato, con `reply_link` come prima risposta; poi si scrive
-  `published_tweet_id`.
-- L'approvazione la dà Kain (una parola in chat) oppure, se in futuro si vuole piena autonomia,
-  si crea il draft con `approved: true` già impostato.
+- `approved: true` → il job di pubblicazione lo pubblica (con `reply_link` come prima risposta) e
+  scrive `published_tweet_id`. La guardia marca così le bozze che passano i suoi controlli.
+- `approved: false` → resta in coda col motivo della bocciatura; il job lo salta e lo segnala.
+- **Cosa blocca la guardia** (`scripts/x_post_guard.py`, motivi di blocco e non avvisi): testo vuoto,
+  sotto 80 o sopra 2.000 caratteri, link nel corpo, menzioni, hashtag, emoji, segnaposto non risolti,
+  lingua dichiarata che non corrisponde al testo, `reply_link` che non è di raziel.news o è della
+  lingua sbagliata, immagine mancante, illeggibile, troppo piccola, non 16:9, oppure testo identico o
+  quasi identico a un post già pubblicato. Sopra i **1.500** caratteri è solo un avviso.
+- **Interruttore di sicurezza:** la presenza del file `x-queue/PAUSA` ferma la pubblicazione
+  automatica al primo passo del job.
 
 ---
 

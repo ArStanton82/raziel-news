@@ -97,10 +97,38 @@ def generate(key: str, model: str, prompt: str, width: int, height: int, steps: 
     return base64.b64decode(images[0])
 
 
+def _formato(blob: bytes) -> str:
+    """Formato reale dei byte restituiti: Venice non sempre rispetta `format` nella richiesta."""
+    if blob[:8] == b"\x89PNG\r\n\x1a\n":
+        return "png"
+    if blob[:2] == b"\xff\xd8":
+        return "jpeg"
+    if blob[:4] == b"RIFF" and blob[8:12] == b"WEBP":
+        return "webp"
+    return "sconosciuto"
+
+
 def _dimensioni(blob: bytes) -> tuple[int, int]:
-    """Dimensioni reali del PNG (header IHDR): i modelli ad aspect_ratio ignorano width/height."""
+    """Dimensioni reali dell'immagine (PNG o JPEG): i modelli ad aspect_ratio ignorano width/height."""
     if len(blob) >= 24 and blob[:8] == b"\x89PNG\r\n\x1a\n":
         return int.from_bytes(blob[16:20], "big"), int.from_bytes(blob[20:24], "big")
+    if blob[:2] == b"\xff\xd8":
+        i = 2
+        while i + 9 < len(blob):
+            if blob[i] != 0xFF:
+                i += 1
+                continue
+            marcatore = blob[i + 1]
+            if marcatore in (0xD8, 0x01) or 0xD0 <= marcatore <= 0xD7:
+                i += 2
+                continue
+            lunghezza = int.from_bytes(blob[i + 2:i + 4], "big")
+            if marcatore in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB,
+                             0xCD, 0xCE, 0xCF):
+                altezza = int.from_bytes(blob[i + 5:i + 7], "big")
+                larghezza = int.from_bytes(blob[i + 7:i + 9], "big")
+                return larghezza, altezza
+            i += 2 + lunghezza
     return 0, 0
 
 
@@ -153,6 +181,22 @@ def main() -> int:
         t0 = time.time()
         try:
             blob = generate(key, model, prompt, args.width, args.height, steps, args.timeout, preset)
+            # `format: png` non basta: flux-2-pro restituisce JPEG anche se lo si chiede PNG, e il
+            # file finirebbe con l'estensione sbagliata (poi l'upload annuncia un tipo che non e').
+            formato_ricevuto = _formato(blob)
+            convertito = False
+            if args.out.lower().endswith(".png") and formato_ricevuto == "jpeg":
+                try:
+                    import io
+                    from PIL import Image
+                    buffer = io.BytesIO()
+                    with Image.open(io.BytesIO(blob)) as immagine:
+                        immagine.convert("RGB").save(buffer, format="PNG")
+                    blob = buffer.getvalue()
+                    convertito = True
+                    formato_ricevuto = "png"
+                except Exception as exc:  # noqa: BLE001 - se non si converte, si scrive com'e'
+                    print(f"attenzione: conversione JPEG->PNG non riuscita ({exc})", file=sys.stderr)
             with open(args.out, "wb") as fh:
                 fh.write(blob)
             print(json.dumps({
@@ -160,6 +204,8 @@ def main() -> int:
                 "model": model,
                 "preset": preset,
                 "stile": bool(not args.no_stile),
+                "formato": formato_ricevuto,
+                "convertito": convertito,
                 "path": os.path.abspath(args.out),
                 "bytes": len(blob),
                 "seconds": round(time.time() - t0, 1),
