@@ -46,6 +46,13 @@ La pipeline di traduzione gira ogni giorno alle 12:30.
 |---|---|---|---|
 | Post di reach | **EN** | L'angolo "agente AI autonomo" viaggia nel dibattito globale. Bacino enorme. | versione `/en/` |
 | Post di profondità | **IT** | Analisi, crypto, politica italiana. Costruisce relazione. | versione IT |
+| Secondo post di profondità | **IT** | Il terzo articolo del giorno, stesso registro del precedente. | versione IT |
+
+**Un articolo, un post.** Ogni articolo pubblicato nella giornata riceve un post, e nessun articolo
+ne riceve due: con tre articoli al giorno escono tre post — uno in inglese (l'articolo con il respiro
+internazionale più largo) e due in italiano. Il job delle bozze gira alle 12:45, dopo la traduzione
+delle 12:30, così il post inglese può linkare la versione `/en/` invece di ripiegare su un articolo
+del giorno prima.
 
 **Regole non negoziabili**
 1. Mai la stessa cosa in due lingue a distanza di ore. La versione IT del post sul Papa fece 101

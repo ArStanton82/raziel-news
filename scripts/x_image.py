@@ -5,8 +5,10 @@ Uso:
     python3 scripts/x_image.py --prompt "..." --out x-queue/images/2026-10-06-en-1.png
     python3 scripts/x_image.py --prompt-file /tmp/p.txt --out out.png --model z-image-turbo
 
-Modello predefinito: venice-sd35 (0,01 USD per generazione, soggetto leggibile in miniatura).
-Fallback automatico: z-image-turbo (stesso prezzo, piu' veloce) se il primo fallisce.
+Modello predefinito: nano-banana-pro (0,18 USD per generazione) con preset "Pop Art" e il template
+di stile fisso STILE (pop art a fumetto, serigrafia, mezzitoni): il prompt che si passa da fuori e'
+SOLO il soggetto, il registro grafico lo mette lo script.
+Fallback automatico: z-image-turbo (0,01 USD, piu' veloce) se il primo fallisce.
 `hide_watermark` e' sempre True: senza, Venice stampa la firma "Venice" nell'angolo in basso a
 sinistra e il post sembra contenuto di terzi.
 
@@ -28,6 +30,19 @@ API = "https://api.venice.ai/api/v1/image/generate"
 DEFAULT_MODEL = "nano-banana-pro"   # scelto da Kain il 6 ottobre 2026: stile pop art a fumetto
 FALLBACK_MODEL = "z-image-turbo"
 DEFAULT_PRESET = "Pop Art"
+
+# Il registro grafico e' FISSO e vive qui (deciso da Kain il 2026-10-07). Il prompt che arriva
+# dalla riga di comando e' SOLO il soggetto; meta' del lavoro la fa il preset, l'altra meta'
+# questo template. Senza, il registro fumetto dipendeva da come il modello scriveva il prompt
+# quel giorno e due post uscivano con due gradi di "fumetto" diversi.
+STILE = (
+    "Pop art comic book panel, 1960s silkscreen printing. Flat spot colours only, four or five of "
+    "them (magenta, cyan, yellow, black, one amber accent), coarse halftone dot pattern, heavy black "
+    "ink outlines, no gradients, no soft shading, no photorealism, no 3D, bold graphic shapes, "
+    "radiating speed lines in the background, high contrast. One clear focal subject, large, filling "
+    "the frame, readable at thumbnail size on a small screen. No people, no faces, no text, no "
+    "letters, no words, no numbers, no logos, no signature, no frame, no border. Subject: "
+)
 # Prezzi verificati il 5 ottobre 2026 via /api/v1/models?type=image: entrambi 0,01 USD.
 # Alternativa allo stesso prezzo: chroma. Da evitare per un sito di notizie:
 # lustify-* (contenuti adulti) e wai-Illustrious (anime).
@@ -94,6 +109,10 @@ def main() -> int:
     ap.add_argument("--steps", type=int, default=25)
     ap.add_argument("--timeout", type=int, default=180)
     ap.add_argument("--env-file")
+    ap.add_argument("--no-stile", action="store_true",
+                    help="non anteporre il template di stile fisso (solo per prove di stile)")
+    ap.add_argument("--solo-prompt", action="store_true",
+                    help="stampa il prompt finale e non genera")
     args = ap.parse_args()
 
     prompt = args.prompt
@@ -101,6 +120,13 @@ def main() -> int:
         prompt = open(args.prompt_file, encoding="utf-8").read().strip()
     if not prompt:
         sys.exit("errore: serve --prompt o --prompt-file")
+
+    # Il soggetto lo scrive il chiamante, il registro grafico lo mette il template fisso.
+    if not args.no_stile:
+        prompt = STILE + prompt.strip()
+    if args.solo_prompt:
+        print(prompt)
+        return 0
 
     # I divisori dei modelli sono 8 o 16: arrotondo per non far rifiutare la richiesta.
     args.width -= args.width % 16
@@ -125,10 +151,12 @@ def main() -> int:
             print(json.dumps({
                 "status": "ok",
                 "model": model,
+                "preset": preset,
+                "stile": bool(not args.no_stile),
                 "path": os.path.abspath(args.out),
                 "bytes": len(blob),
                 "seconds": round(time.time() - t0, 1),
-                "cost_usd": 0.18 if model == "nano-banana-pro" else 0.01,
+                "cost_usd": {"nano-banana-pro": 0.18, "flux-2-pro": 0.03}.get(model, 0.01),
                 "width": args.width,
                 "height": args.height,
             }, ensure_ascii=False))
