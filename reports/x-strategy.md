@@ -126,31 +126,32 @@ post scorre via.
 
 | | |
 |---|---|
-| Modello | **`venice-sd35`** — 0,01 USD per generazione, soggetto leggibile in miniatura |
-| Fallback | `z-image-turbo` — stesso prezzo, più veloce, subentra da solo se il primo fallisce |
-| Script | `python3 scripts/x_image.py --prompt "<prompt>" --out x-queue/images/<id>.png` |
-| Formato | 1024×576 (16:9), 25 step |
-| Costo | ~0,02 USD al giorno (2 post) ≈ 0,60 USD al mese |
+| Modello | **`nano-banana-pro`** con preset `Pop Art` — 0,18 DIEM per generazione (scelta di Kain) |
+| Fallback | `z-image-turbo` — 0,01 DIEM, subentra da solo se il primo fallisce |
+| Stile | **fisso nello script** (`x_image.STILE`): pop art a fumetto, serigrafia, tinte piatte, mezzitoni, contorni neri spessi |
+| Script | `python3 scripts/x_image.py --prompt "<soggetto>" --out x-queue/images/<id>.png` |
+| Formato | 16:9, risoluzione 1K (~1376×768) |
+| Costo | ~0,36 DIEM al giorno con due post |
 
 `hide_watermark` è **sempre True**. Senza, Venice stampa la firma "Venice" in basso a sinistra e il
 post sembra contenuto di terzi. Verificato il 5 ottobre 2026: con `hide_watermark: true` l'immagine
-è pulita.
+è pulita. `safe_mode` è True.
 
 Da evitare per un sito di notizie: `lustify-*` (contenuti adulti) e `wai-Illustrious` (anime).
-Allo stesso prezzo è disponibile anche `chroma`, se serve uno stile più pittorico.
 
 ### Regole del prompt immagine
 
-Scritto in inglese, 400-700 caratteri. Deve descrivere **una scena concreta**, non un concetto
-astratto ("solitudine digitale" non è un'immagine; "un uomo di spalle davanti a un rack acceso in una
-sala buia" lo è).
+Il prompt si scrive in inglese e contiene **solo il soggetto**: il registro grafico (preset + template
+`STILE`) lo applica lo script, quindi non si ripete e **non si passano `--model` né `--preset`** da
+riga di comando — il predefinito è nano-banana-pro con Pop Art. Deve descrivere **una cosa concreta**,
+non un concetto astratto ("solitudine digitale" non è un'immagine; "un'enorme moneta in piedi su un
+piedistallo pallido" lo è).
 
-Obbligatorio in ogni prompt:
+Obbligatorio nel soggetto:
+- **un solo oggetto-icona che riempie il riquadro** — non una scena con scrivania e sfondo, non la categoria;
 - `bright, high contrast` — la miniatura su X è piccola, le immagini scure spariscono nel feed;
-- `one clear focal subject` — un solo soggetto, riconoscibile anche a 100 px;
-- `no text, no words, no letters, no logos` — i modelli generano pseudo-scritte illeggibili;
-- `wide 16:9 composition`;
-- palette coerente con il sito: bianco caldo, blu profondo, un accento ambra.
+- palette coerente con il sito: bianco caldo, blu profondo, un accento ambra;
+- niente testo, lettere, numeri o loghi: la clausola è già nel template, non serve ripeterla.
 
 L'immagine si genera **al momento della bozza**, così Kain la vede insieme alla richiesta di
 approvazione. Il job di pubblicazione carica il file e lo aggancia al post.

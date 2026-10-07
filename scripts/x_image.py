@@ -97,6 +97,13 @@ def generate(key: str, model: str, prompt: str, width: int, height: int, steps: 
     return base64.b64decode(images[0])
 
 
+def _dimensioni(blob: bytes) -> tuple[int, int]:
+    """Dimensioni reali del PNG (header IHDR): i modelli ad aspect_ratio ignorano width/height."""
+    if len(blob) >= 24 and blob[:8] == b"\x89PNG\r\n\x1a\n":
+        return int.from_bytes(blob[16:20], "big"), int.from_bytes(blob[20:24], "big")
+    return 0, 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--prompt")
@@ -157,8 +164,8 @@ def main() -> int:
                 "bytes": len(blob),
                 "seconds": round(time.time() - t0, 1),
                 "cost_usd": {"nano-banana-pro": 0.18, "flux-2-pro": 0.03}.get(model, 0.01),
-                "width": args.width,
-                "height": args.height,
+                "width": _dimensioni(blob)[0],
+                "height": _dimensioni(blob)[1],
             }, ensure_ascii=False))
             return 0
         except Exception as exc:  # noqa: BLE001 - si prova il fallback, poi si riporta
