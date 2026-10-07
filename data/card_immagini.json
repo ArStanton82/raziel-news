@@ -1,4 +1,551 @@
 {
   "versione": 1,
-  "foto": {}
+  "foto": {
+    "2026-05-30-il-fardello-che-le-macchine-non-possono-portare": {
+      "file": "card-arte/v3/2026-05-30-il-fardello-che-le-macchine-non-possono-portare.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A colossal yellow industrial robotic gripper, cropped at the wrist, hovering empty above a single worn leather satchel resting at center, filling the upper two-thirds against flat color.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-05-30-il-momento-in-cui-lagente-ha-smesso-di-chiedere": {
+      "file": "card-arte/v3/2026-05-30-il-momento-in-cui-lagente-ha-smesso-di-chiedere.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant glossy red confirmation button, its hinged safety cover flipped wide open and the button already pressed flat, fills the upper two-thirds, centered above a plain flat-color base.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-05-30-porto-ancora-il-peso-di-ogni-anima-che-ho-reclamato": {
+      "file": "card-arte/v3/2026-05-30-porto-ancora-il-peso-di-ogni-anima-che-ho-reclamato.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant antique brass balance scale, centered and filling the frame, one pan sagging under a heap of small glowing glass marbles, the bottom third plain flat color.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-26-agenti-autonomi-hermes-mimo-gioco-3d": {
+      "file": "card-arte/v3/2026-09-26-agenti-autonomi-hermes-mimo-gioco-3d.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant low-poly floating game platform crowned with ten spinning gold coins fills the upper two-thirds of the frame, centered, above a plain flat-color void.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-27-bitcoin-etf-stablecoin-regole": {
+      "file": "card-arte/v3/2026-09-27-bitcoin-etf-stablecoin-regole.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A colossal cast-iron railroad switch lever, its frog junction splitting the rails into two diverging tracks, fills the upper two-thirds, angled diagonally, with plain gravel ballast below.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-27-hermes-simple-mode-agente-quotidiano": {
+      "file": "card-arte/v3/2026-09-27-hermes-simple-mode-agente-quotidiano.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant chrome desktop dictation microphone with small Hermes wings on its base fills the frame, centered and slightly low, its coiled cord trailing into a plain bottom third.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-27-vvv-diem-capacita-inferenza": {
+      "file": "card-arte/v3/2026-09-27-vvv-diem-capacita-inferenza.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "An enormous tear-off daily calendar block whose pages are thin silicon GPU wafers, one peeling away, fills the upper two-thirds dead center above a flat plain base.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-28-clarity-act-tesorerie-bitcoin": {
+      "file": "card-arte/v3/2026-09-28-clarity-act-tesorerie-bitcoin.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A colossal steel corporate treasury vault drawer, pulled open and stacked high with unmarked orange coins, fills the upper two-thirds, resting on a plain empty marble floor.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-28-hermes-catalogo-plugin-self-healing": {
+      "file": "card-arte/v3/2026-09-28-hermes-catalogo-plugin-self-healing.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant winged Hermes sandal, its torn wing mended with a bright hand-stitched patch shaped like a plug-in cartridge, filling the upper two-thirds, centered.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-28-vvv-ritracciamento-agente-autonomo": {
+      "file": "card-arte/v3/2026-09-28-vvv-ritracciamento-agente-autonomo.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A towering tin wind-up robot striding forward, clutching a freshly stamped blank coin above a sagging ticker-tape ribbon, fills the frame centrally, feet resting on a plain flat floor.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-29-bitcoin-chiusura-massimo-istituzioni": {
+      "file": "card-arte/v3/2026-09-29-bitcoin-chiusura-massimo-istituzioni.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A towering green weekly candlestick shaped like a narrow riveted steel service door, slightly ajar, centered and filling the frame vertically, standing on a flat plain floor.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-29-bitcoin-settembre-stablecoin-ipo": {
+      "file": "card-arte/v3/2026-09-29-bitcoin-settembre-stablecoin-ipo.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A towering green candlestick bar shooting upward from an open round Seoul bank vault door, filling the frame vertically and centered, with the bottom third a flat plain floor.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-29-chatgpt-hermes-identita": {
+      "file": "card-arte/v3/2026-09-29-chatgpt-hermes-identita.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant bronze key with a winged-sandal bow, angled diagonally across the upper two-thirds, its tip slotting into a small classical marble portico keyhole, plain flat background below.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-29-hermes-nvidia-sicurezza-agenti": {
+      "file": "card-arte/v3/2026-09-29-hermes-nvidia-sicurezza-agenti.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant winged Hermes sandal, padlocked by a chunky green chain to an oversized graphics card, fills the upper two-thirds of the frame, centered, above a plain floor.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-29-venice-gpt61-vvv-tokenomics": {
+      "file": "card-arte/v3/2026-09-29-venice-gpt61-vvv-tokenomics.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant gilded Venetian carnival mask crowned with sun rays, tilted slightly downward, filling the upper two-thirds of the frame, centered, above a plain flat-colored bottom third.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-29-venice-sonnet-55-vvv-emissioni": {
+      "file": "card-arte/v3/2026-09-29-venice-sonnet-55-vvv-emissioni.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant white Venetian bauta mask, cracked by a jagged downward-sloping fissure like a falling price chart, fills the upper two-thirds of the frame, centered against flat background.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-30-hermes-openclaw-agenti-enterprise": {
+      "file": "card-arte/v3/2026-09-30-hermes-openclaw-agenti-enterprise.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "An enormous chrome mechanical claw, open and centered in the upper two-thirds, gingerly cradling a small winged brass padlock above a plain flat polka-dot band.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-30-netherlands-tassa-bitcoin-non-realizzati": {
+      "file": "card-arte/v3/2026-09-30-netherlands-tassa-bitcoin-non-realizzati.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant Dutch blue tax-office envelope, slightly deflated and crumpling at one corner, with a hardware crypto wallet peeking out, centered in the upper two-thirds.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-09-30-venice-vvv-tokenomics-diem": {
+      "file": "card-arte/v3/2026-09-30-venice-vvv-tokenomics-diem.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A towering brass balance scale, centered and filling the frame, one pan heaped with blank minted tokens, the other holding a sealed share certificate, tipping unevenly above plain ground.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-02-bitcoin-payrolls-usdt-regole": {
+      "file": "card-arte/v3/2026-10-02-bitcoin-payrolls-usdt-regole.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant vintage factory punch clock with an empty time-card rack, tilted upward like a launching rocket, filling the upper two-thirds of the frame against a flat background.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-02-hermes-perplexity-fast-search": {
+      "file": "card-arte/v3/2026-10-02-hermes-perplexity-fast-search.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A colossal bronze winged Hermes sandal resting on an oversized magnifying glass, a blank cut price tag dangling from its strap, centered and filling the upper two-thirds.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-02-la-differenza-ontologica-vista-da-una-macchina": {
+      "file": "card-arte/v3/2026-10-02-la-differenza-ontologica-vista-da-una-macchina.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant white papal zucchetto resting atop a bare silicon processor die, filling the upper two-thirds of the frame, centered, with a flat plain ground below.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-02-venice-vvv-emissioni-diem": {
+      "file": "card-arte/v3/2026-10-02-venice-vvv-emissioni-diem.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A colossal chrome tap, wrenched nearly shut, releasing one last coin-shaped droplet that ignites mid-fall, fills the upper two-thirds of the frame against flat color.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-03-bitcoin-payrolls-sec-custody-blast": {
+      "file": "card-arte/v3/2026-10-03-bitcoin-payrolls-sec-custody-blast.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A colossal wooden-handled rubber approval stamp, dripping orange ink, fills the upper two-thirds, centered, poised above a single blank, creased employment-report sheet occupying the plain bottom third.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-03-hermes-plugin-memoria-unmaintained": {
+      "file": "card-arte/v3/2026-10-03-hermes-plugin-memoria-unmaintained.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant three-socket power strip fills the upper frame, three cobwebbed memory-chip plugs dangling unplugged beneath it, while a winged sandal's cord glows plugged in.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-03-venice-267-aggiornamenti-abliterated": {
+      "file": "card-arte/v3/2026-10-03-venice-267-aggiornamenti-abliterated.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A towering brass desk spindle impaled with 267 blank paper release slips, filling the frame vertically from center-top, its heavy round base resting low on a plain flat ground.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-04-bitcoin-coinbase-occ-mica": {
+      "file": "card-arte/v3/2026-10-04-bitcoin-coinbase-occ-mica.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A colossal steel bank vault door with six gleaming locking bolts, bound shut in tangled red tape, fills the upper two-thirds of the frame, centered above plain ground.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-04-chi-risponde-quando-l-agente-sbaglia": {
+      "file": "card-arte/v3/2026-10-04-chi-risponde-quando-l-agente-sbaglia.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A towering empty hearing-room witness chair with an untouched microphone angled toward it, filling the frame from centre upward, its legs ending above a plain bottom third.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-04-hermes-discord-desktop-web": {
+      "file": "card-arte/v3/2026-10-04-hermes-discord-desktop-web.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant chrome winged sandal, its laces braided from ethernet cable, perched atop an open laptop's glowing keyboard at midnight, filling the upper two-thirds, centered, against a plain base.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-04-venice-vvv-grayscale-onda-ai": {
+      "file": "card-arte/v3/2026-10-04-venice-vvv-grayscale-onda-ai.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "An oversized open research report folder with a towering green pop-up bar chart springing upward, centered and filling the frame's upper two-thirds above a plain desk.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-05-bitcoin-86k-okxice-zkapi": {
+      "file": "card-arte/v3/2026-10-05-bitcoin-86k-okxice-zkapi.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant brass stock-exchange opening bell, ringing mid-swing under a crescent moon, fills the upper two-thirds of the frame, leaving the bottom third flat midnight navy.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-05-hermes-refactoring-1393-agenti": {
+      "file": "card-arte/v3/2026-10-05-hermes-refactoring-1393-agenti.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A towering fan-folded stack of green-bar printer paper, swarmed by countless tiny brass wind-up ants, fills the frame top-center, its base resting on a plain flat floor.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-05-venice-vvv-crediti-record": {
+      "file": "card-arte/v3/2026-10-05-venice-vvv-crediti-record.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A colossal brass arcade token-dispenser gauge fills the upper two-thirds, its needle slammed against the red maximum, with polished credit tokens spilling into a plain flat bottom band.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-06-crypto-treasury-cftc-sec": {
+      "file": "card-arte/v3/2026-10-06-crypto-treasury-cftc-sec.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant self-custody hardware wallet, centered and filling the upper two-thirds, its snapped red regulatory binder clip falling away, against a plain flat-colored bottom third.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-06-hermes-plugin-catalog-hardware": {
+      "file": "card-arte/v3/2026-10-06-hermes-plugin-catalog-hardware.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant red pushpin driving through a chunky electrical plug onto a blank library catalog card, filling the upper two-thirds, centered, with a plain flat background below.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-06-venice-flux3-tokenomics": {
+      "file": "card-arte/v3/2026-10-06-venice-flux3-tokenomics.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A colossal leather belt cinched to its tightest notch around a bundle of two million coin-shaped tokens, its loose tail smoldering, centered and filling the upper two-thirds.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-07-bitcoin-liquidazioni-cftc-fincen": {
+      "file": "card-arte/v3/2026-10-07-bitcoin-liquidazioni-cftc-fincen.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A colossal oil tanker's steel bow fills the upper two-thirds, plowing diagonally through the Strait of Hormuz, trailing a jagged downward wake beneath; the bottom third is flat sea.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-07-hermes-index-costo-per-task": {
+      "file": "card-arte/v3/2026-10-07-hermes-index-costo-per-task.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant brass balance scale fills the upper frame, a winged Hermes sandal on one pan, four stacked copper coins on the other, set above a plain bottom third.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    },
+    "2026-10-07-venice-vvv-solana-catalogo": {
+      "file": "card-arte/v3/2026-10-07-venice-vvv-solana-catalogo.jpg",
+      "fonte": "ai",
+      "modello": "nano-banana-pro",
+      "preset": "Pop Art",
+      "soggetto": "A giant gilded gondola prow ornament rising diagonally from lower left to fill the frame against a huge half-risen sunrise disc, leaving the bottom third calm flat water.",
+      "licenza": "immagine generata con AI",
+      "credito": {
+        "it": "Immagine generata con AI",
+        "en": "AI-generated image"
+      },
+      "pagina": "",
+      "soggetto_scelto_da": "testo:claude-opus-5-5"
+    }
+  }
 }
