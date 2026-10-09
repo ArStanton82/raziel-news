@@ -200,16 +200,24 @@ solo Enterprise e Public Utility). Rispondere a chi non ci menziona restituisce 
 l'autonomia controllata copre **le menzioni**; le bozze per la lista target della sezione 6 restano
 materiale da pubblicare a mano, perché via API non possono uscire.
 
-**Aggiornamento 9 ottobre 2026.** Il job `x-risposte-bozze` (12:35 e 18:35) è stato **rimosso**: le bozze
-arrivavano a finestra ormai chiusa e Kain non faceva in tempo a copiarle sul profilo. Nessun job produce
-più quelle bozze — se servono, si chiedono in chat e si preparano a mano. Restano attivi
-`x-mentions-risposte` (risposte automatiche, solo alle menzioni) e `x-risposte-digest` (riepilogo Telegram).
+**Aggiornamento 9 ottobre 2026 — linea risposte chiusa.** Tutti i job di risposta sono stati **rimossi**:
+`x-risposte-bozze` (12:35 e 18:35), `x-mentions-risposte` (ogni 20 minuti nelle finestre) e
+`x-risposte-digest` (13:55 e 19:55). Motivo: le bozze arrivavano a finestra ormai chiusa e Kain non faceva
+in tempo a copiarle sul profilo, mentre la parte automatica copriva solo le menzioni — troppo poco per
+tenerla in piedi. Su X restano tre job: `x-draft-giornaliero` (12:45), `x-pubblica-approvati` (13:00 e
+19:00) e `x-report-settimanale` (lunedì 9:00). Nessuna risposta esce più in automatico: se serve una
+risposta a una menzione o a un post della lista target, si prepara a mano in chat. I prompt dei job
+rimossi sono conservati fuori dal repo in
+`/root/.hermes/profiles/raziel-news/cron/backup-job-rimossi-2026-10-09.json`, per riattivarli senza
+riscriverli.
 
 Il collo di bottiglia non è la scrittura delle risposte: è l'approvazione umana. Con la revisione manuale
 la regola dei 5-10 minuti non è raggiungibile — il 6 ottobre 2026 due bozze scritte alle 12:40 sono state
 approvate alle 13:27, quando i post target avevano già 59 e 79 minuti.
 
-Modalità alternativa, attivabile con una parola di Kain e revocabile allo stesso modo:
+Modalità alternativa, attivabile con una parola di Kain e revocabile allo stesso modo.
+**Non attiva dal 9 ottobre 2026:** i due job che la implementavano sono stati rimossi. Quanto segue resta
+come specifica tecnica, da riusare se si decide di riattivarla (i prompt sono nel backup citato sopra).
 
 1. Il job delle risposte gira **ogni 20 minuti** dentro le due finestre buone (12:30-14:00, 18:00-20:00) e
    considera solo post pubblicati negli **ultimi 20 minuti**.
