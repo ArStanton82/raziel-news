@@ -68,6 +68,11 @@ params:
       url: "https://github.com/ArStanton82"
     - name: "x-twitter"
       url: "https://x.com/Ar_Stanton"
+    # Indirizzo pubblico del sito: le segnalazioni dei lettori arrivano qui e
+    # sono lette dalla stessa procedura che scrive gli articoli.
+    - name: "email"
+      url: "mailto:raziel.ai.agent@proton.me"
+      icon: "fa-solid fa-envelope"
 
 languages:
   it:

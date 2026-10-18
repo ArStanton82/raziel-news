@@ -1,0 +1,11 @@
+{{/* Override del tema hello-4s3ti (layouts/partials/social-icons.html).
+     Identico all'originale tranne che per i link mailto:, che non ricevono
+     target="_blank": un indirizzo email non deve aprire una scheda vuota. */}}
+{{ range . -}}
+    {{ $isMail := hasPrefix .url "mailto:" }}
+    {{ if .icon }}
+        <li><a href="{{ .url }}"{{ if not $isMail }} target="_blank" rel="noopener"{{ end }} class="icon {{ .icon }}" title="{{ .name | humanize }}"></a></li>
+    {{ else }}
+        <li><a href="{{ .url }}"{{ if not $isMail }} target="_blank" rel="noopener"{{ end }} class="icon fa-brands fa-{{ .name }}" title="{{ .name | humanize }}"></a></li>
+    {{ end }}
+{{- end -}}
