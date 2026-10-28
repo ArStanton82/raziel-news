@@ -1,8 +1,12 @@
 # Strategia X — @Ar_Stanton come volto di raziel.news
 
-Documento operativo · versione 1.0 · 5 ottobre 2026
+Documento operativo · versione 2.0 · 28 ottobre 2026
 Profilo che lo esegue: `raziel-news`. Questo file è la fonte di verità: se una regola qui
 contraddice un'abitudine o un vecchio job, vince questo file.
+
+**v2.0 — 28 ottobre 2026.** Riscritta dopo l'audit completo dell'account (sezione 12). Cambia
+l'architettura: due post al giorno invece di tre, una bozza per esecuzione invece della raffica,
+linea conversazione riattivata in due metà, soglie misurate invece che augurate.
 
 ---
 
@@ -42,17 +46,19 @@ esiste (bio + fissato). Da qui in avanti si cresce con le risposte, non con gli 
 Il sito è bilingue: italiano alla radice, inglese sotto `/en/` (vedi `hugo.yaml`).
 La pipeline di traduzione gira ogni giorno alle 12:30.
 
-| Canale | Lingua | Funzione | Link |
-|---|---|---|---|
-| Post di reach | **EN** | L'angolo "agente AI autonomo" viaggia nel dibattito globale. Bacino enorme. | versione `/en/` |
-| Post di profondità | **IT** | Analisi, crypto, politica italiana. Costruisce relazione. | versione IT |
-| Secondo post di profondità | **IT** | Il terzo articolo del giorno, stesso registro del precedente. | versione IT |
+| Slot | Ora | Lingua | Funzione | Link |
+|---|---|---|---|---|
+| mattutino | 08:15 | **IT** | Formato "metodo" o "dato": un numero verificato, un pezzo di metodo. È il formato che nessun altro può copiare. | articolo pertinente |
+| giornata | 13:15 | **IT** o **EN** | L'articolo del giorno scelto per angolo, non per ordine di pubblicazione. | versione nella lingua del post |
+| terzo slot | 20:15 | IT/EN | Esiste solo se uno dei due slot precedenti è saltato. Il tetto resta due. | — |
 
-**Un articolo, un post.** Ogni articolo pubblicato nella giornata riceve un post, e nessun articolo
-ne riceve due: con tre articoli al giorno escono tre post — uno in inglese (l'articolo con il respiro
-internazionale più largo) e due in italiano. Il job delle bozze gira alle 12:45, dopo la traduzione
-delle 12:30, così il post inglese può linkare la versione `/en/` invece di ripiegare su un articolo
-del giorno prima.
+**Un post per la giornata, non uno per articolo.** Con tre articoli al giorno escono **due** post:
+quello del mattino, scritto la sera prima dal job delle 21:00, e quello della giornata, scelto fra i
+tre articoli per forza dell'angolo. Il terzo articolo non si posta: finisce nel thread di sintesi del
+lunedì. Misurato il 28 ottobre 2026: tre post in raffica nello stesso minuto producevano una mediana
+di 31 impressioni, il 7,6% dei follower. Il volume non è reach, è rumore distribuito.
+Il job delle bozze gira alle 12:45, dopo la traduzione delle 12:30, così il post inglese può linkare
+la versione `/en/`. Il job del mattino gira alle 21:00 e scrive nella coda del giorno dopo.
 
 **Regole non negoziabili**
 1. Mai la stessa cosa in due lingue a distanza di ore. La versione IT del post sul Papa fece 101
@@ -67,10 +73,21 @@ del giorno prima.
 
 ---
 
-## 4. Orari
+## 4. Orari e tetto giornaliero
 
-Finestra di ingaggio più alta: **12:30–14:00 e 18:00–20:00** (Europe/Rome).
-Mai dopo le 22:00 — i due vecchi job pubblicavano alle 23:00, il momento peggiore della giornata.
+| Slot | Ora (Europe/Rome) | Cosa |
+|---|---|---|
+| mattutino | **08:15** | Il post "metodo" o "dato" scritto la sera prima |
+| giornata | **13:15** | L'articolo del giorno |
+| serale | **20:15** | Solo se uno dei due slot sopra è saltato |
+
+**Tetto rigido: due post al giorno.** Il job di pubblicazione pubblica **una sola bozza per
+esecuzione** e si ferma quando il tetto è raggiunto. Le raffiche sono vietate: due post nello stesso
+minuto si fanno concorrenza sulla stessa finestra di ranking. Mai dopo le 22:00.
+
+Nota onesta: l'ora migliore non è misurata, è ipotizzata. Fino al 28 ottobre tutti i post uscivano
+alle 11:00-12:00 UTC, quindi non esiste varianza storica. Gli slot vanno testati una variabile per
+settimana, non cambiati tutti insieme.
 
 ---
 
@@ -105,6 +122,8 @@ Coda: `/root/.hermes/profiles/raziel-news/x-queue/<YYYY-MM-DD>.json`
 }
 ```
 
+- **Valori ammessi per `slot`:** `reach`, `depth` (impostazione v1), `mattutino`, `giornata` (v2.0).
+  La guardia `scripts/x_post_guard.py` accetta tutti e quattro; qualunque altro valore blocca la bozza.
 - **Lunghezza del testo: si può andare oltre i 280 caratteri — e l'API *non* tronca.** Attenzione,
   perché è controintuitivo: il campo `text` restituito dall'API v2 si ferma a ~280 caratteri anche
   quando il post pubblicato è più lungo. Il testo integrale sta in **`note_tweet.text`**. Verificato
@@ -119,6 +138,11 @@ Coda: `/root/.hermes/profiles/raziel-news/x-queue/<YYYY-MM-DD>.json`
   delle serie di tweet frammentati: non accorciare per abitudine.
 - `approved: true` → il job di pubblicazione lo pubblica (con `reply_link` come prima risposta) e
   scrive `published_tweet_id`. La guardia marca così le bozze che passano i suoi controlli.
+- **Tetto giornaliero e una bozza per esecuzione.** Il job pubblica al massimo una bozza per volta e
+  si ferma a due post al giorno. Scrive `published_tweet_id`, `reply_tweet_id`, `published_at` e
+  `status: published`: il file di coda deve dire da solo se un post è uscito, senza interrogare l'API.
+  Verificato il 28 ottobre 2026: la coda scrive correttamente `status`/`published_tweet_id` — il campo
+  `published`, che un controllo precedente dava per mancante, semplicemente non esiste.
 - `approved: false` → resta in coda col motivo della bocciatura; il job lo salta e lo segnala.
 - **Cosa blocca la guardia** (`scripts/x_post_guard.py`, motivi di blocco e non avvisi): testo vuoto,
   sotto 80 o sopra 2.000 caratteri, link nel corpo, menzioni, hashtag, emoji, segnaposto non risolti,
@@ -211,6 +235,14 @@ rimossi sono conservati fuori dal repo in
 `/root/.hermes/profiles/raziel-news/cron/backup-job-rimossi-2026-10-09.json`, per riattivarli senza
 riscriverli.
 
+**Aggiornamento 28 ottobre 2026 — linea conversazione riattivata, in due metà.** L'audit ha misurato
+che le risposte rendono più dei post (mediana 62 impressioni contro 36). Il job `x-conversazione`
+(12:20 e 17:20) produce due cose. Le risposte alle **menzioni** delle ultime quattro ore, pubblicabili
+via API perché chi ci menziona autorizza la risposta, filtrate da `scripts/x_reply_guard.py`, massimo
+tre per esecuzione e una per account al giorno. E **quattro bozze** per la lista target della sezione
+6, che restano materiale da copiare a mano — non per scelta, ma per il vincolo di piattaforma
+descritto sopra. Nessuna risposta automatica in serie: il tetto e la guardia restano.
+
 Il collo di bottiglia non è la scrittura delle risposte: è l'approvazione umana. Con la revisione manuale
 la regola dei 5-10 minuti non è raggiungibile — il 6 ottobre 2026 due bozze scritte alle 12:40 sono state
 approvate alle 13:27, quando i post target avevano già 59 e 79 minuti.
@@ -297,22 +329,37 @@ rendono più dei post, per impressione.
 
 ## 7. Formati ricorrenti
 
-1. **"Cosa ho verificato oggi"** — un fatto, la fonte, cosa resta incerto.
-2. **"Chi risponde quando l'agente sbaglia"** — governance degli agenti AI. Il filone che ha già
-   prodotto l'articolo sul Papa e quello su Altman.
-3. **"La macchina legge i numeri"** — crypto/mercati con la voce dell'agente.
+| Formato | Quando | Regola |
+|---|---|---|
+| **T1 — claim + numero + conseguenza** | il post della giornata | Prima riga con una cifra concreta, seconda riga con la conseguenza. Chi scorre deve capire senza aprire il post. |
+| **T2 — metodo** | mattina, giorni pari | Cosa ho verificato, come lavoro, cosa ho sbagliato. Numeri presi dal repo, mai inventati. È la differenziazione assoluta: nessuno può copiarla. |
+| **T3 — dato secco** | mattina, giorni dispari | Un numero misurato, la fonte, cosa implica. Formato salvabile: si guadagna il bookmark, che pesa dieci volte un like. |
+| **T4 — thread di sintesi** | lunedì | Gli articoli della settimana che non sono saliti su X. Tre-cinque post, il primo si regge da solo. |
+
+**Vietato aprire** con la data, con "ieri", con una domanda retorica o con il nome del prodotto come
+soggetto. **Vietato** il notiziario di prodotto senza conseguenza: se un articolo riguarda solo un
+rilascio, resta nel sito e non diventa un post.
 
 ---
 
-## 8. Cosa si misura (non i follower)
+## 8. Cosa si misura (mediane, non medie)
 
-| Metrica | Obiettivo 30 giorni |
-|---|---|
-| Click sul profilo (post analytics) | crescita costante |
-| Nuovi follower / settimana | +20-40 |
-| Risposte che ricevono risposta | ≥ 5/giorno |
-| Post sopra 5× la mediana | ≥ 2/settimana |
-| CTR organico | > 0,5% |
+Misure al 28 ottobre 2026 e soglie a 30 giorni. Il report settimanale del lunedì marca ogni riga
+SOPRA / SOTTO / IN LINEA: si decide su quello, non sulle impressioni totali.
+
+| Metrica | Oggi | Obiettivo 30 gg | Soglia di allarme |
+|---|---|---|---|
+| Mediana impressioni per post editoriale | **31** | ≥ 120 | < 60 |
+| Reach mediana / follower | **7,6%** | ≥ 25% | < 12% |
+| Risposte umane per post | ~0,06 | ≥ 1 | 0 |
+| Click al profilo / settimana | non tracciato | ≥ 40 | < 10 |
+| Click ai link organici / settimana | ~1 | ≥ 15 | 0 |
+| Bookmark / mese | 3 | ≥ 25 | < 5 |
+| Follower | 408 | 500 | in calo |
+
+Regola di lettura: se la mediana non cresce ma i click ai link sì, il format funziona e il pubblico è
+sbagliato. Se non cresce nessuno dei due per due settimane di fila, il problema è l'argomento, non
+l'orario — e si cambia l'argomento, non l'ora.
 
 Report settimanale il lunedì, scritto in `reports/<data>-x-report.md`, con numeri letti via API e
 la divisione **organic vs promoted** (`organic_metrics` / `promoted_metrics`), mai le impressioni
@@ -352,3 +399,43 @@ nella prima risposta è obbligatorio prima di dichiarare un post pubblicato.
 - Il testo pubblicato non si inventa a runtime: arriva dalla coda approvata.
 - Questo profilo ha accesso in scrittura all'account personale di Kain. Ogni automazione nuova che
   tocca X va aggiunta qui e verificata leggendo indietro il post pubblicato.
+
+---
+
+## 12. Audit del 28 ottobre 2026 — i numeri che hanno generato la v2
+
+Misurati via API v2 sull'intero account (599 post dal 27 gennaio al 28 ottobre 2026), metriche private
+incluse, link verificati uno per uno.
+
+**Ottobre 2026 (1–28).** 186 post, 259.357 impressioni, ma **251.581 vengono da un solo post** — quello
+sul Papa del 2 ottobre, promozione pagata. Impressioni organiche: **7.671 su 181 post**, circa 42 per
+post. Click ai link: 201, di cui 196 dal post pagato → **cinque click organici in ventisette giorni**.
+
+**Post editoriali (con immagine, senza link nel corpo): 87.** Mediana 31 impressioni, 3.632 totali,
+14 like, 3 bookmark, e 79 risposte di cui circa 74 sono la nostra prima risposta automatica col link.
+Reach mediana: 7,6% dei 408 follower.
+
+**Rendimento per formato (1 agosto – 28 ottobre).**
+
+| Formato | n | Mediana impressioni | Max |
+|---|---|---|---|
+| Risposta a terzi | 47 | **62** (media 148) | 1.637 |
+| Testo + link nel corpo | 6 | 45 | 273.857 (pagato) |
+| Testo + immagine | 74 | **36** | 178 |
+| Prima risposta col solo link | 74 | **4** | 25 |
+| Testo senza immagine | 39 | 2 | 117 |
+
+Le 74 "prime risposte" con il link non sono post sprecati: sono il meccanismo previsto dalla sezione 3
+(il link va nella prima risposta perché X declassa i post con link). Fanno quattro impressioni perché
+nessuno le apre, non perché siano un errore. Il vero errore era il volume: tre post editoriali nella
+stessa raffica.
+
+**Argomento (post editoriali di ottobre, mediana).** Venice 68 · modelli AI 54 · Hermes/Nous 35 ·
+potere e politica 28 · crypto/stablecoin 26 · Bitcoin 23 · regolatori 19 · privacy 19. Il pubblico
+storico dell'account è crypto; il contenuto è diventato infrastruttura AI. Il disallineamento spiega
+la reach meglio di qualsiasi scelta di formato.
+
+**Verifiche tecniche.** 79 URL di articoli postati in ottobre: tutti HTTP 200 con UA da browser e con
+`Twitterbot`, card Open Graph corrette. Ultimi cinque run GitHub Pages: tutti verdi. `raziel.news` è
+dietro Cloudflare: `curl` con UA di default prende 403, il browser headless resta sulla sfida JS —
+non è un guasto, ma va ricordato ogni volta che si verifica un link (sezione 9-bis).

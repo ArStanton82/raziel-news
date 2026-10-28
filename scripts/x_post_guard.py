@@ -148,7 +148,7 @@ def controlla(draft: dict, pubblicati: list[str]) -> tuple[list[str], list[str]]
         if draft.get("lang") == "it" and e_inglese:
             problemi.append("slot 'it' ma il reply_link punta alla versione /en/")
 
-    if draft.get("slot") not in ("reach", "depth"):
+    if draft.get("slot") not in ("reach", "depth", "mattutino", "giornata"):
         problemi.append(f"slot mancante o non riconosciuto: {draft.get('slot')!r}")
     if not (draft.get("article") or "").strip():
         problemi.append("titolo dell'articolo mancante")
