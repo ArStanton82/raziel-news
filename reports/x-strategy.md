@@ -239,9 +239,11 @@ riscriverli.
 che le risposte rendono più dei post (mediana 62 impressioni contro 36). Il job `x-conversazione`
 (12:20 e 17:20) produce due cose. Le risposte alle **menzioni** delle ultime quattro ore, pubblicabili
 via API perché chi ci menziona autorizza la risposta, filtrate da `scripts/x_reply_guard.py`, massimo
-tre per esecuzione e una per account al giorno. E **quattro bozze** per la lista target della sezione
-6, che restano materiale da copiare a mano — non per scelta, ma per il vincolo di piattaforma
-descritto sopra. Nessuna risposta automatica in serie: il tetto e la guardia restano.
+tre per esecuzione e una per account al giorno. La ricerca autonoma dei post da commentare è invece stata **disattivata** lo stesso giorno, su
+richiesta di Kain: la lista target della sezione 6 non viene più interrogata da nessun job. Al suo
+posto c'è il protocollo della sezione 5-quater — Kain passa il link, la risposta si scrive in chat,
+la pubblicazione è manuale perché il vincolo di piattaforma non lascia alternative. Nessuna risposta
+automatica in serie: il tetto e la guardia restano.
 
 Il collo di bottiglia non è la scrittura delle risposte: è l'approvazione umana. Con la revisione manuale
 la regola dei 5-10 minuti non è raggiungibile — il 6 ottobre 2026 due bozze scritte alle 12:40 sono state
@@ -271,11 +273,40 @@ massimo 6 al giorno, una per account e senza link — un tetto e una guardia, no
 
 ---
 
+## 5-quater. Risposte su richiesta (dal 28 ottobre 2026)
+
+La linea conversazione non cerca più i post da commentare. Funziona così:
+
+1. **Kain passa il post** — il link, o uno screenshot se il post è protetto o cancellato. Il link basta:
+   `xurl "/2/tweets/<id>?tweet.fields=created_at,text,public_metrics,lang&expansions=author_id&user.fields=username"`
+   restituisce autore, testo e metriche di qualunque post pubblico.
+2. **La risposta si scrive in chat**, non in un job: 110-220 caratteri, un dato o un controesempio,
+   nessun link, nessuna menzione, nessun complimento, tono asciutto. Se il post non merita una
+   risposta, si dice: meglio rifiutare che riempire.
+3. **La guardia la valida**: `python3 scripts/x_reply_guard.py <file replies-*.json>`. Bocciata
+   significa non pubblicata: non si ammorbidisce il testo per farla passare.
+4. **La pubblica Kain**, dall'app. Non è pigrizia: dal 23 febbraio 2026 l'API accetta risposte
+   programmatiche solo verso chi ci ha menzionato o citato (annuncio di @XDevelopers del 23/02/2026;
+   esenti solo Enterprise e Public Utility). Una risposta a un terzo qualunque restituisce 403
+   `not-authorized-for-resource`, con qualunque credenziale e qualunque budget.
+5. **Tracciamento**: le risposte scritte su richiesta si salvano comunque in
+   `x-queue/replies-<data>-<hhmm>.json`, con `status: "published"` una volta uscite. Serve alla guardia
+   per non proporre due volte la stessa risposta allo stesso account nello stesso giorno.
+
+Regola di merito, che conta più delle altre: **una risposta sola per post**. Se la prima non è
+abbastanza affilata non se ne manda una seconda a compensare: si lascia perdere.
+
+---
+
 ## 6. Lista target per il motore delle risposte
 
 > **Nota di piattaforma (6 ottobre 2026).** Questi account restano la lista di lettura e di ingaggio
 > manuale. Le risposte automatiche via API sono possibili **solo** verso chi ci menziona: le bozze
 > prodotte per questa lista vanno pubblicate a mano da Kain.
+>
+> **Aggiornamento 28 ottobre 2026.** Nessun job interroga più questa lista. La si usa quando Kain passa
+> un link in chat, con il protocollo della sezione 5-quater: la risposta si scrive su richiesta, la
+> guardia la valida, Kain la pubblica dall'app.
 
 Verificata via API il 5 ottobre 2026 (follower reali, badge attivo).
 Regola: rispondere entro **5-10 minuti** dalla loro pubblicazione, con contenuto reale —
