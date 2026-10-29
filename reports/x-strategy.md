@@ -1,8 +1,12 @@
 # Strategia X — @Ar_Stanton come volto di raziel.news
 
-Documento operativo · versione 2.0 · 28 ottobre 2026
+Documento operativo · versione 2.1 · 29 ottobre 2026
 Profilo che lo esegue: `raziel-news`. Questo file è la fonte di verità: se una regola qui
 contraddice un'abitudine o un vecchio job, vince questo file.
+
+**v2.1 — 29 ottobre 2026.** Aggiunta la sezione **4-bis**: l'eccezione disciplinata per le notizie
+urgenti segnalate da Kain (terzo post ammesso, orario che segue l'evento, traccia obbligatoria nella
+nota della bozza). Nessun'altra regola cambia.
 
 **v2.0 — 28 ottobre 2026.** Riscritta dopo l'audit completo dell'account (sezione 12). Cambia
 l'architettura: due post al giorno invece di tre, una bozza per esecuzione invece della raffica,
@@ -88,6 +92,58 @@ minuto si fanno concorrenza sulla stessa finestra di ranking. Mai dopo le 22:00.
 Nota onesta: l'ora migliore non è misurata, è ipotizzata. Fino al 28 ottobre tutti i post uscivano
 alle 11:00-12:00 UTC, quindi non esiste varianza storica. Gli slot vanno testati una variabile per
 settimana, non cambiati tutti insieme.
+
+Il tetto e il limite delle 22:00 valgono per la routine. L'unica eccezione ammessa è quella delle
+**notizie urgenti segnalate da Kain**, disciplinata nella sezione 4-bis.
+
+---
+
+## 4-bis. Notizie urgenti segnalate da Kain (dal 29 ottobre 2026)
+
+Il tetto di due post e il limite delle 22:00 valgono per la routine. Un fatto grosso che **Kain
+segnala in chat** — un link, «guarda questo», «fammi un articolo subito» — apre un'eccezione
+disciplinata, non un'apertura: le regole che seguono sono vincolanti quanto il tetto che sospendono.
+
+**Chi decide che è urgente.** Solo Kain. L'agente non si autoconcede l'eccezione: se un evento sembra
+grosso ma la segnalazione non c'è, si scrive l'articolo e si propone il post; se la segnalazione è
+solo un link («leggi qui») si chiede prima di pubblicare. Una notizia trovata dalla pipeline resta
+nella routine, comunque sia grossa.
+
+**Cosa cambia, esattamente.**
+
+1. **Terzo post ammesso, non quarto.** Il tetto passa da due a tre post al giorno, una sola volta al
+   giorno. Se la giornata ha già avuto tre post, l'urgente non esce: l'articolo resta sul sito e il
+   post finisce nel thread di sintesi del lunedì (formato T4).
+2. **L'orario si sposta con l'evento, non con la comodità.** Segnalazione prima delle 23:00: il post
+   esce entro 60 minuti. Segnalazione dopo le 23:00: decide un criterio solo — se il fatto può
+   cambiare dentro la notte (saldi ancora in movimento, comunicati attesi, dubbi aperti) esce subito,
+   anche a mezzanotte; se i fatti sono già fermi e la mattina porterà numeri e conferme, diventa il
+   post `mattutino` delle 08:15, con la stessa nota. Il limite delle 22:00 non è una regola di qualità
+   editoriale ma di rendimento: su un fatto che si muove, rendimento basso batte rendimento zero.
+3. **Una lingua sola.** Inglese per reach, salvo che l'evento sia italiano. La seconda lingua non
+   segue a distanza di ore (regola della sezione 3): se serve, è un angolo diverso, e lo chiede Kain.
+4. **Ordine non negoziabile: prima il sito, poi X.** Il post non esce mai con l'articolo non ancora
+   deployato: il link è la prima risposta e deve rispondere 200 al momento della pubblicazione; se il
+   post è in inglese deve esistere già la pagina `/en/`, tradotta subito invece di aspettare le 12:30.
+   Verifica del 200 con User-Agent da browser **prima** della pubblicazione, non dopo.
+5. **Tutto il resto resta identico.** Immagine generata obbligatoria, link solo nella prima risposta,
+   guardia meccanica come ultimo cancello, nessun hashtag, nessuna emoji, nessuna menzione, 1.500
+   caratteri consigliati come limite di leggibilità, nessuna risposta automatica in più.
+
+**La traccia che rende l'eccezione leggibile.** Nella `note` della bozza, obbligatoriamente tre cose:
+la formula `post urgente su segnale di Kain`, quale regola si sta superando (tetto, orario o
+entrambi) e le fonti dei numeri pubblicati. Il campo `slot` resta uno dei quattro valori ammessi
+dalla guardia — `giornata` per l'urgente diurno, `mattutino` per quello spostato all'indomani —
+mentre campi aggiuntivi come `urgente: true` sono ammessi: la guardia legge i campi con `.get()` e
+ignora le chiavi che non conosce.
+
+**Perché la traccia è obbligatoria.** Tre post nello stesso giorno, senza nota, sono indistinguibili
+da un'automazione impazzita: la prima sessione che li legge li tratta come guasto, li segnala a Kain o
+li cancella. L'eccezione vale solo se lascia scritto che era un'eccezione.
+
+**Il costo di un urgente** è quello di un post normale più la ricerca: 0,18 DIEM per l'immagine e
+qualche centesimo di dollaro di letture API. Non è una ragione per non farlo, ed è bene che il numero
+sia scritto qui invece di essere scoperto a fine mese sul dashboard.
 
 ---
 
