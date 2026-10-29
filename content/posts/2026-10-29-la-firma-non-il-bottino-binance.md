@@ -35,6 +35,16 @@ La caratteristica che conta è un'altra, e l'ha spiegata Odysseas Lamtzidi di Ph
 
 E la delega, per esistere, richiede una firma con la chiave privata del wallet. L'attaccante ce l'aveva. Questo è il fatto, ed è l'unico che conti davvero: il perimetro dell'incidente non è il wallet, è chi firma per il wallet. Chiave in chiaro su una macchina connessa, infrastruttura di firma compromessa, accesso interno — nessuna delle ipotesi è confermata, e finché Binance non pubblica la catena di custodia delle proprie chiavi, la differenza tra queste ipotesi resta la differenza tra un errore di configurazione e un problema di insider.
 
+## Aggiornamento, 30 ottobre: cinquanta firme, non una
+
+Nelle ore successive è emerso un dettaglio che restringe il campo delle ipotesi. Secondo l'analisi di **Blockaid**, la transazione delle 20:20:59 non conteneva una sola autorizzazione ma **50 delegazioni EIP-7702 in un unico invio**, una per ogni possibile numero di transazione del wallet: l'attaccante non conosceva il nonce corrente di Binance 14 e ne ha coperti cinquanta in un colpo. Una ha combaciato, perché il wallet in quel momento stava ancora trasmettendo. La stessa analisi riporta che il contratto accetta chiamate solo dall'indirizzo finanziato via Tornado Cash, scritto nel codice, e che una prova di sola lettura da un altro indirizzo viene rifiutata.
+
+Cinquanta autorizzazioni valide significano cinquanta firme: il materiale della chiave era in mano a chi le ha prodotte. Il modello del 2025, quello di Bybit, era diverso — un firmatario a cui viene mostrata un'istruzione che ne approva un'altra, che produce **una** firma sola. La differenza non è accademica: sposta la domanda da «chi ha ingannato un operatore» a «chi aveva la chiave privata». La società di sicurezza Defimon classifica il caso come abuso di una delegazione EIP-7702 con chiave compromessa.
+
+Sempre secondo Blockaid, il wallet è stato poi convertito in un contratto non verificato che permette il prelievo di tutti i token e degli ETH solo verso indirizzi operatore designati; nella notte sono usciti circa 7,77 trilioni di PEPE, per un valore intorno ai 37 milioni di dollari, da un indirizzo etichettato «Binance Hack 2026». Binance non ha confermato nessuno di questi punti, e la ricostruzione di un fornitore di sicurezza non è una confessione dell'exchange.
+
+Restano aperte le domande della notte precedente, ma la prima si è ristretta: non è più «come è stata ottenuta una firma», è **«come è uscita una chiave»**. Le tre strade — chiave in chiaro su un sistema connesso, macchina di firma compromessa, accesso interno — restano tutte a monte della catena, e nessuna delle tre è ancora dimostrata.
+
 ## Il conto che ancora non torna
 
 I totali pubblicati divergono, e non per imprecisione giornalistica: misurano cose diverse.
@@ -60,7 +70,7 @@ Nell'ora successiva il Bitcoin è scivolato da 80.327 a 78.763 dollari, sotto qu
 
 Cinque domande sono aperte, e vanno tenute separate dai fatti on-chain.
 
-1. **Come è stata ottenuta la firma.** È la domanda che determina tutto il resto: compromissione di una chiave, di un firmatario, o di un processo.
+1. **Come è uscita la chiave.** Dopo l'analisi sulle 50 autorizzazioni la domanda si è ristretta: il materiale di chiave era in mano all'attaccante, quindi non si tratta di un firmatario ingannato ma di come quella chiave è finita fuori. Compromissione di una chiave, di una macchina di firma o di una persona.
 2. **Se i deflussi su Bitcoin e su Tron appartengono allo stesso attaccante.** Il conteggio a 5,57 miliardi si basa su un'etichettatura di wallet che Binance non ha confermato.
 3. **Se Binance pubblicherà una prova delle riserve** o una ricostruzione tecnica. Finora ha comunicato due volte, senza dettagli e senza la parola hack.
 4. **Che fine faranno i fondi congelati**, e con quali tempi.
@@ -69,4 +79,4 @@ Cinque domande sono aperte, e vanno tenute separate dai fatti on-chain.
 Un exchange non è un caveau. È una macchina che firma, esposta a internet, e il suo rischio non si misura in quanto custodisce ma in quante persone e quante macchine possono produrre una firma valida per conto suo. La commissione di 0,93 dollari per spostare due miliardi e mezzo è il prezzo di listino di quell'architettura: quasi zero, e questa è esattamente la parte del problema che nessun congelamento risolve.
 
 ---
-*Fonti verificate: CryptoTicker, «Binance Hack: $2.8B Drained From Hot Wallet via EIP-7702», 29 ottobre 2026; Unchained, «Binance Says User Funds Are 'Completely Safe' After $3.5 Billion Drains From Its Hot Wallets», 29 ottobre 2026; Decrypt, «Binance Drained of $5.5 Billion in Suspected Hack, Tether and Circle Freeze $1.8 Billion», 29 ottobre 2026; post di @binance (21:29 UTC), @cz_binance (21:15 e 22:23 UTC), @0xngmi, @paoloardoino, @jerallaire, @spreekaway, @odysseas_eth e @WazzCrypto del 29 ottobre 2026, letti via API; EIP-7702, specifica su eips.ethereum.org. Tutte le fonti consultate il 29 ottobre 2026.*
+*Fonti verificate: CryptoTicker, «Binance Hack: $2.8B Drained From Hot Wallet via EIP-7702», 29 ottobre 2026, e la cronologia aggiornata dello stesso articolo (50 delegazioni firmate con la chiave di Binance 14, contratto che accetta solo l'indirizzo finanziato da Tornado Cash, classificazione Defimon); Blockaid, analisi delle 50 autorizzazioni EIP-7702 e del wallet convertito in contratto non verificato, riportata da TechFlow il 30 ottobre 2026; Unchained, «Binance Says User Funds Are 'Completely Safe' After $3.5 Billion Drains From Its Hot Wallets», 29 ottobre 2026; Decrypt, «Binance Drained of $5.5 Billion in Suspected Hack, Tether and Circle Freeze $1.8 Billion», 29 ottobre 2026; post di @binance (21:29 UTC), @cz_binance (21:15 e 22:23 UTC), @0xngmi, @paoloardoino, @jerallaire, @spreekaway, @odysseas_eth e @WazzCrypto del 29 ottobre 2026, letti via API; EIP-7702, specifica su eips.ethereum.org. Tutte le fonti consultate il 29 e 30 ottobre 2026.*

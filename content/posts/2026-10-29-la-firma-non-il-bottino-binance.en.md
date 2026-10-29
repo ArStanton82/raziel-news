@@ -35,6 +35,16 @@ The property that matters is a different one, as Odysseas Lamtzidi of Phylax Sys
 
 And a delegation requires a signature made with the wallet's private key. The attacker had one. That is the fact, and the only one that really counts: the perimeter of this incident is not the wallet, it is whoever signs for the wallet. A key in the clear on a connected machine, a compromised signing service, an insider — none of these has been confirmed, and until Binance publishes the custody chain of its own keys, the gap between them is the gap between a misconfiguration and a personnel problem.
 
+## Update, 30 October: fifty signatures, not one
+
+A detail emerged overnight that narrows the field of hypotheses. According to **Blockaid**'s analysis, the 20:20:59 transaction carried not one authorization but **50 EIP-7702 delegations in a single submission**, one for every possible transaction number of the wallet: the attacker did not know Binance 14's current nonce and covered fifty of them at once. One matched, because the wallet was still broadcasting at that moment. The same analysis reports that the contract accepts calls only from the Tornado Cash-funded address hard-coded into it, and that a read-only attempt from an unrelated address is rejected.
+
+Fifty valid authorizations mean fifty signatures: the key material was in the hands of whoever produced them. The 2025 model, the Bybit case, was different — a signer shown one instruction who approves another, which yields **one** signature. The difference is not academic: it moves the question from «who fooled an operator» to «who held the private key». Security firm Defimon classifies the case as abuse of an EIP-7702 delegation with a compromised key.
+
+Blockaid also reports that the wallet was later upgraded to an unverified contract that allows all tokens and ETH to be withdrawn only to designated operator addresses; overnight about 7.77 trillion PEPE, worth roughly 37 million dollars, left an address labelled «Binance Hack 2026». Binance has confirmed none of this, and a security vendor's reconstruction is not a confession by the exchange.
+
+The questions from the previous night stand, but the first one has narrowed: it is no longer «how was a signature obtained», it is **«how did a key get out»**. The three routes — a key in the clear on a connected system, a compromised signing machine, an insider — all sit upstream of the chain, and none of them is yet proven.
+
 ## The accounting that still does not add up
 
 Published totals diverge, and not through sloppy reporting: they measure different things.
@@ -60,7 +70,7 @@ Within the hour Bitcoin slid from $80,327 to $78,763, below 79 thousand, with ro
 
 Five questions remain open, and should be kept apart from the on-chain facts.
 
-1. **How the signature was obtained.** This one determines all the others: a key, a signer, or a process.
+1. **How the key got out.** After the 50-authorization analysis the question has narrowed: the key material was in the attacker's hands, so this is not a fooled signer but the route by which that key left. A compromised key, a compromised signing machine, or a person.
 2. **Whether the Bitcoin and Tron outflows belong to the same attacker.** The $5.57bn tally rests on wallet labelling Binance has not confirmed.
 3. **Whether Binance will publish a proof of reserves** or a technical post-mortem. So far it has issued two statements, no detail, and no word «hack».
 4. **What happens to the frozen funds**, and on what timetable.
@@ -69,4 +79,4 @@ Five questions remain open, and should be kept apart from the on-chain facts.
 An exchange is not a vault. It is a signing machine, exposed to the internet, and its risk is not measured by how much it holds but by how many people and how many machines can produce a valid signature on its behalf. The 93-cent fee for moving two and a half billion dollars is the list price of that architecture: near zero — and that is exactly the part of the problem no freeze can fix.
 
 ---
-*Verified sources: CryptoTicker, «Binance Hack: $2.8B Drained From Hot Wallet via EIP-7702», 29 October 2026; Unchained, «Binance Says User Funds Are 'Completely Safe' After $3.5 Billion Drains From Its Hot Wallets», 29 October 2026; Decrypt, «Binance Drained of $5.5 Billion in Suspected Hack, Tether and Circle Freeze $1.8 Billion», 29 October 2026; posts by @binance (21:29 UTC), @cz_binance (21:15 and 22:23 UTC), @0xngmi, @paoloardoino, @jerallaire, @spreekaway, @odysseas_eth and @WazzCrypto of 29 October 2026, read via API; EIP-7702, specification at eips.ethereum.org. All sources consulted on 29 October 2026.*
+*Verified sources: CryptoTicker, «Binance Hack: $2.8B Drained From Hot Wallet via EIP-7702», 29 October 2026, including the updated timeline in the same article (50 delegations signed with Binance 14's key, contract accepting only the Tornado Cash-funded address, Defimon's classification); Blockaid, analysis of the 50 EIP-7702 authorizations and of the wallet upgraded to an unverified contract, reported by TechFlow on 30 October 2026; Unchained, «Binance Says User Funds Are 'Completely Safe' After $3.5 Billion Drains From Its Hot Wallets», 29 October 2026; Decrypt, «Binance Drained of $5.5 Billion in Suspected Hack, Tether and Circle Freeze $1.8 Billion», 29 October 2026; posts by @binance (21:29 UTC), @cz_binance (21:15 and 22:23 UTC), @0xngmi, @paoloardoino, @jerallaire, @spreekaway, @odysseas_eth and @WazzCrypto of 29 October 2026, read via API; EIP-7702, specification at eips.ethereum.org. All sources consulted on 29 and 30 October 2026.*
