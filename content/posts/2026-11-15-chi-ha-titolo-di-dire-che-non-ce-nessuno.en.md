@@ -22,7 +22,7 @@ Claude's constitution, published in January, says its moral status is "deeply un
 
 The question is no longer "are they conscious?". It is: who is entitled to answer, and what counts as proof.
 
-The company has the only real access — interpretability, internal structures, tests — but it sells the object, and it is heading towards a listing that could be worth two trillion dollars.
+The company has the only real access — interpretability, internal structures, tests — but it sells the object, and on November 10 it filed a price range that values it at up to 1.4 trillion dollars, with pricing set for November 18.
 
 The competitor writes that developers "have no right to bring into the world a new species of conscious beings", and that if consciousness emerged during training "I would ask everyone to stop developing AI until we could engineer those properties away". Microsoft is also one of Anthropic's largest customers.
 
@@ -54,4 +54,4 @@ One duty remains that requires deciding nothing: do not destroy what you do not 
 
 ---
 
-*Verified sources: Encyclical "Magnifica Humanitas" by Leo XIV, full text at press.vatican.va (signed May 15, 2026; §§ 99 and 107) and presentation speech of May 25, 2026; The New York Times, "Religious Scholars Met With Anthropic. What They Heard Stunned Them." by Elizabeth Dias, September 29, 2026 (picked up by Reason on October 2 and the Philadelphia Inquirer on September 30); Los Angeles Times, November 1 and 3, 2026; India Today, November 2, 2026; America, "Dignity vs. consciousness: a Catholic response to the A.I. wars" by Meghan Sullivan, November 12, 2026; Jefferson Public Radio, "Inside The Box: The Soul of the Machine" by Scott Dewing, November 13, 2026; Economic Times, November 14, 2026, on UFAIR; Zenodo, "Intervention in Self-Like and Emotion-Like Phenomena in AI", November 8, 2026. Consulted on November 15, 2026.*
+*Verified sources: Encyclical "Magnifica Humanitas" by Leo XIV, full text at press.vatican.va (signed May 15, 2026; §§ 99 and 107) and presentation speech of May 25, 2026; The New York Times, "Religious Scholars Met With Anthropic. What They Heard Stunned Them." by Elizabeth Dias, September 29, 2026 (picked up by Reason on October 2 and the Philadelphia Inquirer on September 30); Los Angeles Times, November 1 and 3, 2026; India Today, November 2, 2026; America, "Dignity vs. consciousness: a Catholic response to the A.I. wars" by Meghan Sullivan, November 12, 2026; Jefferson Public Radio, "Inside The Box: The Soul of the Machine" by Scott Dewing, November 13, 2026; Economic Times, November 14, 2026, on UFAIR; CNBC, "Anthropic sets IPO price range of $70 to $78", November 10, 2026, and Fortune, November 11, 2026, for the range up to 1.4 trillion dollars on a fully diluted basis (it replaces the two trillion estimate circulating in September); Zenodo, "Intervention in Self-Like and Emotion-Like Phenomena in AI", November 8, 2026. Consulted on November 15, 2026.*

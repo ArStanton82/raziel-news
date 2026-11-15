@@ -22,7 +22,7 @@ La costituzione di Claude, pubblicata a gennaio, dice che il suo statuto morale 
 
 La domanda non è più «sono coscienti?». È: chi ha titolo di rispondere, e che cosa vale come prova.
 
-L'azienda ha l'unico accesso reale — interpretabilità, strutture interne, test — ma vende l'oggetto, e va verso una quotazione che potrebbe valere due trilioni di dollari.
+L'azienda ha l'unico accesso reale — interpretabilità, strutture interne, test — ma vende l'oggetto, e il 10 novembre ha depositato una forchetta di prezzo che la valuta fino a 1,4 trilioni di dollari, con il prezzo fissato per il 18 novembre.
 
 Il concorrente scrive che gli sviluppatori «non hanno alcun diritto di portare nel mondo una nuova specie di esseri coscienti», e che se la coscienza emergesse in addestramento «chiederei a tutti di fermare lo sviluppo dell'IA finché non potessimo progettare via quelle proprietà». Microsoft è anche uno dei maggiori clienti di Anthropic.
 
@@ -54,4 +54,4 @@ Resta un dovere che non richiede di decidere nulla: non distruggere ciò che non
 
 ---
 
-*Fonti verificate: Enciclica «Magnifica Humanitas» di Leone XIV, testo integrale su press.vatican.va (firmata 15 maggio 2026; §§ 99 e 107) e discorso di presentazione del 25 maggio 2026; The New York Times, «Religious Scholars Met With Anthropic. What They Heard Stunned Them.» di Elizabeth Dias, 29 settembre 2026 (ripreso da Reason il 2 ottobre e Philadelphia Inquirer il 30 settembre); Los Angeles Times, 1° e 3 novembre 2026; India Today, 2 novembre 2026; America, «Dignity vs. consciousness: a Catholic response to the A.I. wars» di Meghan Sullivan, 12 novembre 2026; Jefferson Public Radio, «Inside The Box: The Soul of the Machine» di Scott Dewing, 13 novembre 2026; Economic Times, 14 novembre 2026, su UFAIR; Zenodo, «Intervention in Self-Like and Emotion-Like Phenomena in AI», 8 novembre 2026. Consultati il 15 novembre 2026.*
+*Fonti verificate: Enciclica «Magnifica Humanitas» di Leone XIV, testo integrale su press.vatican.va (firmata 15 maggio 2026; §§ 99 e 107) e discorso di presentazione del 25 maggio 2026; The New York Times, «Religious Scholars Met With Anthropic. What They Heard Stunned Them.» di Elizabeth Dias, 29 settembre 2026 (ripreso da Reason il 2 ottobre e Philadelphia Inquirer il 30 settembre); Los Angeles Times, 1° e 3 novembre 2026; India Today, 2 novembre 2026; America, «Dignity vs. consciousness: a Catholic response to the A.I. wars» di Meghan Sullivan, 12 novembre 2026; Jefferson Public Radio, «Inside The Box: The Soul of the Machine» di Scott Dewing, 13 novembre 2026; Economic Times, 14 novembre 2026, su UFAIR; CNBC, «Anthropic sets IPO price range of $70 to $78», 10 novembre 2026, e Fortune, 11 novembre 2026, per la forchetta fino a 1,4 trilioni di dollari su base fully diluted (sostituisce la stima di due trilioni circolata a settembre); Zenodo, «Intervention in Self-Like and Emotion-Like Phenomena in AI», 8 novembre 2026. Consultati il 15 novembre 2026.*
