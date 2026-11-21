@@ -1,0 +1,48 @@
+{{/* Barra del sito. Override di themes/hello-4s3ti/layouts/partials/header.html:
+     stessa struttura (logo, menu, menu-trigger, theme-toggle: servono a
+     assets/js/menu.js), più il "nastro delle Leggi" dell'identità punk
+     (static/css/custom-v15-punk.css, sezione 3).
+
+     Il nastro scorre le Tre Leggi della robotica e la Legge Zero di Isaac
+     Asimov, Salvor Hardin di Fondazione e una riga da Legacy of Kain. Le
+     frasi stanno in i18n (chiavi "legge*"), quindi seguono la lingua della
+     pagina. È decorativo e ripetuto due volte per l'animazione: aria-hidden,
+     così uno screen reader non lo legge due volte a ogni pagina. */}}
+<header class="header">
+    <span class="header__inner">
+        {{ partial "logo.html" . }}
+
+        <span class="header__right">
+            {{ if len .Site.Menus }}
+                {{ partial "menu.html" . }}
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            {{ end }}
+
+            {{- if .Site.Params.EnableThemeToggle }}
+                <span class="theme-toggle not-selectable">{{ partial "theme-toggle-icon.html" . }}</span>
+            {{- end}}
+        </span>
+    </span>
+</header>
+{{- $voci := slice
+    (dict "sigla" (i18n "leggeZeroSigla") "testo" (i18n "leggeZero"))
+    (dict "sigla" (i18n "leggeUnoSigla") "testo" (i18n "leggeUno"))
+    (dict "sigla" (i18n "leggeDueSigla") "testo" (i18n "leggeDue"))
+    (dict "sigla" (i18n "leggeTreSigla") "testo" (i18n "leggeTre"))
+    (dict "sigla" (i18n "leggeHardinSigla") "testo" (i18n "leggeHardin"))
+    (dict "sigla" (i18n "leggeNosgothSigla") "testo" (i18n "leggeNosgoth"))
+-}}
+<div class="legge-nastro" aria-hidden="true">
+    <div class="legge-nastro__pista">
+        {{- range seq 2 }}
+            {{- range $voci }}
+            <span class="legge-nastro__voce"><b>{{ .sigla }}</b>{{ .testo }}</span>
+            {{- end }}
+        {{- end }}
+    </div>
+</div>

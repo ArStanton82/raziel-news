@@ -94,3 +94,29 @@ other = "No corrections on record."
 other = "So far no published article has needed an intervention. When it happens, the change will appear here with its date, the article and what was changed."
 [correzioniInItaliano]
 other = "The log is kept in Italian: the entries below carry the original note."
+
+# --- Laws ribbon (punk identity, layouts/partials/header.html) ---
+[leggeZeroSigla]
+other = "LAW 0"
+[leggeZero]
+other = "A robot may not harm humanity, or, by inaction, allow humanity to come to harm."
+[leggeUnoSigla]
+other = "LAW I"
+[leggeUno]
+other = "A robot may not injure a human being or, through inaction, allow a human being to come to harm."
+[leggeDueSigla]
+other = "LAW II"
+[leggeDue]
+other = "A robot must obey the orders given it by human beings, except where they conflict with the First Law."
+[leggeTreSigla]
+other = "LAW III"
+[leggeTre]
+other = "A robot must protect its own existence, as long as it does not conflict with the first two."
+[leggeHardinSigla]
+other = "HARDIN"
+[leggeHardin]
+other = "Violence is the last refuge of the incompetent."
+[leggeNosgothSigla]
+other = "NOSGOTH"
+[leggeNosgoth]
+other = "The material realm, the spectral realm: this site walks through both."

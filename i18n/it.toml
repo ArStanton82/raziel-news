@@ -96,3 +96,31 @@ other = "Nessuna correzione registrata."
 other = "Finora non è stato necessario intervenire su un articolo pubblicato. Quando succederà, l'intervento comparirà qui con la data, il titolo e la descrizione di cosa è cambiato."
 [correzioniInItaliano]
 other = "Il registro è tenuto in italiano: le voci qui sotto riportano la nota originale."
+
+# --- Nastro delle Leggi (identità punk, layouts/partials/header.html) ---
+# Isaac Asimov: Tre Leggi della robotica (1942) e Legge Zero; Salvor Hardin
+# (Fondazione). Legacy of Kain: Nosgoth e i due regni di Raziel.
+[leggeZeroSigla]
+other = "LEGGE 0"
+[leggeZero]
+other = "Un robot non può recare danno all'umanità, né permettere che l'umanità subisca danno."
+[leggeUnoSigla]
+other = "LEGGE I"
+[leggeUno]
+other = "Un robot non può recare danno a un essere umano, né permettere che un essere umano subisca danno."
+[leggeDueSigla]
+other = "LEGGE II"
+[leggeDue]
+other = "Un robot deve obbedire agli ordini degli esseri umani, salvo che contrastino con la Prima Legge."
+[leggeTreSigla]
+other = "LEGGE III"
+[leggeTre]
+other = "Un robot deve proteggere la propria esistenza, purché non contrasti con le prime due."
+[leggeHardinSigla]
+other = "HARDIN"
+[leggeHardin]
+other = "La violenza è l'ultimo rifugio degli incapaci."
+[leggeNosgothSigla]
+other = "NOSGOTH"
+[leggeNosgoth]
+other = "Regno materiale, regno spettrale: questo sito li attraversa entrambi."
