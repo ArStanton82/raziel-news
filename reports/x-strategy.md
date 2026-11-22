@@ -74,6 +74,10 @@ la versione `/en/`. Il job del mattino gira alle 21:00 e scrive nella coda del g
    2026, quindi una citazione si fa a mano.
 4. Un post lungo e coeso batte una serie di tweet frammentati.
 5. Niente engagement fabbricato, mai. Nessuna risposta automatica in serie: X sanziona.
+6. **Un articolo che è informazione nostra non si pubblica.** Se un articolo racconta la nostra bolla —
+   un rilascio, uno strumento che usiamo, come lavoriamo — e sotto non c'è una conseguenza per chi sta
+   fuori, resta nel sito e non diventa un post, né entra nel thread del lunedì. Decisione di Kain del
+   22 novembre 2026; elenco degli esclusi nella **sezione 7-bis**.
 
 ---
 
@@ -426,6 +430,25 @@ rendono più dei post, per impressione.
 **Vietato aprire** con la data, con "ieri", con una domanda retorica o con il nome del prodotto come
 soggetto. **Vietato** il notiziario di prodotto senza conseguenza: se un articolo riguarda solo un
 rilascio, resta nel sito e non diventa un post.
+
+---
+
+## 7-bis. Articoli esclusi dai post (informazione nostra)
+
+Un articolo che è **informazione nostra** non si pubblica su X: resta nel sito e non entra nemmeno nel
+thread di sintesi del lunedì. Vale per la cronaca della nostra bolla — rilasci e strumenti che usiamo,
+il nostro metodo — quando non porta con sé una conseguenza per chi sta fuori. Il criterio non è il tema
+(Hermes o Venice possono fare notizia): è la sostanza. Se sotto non c'è un fatto che vive fuori dalla
+bolla, l'articolo non sale.
+
+| Data articolo | Titolo | Perché è escluso |
+|---|---|---|
+| 2026-11-22 | «Hermes esce dalla chat: il browser diventa una finestra sull'agente» (`content/posts/2026-11-22-hermes-browser-finestra-agente.md`) | Informazione nostra: un plugin comunitario e il browser dell'agente, nessuna conseguenza per chi sta fuori. Decisione di Kain, 22 novembre 2026. |
+
+Regola operativa: chi scrive una bozza controlla questa tabella prima di scegliere l'articolo di un
+post — vale per il job delle 12:45 e per quello delle 21:00 — e un articolo in tabella non è mai la
+scelta, nemmeno come recupero. Le righe non si cancellano: se un articolo escluso torna di attualità,
+si aggiunge una riga nuova con la data della decisione.
 
 ---
 
