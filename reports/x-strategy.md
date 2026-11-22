@@ -450,6 +450,9 @@ post — vale per il job delle 12:45 e per quello delle 21:00 — e un articolo 
 scelta, nemmeno come recupero. Le righe non si cancellano: se un articolo escluso torna di attualità,
 si aggiunge una riga nuova con la data della decisione.
 
+L'esclusione riguarda **il post**, non il `reply_link`: sotto un post che parla d'altro un articolo in
+tabella può ancora comparire come link di approfondimento, se è il più vicino per materia.
+
 ---
 
 ## 8. Cosa si misura (mediane, non medie)
