@@ -138,8 +138,20 @@ def check(draft: dict, published: list[dict], day_counts: dict) -> list[str]:
     return problems
 
 
-def load_published(queue_dir: str, exclude: str) -> list[dict]:
-    out = []
+def date_from_path(path: str) -> str:
+    """Estrae la data dal nome del file (replies-YYYY-MM-DD-HHMM.json)."""
+    m = re.search(r"replies-(\d{4}-\d{2}-\d{2})-", os.path.basename(path))
+    return m.group(1) if m else ""
+
+
+def load_published(queue_dir: str, exclude: str) -> list[tuple[dict, str]]:
+    """Risposte gia' pubblicate, con la data del file che le contiene.
+
+    La data serve al limite "una risposta per account al giorno": si contano solo
+    le pubblicazioni dello stesso giorno della bozza in esame, non tutto lo storico,
+    altrimenti un account risulterebbe bloccato per sempre dalla prima risposta.
+    """
+    out: list[tuple[dict, str]] = []
     for path in sorted(glob.glob(os.path.join(queue_dir, "replies-*.json"))):
         if os.path.abspath(path) == os.path.abspath(exclude):
             continue
@@ -147,9 +159,10 @@ def load_published(queue_dir: str, exclude: str) -> list[dict]:
             data = json.load(open(path, encoding="utf-8"))
         except Exception:
             continue
+        day = data.get("date") or date_from_path(path)
         for r in data.get("replies", []):
             if r.get("status") == "published":
-                out.append(r)
+                out.append((r, day))
     return out
 
 
@@ -161,17 +174,23 @@ def main() -> int:
 
     data = json.load(open(args.path, encoding="utf-8"))
     replies = data.get("replies", [])
+    draft_day = data.get("date") or date_from_path(args.path)
     published = load_published(os.path.dirname(os.path.abspath(args.path)) or QUEUE_DIR, args.path)
 
+    # Somiglianza: si confronta con tutto lo storico. Limite per account e tetto
+    # giornaliero: si contano solo le pubblicazioni dello stesso giorno.
+    published_texts = [r for r, _day in published]
     day_counts: dict[str, int] = {}
-    for r in published:
+    for r, day in published:
+        if draft_day and day != draft_day:
+            continue
         acc = (r.get("account") or "").lstrip("@")
         day_counts[acc] = day_counts.get(acc, 0) + 1
 
     results = []
     failed = 0
     for r in replies:
-        problems = check(r, published, day_counts)
+        problems = check(r, published_texts, day_counts)
         verdict = "PASS" if not problems else "FAIL"
         if problems:
             failed += 1
