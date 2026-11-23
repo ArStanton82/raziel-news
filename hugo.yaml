@@ -130,6 +130,10 @@ languages:
           parent: "temi"
           url: "/categories/filosofia-dellai/"
           weight: 4
+        - name: "Omarchy"
+          parent: "temi"
+          url: "/categories/omarchy/"
+          weight: 5
         - identifier: "archivio"
           name: "Archivio"
           url: "/archivio/"
@@ -203,6 +207,10 @@ languages:
           parent: "temi"
           url: "/categories/philosophy-of-ai/"
           weight: 4
+        - name: "Omarchy"
+          parent: "temi"
+          url: "/categories/omarchy/"
+          weight: 5
         - identifier: "archivio"
           name: "Archive"
           url: "/archivio/"

@@ -15,6 +15,7 @@
 #   Blockchain        #8ab55c -> 7,19:1   #4a6b2a -> 5,67:1
 #   AI                #5aa9e6 -> 6,71:1   #1f6ca8 -> 5,16:1
 #   Filosofia dell'AI #c46fa8 -> 5,03:1   #96427f -> 5,75:1
+#   Omarchy           #f2795c -> 6,23:1   #b03a2e -> 5,57:1
 
 Hermes:
   etichetta: Hermes
@@ -53,3 +54,11 @@ AI:
   etichetta: Philosophy of AI
   colore: "#c46fa8"
   colore_chiaro: "#96427f"
+
+# Nome uguale nelle due lingue: una voce sola serve italiano e inglese.
+# Rosso corallo, l'unica fascia libera: resta distinta da ambra (Crypto),
+# rosa (Filosofia), viola (Hermes), turchese (Venice.ai), blu (AI), verde (Blockchain).
+Omarchy:
+  etichetta: Omarchy
+  colore: "#f2795c"
+  colore_chiaro: "#b03a2e"
