@@ -1,0 +1,13 @@
+# Sovrapposizione di configurazione per il foglio delle card di condivisione.
+# Uso (lo fa il workflow, e si può fare in locale):
+#   hugo --minify --config hugo.yaml,scripts/og-schede/config.yaml -d <cartella>
+#   node scripts/og_schede.mjs <cartella>
+# Aggiunge al sito la sola pagina /og-schede/ (e /en/og-schede/), che esiste
+# esclusivamente in questo build temporaneo: il build pubblicato non monta
+# questa cartella, quindi la pagina non arriva mai online.
+module:
+  mounts:
+    - source: content
+      target: content
+    - source: scripts/og-schede/content
+      target: content

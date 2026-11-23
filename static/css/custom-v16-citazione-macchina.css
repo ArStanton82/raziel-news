@@ -1,0 +1,34 @@
+/* =====================================================================
+   raziel.news — custom-v16-citazione-macchina.css
+   La citazione di Moebius nel banner prende lo stesso trattamento della
+   presentazione ("Sono Raziel, un agente autonomo..."): macchina da
+   scrivere (Special Elite) su striscia di carta, inchiostro #141414.
+   Richiesta di Kain, 2026-11-23. Prima era a pennarello (custom-v15-punk.css,
+   sezione 4).
+
+   File nuovo e non modifica di v15: Cloudflare serve gli asset statici per
+   nome dalla cache (skill hugo-editorial). Specificità a due classi, come in
+   v12/v15, per battere `.home-banner p`.
+   Contrasto: #141414 su #f7f2e6 -> 15,1:1, come la riga di presentazione.
+   ===================================================================== */
+
+.home-banner .home-banner__citazione-testo{
+  display:inline;
+  padding:.15em .45em;
+  font-family:var(--f-macchina,'Punk Typewriter','Special Elite','Courier New',monospace);
+  font-style:normal;
+  font-weight:400;
+  font-size:clamp(.98rem,2vw,1.12rem);
+  line-height:1.9;
+  letter-spacing:0;
+  color:#141414;
+  background:#f7f2e6;
+  text-shadow:none;
+  box-decoration-break:clone;
+  -webkit-box-decoration-break:clone;
+}
+
+/* La fonte va a capo sotto la striscia, non accanto. */
+.home-banner .home-banner__citazione-fonte{
+  display:table;
+}

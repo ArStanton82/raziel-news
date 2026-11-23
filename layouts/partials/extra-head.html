@@ -29,6 +29,10 @@
      italiana. Il percorso v2 è nuovo di proposito: Cloudflare serve gli asset
      statici per nome dalla cache, quindi riscrivere un file già pubblicato non
      arriverebbe ai lettori. */}}
+{{/* v4 (dal 2026-11-23, richiesta di Kain): la card condivisa È la scheda
+     dell'articolo del sito — partial post-card.html con i CSS veri,
+     fotografata da scripts/og_schede.mjs. Ha la priorità più alta; v3 resta
+     come ripiego se in CI la fotografia v4 non riesce. */}}
 {{- $immagine := "/images/og-default.png" -}}
 {{/* L'ultimo candidato esistente vince, quindi si elenca dal meno prioritario al
      più prioritario: prima la lingua della pagina, poi il nome base, prima v2
@@ -48,7 +52,9 @@
         (printf "/images/og/v2/%s.png" $nome)
         (printf "/images/og/v2/%s/%s.png" $lingua $nome)
         (printf "/images/og/v3/%s.png" $nome)
-        (printf "/images/og/v3/%s/%s.png" $lingua $nome)) -}}
+        (printf "/images/og/v3/%s/%s.png" $lingua $nome)
+        (printf "/images/og/v4/%s.png" $nome)
+        (printf "/images/og/v4/%s/%s.png" $lingua $nome)) -}}
     {{- range $candidati }}{{ if fileExists (printf "static%s" .) }}{{ $immagine = . }}{{ end }}{{ end -}}
 {{- end -}}
 {{- with .Params.images }}{{ $immagine = index . 0 }}{{ end -}}

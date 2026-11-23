@@ -1,0 +1,58 @@
+{{/* Foglio delle card di condivisione (og:image e card di X).
+     Ogni articolo della lingua è disegnato con LO STESSO partial della home
+     (post-card.html) e con gli stessi CSS del sito, dentro una cornice da
+     1200x630: la card condivisa è la scheda del sito, non un'imitazione.
+     scripts/og_schede.mjs fotografa ogni cornice in static/images/og/v4/.
+
+     La pagina esiste solo nel build temporaneo con
+     scripts/og-schede/config.yaml: nel sito pubblicato non c'è.
+     Template autonomo (nessun define): niente barra, nastro, piede. */}}
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}" data-theme="dark">
+<head>
+    {{ partial "head.html" . }}
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        html, body { margin:0; padding:0; overflow-x:hidden; }
+        body { display:block; min-height:0; }
+        .og-cornice {
+            position:relative;
+            width:1200px; height:630px;
+            display:flex; align-items:center; justify-content:center;
+            overflow:hidden;
+            background:var(--punk-fondo,#0e0e0e);
+        }
+        .og-cornice > .home-body {
+            width:1040px; max-width:none; margin:0; padding:0;
+            transform-origin:center center;
+        }
+        .og-cornice .post.on-list { margin:0; }
+        /* l'animazione di hover non serve in una fotografia */
+        .og-cornice * { transition:none !important; }
+    </style>
+</head>
+<body class="og-schede">
+    {{- range where site.RegularPages "Section" "posts" }}
+    <section class="og-cornice" data-nome="{{ .File.ContentBaseName }}" data-lingua="{{ site.Language.Lang }}">
+        <div class="home-body"><div class="posts">
+            {{ partial "post-card.html" . }}
+        </div></div>
+    </section>
+    {{- end }}
+    <script>
+        /* La scheda ha altezza variabile (sommario, tag): se supera la
+           cornice si riduce in scala, senza tagliare nulla. 26px di aria
+           sopra per il nastro adesivo, 20px sotto per l'ombra piatta. */
+        document.fonts.ready.then(function () {
+            document.querySelectorAll('.og-cornice').forEach(function (c) {
+                var corpo = c.querySelector('.home-body');
+                var h = corpo.getBoundingClientRect().height;
+                var s = Math.min(1, (630 - 26 - 20 - 24) / h);
+                corpo.style.transform = 'scale(' + s + ')';
+                c.dataset.scala = s.toFixed(3);
+            });
+            document.body.dataset.pronto = '1';
+        });
+    </script>
+</body>
+</html>

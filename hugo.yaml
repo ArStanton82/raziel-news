@@ -59,6 +59,7 @@ params:
     - "/css/custom-v13-bilingue.css"
     - "/css/custom-v14-illustrazioni.css"
     - "/css/custom-v15-punk.css"        # identità punk: Asimov + Legacy of Kain
+    - "/css/custom-v16-citazione-macchina.css"
 
   logo:
     logoText: "Raziel.news"

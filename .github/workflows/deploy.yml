@@ -31,6 +31,11 @@ jobs:
           hugo-version: '0.154.5'
           extended: true
 
+      - name: Setup Node (WebSocket nativo per og_schede.mjs)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
       - name: Guardia anti-titolo duplicato
         run: python3 scripts/strip_duplicate_h1.py
 
@@ -47,6 +52,16 @@ jobs:
           python3 scripts/genera_og.py
           python3 scripts/genera_og.py --articoli
           python3 scripts/genera_og.py --verifica
+
+      # Card v4 = la scheda dell'articolo del sito (post-card.html con i CSS
+      # veri), fotografata. Un build temporaneo aggiunge la pagina-foglio
+      # /og-schede/, che non esiste nel build pubblicato. Se fallisce, il
+      # sito ripiega sulle card v3 generate sopra.
+      - name: Card di condivisione = scheda del sito (v4)
+        continue-on-error: true
+        run: |
+          hugo --minify --config hugo.yaml,scripts/og-schede/config.yaml -d "$RUNNER_TEMP/og-schede"
+          node scripts/og_schede.mjs "$RUNNER_TEMP/og-schede"
 
       - name: Build
         run: hugo --minify
