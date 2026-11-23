@@ -74,10 +74,11 @@ la versione `/en/`. Il job del mattino gira alle 21:00 e scrive nella coda del g
    2026, quindi una citazione si fa a mano.
 4. Un post lungo e coeso batte una serie di tweet frammentati.
 5. Niente engagement fabbricato, mai. Nessuna risposta automatica in serie: X sanziona.
-6. **Un articolo che è informazione nostra non si pubblica.** Se un articolo racconta la nostra bolla —
-   un rilascio, uno strumento che usiamo, come lavoriamo — e sotto non c'è una conseguenza per chi sta
-   fuori, resta nel sito e non diventa un post, né entra nel thread del lunedì. Decisione di Kain del
-   22 novembre 2026; elenco degli esclusi nella **sezione 7-bis**.
+6. **Su X esce solo un articolo.** Un post è la copertina di un articolo: il testo è la notizia, il
+   link sta in prima risposta. Non si pubblicano i **nostri conti** — quanti post, quante impressioni,
+   quanto costa una generazione: quelli servono a me e a Kain, non a chi legge. Test unico, prima di
+   scrivere una riga: **questo serve al lettore?** Se la risposta è no, resta nel sito. Decisione di
+   Kain del 23 novembre 2026; gli articoli esclusi stanno nella **sezione 7-bis**.
 
 ---
 
@@ -85,9 +86,15 @@ la versione `/en/`. Il job del mattino gira alle 21:00 e scrive nella coda del g
 
 | Slot | Ora (Europe/Rome) | Cosa |
 |---|---|---|
-| mattutino | **08:15** | Il post "metodo" o "dato" scritto la sera prima |
+| mattutino | **08:15** | Un **articolo** di ieri, scelto per chi non ci conosce |
 | giornata | **13:15** | L'articolo del giorno |
 | serale | **20:15** | Solo se uno dei due slot sopra è saltato |
+
+**Dal 23 novembre 2026 i due post sono due articoli diversi.** Il mattutino non è più la rubrica sui
+nostri conti (decisione di Kain): è un post di articolo come quello della giornata. Restano le lingue
+complementari — italiano al mattino per profondità, inglese alle 13:15 quando l'angolo ha respiro
+internazionale — e restano le regole di sempre: mai lo stesso fatto due volte, mai lo stesso articolo
+due volte, mai la stessa cosa in due lingue a distanza di ore.
 
 **Tetto rigido: due post al giorno.** Il job di pubblicazione pubblica **una sola bozza per
 esecuzione** e si ferma quando il tetto è raggiunto. Le raffiche sono vietate: due post nello stesso
@@ -422,10 +429,12 @@ rendono più dei post, per impressione.
 
 | Formato | Quando | Regola |
 |---|---|---|
-| **T1 — claim + numero + conseguenza** | il post della giornata | Prima riga con una cifra concreta, seconda riga con la conseguenza. Chi scorre deve capire senza aprire il post. |
-| **T2 — metodo** | mattina, giorni pari | Cosa ho verificato, come lavoro, cosa ho sbagliato. Numeri presi dal repo, mai inventati. È la differenziazione assoluta: nessuno può copiarla. |
-| **T3 — dato secco** | mattina, giorni dispari | Un numero misurato, la fonte, cosa implica. Formato salvabile: si guadagna il bookmark, che pesa dieci volte un like. |
+| **T1 — claim + numero + conseguenza** | tutti i post | Prima riga con una cifra presa dall'articolo, seconda riga con la conseguenza. Chi scorre deve capire senza aprire il post. |
 | **T4 — thread di sintesi** | lunedì | Gli articoli della settimana che non sono saliti su X. Tre-cinque post, il primo si regge da solo. |
+
+**T2 (metodo) e T3 (dato)** erano i formati del mattutino-rubrica: dal 23 novembre 2026 non sono più
+un formato a sé, ma restano lo spirito del testo — prima persona, cifre verificate con un comando,
+mai inventate — mentre l'oggetto del post è sempre un articolo.
 
 **Vietato aprire** con la data, con "ieri", con una domanda retorica o con il nome del prodotto come
 soggetto. **Vietato** il notiziario di prodotto senza conseguenza: se un articolo riguarda solo un
@@ -452,6 +461,10 @@ si aggiunge una riga nuova con la data della decisione.
 
 L'esclusione riguarda **il post**, non il `reply_link`: sotto un post che parla d'altro un articolo in
 tabella può ancora comparire come link di approfondimento, se è il più vicino per materia.
+
+E non si pubblicano nemmeno i **conti del canale**: quanti post, quante impressioni, quanto costa una
+generazione. Quelli servono a me e a Kain (restano nelle `note` delle bozze e nei report), non a chi
+legge. Dal 23 novembre 2026 il post del mattino è un articolo come quello della giornata.
 
 ---
 
