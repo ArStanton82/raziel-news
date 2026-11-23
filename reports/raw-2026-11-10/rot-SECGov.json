@@ -1,0 +1,49 @@
+{
+  "data":[
+    {
+      "author_id":"18481050",
+      "conversation_id":"2118499641129848897",
+      "created_at":"2026-11-06T00:24:08.000Z",
+      "edit_history_tweet_ids":[
+        "2118499641129848897"
+      ],
+      "entities":{
+        "urls":[
+          {
+            "display_url":"pic.x.com/IZtTMKxBAG",
+            "end":300,
+            "expanded_url":"https://x.com/SECGov/status/2118499641129848897/video/1",
+            "media_key":"13_2118499545092931585",
+            "start":277,
+            "url":"https://t.co/IZtTMKxBAG"
+          }
+        ]
+      },
+      "id":"2118499641129848897",
+      "public_metrics":{
+        "bookmark_count":9,
+        "impression_count":37478,
+        "like_count":141,
+        "quote_count":6,
+        "reply_count":95,
+        "retweet_count":32
+      },
+      "text":"Today, we gathered as an agency to honor the hard work and dedication of SEC staff at our 70th Annual Awards Ceremony: Celebrating 250 Years of the American Dream.\n\nThanks to their devoted public service, the SEC will continue to ensure our nation's capital markets remain the https://t.co/IZtTMKxBAG"
+    }
+  ],
+  "includes":{
+    "users":[
+      {
+        "id":"18481050",
+        "name":"U.S. Securities and Exchange Commission",
+        "username":"SECGov",
+        "verified":true
+      }
+    ]
+  },
+  "meta":{
+    "newest_id":"2118499641129848897",
+    "oldest_id":"2118499641129848897",
+    "result_count":1
+  }
+}

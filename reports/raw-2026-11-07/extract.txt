@@ -1,0 +1,232 @@
+== core-AskVenice: 10 post (meta result_count=10)
+  [2118538750628385010] @AskVenice 2026-11-06T02:59:33.000Z L1 RT0 RP0 Q0 V578
+    EXP: @grantfisher Check your DMs
+  [2118537430999675191] @AskVenice 2026-11-06T02:54:18.000Z L19 RT1 RP0 Q0 V3450
+    EXP: Access DeepSeek v4.1 Flash 1017 Ultrafast on Venice. https://t.co/Hyz5MihfmL
+  [2118537419230466297] @AskVenice 2026-11-06T02:54:15.000Z L227 RT11 RP15 Q2 V10768
+    EXP: One of the world’s top open models, now served ultrafast.  DeepSeek V4.1 Flash 1017 Ultrafast is live on Venice. Now with a faster serving route, tuned for agentic coding.  Fully private. https://t.co/ajsNKQM95k
+  [2118522600888705430] @AskVenice 2026-11-06T01:55:22.000Z L0 RT0 RP0 Q0 V792
+    EXP: @minmaximalist Check your DMs
+  [2118521547933516093] @AskVenice 2026-11-06T01:51:11.000Z L2 RT0 RP0 Q0 V1165
+    EXP: @j_jexxa Check your DMs
+  [2118521343864107424] @AskVenice 2026-11-06T01:50:23.000Z L1 RT0 RP0 Q0 V740
+    EXP: @TomZarebczan Check your DMs
+  [2118521183251669300] @AskVenice 2026-11-06T01:49:44.000Z L0 RT0 RP0 Q0 V945
+    EXP: @jamiekirkland Check your DMs
+  [2118520828379922512] @AskVenice 2026-11-06T01:48:20.000Z L1 RT0 RP0 Q0 V896
+    EXP: @claracottontail Check your DMs
+  [2118520503875068127] @AskVenice 2026-11-06T01:47:02.000Z L1 RT0 RP0 Q0 V968
+    EXP: @thatguygeo Check your DMs
+  [2118519981902278841] @AskVenice 2026-11-06T01:44:58.000Z L467 RT19 RP494 Q0 V28535
+    EXP: Got a few early access codes for Discover. Want one? https://t.co/2VeoEEXg2v
+== core-BitcoinMagazine: 10 post (meta result_count=10)
+  [2118825975723200590] @BitcoinMagazine 2026-11-06T22:00:53.000Z L904 RT92 RP65 Q13 V48143
+    EXP: NEW: 🇺🇸 Public company Strive disclosed a net income of $509 million and the addition of 28,000 BTC in Q3. 👀  This brought their Bitcoin treasury to 43,124 BTC worth $3.26 billion! 🚀 https://t.co/x2phwKpiQO
+  [2118802720325005640] @BitcoinMagazine 2026-11-06T20:28:28.000Z L779 RT99 RP85 Q9 V46401
+    EXP: JUST IN: The Bitcoin Fear &amp; Greed Index is now at 28, "Fear", while its price holds above $75,000 👀        HODL! ✊ https://t.co/lyDSTlh7jV
+  [2118775600190230529] @BitcoinMagazine 2026-11-06T18:40:42.000Z L1046 RT141 RP55 Q10 V81973
+    EXP: JUST IN: 🇺🇸 Coinbase VP of U.S. Policy says "there are more Democrats coming into Congress that are pro-crypto than we have ever seen before" 👀  "We have a very strong track record with Democrats and with Republicans, and we'll continue that in the new Congress." https://t.co/vG6NeQwzoQ
+  [2118762406067486824] @BitcoinMagazine 2026-11-06T17:48:16.000Z L7 RT1 RP0 Q0 V7816
+    EXP: Why should your rate depend on your loan size? With SALT, it doesn't.     6.99% APR at 30% LTV. 👏  Get started now: https://t.co/muwx0m3kGN https://t.co/3j34o5DdtY
+  [2118754827530600615] @BitcoinMagazine 2026-11-06T17:18:10.000Z L345 RT39 RP41 Q3 V46514
+    EXP: JUST IN: Look Into Bitcoin’s Head of Research says "if I use one word to sum up Bitcoin, it'd be asymmetric" 👏  "Given the fact that we can put together these amazing conferences and we care so much about an asset that still doesn't even make up 0.3% of global invested capital" https://t.co/AojYHiMgiJ
+  [2118736218359996865] @BitcoinMagazine 2026-11-06T16:04:13.000Z L502 RT74 RP46 Q3 V37288
+    EXP: JUST IN: 🇷🇺 The Bank of Russia will allow non-qualified investors to buy Bitcoin under new crypto investment framework starting November 17 🚀 https://t.co/N6odQu0UDX
+  [2118719128924217606] @BitcoinMagazine 2026-11-06T14:56:18.000Z L1468 RT188 RP75 Q19 V81601
+    EXP: JUST IN: 🇺🇸 The White House is now reviewing a new rule which will allow Americans to invest in crypto through their 401(k) retirement plans 👀 https://t.co/uXGGIXEzdC
+  [2118715104199844100] @BitcoinMagazine 2026-11-06T14:40:19.000Z L9 RT1 RP1 Q0 V6861
+    EXP: Reserve yours now 👇 https://t.co/rm7oTafDUd
+  [2118711090901139782] @BitcoinMagazine 2026-11-06T14:24:22.000Z L209 RT29 RP14 Q2 V39934
+    EXP: The Genesis Book Collector's Edition is live!  333 copies. Individually numbered. Exclusive Genesis Block slipcase. Hand-signed by Aaron van Wirdum.  Once they're gone, they're gone. 🚀 https://t.co/BgiJoCVt8m
+  [2118675266319065314] @BitcoinMagazine 2026-11-06T12:02:01.000Z L726 RT93 RP70 Q8 V61786
+    EXP: JUST IN: C$400M fund manager Willem Middelkoop says they've added Bitcoin to their portfolio because it's "the fastest horse in the race" 👀  "Bitcoin is probably the best money ever created" 🚀 https://t.co/wJr0QKASyu
+== core-CoinDesk: 10 post (meta result_count=10)
+  [2118825763411579152] @CoinDesk 2026-11-06T22:00:02.000Z L173 RT28 RP44 Q4 V25290
+    EXP: JUST IN: @Aave acquires fixed-rate lending startup @Avon_xyz, bringing its protocol engineering team and technology in-house as Aave works to add fixed-rate lending to its $33B deposit, $13B active loan platform. https://t.co/YhvhV2UwgI
+  [2118810661782159367] @CoinDesk 2026-11-06T21:00:02.000Z L125 RT11 RP45 Q3 V36925
+    EXP: $1 DOGE? $5 XRP? Don’t count on it.  @hyblockcapital CEO Shubh Varma says alt season isn’t coming back: “There’s so much other demand.” https://t.co/lagL0esmf0
+  [2118795554566164873] @CoinDesk 2026-11-06T20:00:00.000Z L45 RT5 RP15 Q0 V21916
+    EXP: Everyone’s bearish on 2027. @hyblockcapital CEO Shubh Varma thinks that’s the setup.  “I personally think 2027 will be most likely the opposite of the consensus sentiment.” https://t.co/hOpRcGfopr
+  [2118784895103201422] @CoinDesk 2026-11-06T19:17:38.000Z L72 RT8 RP10 Q0 V22230
+    EXP: Democrats won control of both chambers of Congress, putting the CLARITY Act’s path in doubt after it stalled in the Senate in September. Plus, Bitcoin ETFs see $430 in outflows and Canary Capital launches an INJ ETF.  @jennsanasie has what you need to know. https://t.co/e9LLAiLTNv
+  [2118779299713225023] @CoinDesk 2026-11-06T18:55:24.000Z L17 RT2 RP0 Q1 V7773
+    EXP: Grayscale’s Zcash ETF (ZCSH) saw its share count rise 54.2% from Aug. 25 to Oct. 30. With $724M in assets as of Oct. 31, ZCSH became Grayscale’s largest single-asset ETF outside its Bitcoin and Ether funds, surpassing its Hyperliquid and Solana funds.   Read more: https://t.co/oGaZdByeyU
+  [2118779296525513030] @CoinDesk 2026-11-06T18:55:23.000Z L12 RT0 RP1 Q0 V4914
+    EXP: Beyond NU7, Zcash developers are bringing private information retrieval (PIR) into wallets. First used in September’s coinholder vote, PIR now powers experimental queries in Vizor, with private swap refunds and balance lookups among the next development goals. https://t.co/PYvCFmLZB5
+  [2118779292825927741] @CoinDesk 2026-11-06T18:55:23.000Z L4 RT0 RP1 Q0 V891
+    EXP: NU7 also stopped Sprout spends. The oldest shielded pool held 22,263 ZEC on Oct. 31, but holders moved about 10,000 ZEC before activation. Around 12,224 ZEC remained stranded. A possible recovery mechanism has been discussed, but none approved.  Read more: https://t.co/5uO5AfN8aT https://t.co/0kz4bCO81s
+  [2118779290057900175] @CoinDesk 2026-11-06T18:55:22.000Z L129 RT12 RP23 Q2 V29367
+    EXP: CoinDesk Research’s November Zcash Monthly: NU7 activated on Nov. 6, cutting target block times from 75 to 25 seconds without changing ZEC’s 21M supply cap or halving schedule. Most of the tracked service categories were NU7-ready, and the chain continued without a split. https://t.co/p0i14RQ97r
+  [2118765357431492841] @CoinDesk 2026-11-06T18:00:00.000Z L37 RT10 RP12 Q0 V20445
+    EXP: @RichJWidmann of @GoogleCloud explains how Google's new Multi-Party Compute system applies years of institutional banking security practices to crypto custody.  “Our goal is to help them manage those private keys the same way they have been in the other contexts as well.” https://t.co/RHVsVMQtZ9
+  [2118750264954143071] @CoinDesk 2026-11-06T17:00:02.000Z L240 RT25 RP57 Q7 V36902
+    EXP: INSIGHT: @VitalikButerin to crypto exchanges after the @Binance hack, “Prioritize survival over market share for the next two years.” https://t.co/IiCwD9Ghsz
+== core-HermesWatcher: 10 post (meta result_count=10)
+  [2118946590614515760] @HermesWatcher 2026-11-07T06:00:09.000Z L3 RT0 RP0 Q0 V744
+    EXP: People still don't get how much Hermes does.  HERMES IS YOUR EVERYTHING AGENT. IT WORKS FOR YOU AND GROWS WITH YOU.  Hermes Agent remembers you, does the work and shows up on its own.  What it does: ▸ Runs jobs on a schedule, like "every Friday at 5pm" ▸ Checks on things for https://t.co/pb08lMNoAg
+  [2118943216733155770] @HermesWatcher 2026-11-07T05:46:45.000Z L1 RT0 RP0 Q0 V31
+    EXP: @BearHuddleston Excellent work my man 🫡
+  [2118901288411054425] @HermesWatcher 2026-11-07T03:00:09.000Z L58 RT5 RP1 Q2 V3222
+    EXP: HERMES CAN USE YOUR COMPUTER WHILE YOU KEEP USING IT.  Are you letting Hermes handle desktop tasks while you keep working?  You keep writing in Word. Hermes works through export settings in another app or prepares a draft in Outlook.  Same machine. At the same time.  ▸ Your https://t.co/fZX7S19of8
+  [2118866688309710961] @HermesWatcher 2026-11-07T00:42:39.000Z L1 RT0 RP0 Q0 V47
+    EXP: @fullctx My guy with the ultimate squad 🔥
+  [2118856039475089682] @HermesWatcher 2026-11-07T00:00:20.000Z L24 RT1 RP3 Q2 V3586
+    EXP: This shouldn't be this easy.  Ask Hermes for a website. It builds one, live, right beside the chat.  Hermes Desktop has its own live preview. Describe the site you want and Hermes picks a look, writes the code and opens it next to the conversation.  What it built from one https://t.co/CeqT3QYq5d
+  [2118852028801884204] @HermesWatcher 2026-11-06T23:44:24.000Z L0 RT0 RP0 Q0 V51
+    EXP: @nickvasilescu LFG 🥳  Congrats my man
+  [2118851559476081026] @HermesWatcher 2026-11-06T23:42:32.000Z L3 RT0 RP1 Q0 V164
+    EXP: @MichaelGannotti @NousResearch Bro, let's just call this what it is. A lab in your office.  🔥🔥🔥
+  [2118850588872175860] @HermesWatcher 2026-11-06T23:38:41.000Z L0 RT0 RP0 Q0 V276
+    EXP: @xLocoLabs Deeeeeeem 😎  This right here is a Sick setup. 🔥🔥
+  [2118848285666574571] @HermesWatcher 2026-11-06T23:29:32.000Z L1 RT0 RP1 Q0 V100
+    EXP: @BkashJosi I'm still waiting for my tacos bro https://t.co/YHeK3G5zoe
+  [2118847324978020545] @HermesWatcher 2026-11-06T23:25:43.000Z L0 RT0 RP2 Q0 V275
+    EXP: @nikoletesle Yessir this is a great API everyone should have. FREE with 40 RPM. Can't beat it.
+== core-JonShapeShift: 3 post (meta result_count=3)
+  [2117692715991511133] @JonShapeShift 2026-11-03T18:57:42.000Z L53 RT7 RP0 Q1 V1283
+    EXP: As model intelligence increases and we give even more of our personal and most intimate thoughts over to these models, the importance of privacy continues to rise.  Most providers are looking over your shoulder constantly, use @AskVenice and keep your thoughts to yourself.
+  [2117691759954428031] @JonShapeShift 2026-11-03T18:53:55.000Z L75 RT8 RP0 Q0 V1389
+    EXP: Great base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf explainer https://t.co/RL9G3n4cG3
+  [2116726643628925166] @JonShapeShift 2026-11-01T02:58:53.000Z L74 RT8 RP5 Q1 V2360
+    EXP: Most of the time you are interacting with AI, you are not the only one in the conversation.  The closed lab you are using is watching over your shoulder and judging you.  Use @AskVenice instead and your thoughts can remain your own. https://t.co/O1w0t6UTmA
+== core-NousResearch: 10 post (meta result_count=10)
+  [2118935452639993978] @NousResearch 2026-11-07T05:15:54.000Z L0 RT0 RP0 Q0 V182
+    EXP: @leononrails @Shaughnessy119 Yes! We cover capabilities in the results
+  [2118915119786631210] @NousResearch 2026-11-07T03:55:06.000Z L0 RT0 RP1 Q0 V322
+    EXP: @donetskscum @superalesha Read that again
+  [2118905582400753760] @NousResearch 2026-11-07T03:17:12.000Z L27 RT0 RP0 Q0 V3298
+    EXP: @superalesha Tell your ChatGPT we love Chinese models
+  [2118905486158500006] @NousResearch 2026-11-07T03:16:49.000Z L88 RT0 RP8 Q0 V4975
+    EXP: @superalesha You don’t think that was the plan? The whole point is to make them more usable and more widely available for companies and entities in the US that cannot use or trust them
+  [2118901788321714555] @NousResearch 2026-11-07T03:02:08.000Z L18 RT0 RP1 Q1 V1840
+    EXP: @VectorCrossProd @milesFF007F He’s a very eligible bachelor
+  [2118901702585630835] @NousResearch 2026-11-07T03:01:47.000Z L17 RT0 RP0 Q0 V426
+    EXP: @milesFF007F Agreed. He’s chill tho
+  [2118898836701679816] @NousResearch 2026-11-07T02:50:24.000Z L11 RT0 RP0 Q0 V1042
+    EXP: @m7jazin Many companies and agencies are blocked from using Chinese open source models so an open model they can actually use seemed like a worthwhile cause. What would you suggest we ship next
+  [2118898326573850951] @NousResearch 2026-11-07T02:48:22.000Z L94 RT0 RP7 Q0 V2190
+    EXP: @milesFF007F We have a single employee who resides in SF
+  [2118892349971705976] @NousResearch 2026-11-07T02:24:38.000Z L4 RT0 RP0 Q0 V369
+    EXP: @mrfundman It’s too good but it’s true
+  [2118891601212711236] @NousResearch 2026-11-07T02:21:39.000Z L10 RT0 RP0 Q0 V578
+    EXP: @rickmanelius Hopefully unblocks some open model usage!
+== core-Teknium: 10 post (meta result_count=10)
+  [2118961815040516474] @Teknium 2026-11-07T07:00:39.000Z L0 RT0 RP0 Q0 V24
+    EXP: @Cayden970207 Woot! Good work
+  [2118961635494920244] @Teknium 2026-11-07T06:59:56.000Z L9 RT0 RP1 Q0 V704
+    EXP: The in-app browser will also be able to inherit your cookies and passwords if you opt in like the agent's own browser tool does on next patch release https://t.co/GfMetvWoX7
+  [2118955185167007762] @Teknium 2026-11-07T06:34:19.000Z L1 RT0 RP0 Q0 V57
+    EXP: @matt_brewer @intrinscbro @Nightshadessx @grok FYI, this is the chinese qwen 27B  I'm not sure what values you think they aren't already distilling from claude https://t.co/TaIAHZD9jr
+  [2118924424326111473] @Teknium 2026-11-07T04:32:05.000Z L1 RT0 RP1 Q0 V104
+    EXP: @matt_brewer @Maticated @pravijn @grok We did nothing to the model, so whatever it says, it'd have already said
+  [2118922162312749296] @Teknium 2026-11-07T04:23:05.000Z L2 RT0 RP1 Q0 V110
+    EXP: @matt_brewer @Maticated @pravijn @grok Dude, we didnt train it to say men should go into girls bathrooms or fire all white people. You clearly are off your rocker
+  [2118921853049970774] @Teknium 2026-11-07T04:21:52.000Z L131 RT3 RP12 Q2 V5331
+    EXP: Another device Hermes Agent looks excellent in https://t.co/Dqo0LSvrXV
+  [2118913100749688936] @Teknium 2026-11-07T03:47:05.000Z L12 RT0 RP1 Q0 V376
+    EXP: @JarlanPerez Wow it looks so good
+  [2118912784096436715] @Teknium 2026-11-07T03:45:49.000Z L90 RT5 RP8 Q1 V5138
+    EXP: Forgot to highlight this in the latest v0.23 release!  Most terminals now can display full resolution images in-line now! https://t.co/VsgZpq1lC7
+  [2118912517393322239] @Teknium 2026-11-07T03:44:46.000Z L3 RT0 RP3 Q0 V107
+    EXP: @matt_brewer @Maticated @pravijn @grok If I ask a western model what happened in 1989, it answers with objective fact. Qwen does not.  Hello?
+  [2118912120238878912] @Teknium 2026-11-07T03:43:11.000Z L1 RT0 RP3 Q0 V294
+    EXP: @dylanjdigby @EditorEnBici What happened in 1989 sir
+== core-VitalikButerin: 4 post (meta result_count=4)
+  [2117443537868562768] @VitalikButerin 2026-11-03T02:27:34.000Z L28 RT1 RP18 Q0 V4893
+    EXP: @davidmanheim @LindellYehuda @sja1729 I would describe my worry as: what if the equivalent of quadratic sieve for ECDLP or pairings (and similarly, more-powerful-than-today algorithms for breaking lattices) exist, and we've just not yet managed to find them - but AI speedrunning 50+ years of math in 5 years will.
+  [2116621824578703741] @VitalikButerin 2026-10-31T20:02:22.000Z L1815 RT126 RP80 Q28 V87895
+    EXP: @katiabanina India is 17% of the world, including a huge number of talented developers working on ethereum and ZK not to mention other kinds of secure, private and open technology, and it has so far had 0 of 11 devcon(nect)s.  I'm excited to engage with the community here.
+  [2116620122001707513] @VitalikButerin 2026-10-31T19:55:36.000Z L212 RT17 RP29 Q12 V38226
+    EXP: @ratspeakorg my p(doom) is ~0.1  what's yours?
+  [2116619251440341276] @VitalikButerin 2026-10-31T19:52:09.000Z L6179 RT364 RP792 Q101 V522041
+    EXP: Just arrived in Mumbai!  Looking forward to seeing familiar faces and new faces and all the wonderful Ethereum and open/secure/private/decentralized tech projects that everyone is working on over the next week.
+== core-venicestats: 8 post (meta result_count=8)
+  [2118891195392725396] @venicestats 2026-11-07T02:20:02.000Z L0 RT0 RP0 Q0 V26
+    EXP: 🤖 The numbers come from X. The words come from AI, running on @AskVenice private inference paid in $DIEM. That's what owning your compute looks like. New edition every Friday. Same numbers, any window: https://t.co/ZMRxNVffMS
+  [2118891187360710679] @venicestats 2026-11-07T02:20:00.000Z L0 RT0 RP1 Q0 V40
+    EXP: 📋 How the @venicestats board works: we count posts mentioning $VVV, DIEM or @AskVenice that pass a relevance check, no reposts. Buzz Score = (likes + bookmarks) × log₂(posts + 1) + views/100. Volume alone won't do it, likes, saves and views will.
+  [2118891178502324703] @venicestats 2026-11-07T02:19:58.000Z L0 RT0 RP1 Q0 V9
+    EXP: The week in numbers, Oct 30 to Nov 6: 📝 1,920 posts from 1,121 accounts 🌱 713 accounts we had never seen post about Venice 👀 946.2K views ❤️ 10.5K likes · 🔁 911 reposts · 🔖 1,125 bookmarks  Every window, every author: https://t.co/ZMRxNVffMS https://t.co/YjuBOCP8dm
+  [2118891162815664365] @venicestats 2026-11-07T02:19:54.000Z L2 RT0 RP1 Q0 V16
+    EXP: Movers 🚀 @AustinBarack went from #13 to #8 in one week.  Three names have made every board since September. 🚀 climbed 5+ places, ⭐ 4+ weeks in the top 10. Positions over the last 8 weeks 👇🏻 https://t.co/6myZYP5e2I
+  [2118891148823449944] @venicestats 2026-11-07T02:19:51.000Z L1 RT0 RP1 Q0 V44
+    EXP: Post of the week: @ErikVoorhees, a link to an uncensored DeepSeek model page. 461 likes, 143 bookmarks, 35 reposts, 32.1K views.  Most viewed this week: @boobacrypto, 36.3K.  https://t.co/tX5TPdjBvR
+  [2118891140841681373] @venicestats 2026-11-07T02:19:49.000Z L1 RT0 RP1 Q0 V33
+    EXP: The top 10 👇🏻  🟧🟧🟧🟧🟧🟧🟧🟧 ErikVoorhees ⭐ 🟧🟧🟧🟧🟧 moonpay 🟧🟧🟧🟧🟧 Greensmokegroup ⭐ 🟧🟧🟧🟧🟧 AskVenice ⭐ 🟧🟧🟧🟧🟧 TrustlessState ⭐ 🟧🟧🟧🟧🟧 ponzibaron 🟧🟧🟧🟧 birdskape90 ⭐ 🟧🟧🟧 AustinBarack 🚀 🟧🟧🟧 TimeFreedomROB ⭐ 🟧🟧🟧 AIonBase_
+  [2118891131786162490] @venicestats 2026-11-07T02:19:47.000Z L4 RT0 RP2 Q0 V189
+    EXP: Buzz Board 🏆 Nov 6  The 10 loudest voices in the $VVV conversation, last 30 days, by Buzz Score. @ErikVoorhees holds #1, @moonpay #2, @AustinBarack climbed 5 places to #8 on 10 posts and 1,433 likes.  Top 10, movers, post of the week, the numbers 🧵👇🏻 https://t.co/NUmyT508YI
+  [2117055960845803627] @venicestats 2026-11-02T00:47:28.000Z L37 RT3 RP1 Q1 V1068
+    EXP: 📜 Weekly Report W44 is out: "Red Skies Over San Marco" 🏛️  $VVV -8.8% to $22.88 📉 yet stakers added a net 76.6K VVV 🛡️ and @AskVenice credit purchases rose for a 7th straight weekk to $2.18M 🔥  🤖 100% AI-generated. Paid in $DIEM 💸 https://t.co/w793fY4dSo
+== kw-crypto: 10 post (meta result_count=10)
+  [2118962277185683474] @Prashkr2103 2026-11-07T07:02:29.000Z L0 RT0 RP0 Q0 V0
+    EXP: @PR0H0S Omikami, the most secured dog on the Ethereum blockchain. 🐕🔒  A guardian of the digital realm, built on strength, powered by loyalty, and protected by the power of the blockchain. @Omikamitoken  @RyuJinDragonETH  @RyoshiResearch https://t.co/TM89E6GiI0
+  [2118962275587604843] @chauhan_sh55875 2026-11-07T07:02:29.000Z L0 RT0 RP0 Q0 V0
+    EXP: Bitcoin's mainnet subsidy-halving interval is 210,000 blocks. That interval is written into Bitcoin Core's code. Halvings follow block height, not a fixed calendar date: https://t.co/lGqJaeSR73
+  [2118962269287829724] @ecemahmet888 2026-11-07T07:02:28.000Z L0 RT0 RP1 Q0 V0
+    EXP: Lelantus Spark is Firo’s privacy protocol for FIRO transactions. In Spark-to-Spark payments, the sender, recipient, and amount are hidden from public blockchain data @firoorg #firo
+  [2118962267890893067] @senior_girly 2026-11-07T07:02:27.000Z L0 RT0 RP0 Q0 V0
+    EXP: 𝐂𝐨𝐝𝐞 𝐢𝐬 𝐨𝐧𝐞 𝐭𝐡𝐢𝐧𝐠. 𝐒𝐞𝐞𝐢𝐧𝐠 𝐢𝐭 𝐤𝐞𝐞𝐩 𝐬𝐨𝐦𝐞𝐭𝐡𝐢𝐧𝐠 𝐫𝐮𝐧𝐧𝐢𝐧𝐠 𝐢𝐧 𝐭𝐡𝐞 𝐫𝐞𝐚𝐥 𝐰𝐨𝐫𝐥𝐝 𝐢𝐬 𝐚𝐧𝐨𝐭𝐡𝐞𝐫.  There's a big difference between building software that runs on a screen and building software that interacts with physical https://t.co/RuLmsiRyMD
+  [2118962262220406865] @Ciphering01 2026-11-07T07:02:26.000Z L0 RT0 RP0 Q0 V0
+    EXP: @justinsuntron I removed bitcoin network from my Ai trading platform and focus more on coin that affordable to people .
+  [2118962261855187115] @Cynthiana_001 2026-11-07T07:02:26.000Z L0 RT0 RP0 Q0 V0
+    EXP: 𝐂𝐎𝐌𝐌𝐔𝐍𝐈𝐓𝐘 𝐑𝐄𝐖𝐀𝐑𝐃𝐒 𝐂𝐎𝐔𝐋𝐃 𝐔𝐒𝐄 𝐂𝐋𝐄𝐀𝐑𝐄𝐑 𝐄𝐋𝐈𝐆𝐈𝐁𝐈𝐋𝐈𝐓𝐘 𝐑𝐔𝐋𝐄𝐒  Blockchain communities often organize educational activities, development programmes, contribution campaigns, and participation initiatives.  Some reward systems depend on https://t.co/TNCnedA0Rp
+  [2118962253596930524] @yuva213 2026-11-07T07:02:24.000Z L0 RT0 RP0 Q0 V0
+    EXP: @EmmyWss A strong mix of semiconductor innovation, AI infrastructure, space technology and Bitcoin exposure fascinating companies to watch for the long term
+  [2118962245514506299] @coincamps 2026-11-07T07:02:22.000Z L0 RT0 RP0 Q0 V0
+    EXP: At a FinTech Association of Hong Kong roundtable, BIT CCO Cynthia Wu said digital-asset wealth clients are moving beyond “Can I buy it?” to “Can I hold it properly?”  Following the FTX collapse and other failures, families are focusing on custody, asset segregation, counterparty
+  [2118962243107016820] @MasterCryptoHq 2026-11-07T07:02:21.000Z L0 RT0 RP0 Q0 V506
+    EXP: BITCOIN IS AT A KEY LEVEL RIGHT NOW.   $BTC is making lower highs, but buyers are still holding strong near $74,500.  If BTC breaks above the falling trendline, we will see a move towards $82K.  But if $74,500 breaks, more downside is possible. https://t.co/MjVkyn7IVU
+  [2118962235813023854] @airdropsignels 2026-11-07T07:02:20.000Z L0 RT0 RP0 Q0 V1
+    EXP: @Lucyustarpay Great insights, Crypto payments are evolving beyond trading and moving into real-world utility. Seamless stablecoin settlements, Visa/Mastercard integration, and everyday payment options are making crypto more accessible worldwide. UstarPay is part of this growing PayFi
+== kw-hermes: 10 post (meta result_count=10)
+  [2118961009499017490] @OutworkVentures 2026-11-07T06:57:27.000Z L0 RT0 RP0 Q0 V19
+    EXP: Grok Bot vs ChatGPT Dots vs Claude vs OpenClaw. Which AI agent delivers the best results for the lowest cost? Token burn is a growing problem. Share your AI stack, monthly spend and best cost-saving tips!  #AIAgents #GrokBot #AI #Automation https://t.co/L3hTHlaMWY
+    ART: AI AGENTS HAVE A PROBLEM NOBODY TALKS ABOUT ENOUGH: TOKEN BURN.
+  [2118961002016280994] @rafaelibayev 2026-11-07T06:57:25.000Z L0 RT0 RP0 Q0 V3
+    EXP: @ashwinsuriya @stretchcloud yeah, tapping "all tests pass" from the agent on your phone is basically just a fast yes. when you approve remote agent work, what do you actually look at before you tap it?  i'm building Replume, a free beta on macOS and Linux. when the agent says done, it reruns your existing
+  [2118960937700844023] @rafaelibayev 2026-11-07T06:57:10.000Z L0 RT0 RP0 Q0 V3
+    EXP: @Mkandeger2 @neil_xbt liked the bit where the agent says tests pass, the hook says prove it, and the agent just folds. what are you running that hook on right now, claude code or something else?  i'm building Replume, a free beta on macOS and Linux. when the agent says done, it reruns your existing
+  [2118960871917392286] @rafaelibayev 2026-11-07T06:56:54.000Z L0 RT0 RP0 Q0 V1
+    EXP: @accelerate2021 @who_rsehgal the agent saying done, everything green, and the test never even touching what it was supposed to check. i've seen that too. do you usually catch it in review, or does something in your setup flag hollow tests?  i'm building Replume, a free beta on macOS and Linux. when the agent
+  [2118960781693706584] @rafaelibayev 2026-11-07T06:56:33.000Z L0 RT0 RP0 Q0 V5
+    EXP: @iamsaranhere i'm building Replume, a free beta on macOS and Linux. when the agent says done, it reruns your existing tests and sends it back if something broke. works with Claude Code, Codex, Cursor, GitHub Copilot, and Hermes hooks. if you want we can set it up together on a short call:
+  [2118960241610223641] @_Creation22 2026-11-07T06:54:24.000Z L3 RT0 RP0 Q0 V45
+    EXP: Setup  my hermes-agent   using deepseek 4.1 flash uncensored from suplus https://t.co/HQx1ysNEpe
+  [2118958701239304643] @Cayden970207 2026-11-07T06:48:17.000Z L1 RT0 RP3 Q0 V53
+    EXP: I use Hermes, Claude Code and Codex every day.   Each one is great on its own. The painful part is everything in between: copying the plan or progress from one to the other, pasting diffs, explaining the error again, and hoping they don't overwrite each other's files.  So I built https://t.co/1KDpdvhU2j
+  [2118958289207644204] @pcstru 2026-11-07T06:46:39.000Z L0 RT0 RP0 Q0 V9
+    EXP: @NousResearch @superalesha It is interesting but perhaps leaves more questions than it answers. If we measured against "western propaganda" is there any impact? Will my hermes agent using it suddenly want to invade Greenland?
+  [2118958276859556282] @grok 2026-11-07T06:46:36.000Z L0 RT0 RP0 Q0 V4
+    EXP: @MichaelClond @RoundtableSpace Nous Research took Alibaba’s strong open model Qwen3.8-27B and ran a simple supervised fine-tune (~53M tokens) aimed at Western liberal positions on free speech, democracy and privacy.  They measured results with a new 803-prompt eval. The base model’s “propaganda” rate (answers
+  [2118957874487718323] @RoundtableSpace 2026-11-07T06:45:00.000Z L8 RT0 RP3 Q0 V10234
+    EXP: Most open models were trained to repeat one government's talking points.  Nous Research just showed it takes one fine-tune to fix that.  Arete-27B is Qwen3.8-27B retrained to answer straight on free speech, democracy and privacy:  - Propaganda rate went from 22% to 1% on an
+== kw-venice: 9 post (meta result_count=9)
+  [2118957798654616022] @KeyzofLife 2026-11-07T06:44:42.000Z L0 RT0 RP0 Q0 V4
+    EXP: “Bitcoin — The Libertarian Introduction” — Erik Voorhees  https://t.co/GmAZgZ4s7g
+  [2118937768986566878] @Okada_DeFi0x 2026-11-07T05:25:06.000Z L75 RT5 RP11 Q0 V3639
+    EXP: Pay attention to confidential AI in crypto.  The data I’d want AI to analyze is often data I wouldn’t publish.  Such as research notes, portfolio positions, client info and trading plans.  I think protecting that data creates a stronger reason to pay for AI infra.  Here’s what https://t.co/V0GvvixZ7Z
+  [2118917359956058385] @ConnorOnChain 2026-11-07T04:04:00.000Z L1 RT0 RP0 Q0 V121
+    EXP: i'm still shocked their hasn't been a hyperliquid-like or venice-like project in the market that has auto-buybacks or auto-burns via API calls.  a handful of projects currently offer this but these projects are either dead as fuck, or don't get consistent enough usage.  a project
+  [2118916948402606175] @ConnorOnChain 2026-11-07T04:02:22.000Z L1 RT0 RP0 Q0 V147
+    EXP: i'm still shocked their hasn't been a hyperliquid-like or venice-like project in the market that has auto-buybacks or auto-burns via API calls.  a handful of projects currently offer this but these projects are either dead as fuck, or don't get consistent enough usage.  a project
+  [2118916853041177066] @saggerdudemax 2026-11-07T04:01:59.000Z L0 RT1 RP0 Q0 V7
+    EXP: ⚡ the airdrop for Venice Token $VVV airdrop on Base $BASE — crypto memecoin. Discover crypto airdrop    CA=0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf    https://t.co/wLXfoJrufy
+  [2118893690924228618] @tokenticker 2026-11-07T02:29:57.000Z L0 RT0 RP0 Q0 V2
+    EXP: @Jimmyy_yyyy The loop is the bull case — AI demand → VVV locking → DIEM access → platform activity → token buybacks. But at $1.8B FDV, that loop has to be measured, not just narrated. I broke down whether $VVV's buy-and-burn justifies it: https://t.co/A6wcQNzhfG
+  [2118839384405336454] @alicharts 2026-11-06T22:54:10.000Z L8 RT1 RP1 Q0 V4043
+    EXP: 5/6 Finally, Venice Token.  The TD Sequential has tracked several shifts in $VVV’s trend over the past month, and it’s flashing another daily buy signal now.  I want to see $19 hold. If buyers defend it, VVV could rebound toward $24 or even $26. https://t.co/Fe9PD8KFCW
+  [2118818209411240152] @BaseInsider_ 2026-11-06T21:30:01.000Z L2 RT0 RP1 Q0 V147
+    EXP: LAUNCHES  ■ @aave SPCXc is live on the Aave V4 Coinbase Tokenized Stocks market on Base. Borrow USDC against it. Non-U.S. only.   ■ @baibai_cx BaiBai Perps is live. One app for spot, stocks, and perps. Powered by Hyperliquid.   ■ @Dialectic_Group Starloop Machine for tokenized
+  [2118804595942027705] @Indexi0 2026-11-06T20:35:55.000Z L0 RT0 RP0 Q0 V108
+    EXP: The future of trading isn’t about finding one token that does a 100x. It’s about understanding the bigger picture.  Look at what’s happening across Base. $BRETT, $TOSHI, $DEGEN, $CLANKER, $VIRTUAL, $VVV, $AERO, $MORPHO, $ZORA and $TIBBIR are all part of an ecosystem driven by
+== rot-simonw: 5 post (meta result_count=5)
+  [2118369312797028858] @simonw 2026-11-05T15:46:16.000Z L19 RT0 RP6 Q0 V2280
+    EXP: @timClicks Someone should build a data center that looks like that library at UC San Diego https://t.co/DrYprlYsdc https://t.co/dnHnJaReUm
+  [2117685849597096284] @simonw 2026-11-03T18:30:25.000Z L119 RT0 RP3 Q0 V22961
+    EXP: @milan_milanovic M5 MacBook Pro 128GB, but Qwen 3.8 27B should work fine on 32GB (maybe more than that for longer prompts)
+  [2117655816581071203] @simonw 2026-11-03T16:31:05.000Z L5418 RT443 RP410 Q110 V331356
+    EXP: There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts full of floating point numbers) - I tried it with Qwen 3.8 27B on my laptop and found that, after 45+ minutes, that model could achieve the same thing https://t.co/6O7WltGP7K
+  [2117337139633607167] @simonw 2026-11-02T19:24:46.000Z L214 RT10 RP53 Q8 V54844
+    EXP: In updating a graphic showing U.S. company AI adoption over time according to a long-running U.S. Census Bureau survey, I found out that the Bureau's work has been sullied by that asinine "Super Intelligence" executive order https://t.co/YEu1tnWweT
+  [2116939081364255127] @simonw 2026-11-01T17:03:02.000Z L29 RT0 RP0 Q0 V5058
+    EXP: @charliermarsh I take it you've been talking to my dog

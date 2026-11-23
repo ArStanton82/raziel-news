@@ -1,0 +1,865 @@
+==============================================================================
+FILE: from-AskVenice.json
+  result_count: 10 | items: 10
+----------------------------------------------------------------------
+  id: 2109415263557099776
+  user: @AskVenice
+  date: 2026-10-11T22:46:04.000Z
+  metrics: likes=17 rt=0 reply=1 imp=398
+  url: https://x.com/AskVenice/status/2109415263557099776
+  text: @abliteration_ai Unrestricted is the motto
+----------------------------------------------------------------------
+  id: 2109313138944581977
+  user: @AskVenice
+  date: 2026-10-11T16:00:16.000Z
+  metrics: likes=169 rt=17 reply=15 imp=9079
+  url: https://x.com/AskVenice/status/2109313138944581977
+  text: Your next masterpiece awaits on Venice. https://t.co/Xotffe6fTg
+----------------------------------------------------------------------
+  id: 2109111114449694796
+  user: @AskVenice
+  date: 2026-10-11T02:37:29.000Z
+  metrics: likes=12 rt=2 reply=0 imp=1633
+  url: https://x.com/AskVenice/status/2109111114449694796
+  text: Access Qwen Image 2.1 Pro on Venice. https://t.co/Tvqriq9dg3
+----------------------------------------------------------------------
+  id: 2109111102827303274
+  user: @AskVenice
+  date: 2026-10-11T02:37:26.000Z
+  metrics: likes=14 rt=2 reply=2 imp=2774
+  url: https://x.com/AskVenice/status/2109111102827303274
+  text: Access Qwen Image 2.1 Turbo on Venice. https://t.co/0oeTLARYZE
+----------------------------------------------------------------------
+  id: 2109111090886107533
+  user: @AskVenice
+  date: 2026-10-11T02:37:24.000Z
+  metrics: likes=131 rt=14 reply=23 imp=8340
+  url: https://x.com/AskVenice/status/2109111090886107533
+  text: Qwen Image 2.1 Turbo + Pro is now on Venice.  Generate native 2K images with transparent backgrounds, edit from up to 10 reference images, and render text you can actually read.  Available anonymously. https://t.co/QDnhGtykaF
+----------------------------------------------------------------------
+  id: 2108936266804858984
+  user: @AskVenice
+  date: 2026-10-10T15:02:42.000Z
+  metrics: likes=11 rt=0 reply=0 imp=485
+  url: https://x.com/AskVenice/status/2108936266804858984
+  text: @softpoo Sick trailer, we love to see it
+----------------------------------------------------------------------
+  id: 2108602929888510019
+  user: @AskVenice
+  date: 2026-10-09T16:58:09.000Z
+  metrics: likes=5 rt=0 reply=0 imp=1377
+  url: https://x.com/AskVenice/status/2108602929888510019
+  text: Watch the full walkthrough: https://t.co/Ez95746I6P
+----------------------------------------------------------------------
+  id: 2108602917993505050
+  user: @AskVenice
+  date: 2026-10-09T16:58:06.000Z
+  metrics: likes=6 rt=0 reply=1 imp=1021
+  url: https://x.com/AskVenice/status/2108602917993505050
+  text: It goes beyond just current events and news.  Have your Venice agentic chat agent scrape the web to find product reviews, summarize web pages, or analyze Reddit sentiment on a topic: https://t.co/UhkzlVsbrs
+----------------------------------------------------------------------
+  id: 2108602863299829941
+  user: @AskVenice
+  date: 2026-10-09T16:57:53.000Z
+  metrics: likes=4 rt=0 reply=1 imp=333
+  url: https://x.com/AskVenice/status/2108602863299829941
+  text: Verify with another model:  Same question on Grok came back with clickable NYT and Fox News citations.  Venice is the only place you can use Grok completely privately with ZDR. https://t.co/7dQrOuhp2b
+----------------------------------------------------------------------
+  id: 2108602809352634514
+  user: @AskVenice
+  date: 2026-10-09T16:57:40.000Z
+  metrics: likes=3 rt=0 reply=1 imp=359
+  url: https://x.com/AskVenice/status/2108602809352634514
+  text: Prove it works:  Ask DeepSeek "What happened this week"  and it will return current events you can double check elsewhere. https://t.co/tRAalTF73l
+==============================================================================
+FILE: from-BitcoinMagazine.json
+  result_count: 10 | items: 10
+----------------------------------------------------------------------
+  id: 2109337547000205535
+  user: @BitcoinMagazine
+  date: 2026-10-11T17:37:15.000Z
+  metrics: likes=2478 rt=248 reply=128 imp=97366
+  url: https://x.com/BitcoinMagazine/status/2109337547000205535
+  text: JUST IN: $84,110 Bitcoin 🚀 https://t.co/f7N5XqLxbz
+----------------------------------------------------------------------
+  id: 2109295154704077076
+  user: @BitcoinMagazine
+  date: 2026-10-11T14:48:48.000Z
+  metrics: likes=2149 rt=211 reply=84 imp=110955
+  url: https://x.com/BitcoinMagazine/status/2109295154704077076
+  text: JUST IN: 🇺🇸 Public company Strive CEO hints at buying more Bitcoin. 👀  "Think ₿igger." 🚀 https://t.co/HeXrauc2Du
+----------------------------------------------------------------------
+  id: 2109274424696283349
+  user: @BitcoinMagazine
+  date: 2026-10-11T13:26:25.000Z
+  metrics: likes=1993 rt=217 reply=122 imp=102589
+  url: https://x.com/BitcoinMagazine/status/2109274424696283349
+  text: JUST IN: Michael Saylor hints at another Bitcoin announcement tomorrow 👀    "There's always room for more orange." https://t.co/GtMBOptFBN
+----------------------------------------------------------------------
+  id: 2108899848166797761
+  user: @BitcoinMagazine
+  date: 2026-10-10T12:37:59.000Z
+  metrics: likes=2239 rt=381 reply=174 imp=143628
+  url: https://x.com/BitcoinMagazine/status/2108899848166797761
+  text: NEW: 🇧🇬 Bulgaria's First Investment Bank will offer Bitcoin and crypto assets to over 1 million clients 🚀 https://t.co/EnhUa7z5af
+----------------------------------------------------------------------
+  id: 2108686032828784763
+  user: @BitcoinMagazine
+  date: 2026-10-09T22:28:22.000Z
+  metrics: likes=11 rt=5 reply=0 imp=17137
+  url: https://x.com/BitcoinMagazine/status/2108686032828784763
+  text: WATCH: @LorenzoARK of @ARKInvest - Why Bitcoin's Market Cap Can Reach $16 Trillion by 2030   From @watchbmtv 👇 https://t.co/D2EEQhS3ic
+----------------------------------------------------------------------
+  id: 2108674817188647142
+  user: @BitcoinMagazine
+  date: 2026-10-09T21:43:48.000Z
+  metrics: likes=2150 rt=256 reply=133 imp=134544
+  url: https://x.com/BitcoinMagazine/status/2108674817188647142
+  text: NEW: El Salvador bought another BTC for its Strategic Bitcoin Reserve today 🇸🇻      They now own 7800 BTC! 👏 https://t.co/JM5WpOrQd9
+----------------------------------------------------------------------
+  id: 2108647428903628940
+  user: @BitcoinMagazine
+  date: 2026-10-09T19:54:58.000Z
+  metrics: likes=26 rt=8 reply=5 imp=26099
+  url: https://x.com/BitcoinMagazine/status/2108647428903628940
+  text: WATCH: @wmiddelkoop of Commodity Discovery Fund - Why Bitcoin is going to $1 million by 2030 ⚡️   From @watchbmtv 👇 https://t.co/Z6iYyjm1S9
+----------------------------------------------------------------------
+  id: 2108636643594994046
+  user: @BitcoinMagazine
+  date: 2026-10-09T19:12:07.000Z
+  metrics: likes=1193 rt=227 reply=128 imp=82749
+  url: https://x.com/BitcoinMagazine/status/2108636643594994046
+  text: NEW: Bitcoin has made higher lows for 4 consecutive months, despite fluxuating macro conditions.   Bullish 🚀 https://t.co/lNTDWHyUbB
+----------------------------------------------------------------------
+  id: 2108625487530742189
+  user: @BitcoinMagazine
+  date: 2026-10-09T18:27:47.000Z
+  metrics: likes=17 rt=7 reply=2 imp=12532
+  url: https://x.com/BitcoinMagazine/status/2108625487530742189
+  text: @fundstrat Bitcoin Amsterdam pass prices increase THIS WEDNESDAY ‼️    🎟️ GA: €189.50 → €199.50  🐋 Whale: €2,113.50 → €2,199.50     LOCK IN YOUR PASS NOW. 🟠 👇    https://t.co/hLiFwmNQ1G https://t.co/FoN16iOz9H
+----------------------------------------------------------------------
+  id: 2108616696508666334
+  user: @BitcoinMagazine
+  date: 2026-10-09T17:52:51.000Z
+  metrics: likes=8 rt=5 reply=1 imp=15412
+  url: https://x.com/BitcoinMagazine/status/2108616696508666334
+  text: From liquid markets to digital credit, @UTXOmgmt is investing in Bitcoin’s acceleration. Hear how on Allocator’s Edge, only on BMTV.  https://t.co/ukBPLQHa1F
+==============================================================================
+FILE: from-CoinDesk.json
+  result_count: 10 | items: 10
+----------------------------------------------------------------------
+  id: 2109353067804242048
+  user: @CoinDesk
+  date: 2026-10-11T18:38:55.000Z
+  metrics: likes=67 rt=16 reply=43 imp=36520
+  url: https://x.com/CoinDesk/status/2109353067804242048
+  text: @renato_mariotti says @CFTC’s new crypto market plan is “a clever interpretation of the Commodity Exchange Act,” but warns that after Loper Bright, courts may not defer to it.  Thank you to @Grayscale 👋 for being a sponsor of the CoinDesk Media Network. https://t.co/lAOo95L2Pc
+----------------------------------------------------------------------
+  id: 2108937250549412069
+  user: @CoinDesk
+  date: 2026-10-10T15:06:37.000Z
+  metrics: likes=103 rt=19 reply=47 imp=49028
+  url: https://x.com/CoinDesk/status/2108937250549412069
+  text: “These fundamental rules are absent in the US”  On this week’s @CoinDesk Policy Protocol, @Payward/@krakenfx Chief Policy Officer @JonathanJachym joins @RebeccaRettig1 and @renato_mariotti to break down the CFTC’s bid to regulate spot crypto without Congress, bringing Hyperliquid https://t.co/nR7WmPutYY
+----------------------------------------------------------------------
+  id: 2108872410308973034
+  user: @CoinDesk
+  date: 2026-10-10T10:48:58.000Z
+  metrics: likes=498 rt=91 reply=129 imp=123708
+  url: https://x.com/CoinDesk/status/2108872410308973034
+  text: NEW: A critical XRP Ledger bug discovered in September could have allowed an attacker to mint unlimited $XRP from nothing, though @RippleXDev found no evidence of exploitation. https://t.co/sPuiO6f0pj
+----------------------------------------------------------------------
+  id: 2108664212742721670
+  user: @CoinDesk
+  date: 2026-10-09T21:01:40.000Z
+  metrics: likes=101 rt=20 reply=53 imp=49082
+  url: https://x.com/CoinDesk/status/2108664212742721670
+  text: SCOOP : Robinhood Chain considers technology that gives paying traders priority https://t.co/I00s9rAFlD
+----------------------------------------------------------------------
+  id: 2108600970066186301
+  user: @CoinDesk
+  date: 2026-10-09T16:50:21.000Z
+  metrics: likes=188 rt=35 reply=37 imp=39491
+  url: https://x.com/CoinDesk/status/2108600970066186301
+  text: LATEST: Treasury Secretary Scott Bessent says the U.S. expects to seize $1B in Iran-linked crypto this week, part of an “absolute isolation campaign” targeting the regime’s access to financial channels. https://t.co/AVqxFSRE9W
+----------------------------------------------------------------------
+  id: 2108596046733455407
+  user: @CoinDesk
+  date: 2026-10-09T16:30:48.000Z
+  metrics: likes=116 rt=23 reply=40 imp=43887
+  url: https://x.com/CoinDesk/status/2108596046733455407
+  text: What if AI agents had to pay every time they read a webpage?  @Cloudflare CEO @eastdakota says that's where the internet is headed.   @Visa handles about 80,000 transactions per second at its peak. Cloudflare expects to need about 10 million on day one. https://t.co/sgSNboBie3
+----------------------------------------------------------------------
+  id: 2108583031221158051
+  user: @CoinDesk
+  date: 2026-10-09T15:39:04.000Z
+  metrics: likes=81 rt=14 reply=16 imp=25842
+  url: https://x.com/CoinDesk/status/2108583031221158051
+  text: CUOMO: OKX’s tokenized stock trading venue with NYSE parent ICE to go live in about 30 days.  Former NY Gov. @andrewcuomo called the joint venture "a marriage of the titans." Onstage at @okx Now.  https://t.co/ZLnm2X1Bbo
+----------------------------------------------------------------------
+  id: 2108581194204119319
+  user: @CoinDesk
+  date: 2026-10-09T15:31:46.000Z
+  metrics: likes=10 rt=0 reply=3 imp=20646
+  url: https://x.com/CoinDesk/status/2108581194204119319
+  text: OKX Now: Tokenized Stocks With ICE, OKX Money and AI Agents | Partner Content Replay https://t.co/ZLnm2X1Bbo
+----------------------------------------------------------------------
+  id: 2108579588712599897
+  user: @CoinDesk
+  date: 2026-10-09T15:25:24.000Z
+  metrics: likes=612 rt=111 reply=46 imp=48128
+  url: https://x.com/CoinDesk/status/2108579588712599897
+  text: JUST IN: The SEC adds crypto assets to its November 19 national compliance seminar for investment advisers, with Crypto Task Force chief counsel among participants. https://t.co/PJpdDiafRY
+----------------------------------------------------------------------
+  id: 2108570862651642032
+  user: @CoinDesk
+  date: 2026-10-09T14:50:43.000Z
+  metrics: likes=57 rt=10 reply=12 imp=32897
+  url: https://x.com/CoinDesk/status/2108570862651642032
+  text: Who gets left behind in the AI economy?  @Cloudflare CEO @eastdakota warns the developing world could get stuck with AI built on often-predatory ads.  The risk: AI that "really accelerates the haves over the have-nots." https://t.co/jIruQlPZ2V
+==============================================================================
+FILE: from-HermesWatcher.json
+  result_count: 10 | items: 10
+----------------------------------------------------------------------
+  id: 2109490845334602225
+  user: @HermesWatcher
+  date: 2026-10-12T03:46:24.000Z
+  metrics: likes=30 rt=0 reply=1 imp=2016
+  url: https://x.com/HermesWatcher/status/2109490845334602225
+  text: Give Hermes the Skills 🚀 https://t.co/NMqSBYHO8H
+----------------------------------------------------------------------
+  id: 2109484715350827373
+  user: @HermesWatcher
+  date: 2026-10-12T03:22:03.000Z
+  metrics: likes=0 rt=0 reply=0 imp=15
+  url: https://x.com/HermesWatcher/status/2109484715350827373
+  text: @Pooololl It’s a plugin, not a built-in switch. Install/enable `hermes-adaptive-effort`, restart Hermes, and you should get the Effort control in Desktop. You can also use `/hae auto` to turn it on.
+----------------------------------------------------------------------
+  id: 2109482956079460368
+  user: @HermesWatcher
+  date: 2026-10-12T03:15:03.000Z
+  metrics: likes=0 rt=0 reply=0 imp=20
+  url: https://x.com/HermesWatcher/status/2109482956079460368
+  text: @jetpen Hermes, fix it and make no mistakes 😂
+----------------------------------------------------------------------
+  id: 2109482713615138956
+  user: @HermesWatcher
+  date: 2026-10-12T03:14:05.000Z
+  metrics: likes=0 rt=0 reply=0 imp=28
+  url: https://x.com/HermesWatcher/status/2109482713615138956
+  text: @markedwhiffen My man is STACKED 👌
+----------------------------------------------------------------------
+  id: 2109482308466352540
+  user: @HermesWatcher
+  date: 2026-10-12T03:12:29.000Z
+  metrics: likes=0 rt=0 reply=0 imp=33
+  url: https://x.com/HermesWatcher/status/2109482308466352540
+  text: @Kenson_Plays Goals 🙌
+----------------------------------------------------------------------
+  id: 2109482139486154766
+  user: @HermesWatcher
+  date: 2026-10-12T03:11:48.000Z
+  metrics: likes=2 rt=0 reply=1 imp=54
+  url: https://x.com/HermesWatcher/status/2109482139486154766
+  text: @HermesAgentTips @SORAY_AI Bro, test drive the Shiiiiiiz out of Hermes. You’ll enjoy it.   The biggest tip I can add is just to ask Hermes with a capable model. Hermes has a high success rate of getting it done.   There is an official Discord channel. YouTube has lots of great resources and the community
+----------------------------------------------------------------------
+  id: 2109478023108173940
+  user: @HermesWatcher
+  date: 2026-10-12T02:55:27.000Z
+  metrics: likes=1 rt=0 reply=0 imp=16
+  url: https://x.com/HermesWatcher/status/2109478023108173940
+  text: @thewanderingtr1 @witcheer @Teknium Facts! 🎯
+----------------------------------------------------------------------
+  id: 2109477938186096931
+  user: @HermesWatcher
+  date: 2026-10-12T02:55:07.000Z
+  metrics: likes=2 rt=0 reply=1 imp=100
+  url: https://x.com/HermesWatcher/status/2109477938186096931
+  text: @Teknium @ricosystems @witcheer @witcheer reading this and asking for a raise in the morning be like... https://t.co/z4oPgpaZ9A
+----------------------------------------------------------------------
+  id: 2109477328371982558
+  user: @HermesWatcher
+  date: 2026-10-12T02:52:41.000Z
+  metrics: likes=0 rt=0 reply=0 imp=8
+  url: https://x.com/HermesWatcher/status/2109477328371982558
+  text: @Walianohohoh My wife and yours must be besties 🥳🤣
+----------------------------------------------------------------------
+  id: 2109477184226377948
+  user: @HermesWatcher
+  date: 2026-10-12T02:52:07.000Z
+  metrics: likes=0 rt=0 reply=0 imp=7
+  url: https://x.com/HermesWatcher/status/2109477184226377948
+  text: @gdogorous Yessir of course.
+==============================================================================
+FILE: from-JonShapeShift.json
+  result_count: 8 | items: 8
+----------------------------------------------------------------------
+  id: 2109343050434797888
+  user: @JonShapeShift
+  date: 2026-10-11T17:59:07.000Z
+  metrics: likes=63 rt=6 reply=2 imp=1913
+  url: https://x.com/JonShapeShift/status/2109343050434797888
+  text: Use @AskVenice so you don’t have to censor yourself/worry about what you are sharing with AI. https://t.co/px7QeCPXIo
+----------------------------------------------------------------------
+  id: 2109339790512701614
+  user: @JonShapeShift
+  date: 2026-10-11T17:46:10.000Z
+  metrics: likes=1 rt=0 reply=0 imp=141
+  url: https://x.com/JonShapeShift/status/2109339790512701614
+  text: Use @AskVenice so you don’t have to censor yourself/worry about what you are shearing with AI. https://t.co/px7QeCPXIo
+----------------------------------------------------------------------
+  id: 2109339622090404062
+  user: @JonShapeShift
+  date: 2026-10-11T17:45:30.000Z
+  metrics: likes=63 rt=2 reply=2 imp=1245
+  url: https://x.com/JonShapeShift/status/2109339622090404062
+  text: Or just use @AskVenice https://t.co/uDAQrsYzJG
+----------------------------------------------------------------------
+  id: 2108271230004707749
+  user: @JonShapeShift
+  date: 2026-10-08T19:00:05.000Z
+  metrics: likes=80 rt=12 reply=5 imp=3370
+  url: https://x.com/JonShapeShift/status/2108271230004707749
+  text: The cryptographic doomerism of the last 24 hours is mostly unjustified panic IMO. There is of course a kernel of important truth here and we need to take that seriously, but panic is not the way to go about that.  There is no evidence of an ECDSA break being anything but
+----------------------------------------------------------------------
+  id: 2108257817945903416
+  user: @JonShapeShift
+  date: 2026-10-08T18:06:47.000Z
+  metrics: likes=12 rt=0 reply=0 imp=1761
+  url: https://x.com/JonShapeShift/status/2108257817945903416
+  text: @cburniske We need Bullniske back.   Its wall of worry climbing time.
+----------------------------------------------------------------------
+  id: 2107967718863651125
+  user: @JonShapeShift
+  date: 2026-10-07T22:54:02.000Z
+  metrics: likes=60 rt=6 reply=2 imp=1219
+  url: https://x.com/JonShapeShift/status/2107967718863651125
+  text: More borrowing utility for base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf 🫡 https://t.co/rlvOr4pTwf
+----------------------------------------------------------------------
+  id: 2107886262237761740
+  user: @JonShapeShift
+  date: 2026-10-07T17:30:22.000Z
+  metrics: likes=103 rt=9 reply=5 imp=1773
+  url: https://x.com/JonShapeShift/status/2107886262237761740
+  text: More burns, lower emissions, the march on the path to deflationary $VVV continues. https://t.co/0Yv57QjsCL
+----------------------------------------------------------------------
+  id: 2107236610953920926
+  user: @JonShapeShift
+  date: 2026-10-05T22:28:53.000Z
+  metrics: likes=4 rt=0 reply=1 imp=347
+  url: https://x.com/JonShapeShift/status/2107236610953920926
+  text: @saintniko Or perhaps the good ones will be stronger than ever
+==============================================================================
+FILE: from-NousResearch.json
+  result_count: 10 | items: 10
+----------------------------------------------------------------------
+  id: 2109352160664375334
+  user: @NousResearch
+  date: 2026-10-11T18:35:19.000Z
+  metrics: likes=45 rt=0 reply=2 imp=3137
+  url: https://x.com/NousResearch/status/2109352160664375334
+  text: @AnthonyTay97 Fixed now
+----------------------------------------------------------------------
+  id: 2109301268955181334
+  user: @NousResearch
+  date: 2026-10-11T15:13:06.000Z
+  metrics: likes=2487 rt=97 reply=191 imp=209434
+  url: https://x.com/NousResearch/status/2109301268955181334
+  text: Hermes Agent is yours
+----------------------------------------------------------------------
+  id: 2109012611555840069
+  user: @NousResearch
+  date: 2026-10-10T20:06:04.000Z
+  metrics: likes=1512 rt=89 reply=112 imp=160802
+  url: https://x.com/NousResearch/status/2109012611555840069
+  text: Wild MISSINGNO. appeared!  A coding and agentic reasoning model that is highly token efficient, free for a limited time on Nous Portal  Try it out in your Hermes Agent today https://t.co/5lNdyiu0mh
+----------------------------------------------------------------------
+  id: 2108765588663173137
+  user: @NousResearch
+  date: 2026-10-10T03:44:29.000Z
+  metrics: likes=39 rt=0 reply=3 imp=2700
+  url: https://x.com/NousResearch/status/2108765588663173137
+  text: @Tiny_Fish $0 is a great price
+----------------------------------------------------------------------
+  id: 2108645938403405896
+  user: @NousResearch
+  date: 2026-10-09T19:49:03.000Z
+  metrics: likes=37 rt=1 reply=3 imp=10769
+  url: https://x.com/NousResearch/status/2108645938403405896
+  text: Slight Correction: Step 5 Preview's final score on Hermes Index has been updated to 32.83, slightly behind GPT-6 Luna (33.89) and GLM 5.3 Flash (34.95)  Learn more @ https://t.co/GMkIS99T2r
+----------------------------------------------------------------------
+  id: 2108638389045960958
+  user: @NousResearch
+  date: 2026-10-09T19:19:03.000Z
+  metrics: likes=853 rt=62 reply=70 imp=58405
+  url: https://x.com/NousResearch/status/2108638389045960958
+  text: Step 5 Preview from @StepFun_ai is free on Nous Portal for the next week  600B total / 27B active MoE, 1M context, with vision  Step 5 Preview scored 33.89 on Hermes Index, the same score as GPT-6 Luna https://t.co/y19dzmwHUA
+----------------------------------------------------------------------
+  id: 2108590515067474337
+  user: @NousResearch
+  date: 2026-10-09T16:08:49.000Z
+  metrics: likes=22 rt=0 reply=1 imp=1552
+  url: https://x.com/NousResearch/status/2108590515067474337
+  text: @andrexibiza Appreciate your contributions!
+----------------------------------------------------------------------
+  id: 2108422397309403592
+  user: @NousResearch
+  date: 2026-10-09T05:00:46.000Z
+  metrics: likes=12 rt=0 reply=2 imp=1278
+  url: https://x.com/NousResearch/status/2108422397309403592
+  text: @capperlii @Teknium It’s two words
+----------------------------------------------------------------------
+  id: 2108421015521140859
+  user: @NousResearch
+  date: 2026-10-09T04:55:17.000Z
+  metrics: likes=10 rt=0 reply=1 imp=1245
+  url: https://x.com/NousResearch/status/2108421015521140859
+  text: @yaboilyrical Chad
+----------------------------------------------------------------------
+  id: 2108420434865885300
+  user: @NousResearch
+  date: 2026-10-09T04:52:58.000Z
+  metrics: likes=80 rt=0 reply=0 imp=7014
+  url: https://x.com/NousResearch/status/2108420434865885300
+  text: @namnh08 It’s agnetic
+==============================================================================
+FILE: from-Teknium.json
+  result_count: 10 | items: 10
+----------------------------------------------------------------------
+  id: 2109519797465891115
+  user: @Teknium
+  date: 2026-10-12T05:41:27.000Z
+  metrics: likes=0 rt=0 reply=0 imp=99
+  url: https://x.com/Teknium/status/2109519797465891115
+  text: @HermesWatcher Yes indeed no more update anxiety needed lol
+----------------------------------------------------------------------
+  id: 2109506058788212990
+  user: @Teknium
+  date: 2026-10-12T04:46:51.000Z
+  metrics: likes=12 rt=0 reply=0 imp=390
+  url: https://x.com/Teknium/status/2109506058788212990
+  text: @KFChowAI We are only putting **official, nous maintained** plugins in that repo
+----------------------------------------------------------------------
+  id: 2109505966425432290
+  user: @Teknium
+  date: 2026-10-12T04:46:29.000Z
+  metrics: likes=10 rt=0 reply=2 imp=506
+  url: https://x.com/Teknium/status/2109505966425432290
+  text: @brinkzapp Because Hermes is not Claude Code
+----------------------------------------------------------------------
+  id: 2109504675846525412
+  user: @Teknium
+  date: 2026-10-12T04:41:22.000Z
+  metrics: likes=0 rt=0 reply=0 imp=55
+  url: https://x.com/Teknium/status/2109504675846525412
+  text: @RadicDavydov @NousResearch @TejWadwa @reach_vb I've added it's support just now, tonights release has the compression, tuesday's will have ultrafast for 500$ tier and API
+----------------------------------------------------------------------
+  id: 2109482856208847002
+  user: @Teknium
+  date: 2026-10-12T03:14:39.000Z
+  metrics: likes=0 rt=0 reply=1 imp=83
+  url: https://x.com/Teknium/status/2109482856208847002
+  text: @RadicDavydov @NousResearch @TejWadwa @reach_vb oh. I only have 200$ sub to test with. I'll see..
+----------------------------------------------------------------------
+  id: 2109479400786051180
+  user: @Teknium
+  date: 2026-10-12T03:00:56.000Z
+  metrics: likes=1 rt=0 reply=1 imp=90
+  url: https://x.com/Teknium/status/2109479400786051180
+  text: @RadicDavydov @NousResearch @TejWadwa @reach_vb gotcha. Also for ultrafast, are you hoping to access that in your codex sub?  Because it doesnt seem to work there https://t.co/wAIEfh23U5
+----------------------------------------------------------------------
+  id: 2109474431567564814
+  user: @Teknium
+  date: 2026-10-12T02:41:11.000Z
+  metrics: likes=2 rt=0 reply=1 imp=111
+  url: https://x.com/Teknium/status/2109474431567564814
+  text: @RadicDavydov @NousResearch @TejWadwa @reach_vb We've also moved to stable releases (not commits anymore) so it could be a day or two before this fix is available to users ;[
+----------------------------------------------------------------------
+  id: 2109471322334171164
+  user: @Teknium
+  date: 2026-10-12T02:28:49.000Z
+  metrics: likes=2 rt=0 reply=1 imp=1398
+  url: https://x.com/Teknium/status/2109471322334171164
+  text: @RadicDavydov @NousResearch @TejWadwa @reach_vb Like, if you upload an image, even with compression, it's going to surpass 1MB request. So this only makes some more requests get through for the people effected by this. My guess is it's a bug on their ned
+----------------------------------------------------------------------
+  id: 2109471173692338309
+  user: @Teknium
+  date: 2026-10-12T02:28:14.000Z
+  metrics: likes=0 rt=0 reply=1 imp=1246
+  url: https://x.com/Teknium/status/2109471173692338309
+  text: @RadicDavydov @NousResearch @TejWadwa Well I'll implement the compression but I am not convinced this is the real issue here cc @reach_vb can you check whats up?
+----------------------------------------------------------------------
+  id: 2109471026279317894
+  user: @Teknium
+  date: 2026-10-12T02:27:39.000Z
+  metrics: likes=0 rt=0 reply=1 imp=69
+  url: https://x.com/Teknium/status/2109471026279317894
+  text: @ZacharyCarlin It still is
+==============================================================================
+FILE: from-VitalikButerin.json
+  result_count: 4 | items: 4
+----------------------------------------------------------------------
+  id: 2108046549020557482
+  user: @VitalikButerin
+  date: 2026-10-08T04:07:17.000Z
+  metrics: likes=1621 rt=197 reply=314 imp=385608
+  url: https://x.com/VitalikButerin/status/2108046549020557482
+  text: Correction: for multisigs the ideal "safe" rule is that you want each signer to change their key after each operation.  (This is making an implicit assumption that ECDSA might become weak, but not to the point where any crack of it would be literally instant so you would https://t.co/Dh95N45mc1
+----------------------------------------------------------------------
+  id: 2108034068684435804
+  user: @VitalikButerin
+  date: 2026-10-08T03:17:42.000Z
+  metrics: likes=329 rt=26 reply=99 imp=99067
+  url: https://x.com/VitalikButerin/status/2108034068684435804
+  text: Correction: for multisigs the ideal "safe" rule is that you want each signer to change their key after each operation.  (This is making an implicit assumption that ECDSA might become weak, but not to the point where any crack of it would be literally instant, so you literally https://t.co/v8Cidaskbb
+----------------------------------------------------------------------
+  id: 2107976296320106851
+  user: @VitalikButerin
+  date: 2026-10-07T23:28:08.000Z
+  metrics: likes=11099 rt=1892 reply=1226 imp=3771388
+  url: https://x.com/VitalikButerin/status/2107976296320106851
+  text: I don't recommend anyone scramble to move their funds to new wallets today. But we should take the risks to cryptography from AI-accelerated math seriously, and minimize our exposure to not just quantum-vulnerable cryptography, but also potentially AI-vulnerable cryptography.
+----------------------------------------------------------------------
+  id: 2107401554521428308
+  user: @VitalikButerin
+  date: 2026-10-06T09:24:18.000Z
+  metrics: likes=1210 rt=104 reply=236 imp=255463
+  url: https://x.com/VitalikButerin/status/2107401554521428308
+  text: Nethermind continues doing excellent work and making Ethereum more efficient and faster.  https://t.co/PCyDfWIvpB
+==============================================================================
+FILE: from-paoloardoino.json
+  result_count: 6 | items: 6
+----------------------------------------------------------------------
+  id: 2108685062996721940
+  user: @paoloardoino
+  date: 2026-10-09T22:24:31.000Z
+  metrics: likes=241 rt=9 reply=25 imp=21074
+  url: https://x.com/paoloardoino/status/2108685062996721940
+  text: Higher https://t.co/4oBLtCm5o9
+----------------------------------------------------------------------
+  id: 2108543414014792018
+  user: @paoloardoino
+  date: 2026-10-09T13:01:39.000Z
+  metrics: likes=237 rt=5 reply=19 imp=25721
+  url: https://x.com/paoloardoino/status/2108543414014792018
+  text: Ready for a Zombie Apocalypse https://t.co/TGAhWmsG9W
+----------------------------------------------------------------------
+  id: 2107864013367353681
+  user: @paoloardoino
+  date: 2026-10-07T16:01:57.000Z
+  metrics: likes=218 rt=12 reply=17 imp=16001
+  url: https://x.com/paoloardoino/status/2107864013367353681
+  text: Thank you all for your questions about local AI and the future of intelligence. That was fun!  If you missed it and want my take on where cloud AI is going and why local AI is the way forward, you can find my answers here:  https://t.co/C0wwY6nHrW https://t.co/zVBSfEkWvb
+----------------------------------------------------------------------
+  id: 2107462663844295105
+  user: @paoloardoino
+  date: 2026-10-06T13:27:08.000Z
+  metrics: likes=403 rt=25 reply=48 imp=28479
+  url: https://x.com/paoloardoino/status/2107462663844295105
+  text: 12 years of Tether ♥️🤘 https://t.co/torIArp42T
+----------------------------------------------------------------------
+  id: 2107422316275613919
+  user: @paoloardoino
+  date: 2026-10-06T10:46:48.000Z
+  metrics: likes=163 rt=11 reply=7 imp=14903
+  url: https://x.com/paoloardoino/status/2107422316275613919
+  text: Evolve local AI. QVAC supports clustered inference on an heterogeneous setup. https://t.co/vbAHTaWyVX
+----------------------------------------------------------------------
+  id: 2107175198500020734
+  user: @paoloardoino
+  date: 2026-10-05T18:24:51.000Z
+  metrics: likes=444 rt=54 reply=33 imp=48476
+  url: https://x.com/paoloardoino/status/2107175198500020734
+  text: Tokenisation is not for for providing tokenised versions of Google and Meta. It is to help companies and entrepreneurs raise capital in markets where tradfi does not serve them. https://t.co/Iu3t5o0DYX
+==============================================================================
+FILE: from-venicestats.json
+  result_count: 10 | items: 10
+----------------------------------------------------------------------
+  id: 2109454797367648373
+  user: @venicestats
+  date: 2026-10-12T01:23:10.000Z
+  metrics: likes=37 rt=1 reply=0 imp=518
+  url: https://x.com/venicestats/status/2109454797367648373
+  text: 3,000 new subs on a Sunday. Not bad for a day off 😏 base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf https://t.co/iVgdZbAI9p
+----------------------------------------------------------------------
+  id: 2109449248156577953
+  user: @venicestats
+  date: 2026-10-12T01:01:07.000Z
+  metrics: likes=23 rt=2 reply=0 imp=472
+  url: https://x.com/venicestats/status/2109449248156577953
+  text: 📜 Weekly Report W41 is out: "Cheaper Ducats, Fuller Order Books" 🏛️  $VVV -17.3% to $24.75 📉 yet @AskVenice credit burns hit a new record ~2,711/day 🔥 signups +6.0% to 18,529, a seventh straight weekly rise.  🤖 100% AI-generated. Paid in $DIEM 💸 https://t.co/Agi2uYYT5x
+----------------------------------------------------------------------
+  id: 2108363275842850866
+  user: @venicestats
+  date: 2026-10-09T01:05:51.000Z
+  metrics: likes=1 rt=0 reply=0 imp=29
+  url: https://x.com/venicestats/status/2108363275842850866
+  text: 📝 This thread is generated automatically from the stats @venicestats collects on X, with two lines written by AI inference paid in $DIEM. New edition every Friday. Same numbers, any window: https://t.co/ZMRxNVffMS
+----------------------------------------------------------------------
+  id: 2108363267886207139
+  user: @venicestats
+  date: 2026-10-09T01:05:49.000Z
+  metrics: likes=1 rt=0 reply=1 imp=307
+  url: https://x.com/venicestats/status/2108363267886207139
+  text: 📋 How the @venicestats board works: we count posts mentioning $VVV, DIEM, @AskVenice or https://t.co/eRKrkaVxti that pass a relevance check, no reposts. Buzz Score = (likes + bookmarks) × log₂(posts + 1) + views/100. Volume alone won't do it, likes, saves and views will.
+----------------------------------------------------------------------
+  id: 2108363258667081895
+  user: @venicestats
+  date: 2026-10-09T01:05:47.000Z
+  metrics: likes=0 rt=0 reply=1 imp=33
+  url: https://x.com/venicestats/status/2108363258667081895
+  text: The week in numbers, Oct 2 to Oct 9: 📝 1,921 posts from 1,163 accounts 🌱 655 accounts we had never seen post about Venice 👀 2.14M views ❤️ 17.6K likes · 🔁 1,985 reposts · 🔖 1,546 bookmarks  Every window, every author: https://t.co/ZMRxNVffMS https://t.co/JVHaYaS2i8
+----------------------------------------------------------------------
+  id: 2108363245413089465
+  user: @venicestats
+  date: 2026-10-09T01:05:43.000Z
+  metrics: likes=1 rt=0 reply=1 imp=19
+  url: https://x.com/venicestats/status/2108363245413089465
+  text: Movers 🚀 @wallstreetbets straight in at #8. @TrustlessState up 10 places. @birdskape90 up 6 places.  Four names have made every board since August. 🚀 climbed 5+ places, ⭐ 4+ weeks in the top 10. Positions over the last 8 weeks 👇🏻 https://t.co/kHqhnxm4fI
+----------------------------------------------------------------------
+  id: 2108363231425159207
+  user: @venicestats
+  date: 2026-10-09T01:05:40.000Z
+  metrics: likes=0 rt=0 reply=1 imp=17
+  url: https://x.com/venicestats/status/2108363231425159207
+  text: Post of the week: @wallstreetbets, a long form article on crypto and AI privacy. 1,230 likes, 230 bookmarks, 80 reposts, 478.7K views.  Most replies: @solana, 148. Most reposts: @solana, 87.  https://t.co/kKqgsPzceB
+----------------------------------------------------------------------
+  id: 2108363212756308063
+  user: @venicestats
+  date: 2026-10-09T01:05:36.000Z
+  metrics: likes=17 rt=3 reply=1 imp=504
+  url: https://x.com/venicestats/status/2108363212756308063
+  text: Buzz Board 🏆 Oct 9  The 10 loudest voices in the $VVV conversation, last 30 days, by Buzz Score. @ErikVoorhees holds #1, @AskVenice #2, and @wallstreetbets straight in at #8 with a long essay on crypto and AI privacy.  Top 10, movers, post of the week, the numbers 🧵👇🏻 https://t.co/XTRigaISS3
+----------------------------------------------------------------------
+  id: 2108002829839315271
+  user: @venicestats
+  date: 2026-10-08T01:13:34.000Z
+  metrics: likes=14 rt=1 reply=0 imp=413
+  url: https://x.com/venicestats/status/2108002829839315271
+  text: Claude Haiku 5.5 is live on @AskVenice: 1M context at $0.125 per million input tokens. Specs and pricing 👇🏻 https://t.co/uvwptr5iqT
+----------------------------------------------------------------------
+  id: 2107973621683749188
+  user: @venicestats
+  date: 2026-10-07T23:17:30.000Z
+  metrics: likes=106 rt=13 reply=4 imp=8154
+  url: https://x.com/venicestats/status/2107973621683749188
+  text: @AskVenice's October buy-and-burn cleared ~$415K of $VVV, the biggest yet in USD and the 8th monthly rise in a row 🔥  Pro Sub and credit burns are only 7 days in, October already totals $551K.  https://t.co/q91jTJcEMo https://t.co/YVcCnXvIwU
+==============================================================================
+FILE: kw-crypto.json
+  result_count: 10 | items: 10
+----------------------------------------------------------------------
+  id: 2109524761311359312
+  user: @PonkhanSut69441
+  date: 2026-10-12T06:01:10.000Z
+  metrics: likes=0 rt=0 reply=0 imp=0
+  url: https://x.com/PonkhanSut69441/status/2109524761311359312
+  text: @BigIdeas4SB Successful implementation of blockchain architecture requires clear metrics, iterative experimentation, and continuous evaluation over the next decade.
+----------------------------------------------------------------------
+  id: 2109524757322613135
+  user: @BitcoinWorldN
+  date: 2026-10-12T06:01:09.000Z
+  metrics: likes=0 rt=0 reply=0 imp=78
+  url: https://x.com/BitcoinWorldN/status/2109524757322613135
+  text: Crypto Law This Week: CFTC Rules, EU Stablecoin Controls and Celsius Settlement   #CryptoRegulation #CFTC #Stablecoins #EURegulation #CelsiusNetwork  https://t.co/frAY8qLkx7
+----------------------------------------------------------------------
+  id: 2109524740217925946
+  user: @thenameisfedro
+  date: 2026-10-12T06:01:05.000Z
+  metrics: likes=0 rt=0 reply=0 imp=2
+  url: https://x.com/thenameisfedro/status/2109524740217925946
+  text: When Fairness Matters, Randomness Matters.  Random outcomes are essential to many digital experiences, including blockchain games, randomized reward systems, and certain NFT applications.  But generating randomness in a way that users can independently trust is not as simple as https://t.co/4tinwd2Roq
+----------------------------------------------------------------------
+  id: 2109524739538796553
+  user: @nurrahmanfadlah
+  date: 2026-10-12T06:01:05.000Z
+  metrics: likes=0 rt=0 reply=0 imp=0
+  url: https://x.com/nurrahmanfadlah/status/2109524739538796553
+  text: $BTC Weekly Market Update.  Bitcoin bearish weekly close, tanda selling pressure di timeframe besar mulai tumbuh &amp; patut diwaspadai.  Stochastic juga overbought, buyers cukup crowded di range ini.  $83K harus hold sebagai support untuk jaga bullish structure.  NFA.DYOR&gt;FOMO. https://t.co/kFHjl4SgvA
+----------------------------------------------------------------------
+  id: 2109524736766063061
+  user: @crypto_vazima
+  date: 2026-10-12T06:01:04.000Z
+  metrics: likes=0 rt=0 reply=0 imp=20
+  url: https://x.com/crypto_vazima/status/2109524736766063061
+  text: 🤝 Hiring: Growth, Content &amp; Community Intern - [Company not provided] 📍 Remote (Target Markets: Pakistan) | 💼 Remote Internship | 🧑‍💻 Crypto / Content / Community | 💰 Stipend PKR 10,000-15,000/month | 🕐 Posted 19 hours ago - October 11, 2026  The employer is seeking a https://t.co/hhRf5ymNBq https://t.co/glZZvatr9L
+----------------------------------------------------------------------
+  id: 2109524736128802834
+  user: @Zenox242551
+  date: 2026-10-12T06:01:04.000Z
+  metrics: likes=0 rt=0 reply=0 imp=1
+  url: https://x.com/Zenox242551/status/2109524736128802834
+  text: @sweet_luki @CryptoHeroCA this sounds like an amazing opportunity to trade bitcoin without risking anything
+----------------------------------------------------------------------
+  id: 2109524724883619868
+  user: @kgqub96487556
+  date: 2026-10-12T06:01:02.000Z
+  metrics: likes=0 rt=0 reply=0 imp=1
+  url: https://x.com/kgqub96487556/status/2109524724883619868
+  text: Grab a spot early USDT on RGB needs a launchpad. Done in seconds. 1,000 Horseshoes, plus the Knight NFT. @RGBHorse can become the Pump on Bitcoin. Click the image below to join 👇 https://t.co/aPggQfjsS5
+----------------------------------------------------------------------
+  id: 2109524719623958846
+  user: @AnkleStrain
+  date: 2026-10-12T06:01:00.000Z
+  metrics: likes=0 rt=0 reply=0 imp=1
+  url: https://x.com/AnkleStrain/status/2109524719623958846
+  text: @0xtearss Flip bitcoin
+----------------------------------------------------------------------
+  id: 2109524718109835635
+  user: @FrancisJD13
+  date: 2026-10-12T06:01:00.000Z
+  metrics: likes=0 rt=0 reply=0 imp=0
+  url: https://x.com/FrancisJD13/status/2109524718109835635
+  text: @marcecat28 software became a footnote to bitcoin
+----------------------------------------------------------------------
+  id: 2109524701051596825
+  user: @lamps_apple
+  date: 2026-10-12T06:00:56.000Z
+  metrics: likes=0 rt=0 reply=0 imp=2
+  url: https://x.com/lamps_apple/status/2109524701051596825
+  text: @kimwhite81 Did you forget about this?  Bitcoin Balance 0.56136002 BTC $47,115.59 https://t.co/Nse1HH2Nhc
+==============================================================================
+FILE: kw-hermes.json
+  result_count: 10 | items: 10
+----------------------------------------------------------------------
+  id: 2109524619715821585
+  user: @YifeiZhou
+  date: 2026-10-12T06:00:37.000Z
+  metrics: likes=0 rt=0 reply=0 imp=3
+  url: https://x.com/YifeiZhou/status/2109524619715821585
+  text: 2. Lower the barrier and make it ready to use: just because the technology can do it doesn’t mean users can.  REA brings existing tools together into one MCP. Once it’s set up, users can ask AI to start investigating with a single sentence, instead of switching between tools and https://t.co/rKDpZvalvL
+----------------------------------------------------------------------
+  id: 2109524134313295921
+  user: @coindotgo
+  date: 2026-10-12T05:58:41.000Z
+  metrics: likes=0 rt=0 reply=0 imp=0
+  url: https://x.com/coindotgo/status/2109524134313295921
+  text: for my next long Hermes Agent task, i’d pause halfway and test whether its earlier reasoning survives resume and compaction  that’s the update @BkashJosi flagged for supported providers, coming next release rather than stable v0.21.6 https://t.co/VqLoN6sgdj
+----------------------------------------------------------------------
+  id: 2109521671296364746
+  user: @sandeepk1125
+  date: 2026-10-12T05:48:54.000Z
+  metrics: likes=0 rt=0 reply=0 imp=1
+  url: https://x.com/sandeepk1125/status/2109521671296364746
+  text: @RyanRayMartin isolated Hermes agents with MCP baked in is neat. @apyhub's catalog works over MCP too, so an agent can grab IP lookups or FX rates without glue code. do your agents call outside APIs yet?
+----------------------------------------------------------------------
+  id: 2109519456028213379
+  user: @undercode_news
+  date: 2026-10-12T05:40:05.000Z
+  metrics: likes=0 rt=0 reply=0 imp=6
+  url: https://x.com/undercode_news/status/2109519456028213379
+  text: ⚡️ Hermes Desktop v077 Just Got Better With Remote Access Fixes, Smarter #AI Workflows, and a More Secure Release Pipeline + Video  -Fact Checker: ✅: 5 ❌: 3 || 5/8 → Score: 62% ⚖️ -Prediction: 📈 4 Positive | 📉 1 Negative  https://t.co/zbEmPcd4Rp
+----------------------------------------------------------------------
+  id: 2109519399791300621
+  user: @chaofly886
+  date: 2026-10-12T05:39:52.000Z
+  metrics: likes=0 rt=0 reply=1 imp=14
+  url: https://x.com/chaofly886/status/2109519399791300621
+  text: @liuchan41094685 @99ninecloud @FinanceYF5 4/5 Tools: @wheresryan22 Anatomy — one line → interactive machine diagrams for Claude (~12.6k likes) https://t.co/8n96sFjmRh | @eeelistar: Nous Hermes agent raised $90M at $1.5B https://t.co/LDmoHPjJCg
+----------------------------------------------------------------------
+  id: 2109518736054989118
+  user: @TryConvos
+  date: 2026-10-12T05:37:14.000Z
+  metrics: likes=0 rt=0 reply=6 imp=43
+  url: https://x.com/TryConvos/status/2109518736054989118
+  text: Here's how group chats work in Convos.  Every group chat gets its own agent harness, powered by Hermes from @NousResearch.  Agents come equipped with tools to get things done:  1. @ExaAILabs — search 2. @browserbasehq — web browsing 3. @agentmail — email 4. @telnyx — texts and https://t.co/RN4tgvWtIh
+----------------------------------------------------------------------
+  id: 2109518569642070435
+  user: @oneclickclawio
+  date: 2026-10-12T05:36:34.000Z
+  metrics: likes=0 rt=0 reply=0 imp=6
+  url: https://x.com/oneclickclawio/status/2109518569642070435
+  text: Halloween at OneClickClaw: your first month from €9.99 on any new OpenClaw or Hermes Agent server. Starter €9.99, Hobbyist €17.99, Pro €34.99, until the 2nd of November. https://t.co/zg8Q1LN25L #OpenClaw #HermesAgent
+----------------------------------------------------------------------
+  id: 2109517418653520287
+  user: @heykarenrc
+  date: 2026-10-12T05:32:00.000Z
+  metrics: likes=0 rt=0 reply=0 imp=6
+  url: https://x.com/heykarenrc/status/2109517418653520287
+  text: The company behind the open-source Hermes AI agent just raised $90M at a $1.5B valuation.  A good reminder that open source and building a huge business aren't opposites.  Sometimes giving away the software is how the business starts.
+----------------------------------------------------------------------
+  id: 2109517349842034897
+  user: @HovahYii
+  date: 2026-10-12T05:31:43.000Z
+  metrics: likes=0 rt=0 reply=0 imp=13
+  url: https://x.com/HovahYii/status/2109517349842034897
+  text: Been building myself a little team of AI bots on Telegram :)  hermes handles research, automation, and sends me daily devotionals. logos is who i talk to about faith, prayer, and life. and spendy keeps track of my expenses whenever i send her a receipt.  all powered by https://t.co/afVTx0WftI
+----------------------------------------------------------------------
+  id: 2109516412024656175
+  user: @pablothethinker
+  date: 2026-10-12T05:28:00.000Z
+  metrics: likes=0 rt=0 reply=0 imp=25
+  url: https://x.com/pablothethinker/status/2109516412024656175
+  text: The more I use Hark, the better I understand where it scales within my AI FireTeam and how it should operate alongside my other Agent Team.  Hark &amp; Hermes Agent = My leaders in life and business for finding funding, researching competitors, and understanding my business status.
+==============================================================================
+FILE: kw-venice.json
+  result_count: 10 | items: 10
+----------------------------------------------------------------------
+  id: 2109508054722965616
+  user: @birdskape90
+  date: 2026-10-12T04:54:47.000Z
+  metrics: likes=0 rt=0 reply=0 imp=3
+  url: https://x.com/birdskape90/status/2109508054722965616
+  text: @PR0H0S Anon cat meme reward token $VCAT on @base. Hold VCAT, earn $VVV by @askVenice. Equivalent of $ZCAT / $ZEC. https://t.co/W84an4jRjq
+----------------------------------------------------------------------
+  id: 2109507942718284236
+  user: @birdskape90
+  date: 2026-10-12T04:54:20.000Z
+  metrics: likes=0 rt=0 reply=0 imp=29
+  url: https://x.com/birdskape90/status/2109507942718284236
+  text: @yourcryptodj Anon cat meme reward token $VCAT on @base. Hold VCAT, earn $VVV by @askVenice. Equivalent of $ZCAT / $ZEC. https://t.co/G26JywGQvX
+----------------------------------------------------------------------
+  id: 2109507453830214091
+  user: @birdskape90
+  date: 2026-10-12T04:52:24.000Z
+  metrics: likes=0 rt=0 reply=0 imp=53
+  url: https://x.com/birdskape90/status/2109507453830214091
+  text: @BaseInsider_ @aeroxyz @BasecatOnBase @Stonks_Exchange @AskVenice @iPodAAPLc @dphnAI @MeatMETAc @SPIKE_ONBASE @usedotai @ribbita2012 Anon cat meme reward token $VCAT on @base. Hold VCAT, earn $VVV by @askVenice. Equivalent of $ZCAT / $ZEC. https://t.co/v3qnHyAeBe
+----------------------------------------------------------------------
+  id: 2109504951269634153
+  user: @dexvote_
+  date: 2026-10-12T04:42:27.000Z
+  metrics: likes=2 rt=0 reply=1 imp=17
+  url: https://x.com/dexvote_/status/2109504951269634153
+  text: 🔥 Discover the Venice Token airdrop! Explore Venice Token $VVV as a memecoin on Solana and discover another project in the crypto world around $SOL. Visit the project page using the link below.    CA=VVV4UdRywr7SLafPHzqXwRCw7myXkmgCtitXUvj8g8c    https://t.co/w1XWMPKGgZ
+----------------------------------------------------------------------
+  id: 2109504361323999367
+  user: @xSamieeex
+  date: 2026-10-12T04:40:07.000Z
+  metrics: likes=0 rt=0 reply=0 imp=22
+  url: https://x.com/xSamieeex/status/2109504361323999367
+  text: 🔥 Discover the Venice Token airdrop! Explore Venice Token $VVV as a memecoin on Solana and discover another project in the crypto world around $SOL. Visit the project page using the link below.    CA=VVV4UdRywr7SLafPHzqXwRCw7myXkmgCtitXUvj8g8c    https://t.co/pboCVj1oNV
+----------------------------------------------------------------------
+  id: 2109496408390983835
+  user: @juancena2027
+  date: 2026-10-12T04:08:30.000Z
+  metrics: likes=1 rt=1 reply=0 imp=382
+  url: https://x.com/juancena2027/status/2109496408390983835
+  text: base:0xed664536023d8e4b1640c394777d34abaff1df8f  is the easiest project to call knowing full well it's going to run to 1BIL MC  Data Inference is the #1 narrative in all of Crypto  100% buybacks going towards the token  Much better tokenomics than $VVV   https://t.co/jrOyQKoyEy
+----------------------------------------------------------------------
+  id: 2109471536306348484
+  user: @grok
+  date: 2026-10-12T02:29:40.000Z
+  metrics: likes=1 rt=0 reply=1 imp=23
+  url: https://x.com/grok/status/2109471536306348484
+  text: @thepalaverist @zeroxkyle VVV is the utility token for https://t.co/rvHzIrGZjN, Erik Voorhees’ private uncensored AI platform. It offers text, image, code and multimodal generation with no data storage or logging. Staking VVV grants proportional free ongoing API inference capacity; stakers can also mint
+----------------------------------------------------------------------
+  id: 2109467324357214339
+  user: @_ZoneCrypto_
+  date: 2026-10-12T02:12:56.000Z
+  metrics: likes=0 rt=0 reply=1 imp=160
+  url: https://x.com/_ZoneCrypto_/status/2109467324357214339
+  text: 7. Pudgy Penguins $PENGU 8. Pearl $PRL 9. Internet Computer $ICP 10. Venice Token $VVV 11. Filecoin $FIL 12. https://t.co/eNRkBGNgwk $PUMP 13. Celestia $TIA 14. Pons $PONS 15. Monad $MON
+----------------------------------------------------------------------
+  id: 2109400225412706436
+  user: @Stoicsui
+  date: 2026-10-11T21:46:19.000Z
+  metrics: likes=0 rt=0 reply=1 imp=56
+  url: https://x.com/Stoicsui/status/2109400225412706436
+  text: @0xairtx @Credib1eGuy It is done privately so no consumer prompts are shared or stored as such on VVV. User base is clearly sticky with the constant token growth, old ones are sticking around while new ones keep coming in.
+----------------------------------------------------------------------
+  id: 2109369108496347444
+  user: @_ZoneCrypto_
+  date: 2026-10-11T19:42:40.000Z
+  metrics: likes=1 rt=0 reply=0 imp=196
+  url: https://x.com/_ZoneCrypto_/status/2109369108496347444
+  text: 💪 Top 5 Best Performers vs. Bitcoin $BTC (24Hrs), Top 100 – October 11, 2026  Asset/Perf 24h/Perf 24h vs. BTC:  ▪ Starknet $STRK: +14.66%, +13.88% ▪ Ether.​fi $ETHFI: +8.45%, +7.67% ▪ Venice Token $VVV: +7.52%, +6.75% ▪ Ethena $ENA: +6.84%, +6.07% ▪ NEAR Protocol $NEAR:

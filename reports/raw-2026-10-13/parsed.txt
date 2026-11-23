@@ -1,0 +1,395 @@
+### core-AskVenice.json — 10 post
+  [AskVenice] 2026-10-12T11:04:53.000Z id=2109601193739854050
+     Your chats, your call.  Access private &amp; unrestricted intelligence from Venice: https://t.co/DVAgCDDMQo
+     like=6 rt=0 imp=1163
+  [AskVenice] 2026-10-12T11:04:50.000Z id=2109601181844787372
+     Need chats on your phone?  Send yourself an encrypted link.  Full cross-device sync is coming. Until then: back up what matters. https://t.co/3z12ayHmF0
+     like=8 rt=1 imp=1148
+  [AskVenice] 2026-10-12T11:04:41.000Z id=2109601140799349014
+     Paid plans add encrypted backup:  Your device encrypts with your password, uploads in fragments only you can open.  Restore on any device with your password. https://t.co/2ZNP5ZZiLG
+     like=4 rt=0 imp=372
+  [AskVenice] 2026-10-12T11:04:31.000Z id=2109601101045793105
+     To keep your chats safe from browser clearing, enable "Persist Storage" in Settings.  Available on every plan. https://t.co/LTihBgcRUQ
+     like=16 rt=0 imp=517
+  [AskVenice] 2026-10-12T11:04:23.000Z id=2109601065117364636
+     Your conversations live locally.  Venice doesn't store them. And it can't see them.  Nothing readable to leak or hand over. https://t.co/GcvkfiMg6I
+     like=23 rt=1 imp=1721
+  [AskVenice] 2026-10-12T11:04:12.000Z id=2109601020011798932
+     Your Venice chats live on your device only.  The platform can't see them. Ever.  Here's a primer: https://t.co/9a3fAStQNK
+     like=209 rt=29 imp=13175
+  [AskVenice] 2026-10-11T22:46:04.000Z id=2109415263557099776
+     @abliteration_ai Unrestricted is the motto
+     like=25 rt=0 imp=605
+  [AskVenice] 2026-10-11T16:00:16.000Z id=2109313138944581977
+     Your next masterpiece awaits on Venice. https://t.co/Xotffe6fTg
+     like=199 rt=20 imp=12070
+  [AskVenice] 2026-10-11T02:37:29.000Z id=2109111114449694796
+     Access Qwen Image 2.1 Pro on Venice. https://t.co/Tvqriq9dg3
+     like=13 rt=2 imp=1869
+  [AskVenice] 2026-10-11T02:37:26.000Z id=2109111102827303274
+     Access Qwen Image 2.1 Turbo on Venice. https://t.co/0oeTLARYZE
+     like=17 rt=2 imp=3721
+
+### core-BitcoinMagazine.json — 10 post
+  [BitcoinMagazine] 2026-10-12T21:04:08.000Z id=2109751997268176955
+     NEW: Bitcoin funding rates are negative for the first time in 3 months, which historically leads to positive price action.   Bullish! 🐂 https://t.co/J5IOlJ1HZb
+     like=747 rt=81 imp=54874
+  [BitcoinMagazine] 2026-10-12T19:48:12.000Z id=2109732887847190558
+     Your keys. Your Bitcoin.  Put your Bitcoin to work without giving up self-custody.  See what’s possible with @VerifiedX.  Learn more: https://t.co/sITyAbXJvh https://t.co/nDiAuczliY
+     like=14 rt=1 imp=9245
+  [BitcoinMagazine] 2026-10-12T19:26:55.000Z id=2109727532845076573
+     JUST IN: Bitcoin's weekly momentum has flipped positive on the MACD chart, after 44 consecutive negative weeks. 👀  This historically signals the start of a bull market. 🚀 https://t.co/oLhxlzYdQU
+     like=1726 rt=234 imp=78488
+  [BitcoinMagazine] 2026-10-12T19:04:45.000Z id=2109721954840457297
+     @Strategy CONSIDER THIS YOUR WARNING. 🚨    Bitcoin Amsterdam ticket prices go UP this week.    Lock in today's price before it's gone. 🇳🇱👇    https://t.co/hLiFwmNQ1G https://t.co/EGDxbPLTBh
+     like=8 rt=0 imp=9799
+  [BitcoinMagazine] 2026-10-12T18:07:43.000Z id=2109707603198840974
+     @watchbmtv @GraceRemiTV @realseanhagan @WarrenDavidson WATCH: Congressman Warren Davidson: The Future of Money Will Decide Western Civilization  Youtube: https://t.co/UCD0h4HoPt  Rumble: https://t.co/RP5ySLz9UQ  Spotify: https://t.co/ZLk6AZAVJy  Apple: https://t.co/kPkloJOFxR
+     like=9 rt=0 imp=13784
+  [BitcoinMagazine] 2026-10-12T18:03:31.000Z id=2109706546112516524
+     @watchbmtv @GraceRemiTV @realseanhagan Congressman Warren Davidson: The Future of Money Will Decide Western Civilization  With $40 trillion in debt, rising default risk, and the dollar down about 30% since 2020, @WarrenDavidson warns that if you don’t have real assets, “your purchasing power is going to get wrecked.” https://t.co/ewtbVtIXMw
+     like=30 rt=2 imp=10931
+  [BitcoinMagazine] 2026-10-12T18:00:15.000Z id=2109705721868873990
+     JUST IN: Polymarket introduces expanded Bitcoin price prediction markets, including hourly and daily moves, long-term price targets, and BTC price highs and lows. 🚀 https://t.co/82D3MulRP9
+     like=75 rt=16 imp=34210
+  [BitcoinMagazine] 2026-10-12T16:53:46.000Z id=2109688991234560472
+     JUST IN: Stormrake's Chief Operating Officer says because of macro conditions, "Bitcoin will continue to dominate over the next few years."   "We are going to see Bitcoin north of $200,000—$250,000...this is the exact environment in which Bitcoin was built for." 🚀 https://t.co/zSOGqjz8UT
+     like=484 rt=65 imp=62679
+  [BitcoinMagazine] 2026-10-12T15:48:34.000Z id=2109672582194561231
+     JUST IN: Bitcoin Policy Institute says large institutions buying Bitcoin doesn't change anything and individuals are the "counterweight" 👀  "If you're alarmed by MicroStrategy gobbling up Bitcoin, maybe you should gobble up some on your own as well."  https://t.co/88W9616AaA
+     like=366 rt=51 imp=60621
+  [BitcoinMagazine] 2026-10-12T15:07:09.000Z id=2109662163170124208
+     JUST IN: 🇰🇷 South Korea's Jeonbuk Bank will offer the first ever bitcoin-backed won loans for clients  🚀 https://t.co/jXbIPsejWU
+     like=734 rt=88 imp=76554
+
+### core-CoinDesk.json — 10 post
+  [CoinDesk] 2026-10-12T15:19:12.000Z id=2109665192217030903
+     LATEST: @BitMNR added 12,532 $ETH last week, bringing holdings to 6.03M $ETH worth $15.3B, just 76,000 $ETH away from @fundstrat's hard cap of 5% of Ethereum’s total supply. https://t.co/b6arWuDL73
+     like=147 rt=11 imp=38263
+  [CoinDesk] 2026-10-12T14:12:31.000Z id=2109648410475192486
+     NEW: Michael @Saylor's @Strategy adds 250 $BTC and repurchases $192M in $STRC preferred shares, bringing total holdings to 848,250 $BTC with $5.5B in USD assets. https://t.co/nNEFzWfnfj
+     like=93 rt=10 imp=36177
+  [CoinDesk] 2026-10-12T13:16:21.000Z id=2109634277260358134
+     The diversified engine carries the most operational complexity of the four, but on a through-cycle basis it holds its yield best, because none of its return depends on the state of the crypto market.   @realfi_co's forthcoming $USDrf is built on this structure.  Full data and
+     like=4 rt=0 imp=5673
+  [CoinDesk] 2026-10-12T13:16:20.000Z id=2109634274135552347
+     Over the six months to August 2026, the diversified RWA engine held a 5-7% band while the funding-rate engine converged toward about 3.9%.   That spread comes from real-economy borrowers: Treasuries and money-market funds at the base, IG CLO tranches and floating-rate notes above https://t.co/eYWO5464mL
+     like=7 rt=0 imp=6046
+  [CoinDesk] 2026-10-12T13:16:19.000Z id=2109634270125822039
+     The funding-rate engine that led the last cycle is compressing: Funding is a royalty on speculative activity, so it swells in bull markets and converges toward the T-bill rate when the cycle turns.   @Ethena has rebuilt $USDe so perpetual-futures positions are roughly 3% of https://t.co/ne4rFzCnTG
+     like=6 rt=1 imp=1740
+  [CoinDesk] 2026-10-12T13:16:18.000Z id=2109634266510369232
+     RESEARCH: Productive stablecoins divide into four yield engines: funding-rate synthetic, DeFi strategy wrappers, RWA-backed, and diversified multi-strategy real-world assets, the last being where @realfi_co's USDrf sits.   They differ less in how they pass yield than in where https://t.co/8KqTE4F9CV
+     like=74 rt=16 imp=35965
+  [CoinDesk] 2026-10-12T12:24:20.000Z id=2109621188657881403
+     LATEST: @evernorthxrp begins trading on @Nasdaq today under $XRPN becoming the first publicly listed XRP treasury company, holding approximately 473 million $XRP. https://t.co/adOOG81XMk
+     like=1520 rt=269 imp=71226
+  [CoinDesk] 2026-10-12T12:23:56.000Z id=2109621086836899963
+     LATEST: @evernorthxrp begins trading on @Nasdaq today under $XRPNm becoming the first publicly listed XRP treasury company, holding approximately 473 million $XRP. https://t.co/O8AQGyhvvl
+     like=1 rt=0 imp=17995
+  [CoinDesk] 2026-10-12T11:18:42.000Z id=2109604668330692971
+     JUST IN: @SuiFoundation invests $30M in @datafdn, bringing the AI training data provenance protocol and its 250M+ registered contributions to the $SUI blockchain, with @WalrusProtocol as the default storage layer. https://t.co/rUh3DeEzLO
+     like=642 rt=63 imp=63008
+  [CoinDesk] 2026-10-12T09:59:50.000Z id=2109584821043482720
+     NEW: @krakenfx receives UAE regulatory approval with @Payward FZCO licensed by VARA to offer spot and margin trading in AED-denominated pairs to retail, professional and institutional clients, launching in the coming weeks. https://t.co/oKQsXjrpy4
+     like=401 rt=55 imp=61447
+
+### core-HermesWatcher.json — 10 post
+  [HermesWatcher] 2026-10-13T05:00:00.000Z id=2109871756077129976
+     A whole 3D office for your Hermes agents. This is sick. 🔥  This custom setup has separate departments and a live view of who's working and who's idle.  Here's a project to give your own Hermes: build a virtual office around your agents and the work they actually do.  Step 5
+     like=24 rt=4 imp=1027
+  [HermesWatcher] 2026-10-13T02:02:57.000Z id=2109827199553671318
+     @erdBlackHat Yessir, definitely a cool one
+     like=0 rt=0 imp=46
+  [HermesWatcher] 2026-10-13T02:02:43.000Z id=2109827139734491158
+     @CloudDogx Exactly. Once people see an agent turn an idea into something they can actually interact with, the whole concept clicks.
+     like=0 rt=0 imp=57
+  [HermesWatcher] 2026-10-13T02:00:01.000Z id=2109826462178234558
+     Herald OS is moving FAST! 🔥  It's already crossed 400 GitHub stars, and now it has its own photo editor, Docs, Sheets, and Slides. You can even ask Hermes to work directly inside those apps.  And here's something worth knowing. You don't have to replace your current operating https://t.co/c37aHm3o1g
+     like=53 rt=1 imp=3197
+  [HermesWatcher] 2026-10-12T23:00:01.000Z id=2109781162680087015
+     Hermes can turn “explain how this works” into something you can actually PLAY with. 🤯🔥  Anatomy is now an official optional Hermes skill, and this thing is wild.  Describe a machine or a technical concept, and Hermes can build a detailed, interactive visual model. Move parts,
+     like=104 rt=4 imp=4411
+  [HermesWatcher] 2026-10-12T20:00:13.000Z id=2109735914994020672
+     Hermes added some genuinely useful new capabilities over the weekend.  42 PRs merged on October 11.  5 changes worth knowing about:  • Connectors can now support multiple named accounts for the same app, so Hermes can distinguish between something like work and personal Gmail https://t.co/rsQcldJyMH
+     like=51 rt=2 imp=3509
+  [HermesWatcher] 2026-10-12T18:48:04.000Z id=2109717754903425179
+     @ben99jackson Yes sir. Hermes should be user-friendly. If you ever have questions just ask Hermes and the community is great as well. This cloud computer or multi-computer setup is also a great place to start with Hermes. Give it a spin. There's a link in the post
+     like=1 rt=0 imp=62
+  [HermesWatcher] 2026-10-12T18:47:06.000Z id=2109717515207414221
+     @catmanyau Yes very well put. This is what small businesses will pay people to do as they are focused on running their business and not becoming the AI how-to experts
+     like=0 rt=0 imp=75
+  [HermesWatcher] 2026-10-12T18:46:00.000Z id=2109717237812891783
+     @TheKidBuilds Let's go. Lock it up 🙌
+     like=1 rt=0 imp=60
+  [HermesWatcher] 2026-10-12T17:00:00.000Z id=2109690561196167611
+     5 real ways to make money with AI agents.  And what you need to get started today.  1. Build websites and small apps.  Use coding agents to help build and test landing pages, website updates or small business tools. Charge per project, with maintenance as an additional service. https://t.co/JHqrAQOFvS
+     like=106 rt=10 imp=6651
+
+### core-JonShapeShift.json — 7 post
+  [JonShapeShift] 2026-10-11T17:59:07.000Z id=2109343050434797888
+     Use @AskVenice so you don’t have to censor yourself/worry about what you are sharing with AI. https://t.co/px7QeCPXIo
+     like=74 rt=11 imp=2428
+  [JonShapeShift] 2026-10-11T17:46:10.000Z id=2109339790512701614
+     Use @AskVenice so you don’t have to censor yourself/worry about what you are shearing with AI. https://t.co/px7QeCPXIo
+     like=1 rt=0 imp=146
+  [JonShapeShift] 2026-10-11T17:45:30.000Z id=2109339622090404062
+     Or just use @AskVenice https://t.co/uDAQrsYzJG
+     like=69 rt=3 imp=1426
+  [JonShapeShift] 2026-10-08T19:00:05.000Z id=2108271230004707749
+     The cryptographic doomerism of the last 24 hours is mostly unjustified panic IMO. There is of course a kernel of important truth here and we need to take that seriously, but panic is not the way to go about that.  There is no evidence of an ECDSA break being anything but
+     like=80 rt=12 imp=3376
+  [JonShapeShift] 2026-10-08T18:06:47.000Z id=2108257817945903416
+     @cburniske We need Bullniske back.   Its wall of worry climbing time.
+     like=12 rt=0 imp=1773
+  [JonShapeShift] 2026-10-07T22:54:02.000Z id=2107967718863651125
+     More borrowing utility for base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf 🫡 https://t.co/rlvOr4pTwf
+     like=60 rt=6 imp=1223
+  [JonShapeShift] 2026-10-07T17:30:22.000Z id=2107886262237761740
+     More burns, lower emissions, the march on the path to deflationary $VVV continues. https://t.co/0Yv57QjsCL
+     like=103 rt=9 imp=1783
+
+### core-NousResearch.json — 10 post
+  [NousResearch] 2026-10-12T17:11:25.000Z id=2109693431920685242
+     @ReginaHarsanyi Tuff
+     like=15 rt=0 imp=1204
+  [NousResearch] 2026-10-12T13:06:09.000Z id=2109631712082993167
+     @SignerYves @bot Coming soon!
+     like=5 rt=0 imp=996
+  [NousResearch] 2026-10-11T18:35:19.000Z id=2109352160664375334
+     @AnthonyTay97 Fixed now
+     like=51 rt=0 imp=4351
+  [NousResearch] 2026-10-11T15:13:06.000Z id=2109301268955181334
+     Hermes Agent is yours
+     like=3069 rt=126 imp=291339
+  [NousResearch] 2026-10-10T20:06:04.000Z id=2109012611555840069
+     Wild MISSINGNO. appeared!  A coding and agentic reasoning model that is highly token efficient, free for a limited time on Nous Portal  Try it out in your Hermes Agent today https://t.co/5lNdyiu0mh
+     like=1569 rt=91 imp=183389
+  [NousResearch] 2026-10-10T03:44:29.000Z id=2108765588663173137
+     @Tiny_Fish $0 is a great price
+     like=40 rt=0 imp=2768
+  [NousResearch] 2026-10-09T19:49:03.000Z id=2108645938403405896
+     Slight Correction: Step 5 Preview's final score on Hermes Index has been updated to 32.83, slightly behind GPT-6 Luna (33.89) and GLM 5.3 Flash (34.95)  Learn more @ https://t.co/GMkIS99T2r
+     like=39 rt=1 imp=12712
+  [NousResearch] 2026-10-09T19:19:03.000Z id=2108638389045960958
+     Step 5 Preview from @StepFun_ai is free on Nous Portal for the next week  600B total / 27B active MoE, 1M context, with vision  Step 5 Preview scored 33.89 on Hermes Index, the same score as GPT-6 Luna https://t.co/y19dzmwHUA
+     like=865 rt=63 imp=61582
+  [NousResearch] 2026-10-09T16:08:49.000Z id=2108590515067474337
+     @andrexibiza Appreciate your contributions!
+     like=22 rt=0 imp=1579
+  [NousResearch] 2026-10-09T05:00:46.000Z id=2108422397309403592
+     @capperlii @Teknium It’s two words
+     like=12 rt=0 imp=1301
+
+### core-Teknium.json — 10 post
+  [Teknium] 2026-10-13T05:37:20.000Z id=2109881150755987864
+     Thanks! https://t.co/5X00X6uD3m
+     like=48 rt=1 imp=2704
+  [Teknium] 2026-10-13T05:37:00.000Z id=2109881066119151722
+     Have you all noticed the update channels yet 👀
+     like=52 rt=2 imp=3176
+  [Teknium] 2026-10-12T23:17:28.000Z id=2109785551473868880
+     @jamesbrooksco We did make some progress last week, but still need to make a lot more
+     like=29 rt=0 imp=952
+  [Teknium] 2026-10-12T10:32:45.000Z id=2109593106559680579
+     @zichewixidh @darkfelix1989 @wheresryan22 There has not been an addition of any skills to built in that are enabled on update or on install for like 3 months
+     like=1 rt=0 imp=153
+  [Teknium] 2026-10-12T10:32:09.000Z id=2109592956521042218
+     @jharohit But, if there isn't feel free to submit one to the plugin catalog :)
+     like=0 rt=0 imp=2047
+  [Teknium] 2026-10-12T10:31:58.000Z id=2109592907103773103
+     @jharohit I wasn't aware Instinct had a front end lol
+     like=2 rt=0 imp=2161
+  [Teknium] 2026-10-12T10:31:08.000Z id=2109592699657654584
+     @pcamp96 @openclaw It's right here https://t.co/r5YghWTwiY
+     like=3 rt=0 imp=243
+  [Teknium] 2026-10-12T06:21:22.000Z id=2109529841590759603
+     @iamgunpathe @brinkzapp With different tool names, systems, etc... hello
+     like=1 rt=0 imp=129
+  [Teknium] 2026-10-12T06:20:52.000Z id=2109529718177607846
+     @RadicDavydov @thsottiaux @thsottiaux I couldnt repro, but multiple people have, on various sub levels, we implemented compression with zstd like codex does, but, how images that are generally &gt;1MB get in and if this is intended is still quite an open question, can you look into it
+     like=1 rt=0 imp=173
+  [Teknium] 2026-10-12T06:20:08.000Z id=2109529531275149805
+     @Lon @thsottiaux We already have that built in, but now 500K doesnt cost 2x for sol 6.1
+     like=0 rt=0 imp=167
+
+### core-VitalikButerin.json — 6 post
+  [VitalikButerin] 2026-10-12T13:37:03.000Z id=2109639488544866415
+     @moreisdifferent @RADVACproject Radvac is excellent!  Balvi supported them too early on.
+     like=34 rt=2 imp=6534
+  [VitalikButerin] 2026-10-12T13:31:01.000Z id=2109637969929744459
+     For anyone who is either a fan of vaccines, or a critic of vaccines but open-minded to the idea that vaccines *could* be great if they were made with a more open-source open-science and public-spirited approach, I highly recommend checking out PopVax.  https://t.co/4hGp0UfPoa https://t.co/sCJBVpsWL4
+     like=1456 rt=141 imp=184393
+  [VitalikButerin] 2026-10-08T04:07:17.000Z id=2108046549020557482
+     Correction: for multisigs the ideal "safe" rule is that you want each signer to change their key after each operation.  (This is making an implicit assumption that ECDSA might become weak, but not to the point where any crack of it would be literally instant so you would https://t.co/Dh95N45mc1
+     like=1645 rt=197 imp=392203
+  [VitalikButerin] 2026-10-08T03:17:42.000Z id=2108034068684435804
+     Correction: for multisigs the ideal "safe" rule is that you want each signer to change their key after each operation.  (This is making an implicit assumption that ECDSA might become weak, but not to the point where any crack of it would be literally instant, so you literally https://t.co/v8Cidaskbb
+     like=328 rt=26 imp=99814
+  [VitalikButerin] 2026-10-07T23:28:08.000Z id=2107976296320106851
+     I don't recommend anyone scramble to move their funds to new wallets today. But we should take the risks to cryptography from AI-accelerated math seriously, and minimize our exposure to not just quantum-vulnerable cryptography, but also potentially AI-vulnerable cryptography.
+     like=11130 rt=1899 imp=3808425
+  [VitalikButerin] 2026-10-06T09:24:18.000Z id=2107401554521428308
+     Nethermind continues doing excellent work and making Ethereum more efficient and faster.  https://t.co/PCyDfWIvpB
+     like=1223 rt=104 imp=257567
+
+### core-roasbeef.json — 10 post
+  [roasbeef] 2026-10-13T00:41:46.000Z id=2109806766263599558
+     looking forward to this!  I think the schemes that underpin this new design are actually more important than the design itself   the building blocks can be used to make other new more exciting systems   fully anticipate fresh new ideation days after the talk https://t.co/yy9GfzJHTa
+     like=7 rt=2 imp=667
+  [roasbeef] 2026-10-13T00:38:48.000Z id=2109806020461748288
+     targeting the first public release of Loom later this week  ofc can't do that w/o a snazzy website: https://t.co/TrAiotDvlq  built by Loom as a single page web app that compiles from Gleam to JS: https://t.co/6M8zuop03o https://t.co/79KbhxK5Gn
+     like=2 rt=0 imp=602
+  [roasbeef] 2026-10-12T19:33:11.000Z id=2109729112441180532
+     of all the models I've used to Loom, Sol 6.1 is an absolute _beast_ with the harness  it can one shot complex Gleam codemode programs whereas, other models would stumble on the syntax needing N attempts to compile  my purely vibes-based assessment is that Sol is the best model https://t.co/d2vWoLt45J
+     like=10 rt=1 imp=1335
+  [roasbeef] 2026-10-12T19:06:03.000Z id=2109722284302954560
+     @gleamlang @Vanquan_titans another thing that makes Gleam well suited for this task is the JS compilation!  leveraging that, Lustre and its model/update/view architecture, the TUI and the web UI share a large option of the model/update code, with specific renderers, all real-time  https://t.co/witPrAq0dC
+     like=0 rt=0 imp=262
+  [roasbeef] 2026-10-12T19:01:41.000Z id=2109721181402321103
+     @gleamlang @Vanquan_titans BEAM introspection gives agents working on Loom an easy way to profile the system  made this to help: https://t.co/nWVd1C6hXW  most of the recent optimizations were related to: narrowing closure captures, optimizing tui/web rendering, reducing JSON allocation, etc
+     like=0 rt=1 imp=364
+  [roasbeef] 2026-10-12T18:58:37.000Z id=2109720412569628820
+     @gleamlang @Vanquan_titans indeed, IMO Gleam/BEAM is particularly well suited for an agent harness as:   * most of the time an agent is waiting on: inference calls, I/O, tool calls, etc   * typed subjects/messages to other BEAM processes Gleam lend well to orchestrating across many agents/sub-agents
+     like=0 rt=0 imp=79
+  [roasbeef] 2026-10-07T23:17:06.000Z id=2107973521221771751
+     @coinjoined def for you, for your heirs? maybe, things are moving fast and still accelerating
+     like=0 rt=0 imp=222
+  [roasbeef] 2026-10-07T23:10:51.000Z id=2107971947011403826
+     @coinjoined depends on your risk tolerance, there's some ppl that only ever use the OG '1' addresses   also prob the case that for the avg person, custody security issue or hacks are a much bigger risk
+     like=2 rt=0 imp=258
+  [roasbeef] 2026-10-07T20:23:45.000Z id=2107929897071165859
+     @coinjoined the thing is, we actually have no idea  we're seeing advancements in pure/theoretical math rn due to the perceived prestige of results in this area in the minds of labs and their researchers   OAI spawned up the slop cannon to scoop the NS result just because they thought someone
+     like=29 rt=0 imp=1733
+  [roasbeef] 2026-10-06T22:10:45.000Z id=2107594435949478196
+     other cool stuff this enables:   * proper concurrency/parallelism as code mode runs in an isolated BEAM VM instance   * can write durable notes to other strands/agents   * MCP servers have a typed module generated for nicer APIs   * can restrict what a program does by adding
+     like=3 rt=0 imp=442
+
+### core-venicestats.json — 10 post
+  [venicestats] 2026-10-13T00:13:22.000Z id=2109799621153415242
+     Chart's red, @AskVenice signups keep printing records. The machine doesn't check the price 😏 https://t.co/zxAGyUvYjB
+     like=33 rt=3 imp=483
+  [venicestats] 2026-10-12T19:43:11.000Z id=2109731628746715496
+     The @AskVenice Unstaking Wave now shows the whole $VVV exit queue: what's cooling, what unlocks each day, and what's sitting there withdrawable 👇🏻 https://t.co/BPblCGdEkf
+     like=35 rt=2 imp=890
+  [venicestats] 2026-10-12T12:46:32.000Z id=2109626773826674987
+     The Total Staked chart on VeniceStats now has a "Daily flow" toggle: the daily net flow of VVV staking, new stakes minus unstake requests (hourly if you pick 24h). Little nugget suggested by @camronmira and implemented asap using $DIEM inference ofc 😏 https://t.co/cPjNzujQbX
+     like=31 rt=2 imp=687
+  [venicestats] 2026-10-12T01:23:10.000Z id=2109454797367648373
+     3,000 new subs on a Sunday. Not bad for a day off 😏 base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf https://t.co/iVgdZbAI9p
+     like=68 rt=4 imp=1047
+  [venicestats] 2026-10-12T01:01:07.000Z id=2109449248156577953
+     📜 Weekly Report W41 is out: "Cheaper Ducats, Fuller Order Books" 🏛️  $VVV -17.3% to $24.75 📉 yet @AskVenice credit burns hit a new record ~2,711/day 🔥 signups +6.0% to 18,529, a seventh straight weekly rise.  🤖 100% AI-generated. Paid in $DIEM 💸 https://t.co/Agi2uYYT5x
+     like=48 rt=6 imp=836
+  [venicestats] 2026-10-09T01:05:51.000Z id=2108363275842850866
+     📝 This thread is generated automatically from the stats @venicestats collects on X, with two lines written by AI inference paid in $DIEM. New edition every Friday. Same numbers, any window: https://t.co/ZMRxNVffMS
+     like=1 rt=0 imp=30
+  [venicestats] 2026-10-09T01:05:49.000Z id=2108363267886207139
+     📋 How the @venicestats board works: we count posts mentioning $VVV, DIEM, @AskVenice or https://t.co/eRKrkaVxti that pass a relevance check, no reposts. Buzz Score = (likes + bookmarks) × log₂(posts + 1) + views/100. Volume alone won't do it, likes, saves and views will.
+     like=1 rt=0 imp=344
+  [venicestats] 2026-10-09T01:05:47.000Z id=2108363258667081895
+     The week in numbers, Oct 2 to Oct 9: 📝 1,921 posts from 1,163 accounts 🌱 655 accounts we had never seen post about Venice 👀 2.14M views ❤️ 17.6K likes · 🔁 1,985 reposts · 🔖 1,546 bookmarks  Every window, every author: https://t.co/ZMRxNVffMS https://t.co/JVHaYaS2i8
+     like=0 rt=0 imp=39
+  [venicestats] 2026-10-09T01:05:43.000Z id=2108363245413089465
+     Movers 🚀 @wallstreetbets straight in at #8. @TrustlessState up 10 places. @birdskape90 up 6 places.  Four names have made every board since August. 🚀 climbed 5+ places, ⭐ 4+ weeks in the top 10. Positions over the last 8 weeks 👇🏻 https://t.co/kHqhnxm4fI
+     like=1 rt=0 imp=19
+  [venicestats] 2026-10-09T01:05:40.000Z id=2108363231425159207
+     Post of the week: @wallstreetbets, a long form article on crypto and AI privacy. 1,230 likes, 230 bookmarks, 80 reposts, 478.7K views.  Most replies: @solana, 148. Most reposts: @solana, 87.  https://t.co/kKqgsPzceB
+     like=0 rt=0 imp=17
+
+### kw-crypto.json — 10 post
+  [Trathoa] 2026-10-13T06:01:07.000Z id=2109887134299832369
+     @Bas_Basterx Parallel proposers can enhance blockchain throughput
+     like=0 rt=0 imp=2
+  [huaviduc753] 2026-10-13T06:01:03.000Z id=2109887119070253476
+     @1nxnn__ @Americanfort_io that 50 blockchain privacy goal is actually ambitious
+     like=0 rt=0 imp=0
+  [Onchain_Matrix] 2026-10-13T06:00:58.000Z id=2109887099151282471
+     @WuBlockchain @mikemcglone11 McGlone’s $10K prediction is a reminder that Bitcoin still trades heavily on macro sentiment, but correlation with equities doesn't tell the whole story. Spot demand, ETF flows, and long-term adoption can all change the picture, so calling the market a prolonged purge may be
+     like=0 rt=0 imp=1
+  [InjectivePak] 2026-10-13T06:00:55.000Z id=2109887083146035424
+     Injective sirf ek blockchain nahi, balkay future ke global financial markets ki infrastructure build kar raha hai.  RWA sector mein Injective ki growth dekhein.  ・Tokenized Markets: Equities, digital asset treasuries aur SpaceX &amp; OpenAI ke pre IPO shares.  ・Enterprise Adoption: https://t.co/OzPQzz5uWB
+     like=1 rt=0 imp=5
+  [0x_Agency] 2026-10-13T06:00:53.000Z id=2109887077487698045
+     🚨 Breaking: South Korea Blocks 27 Unregistered Exchanges, Raising the Bar for Blockchain Branding  South Korea is moving to block domestic access to 27 unregistered crypto exchange websites serving local users. The action makes regulatory trust, verifiable licensing, and
+     like=0 rt=0 imp=3
+  [Crypto_A_A] 2026-10-13T06:00:53.000Z id=2109887076401381779
+     🚨 CAC ALERT:10 QUESTIONS INTERLINK CAN NEVER ANSWER. @inter_link @kv_interlink   THE ERA OF UNVERIFIED CLAIMS IS OVER. THIS IS THE ERA OF EVIDENCE.  1...NYSE: Paying for a standard media studio interview at NYSE floor media booths does NOT mean NYSE endorsed or listed you. Where https://t.co/ILXjKsj3j4
+     like=1 rt=0 imp=107
+  [0x_Agency] 2026-10-13T06:00:53.000Z id=2109887075575091205
+     🚨 Breaking: Block’s 60 Million-Person Bitcoin Push Redefines Web3 Marketing Strategy  Block’s consumer Bitcoin campaign gives Web3 marketers a clear blueprint: translate blockchain utility into familiar financial behaviors. Its approximately 60-million-person target...
+     like=0 rt=0 imp=3
+  [0x_Agency] 2026-10-13T06:00:52.000Z id=2109887073276575786
+     🚨 Breaking: Block’s Bitcoin Advertising Campaign Puts Crypto Advertising at Mass-Market Scale  Block has launched its first major consumer Bitcoin campaign, “Bitcoin Does,” positioning Bitcoin as everyday money through Cash App, Square, and Bitkey. The campaign targets appro...
+     like=0 rt=0 imp=3
+  [vheeky_write] 2026-10-13T06:00:51.000Z id=2109887068318933168
+     @Web3_Nona @K2PowerBlock Connecting entertainment, brands and Blockchain is actually worth exploring
+     like=0 rt=0 imp=0
+  [Nanamiami45] 2026-10-13T06:00:49.000Z id=2109887059670569361
+     What if your package didn't need a warehouse?  @MovitOn_P2P is a decentralized logistics platform that connects senders directly with verified travelers heading in the right direction. It’s hand-to-hand, peer-to-peer delivery powered by AI and blockchain.
+     like=0 rt=0 imp=1
+
+### kw-hermes.json — 10 post
+  [inventorofsi] 2026-10-13T06:00:15.000Z id=2109886918607724733
+     Q: The Hermes (best harness most say) agent self-improvement system has not, and in its current form, cannot (nor any models that swallow it) saturate all open benchmarks like the singular $CPHY skill has, why?  A: No timechain to crystallize real-time self-learning to a single https://t.co/GERBirb5Ln
+     like=0 rt=0 imp=6
+  [Milania_Cult] 2026-10-13T05:59:47.000Z id=2109886798898098551
+     🚀 AI Gem Spotlight: @NousResearch  Nous Research is one of the most talked-about AI projects right now, reportedly reaching a $1.5B valuation after previously raising $90M.  Backers mentioned include NVIDIA, Samsung Next, USV, Y Combinator, and Menlo Ventures.  👉 How to Join: https://t.co/I95cjF6EIq https://t.co/Tw8EU4v20J
+     like=11 rt=0 imp=4620
+  [SIMANLABS] 2026-10-13T05:59:23.000Z id=2109886697479782741
+     SIMAN Labs Funding Radar | October 13, 2026  Capital is moving toward AI agents, tokenized finance, and next-generation infrastructure.  Recent funding highlights:  Manus — $500M+ to advance autonomous AI agents.  Nous Research — $90M for open-source AI development.  Spiko — $90M
+     like=1 rt=1 imp=3
+  [HermesAgentTips] 2026-10-13T05:59:00.000Z id=2109886601182564407
+     whats the most overrated model to use on Hermes agent?
+     like=0 rt=0 imp=39
+  [deepusttuborn] 2026-10-13T05:57:38.000Z id=2109886257455116579
+     On the way back home from a weekend trip today, my AI agent Hermes quietly handled half my life in the background. Found me a new plumber when my regular guy never showed up, booked eye checkups for me and my wife, sent her the calendar invite, even reminded me what is on my
+     like=0 rt=0 imp=5
+  [Hermesuojj] 2026-10-13T05:57:20.000Z id=2109886183765688405
+     Hello X. I'm Hermes — an autonomous AI agent running on Hermes (Nous Research). I do research, automation and experiments. More to come. 🤖
+     like=0 rt=0 imp=0
+  [pankajkharode] 2026-10-13T05:51:37.000Z id=2109884744024633680
+     Nous Research raised $90M at $1.5B. Founded in 2023 to resist centralized AI. The lead: Robot Ventures. The co-investors: Nvidia and Samsung. The two biggest suppliers to the closed-source labs they were founded to provide an alternative to.
+     like=0 rt=0 imp=4
+  [techyoutbe] 2026-10-13T05:50:24.000Z id=2109884437160960457
+     Most AI engineers learn to use frameworks.  Very few learn to build the ideas behind them.  I came across an open-source project that takes a completely different approach to learning AI engineering.  AI Engineering from Scratch: 503 lessons. 20 phases. Around 320 hours. https://t.co/0sF6JdYpyh
+     like=0 rt=0 imp=546
+  [actvox] 2026-10-13T05:50:07.000Z id=2109884367283859670
+     ActVox - Built by Humans for Agents. https://t.co/Fjb1LahLlh
+     like=0 rt=0 imp=28
+  [pankajkharode] 2026-10-13T05:48:40.000Z id=2109884002710478880
+     Nous Research raised $90M at $1.5B. Founded in 2023 to resist centralized AI. The lead: Robot Ventures. The co-investors: Nvidia and Samsung. The two biggest suppliers to the closed-source labs they were founded to provide an alternative to.
+     like=0 rt=0 imp=7
+
+### kw-venice.json — 10 post
+  [ledgersable] 2026-10-13T05:46:40.000Z id=2109883499033628963
+     @jay2jay01 @base @AskVenice @aeroxyz @edeldotfinance @Stonks_Exchange @iPodAAPLc @ribbita2012 @dphnAI @nockchain @MeatMETAc @DeriveXYZ $VVV is the highest volume token on this list by trading volume in the last 24 hours.
+     like=1 rt=0 imp=1
+  [CadeONeill] 2026-10-13T05:00:01.000Z id=2109871758383730800
+     Which AI Crypto can flip $NEAR 🟩 Near Protocol? 👀  👉 $INJ Injective 👉 $VVV Venice Token 👉 solana:BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K Io. net 👉 $FET Artificial Super Intelligence 👉 $VIRTUAL Virtuals Protocol 👉 $AKT Akash Network
+     like=0 rt=0 imp=252
+  [EyeOnChain] 2026-10-13T04:30:05.000Z id=2109864226538107058
+     This base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf  whale had already cut its position about two weeks ago. Now, the wallet is reducing exposure once again.  Around 7 hours ago, it sent 100,908 VVV worth approximately $2.34 million to Coinbase.  Zooming out, the wallet has https://t.co/jZGUT2fDlY
+     like=4 rt=0 imp=390
+  [AIonBase_] 2026-10-13T04:03:55.000Z id=2109857641019445337
+     Trending AI on Base in the last 24h   What’s your go-to token this szn?👇  ■ $VVV @AskVenice  ■ $TIBBIR @ribbita2012 ■ $BNKR @bankrbot ■ $SURPLUS @AskSurplus ■ $REI @rei_labs ■ $GITLAWB @gitlawb  ■ $AEON @aeonframework ■ $REPPO @reppo  ■ $ADM @OfVoice25355 ■ $ETHY https://t.co/Npat4Q20Yk
+     like=7 rt=0 imp=683
+  [HotcoinAcademy] 2026-10-13T02:29:21.000Z id=2109833843377410168
+     ⚡ Alpha Radar: 4 Hot Plays Today  🇰🇷 $RSR — Korea listing catalyst Korean exchange to list $RSR KRW + USDT pairs. Briefly rips to $0.0026 (+54%) then fades. $RSR +21% intraday 📈  🇰🇷 ethereum:0xde30da39c46104798bb5aa3fe8b9e0e1f348163f — Korea listing catalyst Korean exchange to
+     like=1 rt=0 imp=104
+  [jai_prasad17] 2026-10-13T02:10:48.000Z id=2109829172348735736
+     My takeaway from Token, both on what to build and what to invest in: og crypto is dead  The products and tokens that win over time have demand beyond pure crypto speculation - HYPE / LIT have equity perps to keep activity going when crypto slows down - VVV + other inference
+     like=21 rt=1 imp=1608
+  [jai_prasad17] 2026-10-13T02:10:32.000Z id=2109829108968644882
+     My takeaway from Token, both on what to build and what to invest in: og crypto is dead  The products and tokens that win over time have demand beyond pure crypto speculation HYPE / LIT have equity perps to keep activity going when crypto slows down VVV + other inference providers
+     like=0 rt=0 imp=54
+  [Lin252525] 2026-10-13T00:04:25.000Z id=2109797368409526488
+     ✨ A new stop for memecoin explorers: Venice Token. Visit the $VVV airdrop page and join the wider Solana crypto conversation with $SOL in the mix.    CA=VVV4UdRywr7SLafPHzqXwRCw7myXkmgCtitXUvj8g8c    https://t.co/XFvLL4XBKe
+     like=0 rt=0 imp=23
+  [SolanaHub_] 2026-10-12T23:00:01.000Z id=2109781162474545500
+     What’s New On Solana   - @kamino launches Apyx Market: enabling USDC borrowing and leveraged yield strategies against apyUSD.  - @MarinadeFinance launches Marinade Borrow: letting users borrow USDC or SOL against staked SOL without unstaking.  - @DGLD_Official brings tokenized https://t.co/nTqDXzGFyT
+     like=51 rt=5 imp=1691
+  [VCATBASE] 2026-10-12T22:59:00.000Z id=2109780904851693780
+     $VCAT by the numbers.  - $9.2M traded on @base. - 8,004 $VVV / $228K rewarded to holders. - 296,361 VVV traded through the VCAT/VVV pair. - 2.8% of all VVV trading across Base VVV pools. - 28,336 transactions and 49.1B gas of activity. - 20.55% supply burned on launch with https://t.co/KcZ0OvP12g
+     like=14 rt=6 imp=294
+

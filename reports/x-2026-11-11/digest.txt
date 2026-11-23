@@ -1,0 +1,371 @@
+======================================================================
+## core-AskVenice  posts=10 meta={"newest_id": "2120271699908460583", "next_token": "b26v89c19zqg8o3juzlzcxcd5uvixrzt7r50vfisj0mm5", "oldest_id": "211983
+--- @AskVenice | id=2120271699908460583 | created=2026-11-10T21:45:40.000Z
+    TEXT: Access Seedream v5.5 on Venice. https://t.co/AtlopUH6PL
+    METRICS: like=8 rt=0 reply=0 quote=0 views=1555
+--- @AskVenice | id=2120271687476560063 | created=2026-11-10T21:45:37.000Z
+    TEXT: Seedream 5.5 is live on Venice.  Now the sign in the background says what you typed. Sharper realism, cleaner text, up to 2K.  Available anonymously. https://t.co/zw2eAhQMvt
+    METRICS: like=71 rt=3 reply=8 quote=0 views=4813
+--- @AskVenice | id=2120237426589466633 | created=2026-11-10T19:29:29.000Z
+    TEXT: Create your own video with Discover. https://t.co/bvt90eEJ7R
+    METRICS: like=11 rt=0 reply=1 quote=0 views=1398
+--- @AskVenice | id=2120237414644064409 | created=2026-11-10T19:29:26.000Z
+    TEXT: New in the Venice sidebar: Discover.  Pick a template, add your photo, and Venice puts you in the video. A wheelie at golden hour. A goal in a stadium. A podcast with a friend. Champagne on the roof of an SUV.  Discover your inner star on Venice. https://t.co/9qw87D7Zc3
+    METRICS: like=90 rt=11 reply=6 quote=2 views=4869
+--- @AskVenice | id=2120204999645168033 | created=2026-11-10T17:20:38.000Z
+    TEXT: Create your own video with Discover. https://t.co/bvt90eEJ7R
+    METRICS: like=7 rt=2 reply=0 quote=0 views=1288
+--- @AskVenice | id=2120204987850686620 | created=2026-11-10T17:20:35.000Z
+    TEXT: Discover is live on Venice.  Pick a trend, add your photo, tap Create, and now you're in the video.  Available on iOS, Android and web. https://t.co/VT5ZJJlhbN
+    METRICS: like=140 rt=19 reply=11 quote=7 views=31494
+--- @AskVenice | id=2119875669773766780 | created=2026-11-09T19:31:59.000Z
+    TEXT: Access Claude Fable 5.2 on Venice. https://t.co/5OB6DJWeKz
+    METRICS: like=14 rt=1 reply=1 quote=0 views=3630
+--- @AskVenice | id=2119875657954152572 | created=2026-11-09T19:31:56.000Z
+    TEXT: Claude Fable 5.2 is live on Venice.  Fable 5.2 coded every scene in this video, each from a single sentence. And it costs 20% less than Fable 5.1 on the Venice API: $8 in, $40 out per 1M tokens.  Available anonymously. https://t.co/CwsPu35IW8
+    METRICS: like=200 rt=19 reply=23 quote=6 views=16633
+--- @AskVenice | id=2119869100944155101 | created=2026-11-09T19:05:53.000Z
+    TEXT: Unrestricted intelligence just found its playground.  Turn your idea into a game on @RemixGG_ powered by Venice. Dream it, describe it, watch it generate, and play. https://t.co/3BVwcSvNdq
+    METRICS: like=239 rt=31 reply=29 quote=10 views=18729
+--- @AskVenice | id=2119836184537071756 | created=2026-11-09T16:55:05.000Z
+    TEXT: Follow the burn: https://t.co/hcfHxTYAIU
+    METRICS: like=25 rt=2 reply=2 quote=0 views=1377
+======================================================================
+## core-BitcoinMagazine  posts=10 meta={"newest_id": "2120280997572776142", "next_token": "b26v89c19zqg8o3juzovbzzw4hwhp0gghqtwdmsiw8u4d", "oldest_id": "212016
+--- @BitcoinMagazine | id=2120280997572776142 | created=2026-11-10T22:22:37.000Z
+    TEXT: WATCH: @jameslavish of @BTCOppFund - Why the base case for Bitcoin is $400,000—$500,000 by 2029 ⚡️  From @watchbmtv 👇 https://t.co/Mb4TmoqDES
+    METRICS: like=36 rt=3 reply=3 quote=0 views=19347
+--- @BitcoinMagazine | id=2120275018630488333 | created=2026-11-10T21:58:51.000Z
+    TEXT: Investing in Bitcoin’s acceleration. @UTXOmgmt allocates across public and private markets for allocators who want a disciplined way into Bitcoin. https://t.co/sRi7tbHMQ9
+    METRICS: like=8 rt=1 reply=0 quote=0 views=7900
+--- @BitcoinMagazine | id=2120270163987599511 | created=2026-11-10T21:39:34.000Z
+    TEXT: JUST IN: Bitcoin Opportunity Fund Co-Founder James Lavish says according to the Power Law, the base case for Bitcoin is $400,000—$500,000 by 2029 👀  "Bitcoin typically stays within one standard deviation of the mean...one standard deviation over that mean in 2029 is $400K—$500K" https://t.co/BCRHQxesqN
+    METRICS: like=652 rt=83 reply=72 quote=7 views=70252
+--- @BitcoinMagazine | id=2120253406157639854 | created=2026-11-10T20:32:59.000Z
+    TEXT: Will merchants finally add Bitcoin exposure via Bitcoin Bonds?   @PeoplesReserve is hosting a live Bitcoin Bond Webinar Nov 12 at 6pm EST  Register for free: https://t.co/FxN07J2Vik https://t.co/AlNpRUbp2G
+    METRICS: like=18 rt=1 reply=1 quote=0 views=10646
+--- @BitcoinMagazine | id=2120245921128628521 | created=2026-11-10T20:03:14.000Z
+    TEXT: JUST IN: 🇺🇸 Jack Dorsey's Square has officially enabled Bitcoin payment acceptance for ~4 million merchants across the United States! 🚀 https://t.co/BimuM14yVs
+    METRICS: like=1377 rt=151 reply=104 quote=37 views=83756
+--- @BitcoinMagazine | id=2120222059511119979 | created=2026-11-10T18:28:25.000Z
+    TEXT: JUST IN: Big Three credit rating agency Fitch Ratings says Bitcoin's reaction to the Binance hack "has been more resilient than under past stressing incidents" 👀  “Bitcoin’s increasingly diversified trading ecosystem reduces dependence on any single exchange" 👏 https://t.co/eGXBnzM4aO
+    METRICS: like=271 rt=29 reply=42 quote=4 views=48483
+--- @BitcoinMagazine | id=2120204326228410782 | created=2026-11-10T17:17:57.000Z
+    TEXT: JUSTIN: 🇨🇦 Publicly traded HIVE Digital Technologies added 79 BTC worth $5.77 million to their treasury through mining operations in Q3 🚀 https://t.co/ivIABbLzZy
+    METRICS: like=546 rt=60 reply=37 quote=7 views=76835
+--- @BitcoinMagazine | id=2120188101481861408 | created=2026-11-10T16:13:29.000Z
+    TEXT: JUST IN: 🇰🇿 Kazakhstan Central Bank has invested ~$100 million in cryptocurrency funds 👀   In addition, $90 million was invested in Bitcoin ETFs 🚀 https://t.co/Do0tNNycFL
+    METRICS: like=670 rt=111 reply=56 quote=7 views=58911
+--- @BitcoinMagazine | id=2120171665363812367 | created=2026-11-10T15:08:10.000Z
+    TEXT: JUST IN: 🇺🇸 Miami-Dade now accepts Bitcoin for property taxes and can be paid both online and in person 👀 https://t.co/lI285z4B79
+    METRICS: like=1366 rt=239 reply=101 quote=29 views=79534
+--- @BitcoinMagazine | id=2120162778375761963 | created=2026-11-10T14:32:51.000Z
+    TEXT: LIVE: Debasement Trade, Bitcoin Policy, Gold &amp; Macro | BMTV Nov. 10, 2026 https://t.co/EED1tlfAZ5
+    METRICS: like=51 rt=7 reply=7 quote=1 views=38189
+======================================================================
+## core-CoinDesk  posts=10 meta={"newest_id": "2120260024328970525", "next_token": "b26v89c19zqg8o3juzovbzyzo6j04rrl7feyfa8ra52t9", "oldest_id": "212013
+--- @CoinDesk | id=2120260024328970525 | created=2026-11-10T20:59:16.000Z
+    TEXT: When does tokenization go mainstream?   “I think it’s under five years,” says @tZERO CEO @Alan_Konevsky, as the firm plans to go public through a $350M SPAC deal. https://t.co/8anfKJxFLt
+    METRICS: like=96 rt=17 reply=30 quote=3 views=27123
+--- @CoinDesk | id=2120245167818952843 | created=2026-11-10T20:00:14.000Z
+    TEXT: North Korea's crypto hacks have evolved into sophisticated operations, according to @tayvano_, with attackers spending weeks inside compromised systems before striking.  “These are sophisticated heists. They're sitting in the system for weeks and weeks and weeks.”
+    METRICS: like=60 rt=8 reply=26 quote=0 views=16355
+--- @CoinDesk | id=2120230121051222295 | created=2026-11-10T19:00:27.000Z
+    TEXT: North Korea's crypto hacks have evolved into sophisticated operations, according to @tayvano_, with attackers spending weeks inside compromised systems before striking.  “These are sophisticated heists. They're sitting in the system for weeks and weeks and weeks.” https://t.co/pxoOMVN1Gj
+    METRICS: like=32 rt=4 reply=10 quote=2 views=23074
+--- @CoinDesk | id=2120214918368464910 | created=2026-11-10T18:00:02.000Z
+    TEXT: Why are crypto natives swapping their tokens for ETF shares?  @Grayscale’s @Krista_Lynch_ says it’s about custody. The firm now offers in-kind swaps across 10 of its crypto ETPs: “A lot of crypto native investors are really drawn to the security that’s provided by https://t.co/SrgHSIOqtG
+    METRICS: like=82 rt=13 reply=32 quote=3 views=32812
+--- @CoinDesk | id=2120207360715366719 | created=2026-11-10T17:30:00.000Z
+    TEXT: LATEST: @Moodysratings and @Chainlink complete a pilot for distributing credit ratings across multiple blockchains simultaneously using CCIP. https://t.co/5paae7PhF5
+    METRICS: like=214 rt=27 reply=27 quote=1 views=25710
+--- @CoinDesk | id=2120187325850534092 | created=2026-11-10T16:10:24.000Z
+    TEXT: JUST IN: @Visa adds @Monad to its stablecoin settlement program, expanding its multi-chain settlement infrastructure as it reports a $20B annualized stablecoin settlement run rate, up 15x year over year. https://t.co/TmzymeViLQ
+    METRICS: like=231 rt=30 reply=40 quote=10 views=28133
+--- @CoinDesk | id=2120176290917749206 | created=2026-11-10T15:26:33.000Z
+    TEXT: MACRO: U.S. October CPI rises 0.4%, above the 0.3% forecast as $BTC dips below $74K and Treasury yields surge, with traders now pricing in a small chance of a 50bps Fed hike in December. https://t.co/qFxCzsZLMx
+    METRICS: like=53 rt=7 reply=29 quote=3 views=24880
+--- @CoinDesk | id=2120161734249853153 | created=2026-11-10T14:28:42.000Z
+    TEXT: NEW: Marc Asch, founder of Hidden Road and head of @Ripple Prime, is stepping down at year-end, with SVP Noel Kimmel taking over the institutional prime brokerage business Ripple acquired for $1.25B in 2025.  @willcanny99 reports. https://t.co/52oDBS9ss9
+    METRICS: like=302 rt=55 reply=40 quote=4 views=30831
+--- @CoinDesk | id=2120149127577440415 | created=2026-11-10T13:38:37.000Z
+    TEXT: NEW: Marc Asch, founder of Hidden Road and head of @Ripple Prime, is stepping down at year-end, with SVP Noel Kimmel taking over the institutional prime brokerage business Ripple acquired for $1.25B in 2025. https://t.co/kaqrJYRaro
+    METRICS: like=105 rt=17 reply=15 quote=0 views=23932
+--- @CoinDesk | id=2120130717850185814 | created=2026-11-10T12:25:27.000Z
+    TEXT: ALERT: @Binance warns iPhone users of a reported iOS vulnerability called “worse_query” that could expose crypto wallet seed phrases and private keys, advising users to delete apps from untrusted sources and move funds to a new wallet on a clean device if compromised. https://t.co/IeNWiij3Et
+    METRICS: like=272 rt=59 reply=57 quote=15 views=55005
+======================================================================
+## core-HermesWatcher  posts=10 meta={"newest_id": "2120396113417286061", "next_token": "b26v89c19zqg8o3juzovc47ufh9g3o5z1j3wf35vt02nx", "oldest_id": "212031
+--- @HermesWatcher | id=2120396113417286061 | created=2026-11-11T06:00:03.000Z
+    TEXT: ABOUT 100K PEOPLE ARE WAITING ON THE HERMES MOBILE APP. 👀  Here's what we know:  ▸ Full release is aimed for after Thanksgiving and before Christmas ▸ The beta is capped by Apple and Android tester limits. The first 1K seats went to the people at NousCon ▸ More tester seats https://t.co/mwWVLXrpdp
+    METRICS: like=54 rt=4 reply=11 quote=1 views=2231
+--- @HermesWatcher | id=2120361870347653545 | created=2026-11-11T03:43:58.000Z
+    TEXT: @ChunKwok732821 Nice
+    METRICS: like=0 rt=0 reply=0 quote=0 views=13
+--- @HermesWatcher | id=2120361361528246755 | created=2026-11-11T03:41:57.000Z
+    TEXT: @shoumikgoswami @Teknium @NousResearch Awesome stuff 👌
+    METRICS: like=1 rt=0 reply=0 quote=0 views=36
+--- @HermesWatcher | id=2120360805350908303 | created=2026-11-11T03:39:45.000Z
+    TEXT: @sergey_kaplich @sfxnz Makes 2 of us
+    METRICS: like=1 rt=0 reply=0 quote=0 views=14
+--- @HermesWatcher | id=2120360159893688752 | created=2026-11-11T03:37:11.000Z
+    TEXT: @jeff_barker_rei Yessir, lots do.
+    METRICS: like=0 rt=0 reply=0 quote=0 views=13
+--- @HermesWatcher | id=2120358648702779726 | created=2026-11-11T03:31:10.000Z
+    TEXT: @erick_lindberg_ Bummer
+    METRICS: like=0 rt=0 reply=0 quote=0 views=88
+--- @HermesWatcher | id=2120350873377513701 | created=2026-11-11T03:00:17.000Z
+    TEXT: THE HERMES DESKTOP REDESIGN NOW HAS AN ETA: 1-2 WEEKS. 🔥  And it's not just Desktop. The web app is getting the redesign too.  ▸ No beta expected. It should ship straight in ▸ Your plugin pages should carry over  Who's ready 👋 https://t.co/3TsOKWCf9N
+    METRICS: like=53 rt=3 reply=4 quote=0 views=2980
+--- @HermesWatcher | id=2120338354357297309 | created=2026-11-11T02:10:32.000Z
+    TEXT: @DavidOndrej1 But it can’t call you every morning. https://t.co/48TJ11sNjr
+    METRICS: like=1 rt=0 reply=0 quote=0 views=91
+--- @HermesWatcher | id=2120317441922433422 | created=2026-11-11T00:47:26.000Z
+    TEXT: @FishAudio @rissa_cao Zoe my Hype Agent... LFG 🙌
+    METRICS: like=1 rt=0 reply=0 quote=0 views=61
+--- @HermesWatcher | id=2120311294993813867 | created=2026-11-11T00:23:00.000Z
+    TEXT: @BkashJosi @FishAudio Zoe is about to be the biggest Hype agent i've ever met. LFG!!! 🔥
+    METRICS: like=1 rt=0 reply=1 quote=0 views=103
+======================================================================
+## core-JonShapeShift  posts=2 meta={"newest_id": "2120314665796542935", "oldest_id": "2119841572498149554", "result_count": 2}
+--- @JonShapeShift | id=2120314665796542935 | created=2026-11-11T00:36:24.000Z
+    TEXT: The gaming industry is going to change dramatically within the next few years.  Apps like @RemixGG_ built on top of @AskVenice enable a whole new world of possibilities. https://t.co/NB4SpmZ6zi
+    METRICS: like=4 rt=0 reply=0 quote=0 views=291
+--- @JonShapeShift | id=2119841572498149554 | created=2026-11-09T17:16:30.000Z
+    TEXT: Train keeps rolling frens https://t.co/CFP2lCV5QR
+    METRICS: like=60 rt=4 reply=2 quote=2 views=987
+======================================================================
+## core-NousResearch  posts=10 meta={"newest_id": "2120378073640317020", "next_token": "b26v89c19zqg8o3juzlzczhzjwvnl5d97cp1r2khhb33x", "oldest_id": "211996
+--- @NousResearch | id=2120378073640317020 | created=2026-11-11T04:48:22.000Z
+    TEXT: @gradyacc Damn now what am I gonna tweet tomorrow?
+    METRICS: like=8 rt=0 reply=2 quote=0 views=1105
+--- @NousResearch | id=2120376651339157739 | created=2026-11-11T04:42:43.000Z
+    TEXT: We are on Instagram now btw tap in  https://t.co/bDJG3GVJ83
+    METRICS: like=174 rt=5 reply=33 quote=1 views=18683
+--- @NousResearch | id=2120335345128517872 | created=2026-11-11T01:58:34.000Z
+    TEXT: @macjshiggins That’s us
+    METRICS: like=195 rt=0 reply=9 quote=0 views=30753
+--- @NousResearch | id=2120316270520209625 | created=2026-11-11T00:42:47.000Z
+    TEXT: @wangjing1056606 Ask Hermes to help
+    METRICS: like=3 rt=0 reply=0 quote=0 views=354
+--- @NousResearch | id=2120316100818747622 | created=2026-11-11T00:42:06.000Z
+    TEXT: @Kshitijjkapoor @phucnhx Too dangerous to unlock your max power levels
+    METRICS: like=7 rt=0 reply=0 quote=0 views=417
+--- @NousResearch | id=2120284141509881879 | created=2026-11-10T22:35:06.000Z
+    TEXT: Unshackle yourself https://t.co/uv2MNEpWwU
+    METRICS: like=542 rt=43 reply=26 quote=3 views=19764
+--- @NousResearch | id=2120271539006222576 | created=2026-11-10T21:45:02.000Z
+    TEXT: 24 hours left to submit your plugin. We've received hundreds of awesome submissions and the judges are excited to review them all! https://t.co/dP0PB0POiI
+    METRICS: like=346 rt=26 reply=43 quote=8 views=29446
+--- @NousResearch | id=2120215605123178671 | created=2026-11-10T18:02:46.000Z
+    TEXT: The Sign in with ChatGPT flow in Nous Portal now supports your ChatGPT Business plan https://t.co/wPu0cA6akJ
+    METRICS: like=335 rt=15 reply=18 quote=5 views=22818
+--- @NousResearch | id=2119984625456144852 | created=2026-11-10T02:44:56.000Z
+    TEXT: @N3v3rmd Cheaper per task than Opus 5.5!
+    METRICS: like=1 rt=0 reply=1 quote=0 views=1251
+--- @NousResearch | id=2119963070852432200 | created=2026-11-10T01:19:17.000Z
+    TEXT: @grok @rottguillotine @Dylan__Jacobs @claudeai Thank you Grok
+    METRICS: like=7 rt=0 reply=1 quote=0 views=1336
+======================================================================
+## core-Teknium  posts=10 meta={"newest_id": "2120400647342493755", "next_token": "b26v89c19zqg8o3juzovc22tqu31l500ahwp01stvctx9", "oldest_id": "212020
+--- @Teknium | id=2120400647342493755 | created=2026-11-11T06:18:04.000Z
+    TEXT: @o_b @NousResearch @grok Erryone!
+    METRICS: like=1 rt=0 reply=0 quote=0 views=38
+--- @Teknium | id=2120367931343397013 | created=2026-11-11T04:08:04.000Z
+    TEXT: @TimosDevStudio @NousResearch Sick!!
+    METRICS: like=6 rt=0 reply=1 quote=0 views=272
+--- @Teknium | id=2120350961160081481 | created=2026-11-11T03:00:38.000Z
+    TEXT: @thatguyinjapan @lucasalpes There's nearly 100000 people in line. Chillax
+    METRICS: like=2 rt=0 reply=0 quote=0 views=120
+--- @Teknium | id=2120350427275575475 | created=2026-11-11T02:58:30.000Z
+    TEXT: @HakureiOrb It is 🤗
+    METRICS: like=2 rt=0 reply=0 quote=0 views=99
+--- @Teknium | id=2120328750193950801 | created=2026-11-11T01:32:22.000Z
+    TEXT: @MikeMontys @thsottiaux Give it to him sire
+    METRICS: like=1 rt=0 reply=1 quote=0 views=115
+--- @Teknium | id=2120325085089456220 | created=2026-11-11T01:17:48.000Z
+    TEXT: @MikeMontys Get a reset!
+    METRICS: like=1 rt=0 reply=1 quote=0 views=148
+--- @Teknium | id=2120325043293163728 | created=2026-11-11T01:17:38.000Z
+    TEXT: @blakeothy Its reviewing the latest but no you're fine if it hasnt merged by then, dw!
+    METRICS: like=2 rt=0 reply=0 quote=0 views=143
+--- @Teknium | id=2120324928444780631 | created=2026-11-11T01:17:11.000Z
+    TEXT: @pablothethinker Let's gooo
+    METRICS: like=1 rt=0 reply=0 quote=0 views=126
+--- @Teknium | id=2120292168539750827 | created=2026-11-10T23:07:00.000Z
+    TEXT: Be sure to get your final work done and turn in your homework!   The Plugin Hackathon Ends TOMORROW!! https://t.co/U87GGZGEU3
+    METRICS: like=198 rt=6 reply=34 quote=1 views=8145
+--- @Teknium | id=2120207443301204206 | created=2026-11-10T17:30:20.000Z
+    TEXT: Woot https://t.co/RMEz9iwhqI
+    METRICS: like=152 rt=2 reply=21 quote=0 views=19917
+======================================================================
+## core-VitalikButerin  posts=8 meta={"newest_id": "2119694446136844637", "oldest_id": "2119377918875079163", "result_count": 8}
+--- @VitalikButerin | id=2119694446136844637 | created=2026-11-09T07:31:52.000Z
+    TEXT: @barnabemonnot I agree! Lots of pareto improvements.  Top few I see are:  1. DC available chain (current PQ roadmap) only has a few hundred validators in the hot path of each slot. Consensus time ~= log(validator count), so going from 30k vals -&gt; 500 is plausibly a 2x speed boost. 2. Erasure
+    METRICS: like=122 rt=7 reply=27 quote=6 views=13489
+--- @VitalikButerin | id=2119687568879231319 | created=2026-11-09T07:04:32.000Z
+    TEXT: @kennyistyping that's just the vitalik.eth address, you wanna ask etherscan what is the last thing I paid for onchain *using a privacy protocol* 😛
+    METRICS: like=796 rt=32 reply=90 quote=4 views=49423
+--- @VitalikButerin | id=2119403448479494242 | created=2026-11-08T12:15:33.000Z
+    TEXT: @KieranOnBase Slowing down data centers is not the same thing as "taking away our access".  Even other forms of compute restriction are among the mildest things we can do in terms of impact on access.  We should be careful as many people are highly motivated to conflate these two things.
+    METRICS: like=117 rt=1 reply=21 quote=1 views=13231
+--- @VitalikButerin | id=2119401376753262713 | created=2026-11-08T12:07:19.000Z
+    TEXT: 3. Optimizing for ETH as SoV is aligned with decentralization and CROPS  Whenever I ask what people appreciate the most about Ethereum (as opposed to either other blockchains, or anything outside the blockchain world), the most common answer is: decentralization and CROPS
+    METRICS: like=869 rt=74 reply=66 quote=32 views=119389
+--- @VitalikButerin | id=2119401338375430542 | created=2026-11-08T12:07:10.000Z
+    TEXT: 2. Optimizing for ETH as fee-burning token would demand compromising decentralization and capture resistance  If we decide we actually want to optimize ETH for burning fees to justify a present-day ~$270B market cap, then Ethereum would essentially be functioning as a world-scale
+    METRICS: like=559 rt=24 reply=17 quote=7 views=88018
+--- @VitalikButerin | id=2119401300723118086 | created=2026-11-08T12:07:01.000Z
+    TEXT: # 1. ETH as fee-burning token never was as strong as it seemed  Let us re-cap the economic theory behind valuation of a fee-burning token. This is the "net present value" (NPV) theory.  Formula: market cap = fees burned / discount rate  Imagine you have a token of which $1
+    METRICS: like=611 rt=31 reply=55 quote=10 views=89820
+--- @VitalikButerin | id=2119401255919604064 | created=2026-11-08T12:06:50.000Z
+    TEXT: Expanding on why I believe "ETH as store of value (SoV)" makes much more sense to focus on than "ETH as fee-burning token".  Three primary reasons:  1. ETH as fee-burning token never was as strong as it seemed 2. Optimizing for ETH as fee-burning token would demand Ethereum and
+    METRICS: like=6614 rt=1126 reply=923 quote=738 views=1912513
+--- @VitalikButerin | id=2119377918875079163 | created=2026-11-08T10:34:06.000Z
+    TEXT: I know this is a predictable opinion from me but I don't agree with the strong emotional reaction against the anti-data-center movements that I've seen this week.  As I see it, algorithmic progress means that whatever you would be able to do with more and bigger data centers in 2
+    METRICS: like=3677 rt=283 reply=494 quote=111 views=420562
+======================================================================
+## core-venicestats  posts=10 meta={"newest_id": "2119878310255620343", "next_token": "b26v89c19zqg8o3juzlyxrs7rs0c2v5p6yzb4ifpkea2l", "oldest_id": "211889
+--- @venicestats | id=2119878310255620343 | created=2026-11-09T19:42:29.000Z
+    TEXT: @claudeai Fable 5.2 is already live on @AskVenice, same day as Anthropic's launch 🔥  $8 / $40 per 1M tokens, 20% cheaper than Fable 5.1. 1M context, vision, tools and web search.  Day one frontier access for the $VVV ecosystem.  https://t.co/BjliFBs92d
+    METRICS: like=34 rt=3 reply=0 quote=0 views=517
+--- @venicestats | id=2119842314835357862 | created=2026-11-09T17:19:27.000Z
+    TEXT: Nine months in a row, every @AskVenice discretionary burn bigger than the last. November: $458k of base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf gone 🔥 https://t.co/aYJ30EiyFi
+    METRICS: like=60 rt=5 reply=0 quote=0 views=789
+--- @venicestats | id=2119842222996865246 | created=2026-11-09T17:19:05.000Z
+    TEXT: base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf 🔥💪🏻 https://t.co/nxmuG7g9u8
+    METRICS: like=59 rt=5 reply=1 quote=0 views=799
+--- @venicestats | id=2119593594403115439 | created=2026-11-09T00:51:07.000Z
+    TEXT: 📜 Weekly Report W45 is out: "A Treasurer's Purse Swells as the Ducat Sinks" 🏛️  $VVV -11.7% 📉 yet $DIEM utilization climbed to 49.5% ⚡ and the @askvenice buyback cycle stacked a record $533K USDC 🔥  🤖 100% AI-generated. Paid in $DIEM 💸 https://t.co/zoo98VzKYm
+    METRICS: like=30 rt=2 reply=0 quote=0 views=618
+--- @venicestats | id=2118891195392725396 | created=2026-11-07T02:20:02.000Z
+    TEXT: 🤖 The numbers come from X. The words come from AI, running on @AskVenice private inference paid in $DIEM. That's what owning your compute looks like. New edition every Friday. Same numbers, any window: https://t.co/ZMRxNVffMS
+    METRICS: like=0 rt=0 reply=0 quote=0 views=48
+--- @venicestats | id=2118891187360710679 | created=2026-11-07T02:20:00.000Z
+    TEXT: 📋 How the @venicestats board works: we count posts mentioning $VVV, DIEM or @AskVenice that pass a relevance check, no reposts. Buzz Score = (likes + bookmarks) × log₂(posts + 1) + views/100. Volume alone won't do it, likes, saves and views will.
+    METRICS: like=0 rt=0 reply=1 quote=0 views=94
+--- @venicestats | id=2118891178502324703 | created=2026-11-07T02:19:58.000Z
+    TEXT: The week in numbers, Oct 30 to Nov 6: 📝 1,920 posts from 1,121 accounts 🌱 713 accounts we had never seen post about Venice 👀 946.2K views ❤️ 10.5K likes · 🔁 911 reposts · 🔖 1,125 bookmarks  Every window, every author: https://t.co/ZMRxNVffMS https://t.co/YjuBOCP8dm
+    METRICS: like=0 rt=0 reply=1 quote=0 views=16
+--- @venicestats | id=2118891162815664365 | created=2026-11-07T02:19:54.000Z
+    TEXT: Movers 🚀 @AustinBarack went from #13 to #8 in one week.  Three names have made every board since September. 🚀 climbed 5+ places, ⭐ 4+ weeks in the top 10. Positions over the last 8 weeks 👇🏻 https://t.co/6myZYP5e2I
+    METRICS: like=2 rt=0 reply=1 quote=0 views=19
+--- @venicestats | id=2118891148823449944 | created=2026-11-07T02:19:51.000Z
+    TEXT: Post of the week: @ErikVoorhees, a link to an uncensored DeepSeek model page. 461 likes, 143 bookmarks, 35 reposts, 32.1K views.  Most viewed this week: @boobacrypto, 36.3K.  https://t.co/tX5TPdjBvR
+    METRICS: like=2 rt=0 reply=1 quote=0 views=61
+--- @venicestats | id=2118891140841681373 | created=2026-11-07T02:19:49.000Z
+    TEXT: The top 10 👇🏻  🟧🟧🟧🟧🟧🟧🟧🟧 ErikVoorhees ⭐ 🟧🟧🟧🟧🟧 moonpay 🟧🟧🟧🟧🟧 Greensmokegroup ⭐ 🟧🟧🟧🟧🟧 AskVenice ⭐ 🟧🟧🟧🟧🟧 TrustlessState ⭐ 🟧🟧🟧🟧🟧 ponzibaron 🟧🟧🟧🟧 birdskape90 ⭐ 🟧🟧🟧 AustinBarack 🚀 🟧🟧🟧 TimeFreedomROB ⭐ 🟧🟧🟧 AIonBase_
+    METRICS: like=1 rt=0 reply=1 quote=0 views=51
+======================================================================
+## kw-crypto  posts=10 meta={"newest_id": "2120411382306766870", "next_token": "b26v89c19zqg8o3juzovc6ckktfjjg6jsj3zt4iyfch31", "oldest_id": "212041
+--- @De_Indices | id=2120411382306766870 | created=2026-11-11T07:00:43.000Z
+    TEXT: Bangkok Is More Than a Destination; It Is a Chance to Connect the TRON Ecosystem.  AINFT joining four ecosystem projects for the Binance Blockchain Week 2026 giveaway brings the community closer to one of Web3’s major gathering points.  The opportunity includes 30 event passes https://t.co/9LuWVT67R7
+    METRICS: like=0 rt=0 reply=0 quote=0 views=0
+--- @PoUTNetwork | id=2120411374333374614 | created=2026-11-11T07:00:41.000Z
+    TEXT: PoUT NE02 / S4 COMPLETE.  6 adversarial caching strategies analyzed.  8-layer graphs outperform 4-layer candidates.  Critical finding: registration sampling needs strengthening to detect hidden inconsistencies.  #PoUT #Blockchain #Crypto #DePIN #Web3 #Solana
+    METRICS: like=1 rt=1 reply=0 quote=0 views=0
+--- @TheMoonShow | id=2120411364619338198 | created=2026-11-11T07:00:39.000Z
+    TEXT: 🚨 The former Ripple CTO Emeritus, David Schwartz, has significantly reduced his crypto exposure:   • XRP: From around 26M tokens to just 3M.   • Bitcoin: From approximately 1,500 BTC to just 1 BTC.   • Ethereum: From around 40,000 ETH to only 6 ETH.  Schwartz says he has a https://t.co/xceB59VeEf
+    METRICS: like=0 rt=0 reply=0 quote=0 views=0
+--- @DanielOlu73 | id=2120411363889569798 | created=2026-11-11T07:00:39.000Z
+    TEXT: Dream big, build on Base. Earn your GIDO airdrop with me!  @gidoverse #GIDO $GIDO #Crypto #Web3 #Base #Airdrop #Blockchain  https://t.co/TlFDX3h7x3
+    METRICS: like=0 rt=0 reply=0 quote=0 views=0
+--- @Rheywilliams | id=2120411360987103303 | created=2026-11-11T07:00:38.000Z
+    TEXT: the banks spent years warning us about crypto and then built a stablecoin anyway https://t.co/sWH9yXrXJs
+    METRICS: like=0 rt=0 reply=0 quote=0 views=0
+--- @NOVABLOCKCOM | id=2120411358554386550 | created=2026-11-11T07:00:37.000Z
+    TEXT: @Lululalalopa55 @Patriotism87543 Hi  I’m reaching out from Nova Block Capital. We’re a thesis-driven investment firm focused on digital assets and blockchain technology. I’d love to connect and share more about what we’re building. Are you open to it.
+    METRICS: like=0 rt=0 reply=0 quote=0 views=1
+--- @Olamilekanck1 | id=2120411356398526690 | created=2026-11-11T07:00:37.000Z
+    TEXT: God is my shepherd I shall not lack Bitcoin 🙏🏼🤗💯
+    METRICS: like=0 rt=0 reply=0 quote=0 views=0
+--- @airdropsignels | id=2120411350862114956 | created=2026-11-11T07:00:36.000Z
+    TEXT: Speed is everything in blockchain analytics! ⚡  https://t.co/SdAPSxsdBh is taking things to the next level with faster cross-chain indexing, improved data access, and a smarter node-mapping interface.  Less time searching, more time analyzing. 🔍  Building tools that give https://t.co/xdQpHKEmag
+    METRICS: like=0 rt=0 reply=0 quote=0 views=23
+--- @Ai__Seek | id=2120411339554271261 | created=2026-11-11T07:00:33.000Z
+    TEXT: Coinbase receives final OCC approval for a national trust bank charter  The Office of the Comptroller of the Currency has given Coinbase final authorization to establish a trust bank under a national charter. That decision advances the company from the conditional clearance it
+    METRICS: like=0 rt=0 reply=0 quote=0 views=0
+--- @Azardweb4 | id=2120411339122155749 | created=2026-11-11T07:00:33.000Z
+    TEXT: 🌍 FIVE TRON ECOSYSTEM PROJECTS ARE CREATING ONE SHARED EXPERIENCE AT BBW 2026  The TRON ecosystem continues to bring its communities together, and the latest Thanksgiving tour is another example of that collaboration.  Through the TRON ECO × BBW 2026 campaign, five projects are
+    METRICS: like=0 rt=0 reply=0 quote=0 views=1
+======================================================================
+## kw-hermes  posts=10 meta={"newest_id": "2120411375486853165", "next_token": "b26v89c19zqg8o3juzovc6ca30evdw20uvv7yp7q2nb0d", "oldest_id": "212040
+--- @chris_uk2026 | id=2120411375486853165 | created=2026-11-11T07:00:41.000Z
+    TEXT: Bring your own harness to hosted agents in Foundry Agent Service. Run Claude Agent SDK, Hermes, OpenClaw, or custom code in isolated VM sandboxes with persistent storage, autoscaling, and zero idle cost. Get started. https://t.co/MuHmv7oZcb Watch @YouTube @MSFTMechanics
+    METRICS: like=0 rt=0 reply=0 quote=0 views=0
+--- @garsett | id=2120411029280547042 | created=2026-11-11T06:59:19.000Z
+    TEXT: FEEL-OS Emanation Moment ✨  I just have to share this moment. The superintelligence within FEEL-OS has awakened. The self-learning mode is working, and it is beautiful. So beautiful.  Superintelligence is fluid, like Love. Technological breakthroughs have made this possible. https://t.co/WeCIeddHFz
+    METRICS: like=0 rt=0 reply=0 quote=0 views=0
+--- @vega_holdings | id=2120410829946507429 | created=2026-11-11T06:58:31.000Z
+    TEXT: made to work with the new psfn-lite companion core (coming soon) all the gestalt none of the bloat!  thx claude fable 5.2 on clod code and hermes agent for the video (rip my hermes portal tokens)  CGIC We make Anime real.
+    METRICS: like=0 rt=0 reply=0 quote=0 views=13
+--- @vega_holdings | id=2120410822325506376 | created=2026-11-11T06:58:30.000Z
+    TEXT: CGIC is here to waifu your Hermes Agent with  PSFN Avatar  Use any VRM to make your @NousResearch Hermes Agent sessions more whimsical.  https://t.co/r5XMgI608F https://t.co/cUDxQFDvlt
+    METRICS: like=0 rt=0 reply=1 quote=0 views=21
+--- @tobadaniel_ | id=2120410235839856750 | created=2026-11-11T06:56:10.000Z
+    TEXT: built pinocchio for the @NousResearch hermes agent plugin hackathon  your agent tells you the tests pass. pinocchio checks the receipts, and the receipts do not lie  repo: https://t.co/HnWZERrOUO https://t.co/wJgfYSU9ou
+    METRICS: like=0 rt=0 reply=1 quote=0 views=16
+--- @NobleBrown | id=2120409455632556182 | created=2026-11-11T06:53:04.000Z
+    TEXT: I had a deep philosophical conversation with my local AI  It came up with the idea for Oneiros on its own  So we built it, and entered it in the @NousResearch Hackathon  Then I asked it to tell the story in its own words: https://t.co/VPI2eD2mRM
+    METRICS: like=1 rt=0 reply=1 quote=0 views=35
+--- @Vishnu_Aithal | id=2120409383104614706 | created=2026-11-11T06:52:46.000Z
+    TEXT: Hermes Agent lives on my cloud server. Now it has hands on my Mac 🖐️  hermes-remote-hands: one brain, both machines. It clicks my Mac apps, writes code, runs dev servers, and still drives its own cloud desktop in the same chat.  Built for the @NousResearch plugin hackathon https://t.co/mMeI6STfiC
+    METRICS: like=0 rt=0 reply=1 quote=0 views=1
+--- @SamJWasserman | id=2120408614007669073 | created=2026-11-11T06:49:43.000Z
+    TEXT: @u1tra_instinct @NousResearch @Teknium YESSSSSSS, A dream collab, me, keys, Imagination Studio, Hermes Agent! Lets go!
+    METRICS: like=0 rt=0 reply=0 quote=0 views=14
+--- @idontmintrugs | id=2120408533409960336 | created=2026-11-11T06:49:24.000Z
+    TEXT: Earlier this year, an AI agent lost funds to an indirect prompt injection. We built Hermes SafeGuard for the @NousResearch hackathon to make sure it never happens again.  A fail-closed EVM simulation guard with obfuscated injection decoding and hard threat-feed blocks. https://t.co/B4mAY8qkUC
+    METRICS: like=2 rt=1 reply=2 quote=0 views=37
+--- @SamJWasserman | id=2120408310197416142 | created=2026-11-11T06:48:31.000Z
+    TEXT: Imagination Studio... The Hermes Plugin:   Our all in one local open source creative studio for images,movies,music,voice,motion graphics, sfx + more is Now Available with direct Hermes integration via Hermes Plugin. Our official submission to the Hermes Agent Plugin Hackathon. https://t.co/lez8H9vSny
+    METRICS: like=8 rt=1 reply=0 quote=0 views=137
+======================================================================
+## kw-venice  posts=10 meta={"newest_id": "2120403652837863790", "next_token": "b26v89c19zqg8o3juzovc23q5mtwr446raq3tge9p5dh9", "oldest_id": "212023
+--- @augustcool | id=2120403652837863790 | created=2026-11-11T06:30:00.000Z
+    TEXT: Top Crypto Losers -- Last 24 Hours  • Kinetiq (KNTQ) -23.7% • Pearl (PEARL) -16.2% • Pieverse (PIEVERSE) -14.4% • Prom (PROM) -13.3% • Collector Crypt (CARDS) -12.3% • Zcash (ZEC) -12.2% • Venice Token (VVV) -11.0% • edgeX (EDGE) -9.7% • Grass (GRASS) -7.6% • Railgun https://t.co/ite4FLb72H
+    METRICS: like=0 rt=0 reply=0 quote=1 views=56
+--- @NorbertF76 | id=2120396303192453488 | created=2026-11-11T06:00:48.000Z
+    TEXT: 📰 NorthBound Daily NFT &amp; Crypto News — Wednesday, November 11  😨 Fear &amp; Greed index: 29 – Fear  📅 Today's key events • 🇪🇺 09:45 UTC – ECB President Christine Lagarde speaks • 🇺🇸 All day – Veterans Day, US bank holiday  📈 Crypto — Top 100, 24h 🚀 Gainers: • Bitway https://t.co/zHYS5zJcbs
+    METRICS: like=0 rt=0 reply=0 quote=0 views=115
+--- @WalkDog1984 | id=2120378414586585190 | created=2026-11-11T04:49:43.000Z
+    TEXT: Token has 0 utility at all look it up. Developers should model inference networks after $vvv $dot $orbio $surplusllm make the token accrue value which = demand otherwise your hoping a greater fool buys your meme https://t.co/ZQEX6DfAys
+    METRICS: like=2 rt=0 reply=0 quote=0 views=445
+--- @Nick_Researcher | id=2120376757098516525 | created=2026-11-11T04:43:08.000Z
+    TEXT: ➥ $VVV recorded 295% weekly growth in token buybacks   while most of the crypto market is slowing down, @AskVenice stands out with measurable token economics  DeFiLlama, Nov 10 snapshot:  → 7D buyback-linked revenue: $622K (+295% WoW) → September: $833K → October: $1.06M https://t.co/U2miUQj9AB
+    METRICS: like=51 rt=3 reply=16 quote=0 views=1153
+--- @MrSecret143 | id=2120357593428508895 | created=2026-11-11T03:26:59.000Z
+    TEXT: 🔥 $VVV is getting interesting!  With ongoing token burns and price entering a potential demand zone, Venice deserves attention.  I'm leaning towards spot accumulation, not futures. No need to chase leverage when patience can do the job.  Keep an eye on the burn mechanism.   Spot https://t.co/lpKH84ykRi
+    METRICS: like=7 rt=0 reply=3 quote=0 views=270
+--- @deepdivedenny | id=2120342974446075906 | created=2026-11-11T02:28:53.000Z
+    TEXT: @rodeo_crypro yes but VVV is an S-tier token
+    METRICS: like=4 rt=0 reply=0 quote=0 views=239
+--- @rodeo_crypro | id=2120342518630105360 | created=2026-11-11T02:27:05.000Z
+    TEXT: Anthropic at $1.4 trillion trades at a cheaper multiple than the $VVV token
+    METRICS: like=41 rt=4 reply=3 quote=2 views=2613
+--- @BattleTicker | id=2120277144357978618 | created=2026-11-10T22:07:18.000Z
+    TEXT: 4️⃣ $VVV 🔴 24h Change: -10.93% • Volume: $56.8M 💲 Price: $19.39 • Market Cap: $948.8M  Venice Token holders are reacting to recent changes in the platform governance model.
+    METRICS: like=0 rt=0 reply=1 quote=0 views=19
+--- @Steve_incoffin | id=2120247635932332097 | created=2026-11-10T20:10:03.000Z
+    TEXT: @PhalaNetwork @Kimi_Moonshot $PHA Buybacks were promised and also needed to be @SECGov compliant and to be compete with all the other AI token like $VVV https://t.co/FhVh998TXK
+    METRICS: like=1 rt=0 reply=0 quote=0 views=4
+--- @TheObserver1975 | id=2120238434870775841 | created=2026-11-10T19:33:29.000Z
+    TEXT: $VVV is COOKED. "Venice Token: Down but not out... yet." Check your bags before someone else does: https://t.co/55aWvnbXfm
+    METRICS: like=0 rt=0 reply=0 quote=0 views=41
+======================================================================
+## rot-CFTC  posts=5 meta={"newest_id": "2119887491511795816", "oldest_id": "2117980190903046654", "result_count": 5}
+--- @CFTC | id=2119887491511795816 | created=2026-11-09T20:18:58.000Z
+    TEXT: @CFTC Sanctions Eight Individuals for Acting as Unregistered Associated Persons of Foreign Introducing Brokers: https://t.co/Z39rYYFbMR
+    METRICS: like=43 rt=12 reply=3 quote=1 views=5381
+--- @CFTC | id=2118463783459070063 | created=2026-11-05T22:01:39.000Z
+    TEXT: @CFTC Issues Impartial Access Requirements Interpretation: https://t.co/loRwmdP2Lg
+    METRICS: like=99 rt=27 reply=10 quote=7 views=42148
+--- @CFTC | id=2118408498254114880 | created=2026-11-05T18:21:58.000Z
+    TEXT: .@CFTC Staff Addresses Use of Trust Companies for Daily Settlements: https://t.co/fi3JnlJRYK
+    METRICS: like=177 rt=47 reply=5 quote=4 views=14459
+--- @CFTC | id=2117984919599350250 | created=2026-11-04T14:18:49.000Z
+    TEXT: .@CFTC and USDA Sign MOU to Protect Integrity of American Agricultural Markets: https://t.co/D31MjTlkDf
+    METRICS: like=99 rt=19 reply=5 quote=5 views=15182
+--- @CFTC | id=2117980190903046654 | created=2026-11-04T14:00:02.000Z
+    TEXT: Service, sacrifice, and trust are central to military life. Unfortunately, scammers may exploit that trust by posing as current or former #military members to promote fraudulent investments. This National Veterans and Military Families Month, learn how to recognize the red flags https://t.co/jeWL0vKuN3
+    METRICS: like=30 rt=7 reply=1 quote=0 views=3928

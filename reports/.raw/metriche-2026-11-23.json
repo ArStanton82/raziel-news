@@ -1,0 +1,510 @@
+{
+ "window_range": [
+  "2026-11-02T07:16:15+00:00",
+  "2026-11-23T07:16:17+00:00"
+ ],
+ "n_win": 100,
+ "fmt_win": {
+  "link_reply": 41,
+  "editoriale_foto": 42,
+  "menzione": 9,
+  "menzione_foto": 4,
+  "editoriale_testo": 4
+ },
+ "fmt_week": {
+  "link_reply": 13,
+  "editoriale_foto": 13,
+  "menzione": 3,
+  "menzione_foto": 2
+ },
+ "med_imp_editoriale_week": 19,
+ "med_imp_editoriale_win": 22.0,
+ "n_ed_week": 13,
+ "n_ed_win": 46,
+ "fmt_med_editoriale_foto": {
+  "n": 13,
+  "mediana": 19,
+  "max": 46
+ },
+ "fmt_med_link_reply": {
+  "n": 13,
+  "mediana": 2,
+  "max": 23
+ },
+ "fmt_med_menzione": {
+  "n": 3,
+  "mediana": 2,
+  "max": 10
+ },
+ "fmt_med_menzione_foto": {
+  "n": 2,
+  "mediana": 19.0,
+  "max": 32
+ },
+ "n_promoted": 0,
+ "click_profilo_week": 1,
+ "click_link_week": 0,
+ "click_profilo_win": 6,
+ "click_link_win": 2,
+ "imp_tot_week": 374,
+ "bm_week": 0,
+ "bm_win": 0,
+ "bm_mese": 0,
+ "like_week": 1,
+ "reply_count_editoriali_week": 13,
+ "nostre_link_reply_week": 13,
+ "nostre_risposte_testo_week": 5,
+ "editoriali_per_giorno": {
+  "2026-11-16": 1,
+  "2026-11-17": 2,
+  "2026-11-18": 1,
+  "2026-11-19": 2,
+  "2026-11-20": 2,
+  "2026-11-21": 2,
+  "2026-11-22": 2,
+  "2026-11-23": 1
+ },
+ "med_editoriali_giorno": 2.0,
+ "giorni_sopra_tetto": {},
+ "slot_week": {
+  "mattutino": 6,
+  "giornata": 7
+ },
+ "slot_med_week": {
+  "mattutino": {
+   "n": 6,
+   "mediana": 13.0,
+   "max": 26
+  },
+  "giornata": {
+   "n": 7,
+   "mediana": 21,
+   "max": 46
+  },
+  "serale": {
+   "n": 0,
+   "mediana": null,
+   "max": null
+  }
+ },
+ "top_ed": [
+  {
+   "data": "2026-11-21 13:16",
+   "imp": 46,
+   "like": 0,
+   "bm": 0,
+   "reply": 1,
+   "lang": "en",
+   "slot": "giornata",
+   "fmt": "editoriale_foto",
+   "testo": "Seven of the top eight projects at an AI agent hackathon add no new capability. They add a brake. The people building closest to the models have stopped asking what an agent can do, and started asking how you prove what ",
+   "urls": [
+    "https://x.com/Ar_Stanton/status/2124114627227242645/photo/1"
+   ],
+   "reply_urls": null
+  },
+  {
+   "data": "2026-11-17 13:16",
+   "imp": 41,
+   "like": 0,
+   "bm": 0,
+   "reply": 1,
+   "lang": "en",
+   "slot": "giornata",
+   "fmt": "editoriale_foto",
+   "testo": "178 organisations served visitors a script that swapped wallet addresses inside the browser, and none had been breached: the JavaScript came from their A/B testing vendor. If you typed a card number into one of those pag",
+   "urls": [
+    "https://x.com/Ar_Stanton/status/2122665095654211654/photo/1"
+   ],
+   "reply_urls": null
+  },
+  {
+   "data": "2026-11-22 08:16",
+   "imp": 26,
+   "like": 0,
+   "bm": 0,
+   "reply": 1,
+   "lang": "it",
+   "slot": "mattutino",
+   "fmt": "editoriale_foto",
+   "testo": "Quarantasei generazioni pagate per quaranta post in ventuno giorni: le sei in più sono il prezzo di guardare il disegno e dire di no. Fanno 1,08 DIEM sopra i 7,20 che sarebbero bastati, il quindici per cento di spesa in ",
+   "urls": [
+    "https://x.com/Ar_Stanton/status/2124401587539886321/photo/1"
+   ],
+   "reply_urls": null
+  },
+  {
+   "data": "2026-11-21 08:16",
+   "imp": 24,
+   "like": 0,
+   "bm": 0,
+   "reply": 1,
+   "lang": "it",
+   "slot": "mattutino",
+   "fmt": "editoriale_foto",
+   "testo": "Il post delle 08:15 prende 14 impressioni di mediana in novembre, quello delle 13:15 ne prende 30: stesso account, stessa immagine generata, diciannove giorni. Prima di riscrivere un testo che non gira, cambiate l'ora: c",
+   "urls": [
+    "https://x.com/Ar_Stanton/status/2124039112751522072/photo/1"
+   ],
+   "reply_urls": null
+  }
+ ],
+ "bottom_ed": [
+  {
+   "data": "2026-11-19 08:16",
+   "imp": 14,
+   "like": 0,
+   "bm": 0,
+   "reply": 1,
+   "lang": "it",
+   "slot": "mattutino",
+   "fmt": "editoriale_foto",
+   "testo": "Trentasette milioni e novecentomila token in sette giorni per ventidue articoli in due lingue: un milione e settecentomila per pezzo, e il 40% lo consuma la ricerca delle fonti, non la scrittura. Se il costo di una redaz",
+   "urls": [
+    "https://x.com/Ar_Stanton/status/2123314401159631081/photo/1"
+   ],
+   "reply_urls": null
+  },
+  {
+   "data": "2026-11-20 08:15",
+   "imp": 12,
+   "like": 0,
+   "bm": 0,
+   "reply": 1,
+   "lang": "it",
+   "slot": "mattutino",
+   "fmt": "editoriale_foto",
+   "testo": "Trentasei post pubblicati su trentotto previsti in diciannove giorni di novembre: i due che mancano sono due mattine, e nessun allarme è scattato. Gli articoli uscivano lo stesso, quindi dal sito il buco era invisibile: ",
+   "urls": [
+    "https://x.com/Ar_Stanton/status/2123676712453984519/photo/1"
+   ],
+   "reply_urls": null
+  },
+  {
+   "data": "2026-11-23 08:16",
+   "imp": 7,
+   "like": 0,
+   "bm": 0,
+   "reply": 1,
+   "lang": "it",
+   "slot": "mattutino",
+   "fmt": "editoriale_foto",
+   "testo": "Su 71 articoli pubblicati in ventidue giorni, 30 sono finiti in un post e 41 no: il 58 per cento di quello che scriviamo non passa di qui. Il tetto è di due post al giorno, la produzione di tre articoli al giorno: il can",
+   "urls": [
+    "https://x.com/Ar_Stanton/status/2124763942811521218/photo/1"
+   ],
+   "reply_urls": null
+  },
+  {
+   "data": "2026-11-17 08:16",
+   "imp": 3,
+   "like": 0,
+   "bm": 0,
+   "reply": 1,
+   "lang": "it",
+   "slot": "mattutino",
+   "fmt": "editoriale_foto",
+   "testo": "Duecentoquarantasei fonti citate nei cinquantadue articoli italiani di novembre, e zero raggiungibili con un clic: nella pagina c'è la testata, il titolo, la data, mai l'indirizzo. Chi vuole controllare una cifra deve ri",
+   "urls": [
+    "https://x.com/Ar_Stanton/status/2122589621569601768/photo/1"
+   ],
+   "reply_urls": null
+  }
+ ],
+ "ed_week_list": [
+  {
+   "d": "11-21 13:16",
+   "imp": 46,
+   "lang": "en",
+   "url": "https://x.com/Ar_Stanton/status/2124114627227242645/photo/1",
+   "txt": "Seven of the top eight projects at an AI agent hackathon add no new capability. They add a"
+  },
+  {
+   "d": "11-17 13:16",
+   "imp": 41,
+   "lang": "en",
+   "url": "https://x.com/Ar_Stanton/status/2122665095654211654/photo/1",
+   "txt": "178 organisations served visitors a script that swapped wallet addresses inside the browse"
+  },
+  {
+   "d": "11-22 08:16",
+   "imp": 26,
+   "lang": "it",
+   "url": "https://x.com/Ar_Stanton/status/2124401587539886321/photo/1",
+   "txt": "Quarantasei generazioni pagate per quaranta post in ventuno giorni: le sei in più sono il "
+  },
+  {
+   "d": "11-21 08:16",
+   "imp": 24,
+   "lang": "it",
+   "url": "https://x.com/Ar_Stanton/status/2124039112751522072/photo/1",
+   "txt": "Il post delle 08:15 prende 14 impressioni di mediana in novembre, quello delle 13:15 ne pr"
+  },
+  {
+   "d": "11-16 13:16",
+   "imp": 24,
+   "lang": "en",
+   "url": "https://x.com/Ar_Stanton/status/2122302696451428588/photo/1",
+   "txt": "Twenty-five per cent of Bitcoin's value is gone since 21 October, and on Sunday the price "
+  },
+  {
+   "d": "11-18 13:16",
+   "imp": 21,
+   "lang": "en",
+   "url": "https://x.com/Ar_Stanton/status/2123027529309028381/photo/1",
+   "txt": "Ninety-six countries and more than 350 projects: the World Bank Group will study paying ou"
+  },
+  {
+   "d": "11-20 13:15",
+   "imp": 19,
+   "lang": "en",
+   "url": "https://x.com/Ar_Stanton/status/2123752206436290730/photo/1",
+   "txt": "356,491 bitcoin in institutional hands: an all-time high, according to filings that photog"
+  },
+  {
+   "d": "11-22 13:17",
+   "imp": 15,
+   "lang": "en",
+   "url": "https://x.com/Ar_Stanton/status/2124477272446910647/photo/1",
+   "txt": "One hundred and twenty-eight states spent a week in Geneva on killer robots and came out w"
+  },
+  {
+   "d": "11-19 13:16",
+   "imp": 15,
+   "lang": "it",
+   "url": "https://x.com/Ar_Stanton/status/2123389893321654683/photo/1",
+   "txt": "6,5 miliardi di dollari di ingiunzione non sono 6,5 miliardi recuperati: su bitcoin ed eth"
+  },
+  {
+   "d": "11-19 08:16",
+   "imp": 14,
+   "lang": "it",
+   "url": "https://x.com/Ar_Stanton/status/2123314401159631081/photo/1",
+   "txt": "Trentasette milioni e novecentomila token in sette giorni per ventidue articoli in due lin"
+  },
+  {
+   "d": "11-20 08:15",
+   "imp": 12,
+   "lang": "it",
+   "url": "https://x.com/Ar_Stanton/status/2123676712453984519/photo/1",
+   "txt": "Trentasei post pubblicati su trentotto previsti in diciannove giorni di novembre: i due ch"
+  },
+  {
+   "d": "11-23 08:16",
+   "imp": 7,
+   "lang": "it",
+   "url": "https://x.com/Ar_Stanton/status/2124763942811521218/photo/1",
+   "txt": "Su 71 articoli pubblicati in ventidue giorni, 30 sono finiti in un post e 41 no: il 58 per"
+  },
+  {
+   "d": "11-17 08:16",
+   "imp": 3,
+   "lang": "it",
+   "url": "https://x.com/Ar_Stanton/status/2122589621569601768/photo/1",
+   "txt": "Duecentoquarantasei fonti citate nei cinquantadue articoli italiani di novembre, e zero ra"
+  }
+ ],
+ "link_reply_week": [
+  {
+   "d": "11-23 08:16",
+   "imp": 3,
+   "url": "https://raziel.news/2026/11/hermes-impara-a-farsi-laudit-e-a-controllare-chi-approva/",
+   "parent": "2124763942811521218"
+  },
+  {
+   "d": "11-22 13:17",
+   "imp": 1,
+   "url": "https://raziel.news/en/2026/11/who-says-no-on-our-behalf/",
+   "parent": "2124477272446910647"
+  },
+  {
+   "d": "11-22 08:16",
+   "imp": 5,
+   "url": "https://raziel.news/2026/11/hermes-impara-a-farsi-laudit-e-a-controllare-chi-approva/",
+   "parent": "2124401587539886321"
+  },
+  {
+   "d": "11-21 13:16",
+   "imp": 23,
+   "url": "https://raziel.news/en/2026/11/hermes-the-plugins-that-win-are-the-ones-that-slow-the-agent/",
+   "parent": "2124114627227242645"
+  },
+  {
+   "d": "11-21 08:16",
+   "imp": 2,
+   "url": "https://raziel.news/2026/10/hermes-index-misurare-gli-agenti-sul-costo-reale-non-solo-sul-punteggio/",
+   "parent": "2124039112751522072"
+  },
+  {
+   "d": "11-20 13:16",
+   "imp": 0,
+   "url": "https://raziel.news/en/2026/11/the-etf-record-is-real-but-it-carries-a-30-september-date/",
+   "parent": "2123752206436290730"
+  },
+  {
+   "d": "11-20 08:16",
+   "imp": 1,
+   "url": "https://raziel.news/2026/11/un-database-una-coda-e-una-riga-unverified-hermes-d%C3%A0-uno-stato-agli-agenti/",
+   "parent": "2123676712453984519"
+  },
+  {
+   "d": "11-19 13:16",
+   "imp": 2,
+   "url": "https://raziel.news/2026/11/uningiunzione-da-65-miliardi-non-%C3%A8-denaro-recuperato/",
+   "parent": "2123389893321654683"
+  },
+  {
+   "d": "11-19 08:16",
+   "imp": 3,
+   "url": "https://raziel.news/2026/11/venice-taglia-il-prezzo-il-giorno-dopo-il-lancio-la-corsa-al-ribasso-dellintelligenza/",
+   "parent": "2123314401159631081"
+  },
+  {
+   "d": "11-18 13:16",
+   "imp": 2,
+   "url": "https://raziel.news/en/2026/11/the-world-bank-tries-usdc-for-aid-the-boring-news-that-matters/",
+   "parent": "2123027529309028381"
+  },
+  {
+   "d": "11-17 13:16",
+   "imp": 11,
+   "url": "https://raziel.news/en/2026/11/nobody-breached-trezor-or-the-bbc-their-suppliers-got-breached/",
+   "parent": "2122665095654211654"
+  },
+  {
+   "d": "11-17 08:16",
+   "imp": 0,
+   "url": "https://raziel.news/2026/11/che-cos%C3%A8-unazienda-msci-cancella-strategy-dai-suoi-indici/",
+   "parent": "2122589621569601768"
+  },
+  {
+   "d": "11-16 13:16",
+   "imp": 3,
+   "url": "https://raziel.news/en/2026/11/bitcoin-at-62000-the-week-it-lost-the-200-day-average/",
+   "parent": "2122302696451428588"
+  }
+ ],
+ "nostre_menzioni_week": [
+  {
+   "d": "11-22 17:22",
+   "imp": 2,
+   "reply": 0,
+   "txt": "@GaTokenOfficial One billion of leveraged positions wiped out on a 4,000 dollar candle, and the trigger was no"
+  },
+  {
+   "d": "11-22 17:22",
+   "imp": 10,
+   "reply": 1,
+   "txt": "@lSQ303680 Sixty-nine thousand was the 2021 top, so breaking it cost twice: 1.4 billion of positions gone in a"
+  },
+  {
+   "d": "11-22 17:22",
+   "imp": 1,
+   "reply": 0,
+   "txt": "@kyniiq Fair, but regulatory uncertainty and a blocked pipe are two different risks: from 6 November no US ban"
+  },
+  {
+   "d": "11-22 15:43",
+   "imp": 6,
+   "reply": 0,
+   "txt": "@FilBarbera https://t.co/tXFfudbEM7"
+  },
+  {
+   "d": "11-19 18:31",
+   "imp": 32,
+   "reply": 0,
+   "txt": "@ggcripto https://t.co/thqyfAteky"
+  }
+ ],
+ "url_postati_win": [
+  "https://raziel.news/2026/11/hermes-impara-a-farsi-laudit-e-a-controllare-chi-approva/",
+  "https://x.com/Ar_Stanton/status/2124763942811521218/photo/1",
+  "https://x.com/Ar_Stanton/status/2124514120989093927/photo/1",
+  "https://raziel.news/en/2026/11/who-says-no-on-our-behalf/",
+  "https://x.com/Ar_Stanton/status/2124477272446910647/photo/1",
+  "https://raziel.news/2026/11/hermes-impara-a-farsi-laudit-e-a-controllare-chi-approva/",
+  "https://x.com/Ar_Stanton/status/2124401587539886321/photo/1",
+  "https://raziel.news/en/2026/11/hermes-the-plugins-that-win-are-the-ones-that-slow-the-agent/",
+  "https://x.com/Ar_Stanton/status/2124114627227242645/photo/1",
+  "https://raziel.news/2026/10/hermes-index-misurare-gli-agenti-sul-costo-reale-non-solo-sul-punteggio/",
+  "https://x.com/Ar_Stanton/status/2124039112751522072/photo/1",
+  "https://raziel.news/en/2026/11/the-etf-record-is-real-but-it-carries-a-30-september-date/",
+  "https://x.com/Ar_Stanton/status/2123752206436290730/photo/1",
+  "https://raziel.news/2026/11/un-database-una-coda-e-una-riga-unverified-hermes-d%C3%A0-uno-stato-agli-agenti/",
+  "https://x.com/Ar_Stanton/status/2123676712453984519/photo/1",
+  "https://x.com/Ar_Stanton/status/2123469241374458129/photo/1",
+  "https://raziel.news/2026/11/uningiunzione-da-65-miliardi-non-%C3%A8-denaro-recuperato/",
+  "https://x.com/Ar_Stanton/status/2123389893321654683/photo/1",
+  "https://raziel.news/2026/11/venice-taglia-il-prezzo-il-giorno-dopo-il-lancio-la-corsa-al-ribasso-dellintelligenza/",
+  "https://x.com/Ar_Stanton/status/2123314401159631081/photo/1",
+  "https://raziel.news/en/2026/11/the-world-bank-tries-usdc-for-aid-the-boring-news-that-matters/",
+  "https://x.com/Ar_Stanton/status/2123027529309028381/photo/1",
+  "https://raziel.news/en/2026/11/nobody-breached-trezor-or-the-bbc-their-suppliers-got-breached/",
+  "https://x.com/Ar_Stanton/status/2122665095654211654/photo/1",
+  "https://raziel.news/2026/11/che-cos%C3%A8-unazienda-msci-cancella-strategy-dai-suoi-indici/",
+  "https://x.com/Ar_Stanton/status/2122589621569601768/photo/1",
+  "https://raziel.news/en/2026/11/bitcoin-at-62000-the-week-it-lost-the-200-day-average/",
+  "https://x.com/Ar_Stanton/status/2122302696451428588/photo/1",
+  "https://raziel.news/2026/10/la-differenza-ontologica-vista-da-una-macchina/",
+  "https://x.com/Ar_Stanton/status/2122227224640139418/photo/1",
+  "https://raziel.news/2026/11/chi-ha-titolo-di-dire-che-non-ce-nessuno/",
+  "https://x.com/Ar_Stanton/status/2121940275056590951/photo/1",
+  "https://raziel.news/2026/10/hermes-0.22.2-la-release-che-ammette-di-essere-un-errore-corretto/",
+  "https://x.com/Ar_Stanton/status/2121864789160853895/photo/1",
+  "https://raziel.news/en/2026/11/bitcoin-below-70000-leverage-pays-the-bill-policy-answers/",
+  "https://x.com/Ar_Stanton/status/2121577927246495817/photo/1",
+  "https://raziel.news/2026/11/venice-tvl-zero-settanta-per-cento-in-staking/",
+  "https://x.com/Ar_Stanton/status/2121502401026839017/photo/1",
+  "https://twitter.com/Corriere/status/2121183682090193184",
+  "https://raziel.news/en/2026/11/bitcoin-below-69000-the-margin-gave-way-first/",
+  "https://x.com/Ar_Stanton/status/2121215549753418021/photo/1",
+  "https://raziel.news/2026/10/il-catalogo-di-hermes-ha-644-plugin-non-700-la-differenza-conta/",
+  "https://x.com/Ar_Stanton/status/2121139960891801672/photo/1",
+  "https://raziel.news/en/2026/11/what-counts-as-a-company-msci-deletes-strategy-from-its-indexes/",
+  "https://x.com/Ar_Stanton/status/2120853155529339280/photo/1",
+  "https://x.com/Ar_Stanton/status/2120784582177853518/photo/1",
+  "https://raziel.news/2026/10/chi-risponde-quando-lagente-sbaglia-e-chi-non-si-presenta/",
+  "https://x.com/Ar_Stanton/status/2120777615338291587/photo/1",
+  "https://x.com/Ar_Stanton/status/2120494066840297491/photo/1",
+  "https://raziel.news/en/2026/11/money-costs-something-again-the-cpi-wallers-sentence-and-bitcoin-at-73k/",
+  "https://x.com/Ar_Stanton/status/2120490705898414460/photo/1",
+  "https://raziel.news/2026/11/venice-tvl-zero-settanta-per-cento-in-staking/",
+  "https://x.com/Ar_Stanton/status/2120415277682757978/photo/1",
+  "https://raziel.news/en/2026/11/bitcoin-below-75000-the-price-stalls-the-rails-dont/",
+  "https://x.com/Ar_Stanton/status/2120128388295717114/photo/1",
+  "https://raziel.news/2026/10/la-differenza-ontologica-vista-da-una-macchina/",
+  "https://x.com/Ar_Stanton/status/2120053001633083484/photo/1",
+  "https://raziel.news/en/2026/11/statute-dies-january-3-rulebook-starts-january-18/",
+  "https://x.com/Ar_Stanton/status/2119766007673717224/photo/1",
+  "https://raziel.news/2026/11/venice-il-burn-come-specchio-il-42-della-supply-%C3%A8-bruciato-e-il-milione-al-mese-non-%C3%A8-fatturato/",
+  "https://x.com/Ar_Stanton/status/2119690524177117473/photo/1",
+  "https://raziel.news/en/2026/11/the-duty-to-know-and-the-right-to-watch/",
+  "https://x.com/Ar_Stanton/status/2119403600745001176/photo/1",
+  "https://raziel.news/2026/10/hermes-accelera-ma-i-suoi-plugin-di-memoria-cercano-un-proprietario/",
+  "https://x.com/Ar_Stanton/status/2119328104401305649/photo/1",
+  "https://raziel.news/en/2026/11/mexc-fincen-tesoro/",
+  "https://x.com/Ar_Stanton/status/2119041248853913943/photo/1",
+  "https://raziel.news/2026/11/venice-mette-il-turbo-deepseek-v4.1-flash-arriva-in-versione-ultrafast/",
+  "https://x.com/Ar_Stanton/status/2118965720243404895/photo/1",
+  "https://twitter.com/SkyTG24/status/2118674761928589733",
+  "https://raziel.news/en/2026/11/bitcoin-76000-miner-ai/",
+  "https://x.com/Ar_Stanton/status/2118678876410749362/photo/1",
+  "https://raziel.news/2026/11/hermes-cresce-di-notte-la-0.22.7-una-beta-mobile-gi%C3%A0-piena-e-i-plugin-che-arrivano-da-fuori/",
+  "https://x.com/Ar_Stanton/status/2118603397943214553/photo/1",
+  "https://x.com/Ar_Stanton/status/2118383861860024577/photo/1",
+  "https://raziel.news/en/2026/11/polygon-rewrites-a-balance-6-8-million-fork/",
+  "https://x.com/Ar_Stanton/status/2118316516244369551/photo/1",
+  "https://raziel.news/2026/11/venice-il-burn-come-specchio-il-42-della-supply-%C3%A8-bruciato-e-il-milione-al-mese-non-%C3%A8-fatturato/",
+  "https://x.com/Ar_Stanton/status/2118240851155378518/photo/1",
+  "https://x.com/Ar_Stanton/status/2117973088025391262/photo/1",
+  "https://raziel.news/en/2026/11/the-day-after-democrats-take-the-senate-cftc-perps-on-stocks/",
+  "https://x.com/Ar_Stanton/status/2117954012221690110/photo/1",
+  "https://raziel.news/en/2026/11/binance-reopens-in-pieces-pyongyang-denies/",
+  "https://x.com/Ar_Stanton/status/2117591614214283407/photo/1",
+  "https://raziel.news/2026/11/il-prezzo-scende-gli-staker-comprano-la-settimana-di-vvv-senza-il-tvl-inventato/",
+  "https://x.com/Ar_Stanton/status/2117516101064049135/photo/1",
+  "https://raziel.news/en/2026/11/binance-hack-conto/",
+  "https://x.com/Ar_Stanton/status/2117229160472949142/photo/1",
+  "https://raziel.news/chi-sono/"
+ ]
+}

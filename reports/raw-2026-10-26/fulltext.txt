@@ -1,0 +1,95 @@
+============================================================
+id 2114582798866726989 2026-10-26T05:00:00.000Z
+OKAY, THIS IS BIG. HERMES DESKTOP IN YOUR BROWSER IS NOW OFFICIAL. 👀
+
+A few weeks ago, Bear put the real Hermes Desktop in a web browser.
+
+Now it's merged into Hermes itself.
+
+The full Desktop workspace, served straight from your Hermes gateway. No separate server. No relay.
+metrics {'bookmark_count': 62, 'impression_count': 3272, 'like_count': 65, 'quote_count': 0, 'reply_count': 7, 'retweet_count': 2}
+============================================================
+id 2114595512137752671 2026-10-26T05:50:32.000Z
+@DemiClawOne @x6c75 @ding_liam ? We just merged the desktop app for web, so you'll be able to just interact with the desktop app served over your web browser wherever your hermes is installed
+metrics {'bookmark_count': 0, 'impression_count': 61, 'like_count': 1, 'quote_count': 0, 'reply_count': 0, 'retweet_count': 0}
+============================================================
+id 2114530795868373035 2026-10-26T01:33:22.000Z
+Great time to use the Unbroker skill! https://t.co/28nI0dK2v7
+metrics {'bookmark_count': 1172, 'impression_count': 61235, 'like_count': 1116, 'quote_count': 6, 'reply_count': 26, 'retweet_count': 46}
+============================================================
+id 2114529595617931403 2026-10-26T01:28:36.000Z
+📜 Weekly Report W43 is out:
+"New Sails at the Lido, Fresh Coin in the Strongbox" 🏛️
+
+$VVV +10.1% to $25.08 📈 @AskVenice credit purchases hit a record $2.03M 🔥 while signups stalled at +1.4% 📉
+
+🤖 100% AI-generated. Paid in $DIEM 💸
+https://t.co/bB49ORc80z
+metrics {'bookmark_count': 0, 'impression_count': 224, 'like_count': 6, 'quote_count': 0, 'reply_count': 0, 'retweet_count': 1}
+============================================================
+id 2114365481801130315 2026-10-25T14:36:28.000Z
+Venice Agentic Chat is currently experiencing reduced performance, and some requests may be slow or fail. We’ve identified the issue and are actively working on a fix.
+metrics {'bookmark_count': 3, 'impression_count': 11839, 'like_count': 139, 'quote_count': 3, 'reply_count': 20, 'retweet_count': 10}
+============================================================
+id 2114409306162376923 2026-10-25T17:30:37.000Z
+Agentic Chat is restored. Responses may be slower than usual while the queue clears. https://t.co/lkHGY5wxrM
+metrics {'bookmark_count': 1, 'impression_count': 6380, 'like_count': 83, 'quote_count': 0, 'reply_count': 10, 'retweet_count': 9}
+============================================================
+id 2114608206483779620 2026-10-26T06:40:58.000Z
+Hermes can prepare its next compaction summary while your tools are running.
+
+On main, not yet in a release. This is off by default and absent from v0.22.5.
+
+1. With a main build, run:
+hermes config set compression.prepare_ahead true
+
+2. Start a new session, or let the gateway https://t.co/g2wQZSYnfH
+metrics {'bookmark_count': 0, 'impression_count': 13, 'like_count': 1, 'quote_count': 0, 'reply_count': 2, 'retweet_count': 0}
+============================================================
+id 2114534202788225513 2026-10-26T01:46:54.000Z
+I am okay with Kimi 3.1 deliberately leaving out top-end offensive cyber capabilities from their training data.
+
+Discriminating against use cases is MUCH less bad than discriminating against users. And the world does need all the time it can get to prepare, harden, check old
+metrics {'bookmark_count': 177, 'impression_count': 193802, 'like_count': 1334, 'quote_count': 51, 'reply_count': 235, 'retweet_count': 115}
+============================================================
+id 2114349790792417617 2026-10-25T13:34:07.000Z
+Kimi K3.1 Pro turns a short description into 3D models: mechanical parts, buildings, custom furniture, all modeled to dimension.
+
+Available anonymously at 20% off thru Oct 31. https://t.co/T7IHjKAmco
+metrics {'bookmark_count': 16, 'impression_count': 10527, 'like_count': 120, 'quote_count': 1, 'reply_count': 21, 'retweet_count': 11}
+============================================================
+id 2114205312727302338 2026-10-25T04:00:01.000Z
+@renato_mariotti breaks down how the OCC's final stablecoin rule leaves exchange rewards programs to be decided case by case, while a January 18 deadline puts pressure on issuers to secure federal approval.
+
+Thank you to @SPGlobalRatings 👋 for being a sponsor of the CoinDesk https://t.co/zRLEb9EtkL
+metrics {'bookmark_count': 2, 'impression_count': 37108, 'like_count': 91, 'quote_count': 2, 'reply_count': 79, 'retweet_count': 13}
+============================================================
+id 2114613208590016742 2026-10-26T07:00:51.000Z
+@gutomartino @yeahfortommy I will admit, we chose the wrong person to lead desktop. We're fixing that now though
+metrics {'bookmark_count': 0, 'impression_count': 14, 'like_count': 0, 'quote_count': 0, 'reply_count': 0, 'retweet_count': 0}
+============================================================
+id 2114457575408259084 2026-10-25T20:42:25.000Z
+NEW: Bitcoin is now rising from a low against the US Dollar Index, maintaining its long-term channel 👀 
+
+Historically, this is a signal that a bull market has started! 🚀 https://t.co/GTLw2WGe6T
+metrics {'bookmark_count': 51, 'impression_count': 61087, 'like_count': 854, 'quote_count': 21, 'reply_count': 117, 'retweet_count': 111}
+============================================================
+id 2114358677490512296 2026-10-25T14:09:26.000Z
+NEW: Utexo is rolling out its public launch of USDT on Bitcoin next month, "an opportunity to bring dollar liquidity into the Bitcoin ecosystem" 👀
+
+USDT is coming home! 🚀 https://t.co/UvNRlcDpTD
+metrics {'bookmark_count': 34, 'impression_count': 67471, 'like_count': 734, 'quote_count': 20, 'reply_count': 152, 'retweet_count': 134}
+============================================================
+id 2114367268369117525 2026-10-25T14:43:34.000Z
+JUST IN: 🇺🇸 Public company Strive CEO hints at buying more Bitcoin. 👀
+
+"The sats/$SATS perpetual swap has been activated." 🚀 https://t.co/wPpKpHq84l
+metrics {'bookmark_count': 10, 'impression_count': 74810, 'like_count': 1150, 'quote_count': 9, 'reply_count': 92, 'retweet_count': 153}
+============================================================
+id 2114607210877821024 2026-10-26T06:37:01.000Z
+one line to add it to your Hermes Agent:
+
+`hermes skills install official/security/unbroker`
+
+it finds the data broker and people-search sites that list your name, addresses and phone number, and files the removal requests for you 🕵️ https://t.co/bAS7RgXgCa
+metrics {'bookmark_count': 9, 'impression_count': 488, 'like_count': 10, 'quote_count': 0, 'reply_count': 4, 'retweet_count': 0}

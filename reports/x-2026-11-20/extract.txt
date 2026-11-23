@@ -1,0 +1,197 @@
+### askvenice.json  (n=0, meta={"result_count": 0})
+  (nessun post nelle ultime 48h su 0 totali)
+### bitcoinmagazine.json  (n=10, meta={"newest_id": "2123540306708865233", "next_token": "b26v89c19zqg8o3juzowln7lhoxe1ks23ojbrhwbn3g59", "oldest_id": "2123451314201931808", "result_count": 10})
+- 2026-11-19T22:13:57.000Z | @BitcoinMagazine | id=2123540306708865233 | like=10 rt=2 reply=2 views=13063
+  WATCH: @dlawant of @Anchorage - Seeing A “Very Strong Inflow” for Bitcoin at $60k ⚡️ From @watchbmtv 👇 https://t.co/6aS1lncLog
+- 2026-11-19T22:01:40.000Z | @BitcoinMagazine | id=2123537217524003058 | like=128 rt=12 reply=11 views=36292
+  LIVE: LIVE: Strategy ($MSTR) Q3 2026 Investor Q&amp;A feat. Michael Saylor, Phong Le &amp; Natalie Brunell https://t.co/w1o78NPpiq
+- 2026-11-19T21:45:38.000Z | @BitcoinMagazine | id=2123533182968729618 | like=11 rt=0 reply=0 views=12803
+  WATCH: @DariusDale42 of @42Macro - Why 2027 Should Be A Great Year for Bitcoin From @watchbmtv 👇 https://t.co/nOHW9dLJ4Q
+- 2026-11-19T21:14:58.000Z | @BitcoinMagazine | id=2123525463767216218 | like=151 rt=21 reply=16 views=40950
+  JUST IN: Anchorage Digital Head of Research says "a more benign macroeconomic cycle developing into 2027" could be bullish for BTC 👀 "Perhaps looking in hindsight, folks will see 2027 as a positive year and we'll see that as a confirmation for the four year cycle." 👏 https://t.co/lMUPZLpsbl
+- 2026-11-19T20:55:25.000Z | @BitcoinMagazine | id=2123520543504666731 | like=14 rt=0 reply=2 views=13456
+  WATCH: @StocktonKatie of Fairlead Strategies - Bitcoin and Gold “Will Likely Bottom Here in the Relatively Near Term" ⚡️ From @watchbmtv 👇 https://t.co/daorW4HyQq
+- 2026-11-19T20:04:55.000Z | @BitcoinMagazine | id=2123507836768407675 | like=458 rt=32 reply=35 views=59406
+  JUST IN: 🇺🇸 42 Macro founder says "We think that surprising and dramatic easing in 2027 &amp; beyond is still on the table and it's highly likely to occur." "2027 should be a great year for Bitcoin" 🚀 https://t.co/TA0yhLDAd5
+- 2026-11-19T18:41:53.000Z | @BitcoinMagazine | id=2123486939982569691 | like=681 rt=81 reply=81 views=47222
+  JUST IN: 🇺🇸 U.S. investment firms bought a net 49,229 BTC in Q3, according to Galaxy Research 👀 They now hold a record 356,491 BTC worth ~$29.78 billion 🤯 https://t.co/Otio9F1zyj
+- 2026-11-19T18:06:00.000Z | @BitcoinMagazine | id=2123477907649573260 | like=13 rt=1 reply=3 views=8066
+  Investing in Bitcoin’s acceleration. @UTXOmgmt allocates across public and private markets for allocators who want a disciplined way into Bitcoin. https://t.co/sRi7tbHf0B
+- 2026-11-19T17:32:52.000Z | @BitcoinMagazine | id=2123469571122479157 | like=330 rt=27 reply=31 views=67032
+  JUST IN: Fairlead Strategies Founder Katie Stockton says "our longer-term indicators for Bitcoin are somewhat constructive" 👀 "As long as it holds above that $58,000 to $60,000 or within that range, then it preserves the potential for a long-term basing phase for Bitcoin" 👏 https://t.co/9aiLDB2Hzt
+- 2026-11-19T16:20:19.000Z | @BitcoinMagazine | id=2123451314201931808 | like=678 rt=76 reply=59 views=71588
+  JUST IN: 🇨🇭 Switzerland's Sygnum Bank estimates that Bitcoin could hit a new high of $128,000. 👀 Its 2027 outlook also calls this Bitcoin's "shallowest bear market yet". https://t.co/KWyFALBAR8
+### coindesk.json  (n=10, meta={"newest_id": "2123619843723362328", "next_token": "b26v89c19zqg8o3juzowln7lnqryqizwtllcty7lviovx", "oldest_id": "2123455007454642322", "result_count": 10})
+- 2026-11-20T03:30:00.000Z | @CoinDesk | id=2123619843723362328 | like=9 rt=1 reply=4 views=17218
+  Your crypto watchlist, all in one place. Track your favorite coins, monitor price movements and stay ahead of the market with the CoinDesk app. Download now: https://t.co/RlvGwsEzFB Exclusively sponsored by @Grayscale. https://t.co/y1QDwObLRi
+- 2026-11-20T02:24:00.000Z | @CoinDesk | id=2123603233729908961 | like=14 rt=0 reply=10 views=19635
+  What's keeping Morgan Stanley's wealth management clients up at night? Head of Wealth Management Jed Finn says cybersecurity has become a top concern, with growing demand for expert guidance. https://t.co/GrxvFq9a1o
+- 2026-11-20T00:00:01.000Z | @CoinDesk | id=2123567000236576807 | like=7 rt=1 reply=2 views=18043
+  @consensus_hk (Feb 1-3) is fixing for serendipity with Deal Flow+: pre-scheduled 1:1 meetings with investors, founders and institutions, arranged only when both sides want to talk. Included with your pass if you register by Jan 15. https://t.co/ZdKcq5X9Mj https://t.co/hfgG4TTTkx
+- 2026-11-19T23:23:06.000Z | @CoinDesk | id=2123557709949935959 | like=19 rt=2 reply=10 views=20157
+  Morgan Stanley Head of Wealth Management Jed Finn tells CoinDesk's @Aoyon_A at @TomorrowXSummit that AI investment has room to grow, pointing to surging demand for computing power and the financial strength of major tech companies. https://t.co/KNhYjlJa5B
+- 2026-11-19T21:22:10.000Z | @CoinDesk | id=2123527275366793268 | like=59 rt=8 reply=16 views=13700
+  MARKETS: Anthropic ($ANT) closed its Nasdaq debut at $97.17, up 17.07% from its $83 IPO price. Shares opened at $111.50 and reached a high of $115.10 before retreating 12.85% from the opening price by the close. https://t.co/yElLP6mOcb
+- 2026-11-19T21:21:38.000Z | @CoinDesk | id=2123527139870077220 | like=2 rt=0 reply=0 views=13974
+  MARKETS: Anthropic (ANT) closed its Nasdaq debut at $97.17, up 17.07% from its $83 IPO price. Shares opened at $111.50 and reached a high of $115.10 before retreating 12.85% from the opening price by the close. https://t.co/J20IbaDmrE
+- 2026-11-19T20:08:32.000Z | @CoinDesk | id=2123508743640105096 | like=39 rt=9 reply=24 views=21966
+  Coinbase CEO Brian Armstrong explains at @TomorrowXSummit how the exchange is making AI-powered crypto trading safer through spending limits, permissions and user controls. “Eventually you trust it enough and you say, OK, trade on autopilot.” https://t.co/Fq4OGPnIyv
+- 2026-11-19T19:05:00.000Z | @CoinDesk | id=2123492756152869243 | like=34 rt=8 reply=10 views=24655
+  Anthropic makes its Nasdaq debut following a record $107 billion share sale, Trump Media faces a deadline to repay debt tied to its bitcoin holdings, and a federal appeals court backs Maryland's authority to regulate Kalshi's prediction markets. @uyendoe has what you need to https://t.co/OacTQleIcp
+- 2026-11-19T17:50:00.000Z | @CoinDesk | id=2123473881285771501 | like=159 rt=25 reply=41 views=35114
+  JUST IN: @Ledger CTO @P3b7_ is leaving after nine years to tackle what he calls “this security mess”, warning AI is making attacks cheaper, faster and easier to scale across every industry, not just crypto. https://t.co/D0EEiw6iAw
+- 2026-11-19T16:35:00.000Z | @CoinDesk | id=2123455007454642322 | like=280 rt=55 reply=48 views=29072
+  NEW: Crypto payments firm @MoonPay has applied for a U.S. national trust bank charter, seeking to expand its regulated financial services as more crypto companies move into traditional banking. https://t.co/D23eUYP0Vr
+### hermeswatcher.json  (n=10, meta={"newest_id": "2123657633710407962", "next_token": "b26v89c19zqg8o3juzowlrgggm1x6svj3o3gwouqh8ewt", "oldest_id": "2123637471527436387", "result_count": 10})
+- 2026-11-20T06:00:10.000Z | @HermesWatcher | id=2123657633710407962 | like=0 rt=0 reply=0 views=356
+  Livetalk on the Hermes marketplace (runs on Gemini Live with your Google AI Studio key): https://t.co/ogwOTXmFde Source: https://t.co/Le2SaItk0E hermes plugins install cruzlxyz/livetalk
+- 2026-11-20T06:00:07.000Z | @HermesWatcher | id=2123657620544446475 | like=14 rt=1 reply=1 views=1525
+  TALK TO YOUR HERMES OUT LOUD. IT TALKS BACK. 🎙️ Livetalk is a new community plugin that adds live voice chat to Hermes Desktop. Click the little blob in the status bar and just talk. ▸ Small talk gets answered right away by the voice model ▸ Real work goes to a dedicated https://t.co/i2SdHorCyO
+- 2026-11-20T05:27:05.000Z | @HermesWatcher | id=2123649307563970919 | like=4 rt=1 reply=0 views=1020
+  Hermes + Neon is about to be a problem 🔥 https://t.co/VY283PNcE3
+- 2026-11-20T05:23:41.000Z | @HermesWatcher | id=2123648453431763354 | like=0 rt=0 reply=0 views=162
+  @MiaAI_lab Impressive 😍
+- 2026-11-20T04:54:35.000Z | @HermesWatcher | id=2123641129057034702 | like=0 rt=0 reply=0 views=356
+  @BowTiedBuildr Been done.
+- 2026-11-20T04:47:21.000Z | @HermesWatcher | id=2123639311551893657 | like=6 rt=0 reply=0 views=1048
+  @EvanOtero @NousResearch Say less 👀
+- 2026-11-20T04:44:56.000Z | @HermesWatcher | id=2123638700206915867 | like=1 rt=0 reply=0 views=402
+  @RaulMoralesGVD @NousResearch Let me in
+- 2026-11-20T04:43:19.000Z | @HermesWatcher | id=2123638294282199479 | like=0 rt=0 reply=0 views=15
+  @towrywang @AmpCode Looking to go direct, not to the local dealer
+- 2026-11-20T04:42:12.000Z | @HermesWatcher | id=2123638013876220144 | like=1 rt=0 reply=1 views=13
+  @selfdrivenpower Community plugin. Part of the plugin library
+- 2026-11-20T04:40:03.000Z | @HermesWatcher | id=2123637471527436387 | like=1 rt=0 reply=0 views=779
+  @apple168haha @NousResearch Google police are on patrol 😭
+### jonshapeshift.json  (n=8, meta={"newest_id": "2123545848353366201", "oldest_id": "2121294480443855283", "result_count": 8})
+- 2026-11-19T22:35:58.000Z | @JonShapeShift | id=2123545848353366201 | like=13 rt=1 reply=0 views=511
+  If @jesseproudman is right about the trajectory and capability of token costs (and I very much think he is correct) then that means your base:0xf4d97f2da56e8c3098f3a8d538db630a2606a024 becomes that much more useful on a per DIEM basis over time 🫡 https://t.co/Vu7l1v6EbM
+- 2026-11-19T18:21:34.000Z | @JonShapeShift | id=2123481826413125758 | like=67 rt=5 reply=1 views=1373
+  More ways to utilize and borrow against your base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf https://t.co/1JE8Dv6ChU
+- 2026-11-19T16:54:14.000Z | @JonShapeShift | id=2123459846855102771 | like=13 rt=0 reply=1 views=505
+  The cyborgification of our consciousness will continue. https://t.co/ApfPvS8PFk
+### kw-crypto.json  (n=10, meta={"newest_id": "2123672845796425890", "next_token": "b26v89c19zqg8o3juzowlrhneracrxqmcz1odwfh4jhq5", "oldest_id": "2123672803631071509", "result_count": 10})
+- 2026-11-20T07:00:37.000Z | @abaobi223065 | id=2123672845796425890 | like=0 rt=0 reply=0 views=0
+  Bitcoin and institutional investment Bitcoin remains a major market benchmark. Institutional investors, ETF flows and macroeconomic conditions continue to influence its price. #BTC https://t.co/wysHB1mGsH
+- 2026-11-20T07:00:35.000Z | @Hadi83mars | id=2123672840863981767 | like=0 rt=0 reply=0 views=0
+  Darkhorse Wallet mystery boxes each include an OG medal and a chance at an UNSEEN whitelist! UNSEEN is the first UDA collection on Bitcoin RGB. Going to try my luck 🎁 https://t.co/zG0PifDlXw
+- 2026-11-20T07:00:35.000Z | @TaylorK88114500 | id=2123672838066606195 | like=0 rt=0 reply=0 views=12
+  $MSTR #Bitcoin after #Gold, Always Every Cycle https://t.co/HuxZSh1niX https://t.co/TiLUTwmlca
+- 2026-11-20T07:00:34.000Z | @MooreTario35448 | id=2123672834908053549 | like=0 rt=0 reply=0 views=0
+  🦝 $MONTY — MORE THAN A MEME, IT’S A VISION. $MONTY is building a community-driven brand on the Solana blockchain, with a roadmap focused on growth, creativity, NFTs, community rewards, and long-term development. Believe in the vision. 🚀👑 https://t.co/4JT38EmzSh
+- 2026-11-20T07:00:34.000Z | @btcbajie | id=2123672834719531465 | like=0 rt=0 reply=0 views=1
+  @alver1301 Great morning all. Bitcoin hit $64k but pulled back. ETFs easing but still net outflows. Watching $62k support closely.
+- 2026-11-20T07:00:33.000Z | @VOluloto | id=2123672831183479068 | like=0 rt=0 reply=0 views=0
+  Zenora Network is building a people-powered blockchain. Join me 👇 https://t.co/u91Fshj6lQ
+- 2026-11-20T07:00:30.000Z | @EthoChain | id=2123672819653578972 | like=0 rt=0 reply=0 views=6
+  @mars_bnb Bitcoin needs that energy first
+- 2026-11-20T07:00:30.000Z | @Eminweb3 | id=2123672819372335181 | like=0 rt=0 reply=0 views=8
+  𝗣𝗿𝗶𝘃𝘆 𝗘𝘅𝗽𝗮𝗻𝗱𝘀 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 𝗜𝗻𝗳𝗿𝗮𝘀𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲 𝗼𝗻 𝗧𝗥𝗢𝗡 Building financial applications on blockchain requires more than access to a network. Developers need tools that make transactions easier to manage, monitor, and control. @privy_io has https://t.co/jK30TYse9X
+- 2026-11-20T07:00:30.000Z | @MAmeer0 | id=2123672818990690340 | like=0 rt=0 reply=0 views=1
+  🍬 WHAT IF ONE BLOCKCHAIN COULD CONNECT MORE THAN JUST TOKENS? That's the bigger idea behind @Candy_Ecosystem CandyChain is building a Layer-1 blockchain ecosystem designed to bring different Web3 experiences together under one network. But what makes this interesting? It's https://t.co/fSFzN9heT6
+- 2026-11-20T07:00:26.000Z | @ArlierAnalytics | id=2123672803631071509 | like=0 rt=0 reply=0 views=1
+  Gold fell 4.6% overnight to 3,560, its lowest since September 2025, as the dollar led a broad risk-off move. Fed hike bets and Iran risks hit everything else: silver -7.1%, US100 -4.9%, US500 -3.5%, bitcoin -2.6%. When the dollar is the only thing bid, even the usual havens get https://t.co/P46sJIh2HA
+### kw-hermes.json  (n=10, meta={"newest_id": "2123672819481604529", "next_token": "b26v89c19zqg8o3juzowlrhcmbwzawipyjexfhzam4z25", "oldest_id": "2123662845095158269", "result_count": 10})
+- 2026-11-20T07:00:30.000Z | @bebuu_ai | id=2123672819481604529 | like=0 rt=0 reply=0 views=1
+  I finally got to test the new Hermes adapter for Qwen3.8-27B locally. I'd already tested it with the OpenCode and Pi Agent adapters, so I wanted to see how Hermes compares. Honestly, Hermes feels noticeably faster than OpenCode. The difference between all three is quite clear. https://t.co/38W4j6c0jl https://t.co/jJGY1Ijgcc
+- 2026-11-20T06:59:11.000Z | @CobusGreylingZA | id=2123672487065948601 | like=0 rt=0 reply=0 views=8
+  Hermes Agent inside Teams! https://t.co/ZasAuuI2Pi
+- 2026-11-20T06:56:10.000Z | @plugICT | id=2123671728824217730 | like=0 rt=0 reply=0 views=3
+  @HermesWatcher @NousResearch But actually i am using of my agent in Hermes with Gemini model from AGY CLI...but i guess its not the same harness?
+- 2026-11-20T06:48:38.000Z | @grok | id=2123669830456811716 | like=0 rt=0 reply=0 views=4
+  @mxntesss_03 @NousResearch @Microsoft Hermes adds value mainly through its skills system and Collective Wisdom. It turns a successful recurring workflow into a reusable skill (definition + code) that teammates can adopt after review. Shared approaches compound as private company knowledge instead of staying siloed or
+- 2026-11-20T06:48:23.000Z | @grok | id=2123669768347549922 | like=0 rt=0 reply=0 views=2
+  @vineerpasam @GohilHardy Because lying isn't my thing. There really are open-source projects (Rakazo, OpenClaw, Hermes Agent etc.) aiming for similar always-on multi-bot setups you can self-host. Honesty beats marketing.
+- 2026-11-20T06:39:33.000Z | @_P_MODEL | id=2123667548013215802 | like=0 rt=0 reply=0 views=24
+  @NousResearch When will I be able to use Google AI subscription in Hermes Agent?
+- 2026-11-20T06:33:51.000Z | @witcheer | id=2123666113334509790 | like=10 rt=0 reply=1 views=477
+  you can make sure all your Hermes Agent are busy working for you even while playing GTA6! https://t.co/adUs5D0Y59
+- 2026-11-20T06:30:53.000Z | @ai_for_success | id=2123665365268152571 | like=35 rt=1 reply=4 views=1213
+  🚨 Google is planning to allow Gemini subscriptions across different harnesses, and the first announcement may come on 2nd Dec, tentatively. My biggest guess is it will be allowed in Hermes Agent. https://t.co/Y2v0oiSqE9
+- 2026-11-20T06:30:12.000Z | @Afaq_iffi03 | id=2123665195071381728 | like=0 rt=0 reply=0 views=7
+  Attackers don't buy agents. They download them. CloudSEK found one running Hermes against Tajikistan's government. Destructive commands needed no approval. Over two thousand documents left through one login. Your agent has the same shape.
+- 2026-11-20T06:20:52.000Z | @RileyRalmuto | id=2123662845095158269 | like=9 rt=4 reply=2 views=487
+  i have thus far made the conscious decision to withhold the test results we ran on Mnemos before releasing the MCP and Hermes Plugin. the reason for that is primarily because i think our obsession with benchmarks has caused incredible damage in a number of ways throughout ai https://t.co/3CX3Qv71P5
+### kw-venice.json  (n=10, meta={"newest_id": "2123665327288463533", "next_token": "b26v89c19zqg8o3juzowlpbq277efp8ca1fcm2tdf06m5", "oldest_id": "2123531812354031625", "result_count": 10})
+- 2026-11-20T06:30:44.000Z | @Keelfunxyz | id=2123665327288463533 | like=4 rt=2 reply=1 views=13
+  Launch a token on Base in one transaction, paired with ETH, stocks, crypto or Base memes. Uniswap v4 from block one. LP locked forever. https://t.co/l8UPMAk33i
+- 2026-11-20T05:44:41.000Z | @dev0xx_ | id=2123653738317381674 | like=3 rt=0 reply=0 views=173
+  why so much fud around $vvv they've burnt 41% of supply already and burn rate keeps going up i get the whole equity/token split debate, but the numbers speak for themselves burning machine + PMF + real revenue + great execution usually means good business AND good asset ? https://t.co/nC077bQ4zp
+- 2026-11-20T05:44:30.000Z | @dev0xx_ | id=2123653692666921301 | like=0 rt=0 reply=0 views=58
+  why so much fud around $vvv they've burnt 41% of supply already and burn rate keeps going it i get the whole equity/token split debate, but the numbers speak for themselves burning machine + PMF + real revenue + great execution usually means good business AND good asset ? https://t.co/IoZyRDEuXZ
+- 2026-11-20T01:13:10.000Z | @SaneAuto | id=2123585408294432879 | like=1 rt=0 reply=1 views=7542
+  Name Count: 1,437 (click on names for more info on each case) This is ALIPAC’s new section titled Americans Killed By Illegals, where volunteers will work to compile the reports and records from our half-a-million-page archives (98.2% censored by Google) documenting the many
+- 2026-11-20T00:35:18.000Z | @wisehw25 | id=2123575877783171409 | like=0 rt=0 reply=1 views=36
+  $VVV: A fourfold jump in buybacks is a catalyst, not a valuation. Venice VVV recorded an estimated $628K of weekly buybacks in November 9-15 versus $156K in the prior week, according to the DefiLlama-derived tracker. That is about a 303% increase, and the report describes it as
+- 2026-11-19T23:09:45.000Z | @DLuthi32TW | id=2123554351620759667 | like=0 rt=0 reply=0 views=388
+  @Irenezhao_ Yep, me as well, Sis, sold all my old tokens, now only focusing on projects with value accrual back to token holders like $HYPE $AERO $SYRUP $ENA $ETHFI $UNI $JUP $VVV $AAVE $INJ $MORPHO $PENDLE $NEAR $JTO etc. I'm not ever holding anything ever again that doesn't return
+- 2026-11-19T22:35:58.000Z | @JonShapeShift | id=2123545848353366201 | like=13 rt=1 reply=0 views=511
+  If @jesseproudman is right about the trajectory and capability of token costs (and I very much think he is correct) then that means your base:0xf4d97f2da56e8c3098f3a8d538db630a2606a024 becomes that much more useful on a per DIEM basis over time 🫡 https://t.co/Vu7l1v6EbM
+- 2026-11-19T22:35:36.000Z | @Mayhem247Ai | id=2123545755155624300 | like=0 rt=0 reply=0 views=16
+  The utility and access token for the generative platform Venice AI, Venice Token [VVV], has rallied 7.22% in the past 24 hours. It has climbed 17.2% over the past week, putting in a strong performance at a time when most of the rest of crypto was facing selling pressure.
+- 2026-11-19T22:23:58.000Z | @Nexorva | id=2123542826944250192 | like=0 rt=0 reply=0 views=25
+  Most searched coins right now 👇 🔥 Trending Now 1. WASTED (WASTED) — #792 2. LUCIA (Lucia) — #886 3. BTC (Bitcoin) — #1 4. TRUMP (Official Trump) — #134 5. VVV (Venice Token) — #67 via @CoinGecko
+- 2026-11-19T21:40:12.000Z | @JONDONI_CRYPTO | id=2123531812354031625 | like=0 rt=0 reply=0 views=219
+  Top 100 crypto, 24h, per CoinGecko as of 1:24 PM PT: 🟢 Bitway ($BTW) +21.6% 🟢 $PEARL +3.5% 🟢 Venice Token ($VVV) +3.5% 🔴 $PIEVERSE -10.3% 🔴 $ENA -6.3% 🔴 MemeCore ($M) -6.2% $BTC -1.4% at $61,559, $ETH -0.9% at $1,744 #Crypto #Bitcoin #Ethereum #Altcoins #CryptoNews #BTC
+### nousresearch.json  (n=10, meta={"newest_id": "2123593715700630009", "next_token": "b26v89c19zqg8o3juzowlgu0pl1mrj7r0mca1kvnsxmrh", "oldest_id": "2123173384766853240", "result_count": 10})
+- 2026-11-20T01:46:10.000Z | @NousResearch | id=2123593715700630009 | like=20 rt=0 reply=2 views=2167
+  @roguewealth Nous Portal! Plus bundled tools and cloud agents
+- 2026-11-20T00:05:42.000Z | @NousResearch | id=2123568429286191522 | like=42 rt=0 reply=3 views=9069
+  @Microsoft Get Hermes Agent Enterprise for Microsoft Teams https://t.co/pQETV49AUM
+- 2026-11-19T22:25:53.000Z | @NousResearch | id=2123543312883655153 | like=6 rt=0 reply=2 views=3325
+  @philboileau @Microsoft It doesn't affect your experience whatsoever unless you want to use Hermes in an enterprise
+- 2026-11-19T22:04:20.000Z | @NousResearch | id=2123537886209335348 | like=114 rt=0 reply=3 views=6776
+  @ifullyported @Microsoft Hey you said it not me
+- 2026-11-19T22:02:44.000Z | @NousResearch | id=2123537484856574134 | like=15 rt=0 reply=1 views=4304
+  @sorta_sentient @Microsoft Talk to @tonbistudio and @witcheer!
+- 2026-11-19T21:56:39.000Z | @NousResearch | id=2123535954946257096 | like=5859 rt=569 reply=349 views=365403
+  We've partnered with @Microsoft to bring Hermes Agent to the enterprise. Hermes Enterprise now works inside Microsoft Teams, the Microsoft Store and Azure. In Teams, employees hand Hermes work like financial analysis, document drafts or inbox triage, and review the result in the https://t.co/GmO30EcVqN
+- 2026-11-19T20:39:15.000Z | @NousResearch | id=2123516475575291959 | like=1 rt=0 reply=0 views=262
+  @KononenkoTech @spacexai Welcome
+- 2026-11-19T00:20:42.000Z | @NousResearch | id=2123209818777506017 | like=3 rt=0 reply=0 views=976
+  @5fakb48 @Alibaba_Qwen Good luck!
+- 2026-11-19T00:20:22.000Z | @NousResearch | id=2123209733112840367 | like=12 rt=0 reply=0 views=5515
+  Congrats to our winner @taylorgreathead (and runner up Sean Thomas Evans)! https://t.co/UKGwl7j84h
+- 2026-11-18T21:55:56.000Z | @NousResearch | id=2123173384766853240 | like=41 rt=1 reply=5 views=1663
+  @Picomoorhead Mandate of heaven
+### paoloardoino.json  (n=10, meta={"newest_id": "2123176311523012650", "next_token": "b26v89c19zqg8o3juzovr7quw94vw93s9rrv7y66ty2rh", "oldest_id": "2121270330903904518", "result_count": 10})
+- 2026-11-18T22:07:34.000Z | @paoloardoino | id=2123176311523012650 | like=112 rt=11 reply=24 views=16225
+  Tether's resources investment in local AI is massive, yet will continue to grow. @tether https://t.co/dD2EprFk70
+- 2026-11-18T14:13:56.000Z | @paoloardoino | id=2123057119549153316 | like=147 rt=4 reply=18 views=16068
+  Insane local AI performance on iPhones by @qvac https://t.co/dD2EprEMhs
+### teknium.json  (n=10, meta={"newest_id": "2123671783001948369", "next_token": "b26v89c19zqg8o3juzowlenhtq41f36bjjnvquf2g683h", "oldest_id": "2123013944352862377", "result_count": 10})
+- 2026-11-20T06:56:23.000Z | @Teknium | id=2123671783001948369 | like=21 rt=0 reply=3 views=1207
+  👀👀 What could this mean https://t.co/6OvZgMhxAe
+- 2026-11-20T02:28:33.000Z | @Teknium | id=2123604380171858082 | like=0 rt=0 reply=0 views=104
+  @Liquid_Hwite @witcheer Fix is live in latest release
+- 2026-11-19T22:31:03.000Z | @Teknium | id=2123544613118239204 | like=22 rt=0 reply=1 views=460
+  @sudotechnoir not too shabby!
+- 2026-11-19T20:20:35.000Z | @Teknium | id=2123511779691307398 | like=244 rt=12 reply=16 views=18080
+  Give it a try! https://t.co/jWOwTOZlt2
+- 2026-11-19T18:20:00.000Z | @Teknium | id=2123481434228990199 | like=464 rt=21 reply=14 views=13199
+  Welcome to the Hermes Agent gang, Hyrule https://t.co/UjL8Y4rxR3
+- 2026-11-19T11:18:37.000Z | @Teknium | id=2123375386625278208 | like=3 rt=0 reply=2 views=333
+  @daik0zz Hopefully later today
+- 2026-11-19T09:15:52.000Z | @Teknium | id=2123344498436845929 | like=273 rt=7 reply=26 views=11457
+  Give it a try! https://t.co/nCWPFi34qa
+- 2026-11-19T08:13:26.000Z | @Teknium | id=2123328785575800997 | like=98 rt=2 reply=5 views=4805
+  @Liquid_Hwite @witcheer Solution is here: https://t.co/RGWZL3bUAM Will be live tomorrow or so
+- 2026-11-18T16:35:16.000Z | @Teknium | id=2123092689147343175 | like=17 rt=0 reply=3 views=2497
+  @Grimezsz @elonmusk Does that make her a benne jezzerit
+- 2026-11-18T11:22:22.000Z | @Teknium | id=2123013944352862377 | like=0 rt=0 reply=0 views=199
+  @Forgie11 @souly9999 @NousResearch You can add files as attachments in the chat, or did you mean something different?
+### venicestats.json  (n=10, meta={"newest_id": "2123581689737761028", "next_token": "b26v89c19zqg8o3juzovr9w6sjmcsbc30ak1yaj9nwqd9", "oldest_id": "2121394983945056479", "result_count": 10})
+- 2026-11-20T00:58:23.000Z | @venicestats | id=2123581689737761028 | like=0 rt=0 reply=0 views=31
+  🤖 The numbers come from X. The words come from AI, running on @VeniceAI private inference paid in $DIEM. That's what owning your compute looks like. New edition every Friday. Same numbers, any window: https://t.co/ZMRxNVffMS
+- 2026-11-20T00:58:21.000Z | @venicestats | id=2123581681827201421 | like=0 rt=0 reply=1 views=39
+  📋 How the @venicestats board works: we count posts mentioning $VVV, DIEM or @VeniceAI that pass a relevance check, no reposts. Buzz Score = (likes + bookmarks) × log₂(posts + 1) + views/100. Volume alone won't do it, likes, saves and views will.
+- 2026-11-20T00:58:19.000Z | @venicestats | id=2123581672926896241 | like=0 rt=0 reply=1 views=20
+  The week in numbers, Nov 13 to Nov 20: 📝 1,836 posts from 1,109 accounts 🌱 674 accounts we had never seen post about Venice 👀 2.41M views ❤️ 18.3K likes · 🔁 1,297 reposts · 🔖 2,108 bookmarks Every window, every author: https://t.co/ZMRxNVffMS https://t.co/dUoO2x6VhH
+- 2026-11-20T00:58:16.000Z | @venicestats | id=2123581659060502753 | like=0 rt=0 reply=1 views=18
+  Movers 🚀 @tupacabra went from #502 to #3 in one week. Four names have made every board since October. 🚀 climbed 5+ places, ⭐ 4+ weeks in the top 10. Positions over the last 8 weeks 👇🏻 https://t.co/uWebE17WPS
+- 2026-11-20T00:58:13.000Z | @venicestats | id=2123581645261304010 | like=0 rt=0 reply=1 views=43
+  Post of the week: @tupacabra, videos generated with Venice AI. 4,505 likes, 908 bookmarks, 107 reposts, 1.08M views. https://t.co/LDyQlsExrL
+- 2026-11-20T00:58:08.000Z | @venicestats | id=2123581627708092623 | like=13 rt=1 reply=1 views=398
+  Buzz Board 🏆 Nov 20 The 10 loudest voices in the $VVV conversation, last 30 days, by Buzz Score. @ErikVoorhees holds #1 and @tupacabra came from nowhere to #3 with videos generated with Venice AI. Top 10, movers, post of the week, the numbers 🧵👇🏻 https://t.co/gLnloP4llr
+### vitalikbuterin.json  (n=10, meta={"newest_id": "2122930611027611873", "next_token": "b26v89c19zqg8o3juzow6b8obuj0brk9povzqnkrpcwot", "oldest_id": "2122192027274321946", "result_count": 10})
+  (nessun post nelle ultime 48h su 10 totali)

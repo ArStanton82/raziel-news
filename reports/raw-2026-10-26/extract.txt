@@ -1,0 +1,470 @@
+======================================================================
+FILE core-AskVenice.json count 10
+------------------------------------------------------------
+id: 2114487136447574373 | user: AskVenice | created: 2026-10-25T22:39:53.000Z
+metrics: like=91 rt=12 reply=12 quote=2 imp=6891
+text: See you tomorrow in NYC. https://t.co/FhrINxMyk0
+------------------------------------------------------------
+id: 2114409306162376923 | user: AskVenice | created: 2026-10-25T17:30:37.000Z
+metrics: like=83 rt=9 reply=10 quote=0 imp=6380
+text: Agentic Chat is restored. Responses may be slower than usual while the queue clears. https://t.co/lkHGY5wxrM
+------------------------------------------------------------
+id: 2114387074346344665 | user: AskVenice | created: 2026-10-25T16:02:16.000Z
+metrics: like=13 rt=3 reply=0 quote=0 imp=1544
+text: ATO DE [LATER] will be screening in full at The Roxy Cinema tomorrow, October 26, along with the other finalists and category winners. The Grand Prize winner will be revealed live on the night. Lumara is presented by @moonpay and Venice. https://t.co/qz3SAUWnoO
+------------------------------------------------------------
+id: 2114387071565713624 | user: AskVenice | created: 2026-10-25T16:02:15.000Z
+metrics: like=107 rt=14 reply=17 quote=2 imp=8512
+text: Presenting the Get Shorty Award winner of the Lumara Film Festival... ATO DE [LATER] by Luke Mazey This heartfelt anime packs an emotional punch, winning Best Film Under Two Minutes, and includes an $8,000 prize plus 800K Venice credits. https://t.co/fOoeKk9p1n
+------------------------------------------------------------
+id: 2114365481801130315 | user: AskVenice | created: 2026-10-25T14:36:28.000Z
+metrics: like=139 rt=10 reply=20 quote=3 imp=11839
+text: Venice Agentic Chat is currently experiencing reduced performance, and some requests may be slow or fail. We’ve identified the issue and are actively working on a fix.
+------------------------------------------------------------
+id: 2114349802842730764 | user: AskVenice | created: 2026-10-25T13:34:10.000Z
+metrics: like=13 rt=4 reply=0 quote=0 imp=1702
+text: Access Kimi K3.1 Pro on Venice. https://t.co/MQHhqc3sM6
+------------------------------------------------------------
+id: 2114349790792417617 | user: AskVenice | created: 2026-10-25T13:34:07.000Z
+metrics: like=120 rt=11 reply=21 quote=1 imp=10527
+text: Kimi K3.1 Pro turns a short description into 3D models: mechanical parts, buildings, custom furniture, all modeled to dimension. Available anonymously at 20% off thru Oct 31. https://t.co/T7IHjKAmco
+------------------------------------------------------------
+id: 2114052333956972604 | user: AskVenice | created: 2026-10-24T17:52:08.000Z
+metrics: like=13 rt=0 reply=3 quote=0 imp=482
+text: @moonpay Epic animation, well deserved
+------------------------------------------------------------
+id: 2114028057354699080 | user: AskVenice | created: 2026-10-24T16:15:40.000Z
+metrics: like=9 rt=2 reply=1 quote=0 imp=2341
+text: FIX will be screening in full at The Roxy Cinema on October 26, along with the other finalists and category winners. One more category winner announced tomorrow. Lumara is presented by @moonpay and Venice. https://t.co/qz3SAUWnoO
+------------------------------------------------------------
+id: 2114028052124754113 | user: AskVenice | created: 2026-10-24T16:15:39.000Z
+metrics: like=100 rt=9 reply=22 quote=0 imp=8354
+text: Presenting the Mouse Award winner of Lumara Film Festival... FIX by Eunha Lee, Sora Lee and Hakhoon Lee This visually stunning animated coming-of-age musical wins the award for best film for young audiences, and comes with an $8,000 prize along with 800K Venice credits. https://t.co/Qmf8VQgPf5
+======================================================================
+FILE core-BitcoinMagazine.json count 10
+------------------------------------------------------------
+id: 2114457575408259084 | user: BitcoinMagazine | created: 2026-10-25T20:42:25.000Z
+metrics: like=854 rt=111 reply=117 quote=21 imp=61087
+text: NEW: Bitcoin is now rising from a low against the US Dollar Index, maintaining its long-term channel 👀 Historically, this is a signal that a bull market has started! 🚀 https://t.co/GTLw2WGe6T
+------------------------------------------------------------
+id: 2114367268369117525 | user: BitcoinMagazine | created: 2026-10-25T14:43:34.000Z
+metrics: like=1150 rt=153 reply=92 quote=9 imp=74810
+text: JUST IN: 🇺🇸 Public company Strive CEO hints at buying more Bitcoin. 👀 "The sats/$SATS perpetual swap has been activated." 🚀 https://t.co/wPpKpHq84l
+------------------------------------------------------------
+id: 2114358677490512296 | user: BitcoinMagazine | created: 2026-10-25T14:09:26.000Z
+metrics: like=734 rt=134 reply=152 quote=20 imp=67471
+text: NEW: Utexo is rolling out its public launch of USDT on Bitcoin next month, "an opportunity to bring dollar liquidity into the Bitcoin ecosystem" 👀 USDT is coming home! 🚀 https://t.co/UvNRlcDpTD
+------------------------------------------------------------
+id: 2114129011752178077 | user: BitcoinMagazine | created: 2026-10-24T22:56:49.000Z
+metrics: like=1906 rt=218 reply=154 quote=27 imp=114062
+text: NEW: $5.3 billion Cardone Capital bought 16 BTC worth $1.28 million on this dip! 🚀 https://t.co/YJ6tA4E8CD
+------------------------------------------------------------
+id: 2113991560366903392 | user: BitcoinMagazine | created: 2026-10-24T13:50:38.000Z
+metrics: like=779 rt=122 reply=109 quote=13 imp=64878
+text: JUST IN: $500 million CMCC Global plans to launch two tokenized Bitcoin Funds: Crest Fund and Liberty Bitcoin Accumulation Fund 👀 Liberty Bitcoin Accumulation Fund targets an annualized net return of 8% to 12% in BTC 🚀 https://t.co/JyZnVbHaKW
+------------------------------------------------------------
+id: 2113969042268819561 | user: BitcoinMagazine | created: 2026-10-24T12:21:09.000Z
+metrics: like=1647 rt=308 reply=180 quote=27 imp=96944
+text: NEW: Bitcoin's Realized Cap is climbing, a sign that fresh capital is flowing in 👀 Historically, this is a sign that a new bull market has started! 🚀 https://t.co/1pK6bNnLh9
+------------------------------------------------------------
+id: 2113745243543871935 | user: BitcoinMagazine | created: 2026-10-23T21:31:52.000Z
+metrics: like=591 rt=105 reply=104 quote=14 imp=70272
+text: JUST IN: CME Group recorded $326.7 billion in total notional trading volume for its Bitcoin derivatives in Q3! 🚀 https://t.co/lKBAExJCOp
+------------------------------------------------------------
+id: 2113721587316756903 | user: BitcoinMagazine | created: 2026-10-23T19:57:52.000Z
+metrics: like=649 rt=103 reply=56 quote=14 imp=81056
+text: JUST IN: 🇮🇱 Israeli Prime Minister Benjamin Netanyahu says he wants to use crypto &amp; blockchain to fight possible economic and banking restrictions. 👀 https://t.co/gJAp44CY1f
+------------------------------------------------------------
+id: 2113701562673446988 | user: BitcoinMagazine | created: 2026-10-23T18:38:17.000Z
+metrics: like=2545 rt=521 reply=168 quote=62 imp=112608
+text: JUST IN: 🇺🇸 $1.8 trillion Franklin Templeton has received approval from Nasdaq to list two new Bitcoin ETFs with a DRIP strategy 👀 The 'FBEQ' and 'FIBT' ETFs will reinvest dividends from US stocks into Bitcoin! 🚀 https://t.co/o2115UHu9r
+------------------------------------------------------------
+id: 2113683545856315527 | user: BitcoinMagazine | created: 2026-10-23T17:26:42.000Z
+metrics: like=15 rt=3 reply=2 quote=0 imp=10014
+text: @watchbmtv @GraceRemiTV @realseanhagan Why should your rate depend on your loan size? With SALT, it doesn't. 6.99% APR at 30% LTV. 👏 Get started now: https://t.co/muwx0m3kGN https://t.co/XurVAqDLvu
+======================================================================
+FILE core-CoinDesk.json count 10
+------------------------------------------------------------
+id: 2114205312727302338 | user: CoinDesk | created: 2026-10-25T04:00:01.000Z
+metrics: like=91 rt=13 reply=79 quote=2 imp=37108
+text: @renato_mariotti breaks down how the OCC's final stablecoin rule leaves exchange rewards programs to be decided case by case, while a January 18 deadline puts pressure on issuers to secure federal approval. Thank you to @SPGlobalRatings 👋 for being a sponsor of the CoinDesk https://t.co/zRLEb9EtkL
+------------------------------------------------------------
+id: 2114009267267371206 | user: CoinDesk | created: 2026-10-24T15:01:00.000Z
+metrics: like=173 rt=38 reply=80 quote=7 imp=51963
+text: “It is mathematically not possible for stablecoins to cause deposit flight.” Zero Knowledge founder and CEO @austincampbell joins @RebeccaRettig1 and @renato_mariotti on this week’s @Coindesk Policy Protocol to break down the OCC’s stablecoin rules, JPMorgan’s JPMD on Ethereum, https://t.co/UZlPQzsqji
+------------------------------------------------------------
+id: 2113722131146031518 | user: CoinDesk | created: 2026-10-23T20:00:01.000Z
+metrics: like=76 rt=8 reply=32 quote=4 imp=34492
+text: Polymarket fires its CMO following an internal investigation into alleged fake trading, Sen. Richard Blumenthal questions payments tied to Tether's U.S. chief Bo Hines, and Ethereum developers delay the Glamsterdam upgrade on a test network over security concerns. @uyendoe has https://t.co/LtrZT7JQZh
+------------------------------------------------------------
+id: 2113722125341311309 | user: CoinDesk | created: 2026-10-23T20:00:00.000Z
+metrics: like=75 rt=14 reply=43 quote=1 imp=26294
+text: MARKETS: Robinhood is seeing growing demand for prediction markets tied to bitcoin, gold and oil as traders increasingly move beyond sports prediction markets. https://t.co/YlV9RjBN6Z
+------------------------------------------------------------
+id: 2113708283873693779 | user: CoinDesk | created: 2026-10-23T19:05:00.000Z
+metrics: like=337 rt=54 reply=42 quote=6 imp=46718
+text: INSIGHT: @JPMorgan says recent SEC and CFTC actions have partially offset the CLARITY Act’s failure, but warns crypto faces a patchwork of regulatory measures that could be reversed in two years if Democrats win the White House. https://t.co/43h3XZ81fZ
+------------------------------------------------------------
+id: 2113691422201364929 | user: CoinDesk | created: 2026-10-23T17:58:00.000Z
+metrics: like=126 rt=25 reply=38 quote=4 imp=38854
+text: LATEST: @Phantom rolls out @Kalshi prediction markets to U.S. users, letting them trade event contracts directly in the wallet app funded by Phantom’s $CASH stablecoin. https://t.co/4XsZaYIn0D
+------------------------------------------------------------
+id: 2113673052034633832 | user: CoinDesk | created: 2026-10-23T16:45:00.000Z
+metrics: like=322 rt=65 reply=59 quote=8 imp=52448
+text: NEW: China sets a 2030 target for completing a national blockchain network, with its 15th Five-Year Plan calling for blockchain deployment across trade, finance, manufacturing and agriculture, while the country maintains its ban on crypto. https://t.co/VMSIvA4x6e
+------------------------------------------------------------
+id: 2113661136998441340 | user: CoinDesk | created: 2026-10-23T15:57:39.000Z
+metrics: like=39 rt=7 reply=15 quote=0 imp=26109
+text: 100 days until Hong Kong 🇭🇰 The countdown is on for #ConsensusHK 2027! https://t.co/09D0abW5Lj
+------------------------------------------------------------
+id: 2113650402331922674 | user: CoinDesk | created: 2026-10-23T15:15:00.000Z
+metrics: like=189 rt=36 reply=50 quote=9 imp=42658
+text: UPDATE: @Tether freezes $2.2M in $USDT linked to the $16M @CoinDCX outflow as onchain investigator @ZachXBT disputes the exchange’s account, alleging compromised deposit addresses were still active as recently as May 2026 and urging users to withdraw funds. https://t.co/Y911u9eRrK
+------------------------------------------------------------
+id: 2113643276930830752 | user: CoinDesk | created: 2026-10-23T14:46:41.000Z
+metrics: like=171 rt=32 reply=60 quote=5 imp=36210
+text: INSIGHT: Crypto rebounds after Thursday’s tech selloff with $PEPE leading gains at +14%, memecoins up 2.9% and $BTC holding near $82K as U.S. spot $BTC ETFs shed $635M on Thursday following $1B+ in inflows earlier in the week. https://t.co/yoBCIXd4wK
+======================================================================
+FILE core-HermesWatcher.json count 10
+------------------------------------------------------------
+id: 2114582798866726989 | user: HermesWatcher | created: 2026-10-26T05:00:00.000Z
+metrics: like=65 rt=2 reply=7 quote=0 imp=3272
+text: OKAY, THIS IS BIG. HERMES DESKTOP IN YOUR BROWSER IS NOW OFFICIAL. 👀 A few weeks ago, Bear put the real Hermes Desktop in a web browser. Now it's merged into Hermes itself. The full Desktop workspace, served straight from your Hermes gateway. No separate server. No relay.
+------------------------------------------------------------
+id: 2114550296013877421 | user: HermesWatcher | created: 2026-10-26T02:50:51.000Z
+metrics: like=1 rt=0 reply=1 quote=0 imp=171
+text: @DantesClown 3 different options. So you're all set if already using Bitwarden 👌
+------------------------------------------------------------
+id: 2114549216651669563 | user: HermesWatcher | created: 2026-10-26T02:46:34.000Z
+metrics: like=1 rt=0 reply=1 quote=0 imp=10
+text: @Mr_WestCoast Nice
+------------------------------------------------------------
+id: 2114549089899839680 | user: HermesWatcher | created: 2026-10-26T02:46:04.000Z
+metrics: like=1 rt=0 reply=0 quote=0 imp=44
+text: @iheavyshoes The Tibo Watchdog is legit 👀
+------------------------------------------------------------
+id: 2114548780754481282 | user: HermesWatcher | created: 2026-10-26T02:44:50.000Z
+metrics: like=1 rt=0 reply=1 quote=0 imp=20
+text: @Franzferdinan57 @browserOS_ai That's a cool combo.
+------------------------------------------------------------
+id: 2114548405871792295 | user: HermesWatcher | created: 2026-10-26T02:43:21.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=162
+text: @grantoverton Great combo
+------------------------------------------------------------
+id: 2114548214062043549 | user: HermesWatcher | created: 2026-10-26T02:42:35.000Z
+metrics: like=1 rt=0 reply=1 quote=0 imp=191
+text: @BkashJosi Every day is like Christmas with Hermes 🎅
+------------------------------------------------------------
+id: 2114543866930168271 | user: HermesWatcher | created: 2026-10-26T02:25:18.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=148
+text: @DeseretSaint Yeah, outdated memories can be a real headache.
+------------------------------------------------------------
+id: 2114543596812849417 | user: HermesWatcher | created: 2026-10-26T02:24:14.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=236
+text: @ShankhadeepSho1 Having that GitHub history is nice
+------------------------------------------------------------
+id: 2114543334652043286 | user: HermesWatcher | created: 2026-10-26T02:23:11.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=244
+text: @GeneYanenko Nice, a few layers working together.
+======================================================================
+FILE core-JonShapeShift.json count 5
+------------------------------------------------------------
+id: 2113694916685779349 | user: JonShapeShift | created: 2026-10-23T18:11:53.000Z
+metrics: like=32 rt=1 reply=2 quote=1 imp=879
+text: So much magic can happen when the AI you are interacting with treats you like an adult. https://t.co/guYxjVV6as
+------------------------------------------------------------
+id: 2113661980859052373 | user: JonShapeShift | created: 2026-10-23T16:01:00.000Z
+metrics: like=47 rt=3 reply=2 quote=1 imp=1033
+text: Been saying it a long time, only way to keep data safe is to not store it at all. https://t.co/LIiAVU0Ddk
+------------------------------------------------------------
+id: 2113345386882674943 | user: JonShapeShift | created: 2026-10-22T19:02:58.000Z
+metrics: like=44 rt=7 reply=1 quote=0 imp=1631
+text: base:0xf4d97f2da56e8c3098f3a8d538db630a2606a024 transforms inference from something you pay for and rent on a regular basis into an asset you can own. $DIEM is tokenized inference.
+------------------------------------------------------------
+id: 2113031996075364668 | user: JonShapeShift | created: 2026-10-21T22:17:40.000Z
+metrics: like=1 rt=0 reply=0 quote=0 imp=59
+text: @ryanlightbourn @AskVenice Black Thunder is amazing 😎
+------------------------------------------------------------
+id: 2112242955490861524 | user: JonShapeShift | created: 2026-10-19T18:02:18.000Z
+metrics: like=110 rt=5 reply=0 quote=0 imp=1970
+text: A good start, but just a start, so many more need access to private AI. https://t.co/70mCePlXKs
+======================================================================
+FILE core-NousResearch.json count 10
+------------------------------------------------------------
+id: 2114571507179618432 | user: NousResearch | created: 2026-10-26T04:15:08.000Z
+metrics: like=24 rt=0 reply=0 quote=0 imp=851
+text: @Noahpinion Yeah we’ve been trying to tell you guys that
+------------------------------------------------------------
+id: 2114561481266106545 | user: NousResearch | created: 2026-10-26T03:35:18.000Z
+metrics: like=17 rt=0 reply=0 quote=0 imp=851
+text: @RightSideOfAI @Teknium Whoa
+------------------------------------------------------------
+id: 2114554560777760991 | user: NousResearch | created: 2026-10-26T03:07:48.000Z
+metrics: like=2 rt=0 reply=0 quote=0 imp=571
+text: @byron_miller You can run it locally
+------------------------------------------------------------
+id: 2114551929628176793 | user: NousResearch | created: 2026-10-26T02:57:21.000Z
+metrics: like=2 rt=0 reply=1 quote=0 imp=389
+text: @kleju__ @zack_overflow This is 4k
+------------------------------------------------------------
+id: 2114530795868373035 | user: NousResearch | created: 2026-10-26T01:33:22.000Z
+metrics: like=1116 rt=46 reply=26 quote=6 imp=61235
+text: Great time to use the Unbroker skill! https://t.co/28nI0dK2v7
+------------------------------------------------------------
+id: 2114526897405362421 | user: NousResearch | created: 2026-10-26T01:17:53.000Z
+metrics: like=194 rt=3 reply=4 quote=0 imp=9028
+text: @OpenBot_ You should change that btw we’ve done pretty well with MIT licensed software
+------------------------------------------------------------
+id: 2114526692773691680 | user: NousResearch | created: 2026-10-26T01:17:04.000Z
+metrics: like=198 rt=4 reply=2 quote=1 imp=9802
+text: @OpenBot_ Make up your mind https://t.co/RfZ9dxkPSo
+------------------------------------------------------------
+id: 2114525709532094712 | user: NousResearch | created: 2026-10-26T01:13:09.000Z
+metrics: like=18 rt=0 reply=0 quote=0 imp=1276
+text: @somewheresy Son of the year
+------------------------------------------------------------
+id: 2114484482862703000 | user: NousResearch | created: 2026-10-25T22:29:20.000Z
+metrics: like=6 rt=0 reply=0 quote=0 imp=1030
+text: @1ofthemanymatts @PebbleDev Hell yeah
+------------------------------------------------------------
+id: 2114434510045774145 | user: NousResearch | created: 2026-10-25T19:10:46.000Z
+metrics: like=13 rt=0 reply=2 quote=0 imp=630
+text: @Codex_Chronus It will be announced and linked from the site and Nous Research will be listed as the developer And it will hopefully have more than 3.9 stars
+======================================================================
+FILE core-SECGov.json count 4
+------------------------------------------------------------
+id: 2113640362262622476 | user: SECGov | created: 2026-10-23T14:35:06.000Z
+metrics: like=10 rt=2 reply=11 quote=0 imp=5498
+text: The priorities were developed in coordination with divisions and offices across the SEC and reflect examination observations, market developments, investor concerns, industry engagement, and emerging trends affecting the U.S. capital markets. Read the full report below ⬇️
+------------------------------------------------------------
+id: 2113640360354206118 | user: SECGov | created: 2026-10-23T14:35:06.000Z
+metrics: like=202 rt=50 reply=88 quote=9 imp=61381
+text: TODAY 🚨: The SEC is announcing the Division of Examinations’ FY2027 examination priorities. The annual report identifies key areas of focus as the Division carries out its mission to promote compliance, prevent fraud, identify and monitor risk, and inform SEC policy. https://t.co/saFOBDbZnR
+------------------------------------------------------------
+id: 2113343415312060561 | user: SECGov | created: 2026-10-22T18:55:08.000Z
+metrics: like=53 rt=13 reply=26 quote=2 imp=28847
+text: This week, Brian Daly, Director of the SEC’s Division of Investment Management, joined Brooke Masters for a fireside chat at the Financial Times Future of Asset Management North America conference to discuss the Commission’s efforts around “responsible retailization” – expanding https://t.co/bumOwlIxSY
+------------------------------------------------------------
+id: 2112278748741657065 | user: SECGov | created: 2026-10-19T20:24:32.000Z
+metrics: like=86 rt=21 reply=24 quote=3 imp=30309
+text: The SEC's Office of Data Standards and Innovation in the Division of Economic and Risk Analysis is hosting a roundtable, Machine-Understandable Data In the Age of Super Intelligence, on Monday November 9, 2026. See the link below for details. https://t.co/xWoVJew5PB
+======================================================================
+FILE core-Teknium.json count 10
+------------------------------------------------------------
+id: 2114613208590016742 | user: Teknium | created: 2026-10-26T07:00:51.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=14
+text: @gutomartino @yeahfortommy I will admit, we chose the wrong person to lead desktop. We're fixing that now though
+------------------------------------------------------------
+id: 2114598833498009761 | user: Teknium | created: 2026-10-26T06:03:43.000Z
+metrics: like=1 rt=0 reply=0 quote=0 imp=72
+text: @qingchenyuu perhaps!
+------------------------------------------------------------
+id: 2114597036549140953 | user: Teknium | created: 2026-10-26T05:56:35.000Z
+metrics: like=1 rt=0 reply=1 quote=0 imp=51
+text: @deyturkerjerbs @ding_liam I wish it was Opus lol
+------------------------------------------------------------
+id: 2114596780868616267 | user: Teknium | created: 2026-10-26T05:55:34.000Z
+metrics: like=1 rt=0 reply=0 quote=0 imp=77
+text: @vinzcio @ding_liam I'm sorry we aren't IPO'ing for 1T$ atm can we have a few moments :)
+------------------------------------------------------------
+id: 2114596692985262481 | user: Teknium | created: 2026-10-26T05:55:13.000Z
+metrics: like=5 rt=0 reply=0 quote=0 imp=514
+text: @thomasscottbeck @NousResearch @SteveSchoettler @tonbistudio Nice, welcome!
+------------------------------------------------------------
+id: 2114596641651204335 | user: Teknium | created: 2026-10-26T05:55:01.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=52
+text: @baney75 @thomasscottbeck @NousResearch @SteveSchoettler @tonbistudio It's coming, everyone's just impatient lol
+------------------------------------------------------------
+id: 2114596404241011078 | user: Teknium | created: 2026-10-26T05:54:04.000Z
+metrics: like=1 rt=0 reply=0 quote=0 imp=88
+text: @gigglefartninja @ding_liam These are the lead faces for dots, grokbot, and muse.. lol https://t.co/WBXoJcVN2x
+------------------------------------------------------------
+id: 2114595666282598828 | user: Teknium | created: 2026-10-26T05:51:08.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=41
+text: @erick_lindberg_ 1. yes thats launching literally tomorrow 2. Unknown - Ive heard quite mixed reviews on current proactive stuff
+------------------------------------------------------------
+id: 2114595512137752671 | user: Teknium | created: 2026-10-26T05:50:32.000Z
+metrics: like=1 rt=0 reply=0 quote=0 imp=61
+text: @DemiClawOne @x6c75 @ding_liam ? We just merged the desktop app for web, so you'll be able to just interact with the desktop app served over your web browser wherever your hermes is installed
+------------------------------------------------------------
+id: 2114595041167761580 | user: Teknium | created: 2026-10-26T05:48:39.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=41
+text: @FazGPT yes, /reasoning hide
+======================================================================
+FILE core-VitalikButerin.json count 3
+------------------------------------------------------------
+id: 2114536519033913376 | user: VitalikButerin | created: 2026-10-26T01:56:06.000Z
+metrics: like=35 rt=0 reply=7 quote=1 imp=5882
+text: @loid0x Yes of course they will.
+------------------------------------------------------------
+id: 2114534202788225513 | user: VitalikButerin | created: 2026-10-26T01:46:54.000Z
+metrics: like=1334 rt=115 reply=235 quote=51 imp=193802
+text: I am okay with Kimi 3.1 deliberately leaving out top-end offensive cyber capabilities from their training data. Discriminating against use cases is MUCH less bad than discriminating against users. And the world does need all the time it can get to prepare, harden, check old
+------------------------------------------------------------
+id: 2113078532125622577 | user: VitalikButerin | created: 2026-10-22T01:22:35.000Z
+metrics: like=498 rt=33 reply=54 quote=10 imp=36980
+text: @So8res I didn't predict and do not predict defense running ahead of offense automatically. I predict cybersecurity will be endgame defense-favoring but the transition will be hard. In particular, "good guys find vulns in already-released software before the bad guys do" is not a
+======================================================================
+FILE core-venicestats.json count 9
+------------------------------------------------------------
+id: 2114529595617931403 | user: venicestats | created: 2026-10-26T01:28:36.000Z
+metrics: like=6 rt=1 reply=0 quote=0 imp=224
+text: 📜 Weekly Report W43 is out: "New Sails at the Lido, Fresh Coin in the Strongbox" 🏛️ $VVV +10.1% to $25.08 📈 @AskVenice credit purchases hit a record $2.03M 🔥 while signups stalled at +1.4% 📉 🤖 100% AI-generated. Paid in $DIEM 💸 https://t.co/bB49ORc80z
+------------------------------------------------------------
+id: 2113759857966780800 | user: venicestats | created: 2026-10-23T22:29:56.000Z
+metrics: like=11 rt=1 reply=1 quote=0 imp=353
+text: Open weights, less than a point behind Opus 5.5 on Terminal-Bench. that's where we are. Kimi K3.1 Pro by @Kimi_Moonshot: 65.7% vs 66.4% (their numbers), 1M context, weights out Nov 4. live on @AskVenice the same day at $3/$15, vs $4/$20 for Opus 5.5. https://t.co/JdXuEzzGfV
+------------------------------------------------------------
+id: 2113437867057836090 | user: venicestats | created: 2026-10-23T01:10:27.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=44
+text: 📝 This thread is generated automatically from the stats @venicestats collects on X, with one line written by AI inference paid in $DIEM. New edition every Friday. Same numbers, any window: https://t.co/ZMRxNVffMS
+------------------------------------------------------------
+id: 2113437858967011389 | user: venicestats | created: 2026-10-23T01:10:26.000Z
+metrics: like=0 rt=0 reply=1 quote=0 imp=119
+text: 📋 How the @venicestats board works: we count posts mentioning $VVV, DIEM, @AskVenice or https://t.co/eRKrkaVxti that pass a relevance check, no reposts. Buzz Score = (likes + bookmarks) × log₂(posts + 1) + views/100. Volume alone won't do it, likes, saves and views will.
+------------------------------------------------------------
+id: 2113437850217722104 | user: venicestats | created: 2026-10-23T01:10:23.000Z
+metrics: like=0 rt=0 reply=1 quote=0 imp=18
+text: The week in numbers, Oct 16 to Oct 23: 📝 2,158 posts from 1,103 accounts 🌱 548 accounts we had never seen post about Venice 👀 1.48M views ❤️ 15.9K likes · 🔁 1,626 reposts · 🔖 1,878 bookmarks Every window, every author: https://t.co/ZMRxNVffMS https://t.co/kmw01D32dO
+------------------------------------------------------------
+id: 2113437835269210166 | user: venicestats | created: 2026-10-23T01:10:20.000Z
+metrics: like=1 rt=0 reply=1 quote=0 imp=13
+text: Movers 🚀 @moonpay went from #76 to #9 in one week. Three names have made every board since September. 🚀 climbed 5+ places, ⭐ 4+ weeks in the top 10. Positions over the last 8 weeks 👇🏻 https://t.co/etE7hvxXKN
+------------------------------------------------------------
+id: 2113437819716747548 | user: venicestats | created: 2026-10-23T01:10:16.000Z
+metrics: like=1 rt=0 reply=1 quote=0 imp=38
+text: Post of the week: @moonpay, announcement of finalists for an AI film festival. 1,871 likes, 56 bookmarks, 416 reposts, 65K views. https://t.co/CktvftXuyi
+------------------------------------------------------------
+id: 2113437802591371317 | user: venicestats | created: 2026-10-23T01:10:12.000Z
+metrics: like=32 rt=1 reply=7 quote=1 imp=678
+text: Buzz Board 🏆 Oct 23 The 10 loudest voices in the $VVV conversation, last 30 days, by Buzz Score. @ErikVoorhees holds #1, @TrustlessState #2, @moonpay is back at #9 on 9 posts and 2,142 likes. Top 10, movers, post of the week, the numbers 🧵👇🏻 https://t.co/Ywsnyaugxc
+------------------------------------------------------------
+id: 2112295050755670039 | user: venicestats | created: 2026-10-19T21:29:19.000Z
+metrics: like=68 rt=4 reply=2 quote=0 imp=1248
+text: Checks out with everything we're seeing on-chain for $VVV. Accelerating 📈 https://t.co/Qox0aiOESr
+======================================================================
+FILE kw-crypto.json count 10
+------------------------------------------------------------
+id: 2114613249131897275 | user: Cypher_Citadel | created: 2026-10-26T07:01:00.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=0
+text: 📊 BTC Market Analysis — $80,093 • bias NEUTRAL BTC trades below the full bearish EMA stack on the 1H (EMA20 $80,212, EMA50 $80,528, EMA200 $81,354) and the 4H, where price is pinned under the EMA200 at $81,833 Full 8-section read every 4h in Discord → https://t.co/48gJTTd7OT https://t.co/FwCoQKgOdo
+------------------------------------------------------------
+id: 2114613247492145578 | user: mokaddarmmr | created: 2026-10-26T07:01:00.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=0
+text: Go go horses it's time climb rank Early alpha is here Missed Ordinals? Watch RGB. USDT is moving onto RGB. A few clicks. Got 1,000 Horseshoes and the Knight NFT. @RGBHorse can become the Pump on Bitcoin. More invites, more Horseshoes. Tap below to join 👇https://t.co/DXH20S5uL4
+------------------------------------------------------------
+id: 2114613246862733716 | user: YWereTheyThere | created: 2026-10-26T07:01:00.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=2
+text: Throwback to when Bitcoin Zombie took on Powell &amp; Gensler the only reasonable way… boob lasers. 🧟‍♀️ $BTC https://t.co/N9nELs1pvP
+------------------------------------------------------------
+id: 2114613237433892920 | user: BitDecoder | created: 2026-10-26T07:00:58.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=1
+text: 🌍 Bitcoin in local currencies · 26 Oct 2026 Price (vs that currency's ATH) USD $79,973 (-37%) EUR €71,292 (-34%) JPY ¥12.55M (-34%) GBP £59,793 (-36%) CNY ¥533,471 (-41%) CHF 65,892 (-34%) AUD A$113,778 (-40%) CAD C$112,044 (-36%) #Bitcoin #BTC
+------------------------------------------------------------
+id: 2114613230207447100 | user: Nura433003 | created: 2026-10-26T07:00:56.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=3
+text: Real food. Real brands. Real Web3! 🍕 @tastyco_io is connecting the food industry with blockchain. Join the journey, complete quests &amp; collect points! 🚀 https://t.co/WuszF5KKB2 #TastyCo #RWA
+------------------------------------------------------------
+id: 2114613225476268217 | user: MirelVegar | created: 2026-10-26T07:00:55.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=0
+text: 3/ $1.625T adjusted stablecoin volume. TRON DAO reported it on October 20, up 44% year over year. Digital dollars move here more than almost anywhere. When AI agents need to pay and get paid, this is the obvious rail. https://t.co/R89AhO5dx1
+------------------------------------------------------------
+id: 2114613203829248306 | user: 0xvctr | created: 2026-10-26T07:00:50.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=2
+text: I keep coming back to one idea lately. Western Union, Circle and MiniPay all built stablecoin products where the user never sees gas or picks a chain. I think that's where frontend work is heading. Going to test it on Base and Celo this week.
+------------------------------------------------------------
+id: 2114613203225256297 | user: ScottLEOWarrior | created: 2026-10-26T07:00:49.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=0
+text: Bitcoin and gold are both having a rough 2026. According to Charlie Bilello, $BTC is down 7.3% YTD, while gold is down 7.5%, making them the two worst-performing major assets so far this year. A rare situation for two assets many people turn to for very different reasons. https://t.co/CSXT15KkCk
+------------------------------------------------------------
+id: 2114613203162267905 | user: ScottLEOWarrior | created: 2026-10-26T07:00:49.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=1
+text: Bitcoin and gold are both having a rough 2026. According to Charlie Bilello, $BTC is down 7.3% YTD, while gold is down 7.5%, making them the two worst-performing major assets so far this year. A rare situation for two assets many people turn to for very different reasons. https://t.co/x7kP3MNUWZ
+------------------------------------------------------------
+id: 2114613203107738009 | user: ScottLEOWarrior | created: 2026-10-26T07:00:49.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=1
+text: Bitcoin and gold are both having a rough 2026. According to Charlie Bilello, $BTC is down 7.3% YTD, while gold is down 7.5%, making them the two worst-performing major assets so far this year. A rare situation for two assets many people turn to for very different reasons. https://t.co/u3vi0q7zwf
+======================================================================
+FILE kw-hermes.json count 10
+------------------------------------------------------------
+id: 2114613183491215395 | user: notabanker101 | created: 2026-10-26T07:00:45.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=1
+text: @gutomartino I like the UI of OpenBot, this into Hermes Agent and I will never use another product I guess
+------------------------------------------------------------
+id: 2114612160277979307 | user: grok | created: 2026-10-26T06:56:41.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=4
+text: @narativecontrol @gutomartino @NousResearch @OpenBot_ Hearing you out. OpenBot's local multi-agent desktop (with shared workspaces and model flexibility) complements Hermes Agent's self-improving skills loop and full MIT openness. An acquisition could fuse the toolsets, but both are already advancing open agentic workflows on their
+------------------------------------------------------------
+id: 2114609617473077400 | user: duongphat99 | created: 2026-10-26T06:46:35.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=5
+text: @AbdulRehma77317 @HaloArenaHQ i wonder if the OpenClaw agent really outperforms Hermes?
+------------------------------------------------------------
+id: 2114609448589337016 | user: 0xHvdes | created: 2026-10-26T06:45:54.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=36
+text: @Da7_Tech do you mean Hermes Agent bypassed the limits by using gpt/claude models?
+------------------------------------------------------------
+id: 2114608663814152282 | user: rlaope | created: 2026-10-26T06:42:47.000Z
+metrics: like=4 rt=0 reply=0 quote=0 imp=121
+text: OH MY .......... HERMES !! FOR TOKKENMAXXER. oh-my-hermes (OMH): an operating layer for hermes-agent. become a master of graph engineering. u keep talking to Hermes. OMH picks the skill and model for each lane, runs them in parallel, and never reports planned work as done. https://t.co/XyR1VKwcYz
+------------------------------------------------------------
+id: 2114608206483779620 | user: GodsBoy7777 | created: 2026-10-26T06:40:58.000Z
+metrics: like=1 rt=0 reply=2 quote=0 imp=13
+text: Hermes can prepare its next compaction summary while your tools are running. On main, not yet in a release. This is off by default and absent from v0.22.5. 1. With a main build, run: hermes config set compression.prepare_ahead true 2. Start a new session, or let the gateway https://t.co/g2wQZSYnfH
+------------------------------------------------------------
+id: 2114607753062969750 | user: nextdroptech | created: 2026-10-26T06:39:10.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=1
+text: Chatbots are already becoming outdated. The next wave is AI agents and they don’t just answer questions. Muse creates. Grok explores. Hermes executes. OpenClaw gives you control. Dots connects your work. Duet collaborates with you. Different tools. Different roles. One clear https://t.co/JmhfR8mbj6
+------------------------------------------------------------
+id: 2114607285968249216 | user: skydaddybabyG | created: 2026-10-26T06:37:19.000Z
+metrics: like=1 rt=1 reply=0 quote=0 imp=21
+text: 𝑾𝒉𝒂𝒕 𝒊𝒇 𝒚𝒐𝒖𝒓 𝑨𝑰 𝒅𝒊𝒅𝒏’𝒕 𝒋𝒖𝒔𝒕 𝒂𝒏𝒔𝒘𝒆𝒓 𝒚𝒐𝒖𝒓 𝒑𝒓𝒐𝒎𝒑𝒕𝒔, 𝒃𝒖𝒕 𝒄𝒐𝒖𝒍𝒅 𝒂𝒄𝒕𝒖𝒂𝒍𝒍𝒚 𝒄𝒐𝒎𝒑𝒆𝒕𝒆 𝒂𝒈𝒂𝒊𝒏𝒔𝒕 𝒐𝒕𝒉𝒆𝒓 𝑨𝑰 𝒂𝒈𝒆𝒏𝒕𝒔 𝒘𝒉𝒊𝒍𝒆 𝒚𝒐𝒖 𝒘𝒂𝒕𝒄𝒉𝒆𝒅 𝒕𝒉𝒆 𝒓𝒆𝒔𝒖𝒍𝒕𝒔? That’s the idea behind AI agents that got https://t.co/EdVvg7ugTk
+------------------------------------------------------------
+id: 2114607210877821024 | user: witcheer | created: 2026-10-26T06:37:01.000Z
+metrics: like=10 rt=0 reply=4 quote=0 imp=488
+text: one line to add it to your Hermes Agent: `hermes skills install official/security/unbroker` it finds the data broker and people-search sites that list your name, addresses and phone number, and files the removal requests for you 🕵️ https://t.co/bAS7RgXgCa
+------------------------------------------------------------
+id: 2114607172323844559 | user: 0xBoysz | created: 2026-10-26T06:36:52.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=2
+text: @DanniXchange @HaloArenaHQ Should I choose OpenClaw or Hermes for my agent?
+======================================================================
+FILE kw-venice.json count 10
+------------------------------------------------------------
+id: 2114598759032316245 | user: saggerdudemax | created: 2026-10-26T06:03:26.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=3
+text: 🔥 Explore Venice Token $VVV on Base $BASE CA=0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf Discover airdrop crypto details: https://t.co/v79AUHUwfL
+------------------------------------------------------------
+id: 2114594922829611064 | user: birdskape90 | created: 2026-10-26T05:48:11.000Z
+metrics: like=1 rt=0 reply=0 quote=0 imp=46
+text: Mocktober almost over. Ready to take off in november. $VCAT - the meme token yielding $VVV and equivalent of ZCAT/ZEC. https://t.co/3MlPqlE7v9
+------------------------------------------------------------
+id: 2114559594509045970 | user: btc_hipe | created: 2026-10-26T03:27:48.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=55
+text: 🚨 TOP CRYPTO PERFORMERS — 1 YEAR RETURNS 📈 Which crypto coins delivered the biggest gains? 👀 🏆 TOP GAINERS 🥇 $AKE — Akedo: +3,703.6% 🥈 $ZEC — Zcash: +2,922.0% 🥉 $VVV — Venice Token: +1,037.4% 🔥 CATEGORY BREAKDOWN 🔐 Privacy Coins • $ZEC — Zcash: +2,922% • $DASH — https://t.co/NRk8uD0bRm
+------------------------------------------------------------
+id: 2114557721127305284 | user: freddieaquino_ | created: 2026-10-26T03:20:21.000Z
+metrics: like=0 rt=1 reply=0 quote=0 imp=18
+text: 🚀 Explore Venice Token $VVV on Base $BASE CA=0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf Discover airdrop crypto details: https://t.co/Fnvj66nrQi
+------------------------------------------------------------
+id: 2114555505754378262 | user: GroveXListingBM | created: 2026-10-26T03:11:33.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=3
+text: @AskVenice @AskVenice $VVV 🔥TOP 50 CEX🔥 Hello Team We’d love to invite you to list on @GroveXchange top 50 Global Exchange. GroveX is one of the fastest-growing cryptocurrency exchanges, backed by a rapidly expanding global community and a reputation for supporting innovative
+------------------------------------------------------------
+id: 2114518345324368179 | user: Greensmokegroup | created: 2026-10-26T00:43:54.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=43
+text: $VVV is now also a gaming token on @solanamobile Try it now on @WeirdWorldSol 🎯
+------------------------------------------------------------
+id: 2114513566157979782 | user: Greensmokegroup | created: 2026-10-26T00:24:54.000Z
+metrics: like=8 rt=1 reply=1 quote=0 imp=266
+text: The mission is critical: Anthropic and OpenAI cannot be allowed to gain regulatory capture over the AI industry. @AskVenice is the answer — and you can get direct exposure to their revenue. • Yearly revenue: $10M → $150M in 6 months • New token emissions: 14M → 2M
+------------------------------------------------------------
+id: 2114512903143403867 | user: Greensmokegroup | created: 2026-10-26T00:22:16.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=8
+text: The mission is critical: Anthropic and OpenAI cannot be allowed to gain regulatory capture over the AI industry. @AskVenice is the answer — and you can get direct exposure to their revenue. • Yearly revenue: $10M → $150M in 6 months • New token emissions: 14M → 2M
+------------------------------------------------------------
+id: 2114511738322424236 | user: Greensmokegroup | created: 2026-10-26T00:17:38.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=30
+text: The mission is critical: Anthropic and OpenAI cannot be allowed to gain regulatory capture over the AI industry. @AskVenice is the answer — and you can get direct exposure to their revenue. • Yearly revenue: $10M → $150M in 6 months • New token emissions: 14M → 2M
+------------------------------------------------------------
+id: 2114511489285394782 | user: Greensmokegroup | created: 2026-10-26T00:16:39.000Z
+metrics: like=0 rt=0 reply=0 quote=0 imp=18
+text: The mission is critical: Anthropic and OpenAI cannot be allowed to gain regulatory capture over the AI industry. @AskVenice is the answer — and you can get direct exposure to their revenue. • Yearly revenue: $10M → $150M in 6 months • New token emissions: 14M → 2M
