@@ -27,9 +27,12 @@ import unicodedata
 RADICE = pathlib.Path(__file__).resolve().parent.parent
 CODA = pathlib.Path("/root/.hermes/profiles/raziel-news/x-queue")
 
-MIN_CARATTERI = 80          # sotto questa soglia non e' un post, e' un segnaposto
-MAX_CARATTERI = 2000        # blocco: oltre, il post non e' piu' leggibile
-CARATTERI_CONSIGLIATI = 1500   # avviso, non blocco (sezione 5 della strategia)
+MIN_CARATTERI = 90          # sotto questa soglia l'apertura non dice niente
+APERTURA_MAX = 275          # oltre, nella timeline scatta "mostra altro" (limite X: 280)
+PEZZO_MIN, PEZZO_MAX = 60, 260   # limiti dei pezzi del thread
+PEZZO_HARD_MAX = 275
+THREAD_MAX = 3
+MAX_CARATTERI = 2000        # solo per le bozze vecchie senza thread: oltre, blocco
 MIN_LATO = 900              # lato minimo dell'immagine
 RAPPORTO_MIN, RAPPORTO_MAX = 1.60, 1.86   # 16:9 = 1,78
 
@@ -107,29 +110,72 @@ def controlla(draft: dict, pubblicati: list[str]) -> tuple[list[str], list[str]]
     problemi: list[str] = []
     avvisi: list[str] = []
     testo = draft.get("text") or ""
+    thread = draft.get("thread") or []
 
     if not testo.strip():
         problemi.append("testo vuoto")
     else:
         if len(testo) < MIN_CARATTERI:
-            problemi.append(f"testo troppo corto ({len(testo)} caratteri, minimo {MIN_CARATTERI})")
-        if len(testo) > MAX_CARATTERI:
-            problemi.append(f"testo troppo lungo ({len(testo)} caratteri, massimo {MAX_CARATTERI})")
-        elif len(testo) > CARATTERI_CONSIGLIATI:
-            avvisi.append(f"testo lungo {len(testo)} caratteri (oltre i {CARATTERI_CONSIGLIATI} consigliati)")
+            problemi.append(f"apertura troppo corta ({len(testo)} caratteri, minimo {MIN_CARATTERI})")
+        if len(testo) > APERTURA_MAX:
+            if thread:
+                problemi.append(
+                    f"apertura lunga {len(testo)} caratteri (massimo {APERTURA_MAX}): "
+                    "il resto va nei pezzi del thread"
+                )
+            elif len(testo) > MAX_CARATTERI:
+                problemi.append(f"testo troppo lungo ({len(testo)} caratteri, massimo {MAX_CARATTERI})")
+            else:
+                avvisi.append(
+                    f"bozza senza thread e apertura di {len(testo)} caratteri: "
+                    "nella timeline si apre solo con 'mostra altro'"
+                )
         if LINK.search(testo):
-            problemi.append("link nel corpo del post (il link va nella prima risposta)")
-        if MENTION.search(testo):
-            problemi.append("menzione nel corpo del post")
-        if HASHTAG.search(testo):
-            problemi.append("hashtag")
-        if EMOJI.search(testo):
-            problemi.append("emoji")
-        if SEGNAPOSTO.search(testo):
-            problemi.append("segnaposto non risolto nel testo")
+            problemi.append("link nel corpo del post (il link va in coda al thread)")
+        for etichetta, testo_controllato in [("testo", testo)]:
+            if MENTION.search(testo_controllato):
+                problemi.append(f"menzione nel {etichetta}")
+            if HASHTAG.search(testo_controllato):
+                problemi.append(f"hashtag nel {etichetta}")
+            if EMOJI.search(testo_controllato):
+                problemi.append(f"emoji nel {etichetta}")
+            if SEGNAPOSTO.search(testo_controllato):
+                problemi.append(f"segnaposto non risolto nel {etichetta}")
 
-        n_it = len(IT.findall(testo))
-        n_en = len(EN.findall(testo))
+    if thread and not isinstance(thread, list):
+        problemi.append(f"campo thread non e' una lista: {type(thread).__name__}")
+        thread = []
+    if isinstance(thread, list) and thread:
+        if len(thread) > THREAD_MAX:
+            problemi.append(f"thread con {len(thread)} pezzi (massimo {THREAD_MAX})")
+        for posizione, pezzo in enumerate(thread, start=1):
+            if not isinstance(pezzo, str) or not pezzo.strip():
+                problemi.append(f"pezzo {posizione} del thread vuoto")
+                continue
+            lunghezza = len(pezzo)
+            if lunghezza < PEZZO_MIN:
+                problemi.append(f"pezzo {posizione} del thread troppo corto ({lunghezza} caratteri, minimo {PEZZO_MIN})")
+            elif lunghezza > PEZZO_HARD_MAX:
+                problemi.append(f"pezzo {posizione} del thread troppo lungo ({lunghezza} caratteri, massimo {PEZZO_HARD_MAX})")
+            elif lunghezza > PEZZO_MAX:
+                avvisi.append(f"pezzo {posizione} del thread lungo {lunghezza} caratteri (consigliato fino a {PEZZO_MAX})")
+            if LINK.search(pezzo):
+                problemi.append(f"link nel pezzo {posizione} del thread (il link va in coda)")
+            if MENTION.search(pezzo):
+                problemi.append(f"menzione nel pezzo {posizione} del thread")
+            if HASHTAG.search(pezzo):
+                problemi.append(f"hashtag nel pezzo {posizione} del thread")
+            if EMOJI.search(pezzo):
+                problemi.append(f"emoji nel pezzo {posizione} del thread")
+        if not any("?" in p for p in thread if isinstance(p, str)):
+            avvisi.append("nessun pezzo del thread chiude con una domanda: la reply e' il segnale che pesa di piu'")
+    elif not thread and "?" not in testo:
+        avvisi.append("nessuna domanda nel post: la reply e' il segnale che pesa di piu'")
+
+    if testo.strip():
+        tutto = testo + " " + " ".join(p for p in thread if isinstance(p, str))
+        n_it = len(IT.findall(tutto))
+        n_en = len(EN.findall(tutto))
         lingua = (draft.get("lang") or "").lower()
         if lingua == "en" and n_it > n_en:
             problemi.append(f"slot 'en' ma il testo sembra italiano (marcatori it={n_it}, en={n_en})")

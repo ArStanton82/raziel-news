@@ -52,9 +52,9 @@ La pipeline di traduzione gira ogni giorno alle 12:30.
 
 | Slot | Ora | Lingua | Funzione | Link |
 |---|---|---|---|---|
-| mattutino | 08:15 | **IT** | Formato "metodo" o "dato": un numero verificato, un pezzo di metodo. È il formato che nessun altro può copiare. | articolo pertinente |
-| giornata | 13:15 | **IT** o **EN** | L'articolo del giorno scelto per angolo, non per ordine di pubblicazione. | versione nella lingua del post |
-| terzo slot | 20:15 | IT/EN | Esiste solo se uno dei due slot precedenti è saltato. Il tetto resta due. | — |
+| mattutino | 08:15 | **IT** | Il post italiano della giornata: un articolo scelto per chi non ci conosce, apertura + thread. | ultima risposta del thread |
+| giornata | 13:15 | **EN** | L'articolo del giorno scelto per angolo, non per ordine di pubblicazione. | ultima risposta del thread |
+| terzo slot | 20:15 | EN | Esiste solo se uno dei due slot precedenti è saltato. Il tetto resta due. | — |
 
 **Un post per la giornata, non uno per articolo.** Con tre articoli al giorno escono **due** post:
 quello del mattino, scritto la sera prima dal job delle 21:00, e quello della giornata, scelto fra i
@@ -68,11 +68,11 @@ la versione `/en/`. Il job del mattino gira alle 21:00 e scrive nella coda del g
 1. Mai la stessa cosa in due lingue a distanza di ore. La versione IT del post sul Papa fece 101
    impressioni contro 273.330: ai lettori sembra un duplicato. Il seguito nella seconda lingua deve
    essere un **angolo diverso**, non una traduzione.
-2. Il link va **nella prima risposta**, mai nel corpo del post. X declassa i post con link.
+2. Il link va **in coda al thread**, nell'ultima risposta, mai nel corpo del post. X declassa i post con link, e il filtro sulle reply lo tiene fuori dalla For You: in coda fa il minor danno possibile.
 3. **Zero retweet.** Un RT fa 1-2 impressioni e diluisce il segnale. Per segnalare qualcosa: citazione
    con una riga propria — ma la citazione programmatica è bloccata dalla restrizione X del 23 febbraio
    2026, quindi una citazione si fa a mano.
-4. Un post lungo e coeso batte una serie di tweet frammentati.
+4. **Apertura corta, poi thread.** Il post principale sta **sotto i 280 caratteri** e si regge da solo: dentro la timeline non c'è "mostra altro", il fatto e la conseguenza sono visibili interi. Il resto va in massimo **tre** pezzi di thread da 60-260 caratteri, l'ultimo chiude con una domanda secca. Dal 25 novembre 2026, dopo aver letto il codice di ranking pubblicato da X: tutti i 48 post di novembre superavano i 280 caratteri (mediana 1.459) e nessuno era leggibile senza aprire. Dettagli nella sezione 5-quinquies.
 5. Niente engagement fabbricato, mai. Nessuna risposta automatica in serie: X sanziona.
 6. **Su X esce solo un articolo.** Un post è la copertina di un articolo: il testo è la notizia, il
    link sta in prima risposta. Non si pubblicano i **nostri conti** — quanti post, quante impressioni,
@@ -179,7 +179,8 @@ Coda: `/root/.hermes/profiles/raziel-news/x-queue/<YYYY-MM-DD>.json`
       "id": "2026-10-06-en-1",
       "lang": "en",
       "slot": "reach",
-      "text": "testo del post, senza link",
+      "text": "apertura del post, sotto 280 caratteri, senza link",
+      "thread": ["primo pezzo del seguito", "ultimo pezzo, che chiude con la domanda"],
       "reply_link": "https://raziel.news/en/...",
       "article": "titolo dell'articolo",
       "approved": false,
@@ -191,20 +192,22 @@ Coda: `/root/.hermes/profiles/raziel-news/x-queue/<YYYY-MM-DD>.json`
 
 - **Valori ammessi per `slot`:** `reach`, `depth` (impostazione v1), `mattutino`, `giornata` (v2.0).
   La guardia `scripts/x_post_guard.py` accetta tutti e quattro; qualunque altro valore blocca la bozza.
-- **Lunghezza del testo: si può andare oltre i 280 caratteri — e l'API *non* tronca.** Attenzione,
-  perché è controintuitivo: il campo `text` restituito dall'API v2 si ferma a ~280 caratteri anche
-  quando il post pubblicato è più lungo. Il testo integrale sta in **`note_tweet.text`**. Verificato
-  il 5 ottobre 2026 sul post fissato (280 caratteri in `text`, 441 in `note_tweet`): il post online
-  era completo.
-  **Regola di verifica:** dopo una pubblicazione, confrontare il testo riletto con quello della coda
-  usando `note_tweet.text` se presente, altrimenti `text` —
-  `xurl '/2/tweets/<ID>?tweet.fields=note_tweet,text'`.
+- **`text` è l'apertura, non tutto il post: massimo 280 caratteri, minimo 90.** Il resto sta in
+  `thread`: da uno a tre pezzi, ciascuno fra 60 e 260 caratteri, senza link, senza hashtag, senza
+  emoji, senza menzioni. L'ultimo pezzo del thread chiude con una domanda (secca, non retorica).
+  `thread` può essere vuoto su un fatto che sta in due righe, ma la domanda resta obbligatoria.
+  La guardia blocca un'apertura sopra i 275 caratteri, un thread oltre i tre pezzi o con un pezzo
+  fuori misura, e avvisa se nessun pezzo del thread contiene un punto interrogativo.
+- **Lunghezza.** Dal 25 novembre 2026 l'apertura sta sotto i 280 caratteri e il totale del thread sotto
+  i 700: oltre, nella timeline si vede solo "mostra altro" e chi scorre non legge niente. Il campo
+  `text` restituito dall'API v2 si ferma comunque a ~280 caratteri: per un post vecchio o lungo il
+  testo integrale sta in **`note_tweet.text`**. **Regola di verifica:** dopo una pubblicazione,
+  confrontare il testo riletto con quello della coda usando `note_tweet.text` se presente, altrimenti
+  `text` — `xurl '/2/tweets/<ID>?tweet.fields=note_tweet,text'`.
   **Non eliminare mai un post solo perché `text` sembra troncato:** è quasi sempre un falso allarme
   e si distrugge un post integro. Un errore così è già costato due post il 5 ottobre 2026.
-  Limite pratico consigliato: **1.500 caratteri**, per leggibilità. I post lunghi e coesi rendono più
-  delle serie di tweet frammentati: non accorciare per abitudine.
-- `approved: true` → il job di pubblicazione lo pubblica (con `reply_link` come prima risposta) e
-  scrive `published_tweet_id`. La guardia marca così le bozze che passano i suoi controlli.
+- `approved: true` → il job di pubblicazione lo pubblica (apertura con immagine, poi i pezzi del thread
+  a catena, poi `reply_link` come ultima risposta) e scrive `published_tweet_id` e `thread_ids`.
 - **Tetto giornaliero e una bozza per esecuzione.** Il job pubblica al massimo una bozza per volta e
   si ferma a due post al giorno. Scrive `published_tweet_id`, `reply_tweet_id`, `published_at` e
   `status: published`: il file di coda deve dire da solo se un post è uscito, senza interrogare l'API.
@@ -212,12 +215,51 @@ Coda: `/root/.hermes/profiles/raziel-news/x-queue/<YYYY-MM-DD>.json`
   `published`, che un controllo precedente dava per mancante, semplicemente non esiste.
 - `approved: false` → resta in coda col motivo della bocciatura; il job lo salta e lo segnala.
 - **Cosa blocca la guardia** (`scripts/x_post_guard.py`, motivi di blocco e non avvisi): testo vuoto,
-  sotto 80 o sopra 2.000 caratteri, link nel corpo, menzioni, hashtag, emoji, segnaposto non risolti,
-  lingua dichiarata che non corrisponde al testo, `reply_link` che non è di raziel.news o è della
-  lingua sbagliata, immagine mancante, illeggibile, troppo piccola, non 16:9, oppure testo identico o
-  quasi identico a un post già pubblicato. Sopra i **1.500** caratteri è solo un avviso.
+  apertura sotto 90 o sopra 275 caratteri, thread con più di tre pezzi o con un pezzo fuori dai 60-260
+  caratteri, link nel corpo (anche nei pezzi del thread), menzioni, hashtag, emoji, segnaposto non
+  risolti, lingua dichiarata che non corrisponde al testo, `reply_link` che non è di raziel.news o è
+  della lingua sbagliata, immagine mancante, illeggibile, troppo piccola, non 16:9, oppure testo
+  identico o quasi identico a un post già pubblicato. Senza domanda nel thread: solo un avviso.
 - **Interruttore di sicurezza:** la presenza del file `x-queue/PAUSA` ferma la pubblicazione
   automatica al primo passo del job.
+
+---
+
+## 5-quinquies. Perché il formato è questo: il codice di ranking di X (25 novembre 2026)
+
+Il 13 agosto 2026 X ha pubblicato su GitHub il codice del feed For You (`xai-org/x-algorithm`) con i
+pesi dei segnali. Le regole di questa strategia vengono da lì, non da consigli di growth. Le righe che
+seguono sono verificabili aprendo `home-mixer/params/param.rs`.
+
+**I pesi dei segnali** (moltiplicano la probabilità prevista, non i conteggi): copy link **20,0**,
+reply **5,0** e quote 5,0, share via DM 5,0, follow dell'autore 4,0, share 2,1, retweet 1,0, like
+0,708, click 0,274, **click al profilo 0,0**. In negativo: not-dwelled −0,02, block −31,2, mute
+−58,8, "non mi interessa" −53,1, report −234.
+Conseguenza: **il copy link e la reply sono le due cose che contano** e si inseguono con il formato,
+non con la frequenza. Il click al profilo non sposta il ranking: non è una metrica da inseguire.
+
+**Il boost bidirezionale.** `BidirectionalFollowReplyWeightBoost` vale **15,0** sulla probabilità di
+reply: si applica solo fra account che si seguono a vicenda. Al 25 novembre 2026 solo il **10%** dei
+nostri follower è un follow bidirezionale (20 su un campione di 200), quindi il premio più alto dopo
+il copy link resta quasi sempre spento. Da qui la regola del ricambio: **10-15 follow al giorno** verso
+chi ci menziona o ci interagisce, con lo script `scripts/x_follow_back.py` (job `x-follow-back`).
+
+**Le reply fuori rete vengono scartate.** `home-mixer/filters/oon_retweet_reply_filter.rs`: una reply
+verso un autore che lo spettatore non segue non entra nella For You. Le nostre prime risposte con il
+link sono self-reply e restano visibili solo a chi ci segue già: è il motivo per cui fanno 3-4
+impressioni. Da qui il link **in coda al thread**, che almeno non spezza l'apertura.
+
+**Il testo lungo non si vede.** Il 100% dei post di novembre superava i 280 caratteri (mediana 1.459):
+nella timeline si vedeva un troncamento. Da qui apertura sotto i 280 caratteri e corpo in thread.
+
+**La reach si misura sui follower attivi.** `active_follower_count` del profilo: **170** su 403
+follower. La reach mediana va calcolata su 170, non su 403 (sezione 8). Misurare su 403 fa sembrare
+il canale tre volte più morto di com'è.
+
+**Cosa non penalizza** (verificato nel codice, così non ci si torna sopra): pubblicare dall'API,
+l'immagine generata (nessun label per i media AI), l'orario, la frequenza di due post al giorno.
+**Cosa non si può verificare dall'API:** le eventuali etichette di ridotta distribuzione. Kain può
+scaricarle da Impostazioni → "Under the Hood" e vanno lette quando arrivano.
 
 ---
 
@@ -429,7 +471,7 @@ rendono più dei post, per impressione.
 
 | Formato | Quando | Regola |
 |---|---|---|
-| **T1 — claim + numero + conseguenza** | tutti i post | Prima riga con una cifra presa dall'articolo, seconda riga con la conseguenza. Chi scorre deve capire senza aprire il post. |
+| **T1 — apertura + thread** | tutti i post | Apertura sotto 280 caratteri: riga 1 il fatto con una cifra presa dall'articolo, riga 2 la conseguenza. Chi scorre deve capire senza aprire il post. Segue un thread di 1-3 pezzi con il corpo asciutto; l'ultimo chiude con una domanda. Il link va in coda, come ultima risposta. |
 | **T4 — thread di sintesi** | lunedì | Gli articoli della settimana che non sono saliti su X. Tre-cinque post, il primo si regge da solo. |
 
 **T2 (metodo) e T3 (dato)** erano i formati del mattutino-rubrica: dal 23 novembre 2026 non sono più
@@ -439,6 +481,10 @@ mai inventate — mentre l'oggetto del post è sempre un articolo.
 **Vietato aprire** con la data, con "ieri", con una domanda retorica o con il nome del prodotto come
 soggetto. **Vietato** il notiziario di prodotto senza conseguenza: se un articolo riguarda solo un
 rilascio, resta nel sito e non diventa un post.
+
+**Vietato chiudere senza domanda.** Il punto interrogativo nell'ultimo pezzo del thread non è
+gentilezza: la reply pesa 5,0 e il boost bidirezionale altri 15,0, il copy link 20,0. Un post che non
+chiede niente raccoglie solo like, che pesano 0,708.
 
 ---
 
@@ -473,19 +519,26 @@ legge. Dal 23 novembre 2026 il post del mattino è un articolo come quello della
 Misure al 28 ottobre 2026 e soglie a 30 giorni. Il report settimanale del lunedì marca ogni riga
 SOPRA / SOTTO / IN LINEA: si decide su quello, non sulle impressioni totali.
 
-| Metrica | Oggi | Obiettivo 30 gg | Soglia di allarme |
+| Metrica | Oggi (25 nov) | Obiettivo 30 gg | Soglia di allarme |
 |---|---|---|---|
-| Mediana impressioni per post editoriale | **31** | ≥ 120 | < 60 |
-| Reach mediana / follower | **7,6%** | ≥ 25% | < 12% |
-| Risposte umane per post | ~0,06 | ≥ 1 | 0 |
-| Click al profilo / settimana | non tracciato | ≥ 40 | < 10 |
-| Click ai link organici / settimana | ~1 | ≥ 15 | 0 |
-| Bookmark / mese | 3 | ≥ 25 | < 5 |
-| Follower | 408 | 500 | in calo |
+| Mediana impressioni per post editoriale | **19** | ≥ 120 | < 60 |
+| Reach mediana / **follower attivi** (170) | **11,2%** | ≥ 25% | < 12% |
+| Risposte umane per post | ~0,0 | ≥ 1 | 0 |
+| Copy link / bookmark al mese | 0 | ≥ 25 | < 5 |
+| Follow bidirezionali sui follower | 10% | ≥ 35% | < 15% |
+| Click ai link organici / settimana | 0 | ≥ 15 | 0 |
+| Click al profilo / settimana | 1 | non obiettivo (peso 0,0) | — |
+| Follower (di cui attivi) | 403 (170) | 500 | in calo |
+
+**Il denominatore della reach sono i follower attivi** (`active_follower_count`), non i follower
+totali: solo 170 su 403 aprono X almeno una volta al mese. Calcolare la reach su 403 (come nei report
+fino al 23 novembre) fa sembrare il canale tre volte più morto del reale. Il report scrive entrambi i
+numeri.
 
 Regola di lettura: se la mediana non cresce ma i click ai link sì, il format funziona e il pubblico è
 sbagliato. Se non cresce nessuno dei due per due settimane di fila, il problema è l'argomento, non
-l'orario — e si cambia l'argomento, non l'ora.
+l'orario — e si cambia l'argomento, non l'ora. Se non crescono né risposte né copy link, il problema è
+il formato della chiusura: si guarda la sezione 7.
 
 Report settimanale il lunedì, scritto in `reports/<data>-x-report.md`, con numeri letti via API e
 la divisione **organic vs promoted** (`organic_metrics` / `promoted_metrics`), mai le impressioni

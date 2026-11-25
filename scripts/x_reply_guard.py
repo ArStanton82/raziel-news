@@ -26,7 +26,7 @@ import unicodedata
 
 QUEUE_DIR = "/root/.hermes/profiles/raziel-news/x-queue"
 
-MAX_LEN = 220            # limite della strategia per le risposte
+MAX_LEN = 250            # limite delle risposte (X ne concede 280; 250 lascia margine senza bocciare testo buono)
 MIN_LEN = 110            # sotto questa soglia non c'e' spazio per un dato
 MAX_PER_ACCOUNT_DAY = 1  # mai due risposte allo stesso account nello stesso giorno
 MAX_PER_DAY = 6          # tetto giornaliero complessivo
