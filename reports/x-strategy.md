@@ -325,6 +325,13 @@ Il testo resta senza link: il link va nella prima risposta, l'immagine nel post 
 
 ## 5-ter. Modalità autonomia controllata (ATTIVA dal 6 ottobre 2026)
 
+**Aggiornamento 28 novembre 2026 — i commenti non si pubblicano più.** Su richiesta di Kain il job
+`x-conversazione` è **in pausa**: nessuna risposta automatica esce più, né sotto i nostri post né alle
+menzioni. Le risposte tornano a prepararsi in chat, quando Kain passa lui il post o porta lui la
+menzione, e le pubblica lui dal profilo (protocollo della sezione 5-quater). I file
+`x-queue/replies-<data>-<ora>.json` restano come traccia e si possono riusare. Il job si riattiva con una
+parola di Kain, senza riscrivere nulla: il prompt è intatto.
+
 **Perimetro reale (verificato il 6 ottobre 2026).** Dal 23 febbraio 2026 X limita le risposte
 programmatiche: `POST /2/tweets` accetta una risposta solo se l'autore del post originale **ci ha
 menzionato** o ha citato un nostro post (restrizione valida per Free, Basic, Pro e Pay-Per-Use; esenti
